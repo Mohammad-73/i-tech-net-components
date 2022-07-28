@@ -15,16 +15,28 @@ import ContactUsSection from "../../components/ContactUsSection/ContactUsSection
 
 import Besonderheiten from "../../assets/images/Besonderheiten.jpg";
 import DividerImage from "../../assets/images/dividerImage.jpg";
-
 const SurfcampEurope = () => {
   return (
     <div>
       <NavBar />
-      <Hero />
+      <Hero
+        image="bg-hero-europe"
+        title="Surface in Portugal"
+        description="Erlebe die debesten Wellen Europas"
+      />
       <HintSection />
       <Description />
       <ImageGallery />
-      <ListAndImage />
+      <ListAndImage
+        image={Besonderheiten}
+        title="Ein Surfcamp in Europa passt zu dir, wenn du..."
+        items={[
+          "...mit top ausgebildeten Lehrer:innen Surfen lernen willst",
+          "...eine entspannte Atmosphäre unter Gleichgesinnten genießen willst",
+          "...die Vielfalt unseres Kontintents erleben willst",
+          "...unkompliziert und sicher reisen willst",
+        ]}
+      />
       <ImageGallery2 />
       <SingleCardSection />
       <DividerImg align="center" image={DividerImage} />

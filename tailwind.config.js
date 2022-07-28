@@ -4,7 +4,8 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        "hero-portugal": "url('/src/assets/images/HeroPortugal.jpg')",
+        "hero-europe": "url('/src/assets/images/HeroPortugal.jpg')",
+        "hero-france": "url('/src/assets/surfcampFrance/Header/12.jpg')",
       },
       backgroundColor: {
         "custom-orange": "#FF9F1C",
