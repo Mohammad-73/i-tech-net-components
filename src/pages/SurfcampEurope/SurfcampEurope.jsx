@@ -11,10 +11,10 @@ import DividerImg from "../../components/DividerImg/DividerImg";
 import ThreeColImg from "../../components/ThreeColImg/ThreeColImg";
 import ImageGallery3 from "../../components/ImageGallery3/ImageGallery3";
 import RateCardSection from "../../components/RateCardSection/RateCardSection";
+import ContactUsSection from "../../components/ContactUsSection/ContactUsSection";
 
 import Besonderheiten from "../../assets/images/Besonderheiten.jpg";
 import DividerImage from "../../assets/images/dividerImage.jpg";
-import ContactUsSection from "../../components/ContactUsSection/ContactUsSection";
 
 const SurfcampEurope = () => {
   return (

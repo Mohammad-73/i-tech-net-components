@@ -7,7 +7,7 @@ import { ReactComponent as Owl } from "../../assets/images/owl.svg";
 
 const LocationCard = () => {
   return (
-    <div className="h-[25rem] bg-white rounded-[1.25rem] border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
+    <div className=" bg-white rounded-[1.25rem] border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
       <div className="rounded-t-[1.25rem]">
         <img className="rounded-t-[1.25rem] w-full" src={CardImage} alt="" />
       </div>

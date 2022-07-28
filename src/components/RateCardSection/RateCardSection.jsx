@@ -6,12 +6,12 @@ const RateCardSection = () => {
   return (
     <div className="w-full py-7">
       <div className="mx-auto max-w-6xl ">
-        <div>
+        <div className="px-6 lg:px-0">
           <h1 className="text-[#2B2D42] text-[1.56rem] py-3">
             Das sagen Reisende über ihren Surfurlaub in Europa
           </h1>
         </div>
-        <div class=" grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-1 xl:grid-cols-3 gap-5">
+        <div class="px-6 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-1 xl:grid-cols-3 lg:px-0 gap-5">
           <RateCard
             name="Febi"
             description="Sehr sauber, tolle Atmosphäre, super Lage direkt am Strand, mega Blick aufs Meer von der Dachterasse und nette Gäste :)"

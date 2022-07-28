@@ -8,9 +8,9 @@ import ContactForm from "../ContactForm/ContactForm";
 
 const ContactUsSection = () => {
   return (
-    <div className="w-full py-7">
+    <div className="w-full py-7 ">
       <div className="mx-auto max-w-6xl py-9">
-        <div className="flex justify-between">
+        <div className="flex flex-col-reverse md:flex-row justify-between px-6 lg:px-0">
           <div className="my-7">
             <h1 className="text-[1.56rem] text-[#2B2D42]">
               Beliebte Kategorien für einen Surfurlaub in Europa

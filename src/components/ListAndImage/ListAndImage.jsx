@@ -8,15 +8,15 @@ const ListAndImage = () => {
       <div className="max-w-6xl flex flex-col items-center justify-center xl:flex-row mx-auto py-24">
         <div className="w-full flex items-center flex-col justify-center xl:flex-row">
           <div className="relative">
-            <div className="bg-[#FF9F1C] w-[534px] h-[300px] rounded-[20px]"></div>
+            <div className="bg-[#FF9F1C] w-[434px] h-[200px] md:w-[534px] md:h-[300px] rounded-[20px]"></div>
             <img
               src={Besonderheiten}
               alt=""
-              className="absolute w-[496px] h-[384px] rounded-[50px] top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
+              className="absolute w-[396px] h-[284px] md:w-[496px] md:h-[384px] rounded-[50px] top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
             />
           </div>
         </div>
-        <div className="w-full flex flex-col justify-center pt-7 xl:pt-0 ">
+        <div className="max-w-sm md:max-w-md lg:w-full flex flex-col justify-center px-4 pt-7 xl:pt-0  xl:px-0">
           <h1 className="text-[#2B2D42] text-[1.56rem] py-4">
             Ein Surfcamp in Europa passt zu dir, wenn du...
           </h1>

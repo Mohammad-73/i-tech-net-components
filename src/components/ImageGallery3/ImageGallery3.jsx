@@ -11,7 +11,7 @@ const ImageGallery3 = () => {
   return (
     <div className="w-full py-7">
       <div className="mx-auto max-w-6xl ">
-        <div className="my-7">
+        <div className="my-7 px-6 lg:px-0">
           <h1 className="text-[1.56rem] text-[#2B2D42]">
             Das gewisse Extra für deinen Surfurlaub
           </h1>
@@ -22,8 +22,8 @@ const ImageGallery3 = () => {
         </div>
         <section className="overflow-hidden text-gray-700">
           <div className="container py-2 mx-auto ">
-            <div className="flex flex-wrap -m-1 md:-m-2">
-              <div className="flex flex-wrap w-1/2">
+            <div className="flex flex-col md:flex-wrap md:flex-row -m-1 md:-m-2">
+              <div className="flex flex-wrap w-full px-6 lg:px-0 lg:w-1/2 lg:flex-wrap">
                 <div className="w-full p-1 md:p-2">
                   <ImageCard
                     shadowSize="80"
@@ -46,7 +46,7 @@ const ImageGallery3 = () => {
                   />
                 </div>
               </div>
-              <div className="flex flex-wrap w-1/2">
+              <div className="flex flex-wrap w-full px-6 lg:px-0 lg:w-1/2 lg:flex-wrap">
                 <div className="w-1/2 p-1 md:p-2">
                   <ImageCard
                     shadowSize="80"

@@ -7,7 +7,7 @@ const Description = () => {
   return (
     <div className="w-full bg-custom-blue py-4">
       <div className="mx-auto max-w-6xl ">
-        <h1 className="text-2xl py-7 text-center">
+        <h1 className="text-2xl py-7 px-6 lg:px-0 text-center">
           Die besten Reiseziele für einen Surfurlaub in Europa
         </h1>
         <Tabs

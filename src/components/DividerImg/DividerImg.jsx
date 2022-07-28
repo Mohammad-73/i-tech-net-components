@@ -15,7 +15,7 @@ const DividerImg = ({ align, image, dark }) => {
           <div className="w-full h-full absolute top-0 opacity-70 bg-[#2B2D42]"></div>
         )}
         <div
-          className={`absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-${align} w-[72rem]`}
+          className={`absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-${align} w-[70%]`}
         >
           <h1 className="text-[1.56rem] text-white font-bold drop-shadow-lg">
             Entdecke alle Surfcamps in Europa
