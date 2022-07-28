@@ -32,7 +32,7 @@ const NavBar = () => {
           <span className="px-5">
             <BsSuitHeart size={26} />
           </span>
-          <button class="bg-[#12A3BA] hover:bg-blue-500 text-white font-bold py-1 px-3 rounded-[15px]">
+          <button className="bg-[#12A3BA] hover:bg-blue-500 text-white font-bold py-1 px-3 rounded-[15px]">
             Registrieren
           </button>
         </div>

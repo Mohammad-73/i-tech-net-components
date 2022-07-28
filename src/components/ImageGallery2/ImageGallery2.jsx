@@ -1,57 +1,39 @@
 import React from "react";
 import ImageCard from "../ImageCard/ImageCard";
-import G1 from "../../assets/images/g1.jpg";
-import G2 from "../../assets/images/g2.jpg";
-import G3 from "../../assets/images/g3.jpg";
-import G4 from "../../assets/images/g4.jpg";
-import G5 from "../../assets/images/g5.jpg";
+import G21 from "../../assets/images/G21.jpg";
+import G22 from "../../assets/images/G22.jpg";
+import G23 from "../../assets/images/G23.jpg";
+import G24 from "../../assets/images/G24.jpg";
+import G25 from "../../assets/images/G25.jpg";
+import G26 from "../../assets/images/G26.jpg";
 
-const ImageGallery = () => {
+const ImageGallery2 = () => {
   return (
     <div className="w-full py-7">
       <div className="mx-auto max-w-6xl ">
         <div className="my-7">
           <h1 className="text-[1.56rem] text-[#2B2D42]">
-            Entdecke Surfcamps mit der passenden Atmosphäre
+            Beliebte Kategorien für einen Surfurlaub in Europa
           </h1>
-          <p className="text-[1rem] text-[#2B2D42]">
-            Damit dein Surfurlaub zu dem ersehnten Traumurlaub wird, ist die
-            Atmosphäre im Surfcamp entscheidend. Finde jetzt das Surfcamps, das
-            zu dir und deinen Wünschen passt:
-          </p>
         </div>
         <section className="overflow-hidden text-gray-700">
           <div className="container py-2 mx-auto ">
             <div className="flex flex-wrap -m-1 md:-m-2">
               <div className="flex flex-wrap w-1/3">
-                <div className="w-full h-2/5 p-1 md:p-2">
-                  <ImageCard
-                    shadowSize="80"
-                    imageSrc={G1}
-                    title="Surfcamps in Europa: Entdecke die Vielfalt unseres Kontinents"
-                  />
-                </div>
                 <div className="w-full h-3/5 p-1 md:p-2">
                   <ImageCard
                     shadowSize="80"
-                    imageSrc={G2}
+                    imageSrc={G21}
                     title="Surfcamps in Europa: Entdecke die Vielfalt unseres Kontinents"
-                  />
-                </div>
-              </div>
-              <div className="flex flex-wrap w-1/3">
-                <div className="w-full h-3/5 p-1 md:p-2">
-                  <ImageCard
-                    shadowSize="80"
-                    imageSrc={G3}
-                    title="Surfcamps in Europa: Entdecke die Vielfalt unseres Kontinents"
+                    description="Entdecke Surfcamps für den kleinen Geldbeutel - unvergessliche Momente inklusive!"
                   />
                 </div>
                 <div className="w-full h-2/5 p-1 md:p-2">
                   <ImageCard
                     shadowSize="80"
-                    imageSrc={G4}
+                    imageSrc={G22}
                     title="Surfcamps in Europa: Entdecke die Vielfalt unseres Kontinents"
+                    description="Surfurlaub zum Wohlfühlen - Verbinde Komfort und Erholung mit Abenteuer in den Wellen!"
                   />
                 </div>
               </div>
@@ -59,15 +41,35 @@ const ImageGallery = () => {
                 <div className="w-full h-2/5 p-1 md:p-2">
                   <ImageCard
                     shadowSize="80"
-                    imageSrc={G5}
+                    imageSrc={G23}
                     title="Surfcamps in Europa: Entdecke die Vielfalt unseres Kontinents"
+                    description="Raus aus dem Alltag rein in die Natur - tauche ein in eine eigene Welt und laufe barfuß zum Strand!"
                   />
                 </div>
                 <div className="w-full h-3/5 p-1 md:p-2">
                   <ImageCard
                     shadowSize="80"
-                    imageSrc={G2}
+                    imageSrc={G24}
                     title="Surfcamps in Europa: Entdecke die Vielfalt unseres Kontinents"
+                    description="Traumhafte Strände und vielfältige Landschaften - Europa hat so einiges zu bieten!"
+                  />
+                </div>
+              </div>
+              <div className="flex flex-wrap w-1/3">
+                <div className="w-full h-3/5 p-1 md:p-2">
+                  <ImageCard
+                    shadowSize="80"
+                    imageSrc={G25}
+                    title="Surfcamps in Europa: Entdecke die Vielfalt unseres Kontinents"
+                    description="Surfcamps mit flexibler Buchung und 100% Rückerstattung - Urlaub buchen ohne Risiko!"
+                  />
+                </div>
+                <div className="w-full h-2/5 p-1 md:p-2">
+                  <ImageCard
+                    shadowSize="80"
+                    imageSrc={G26}
+                    title="Surfcamps in Europa: Entdecke die Vielfalt unseres Kontinents"
+                    description="Surfurlaub zum Wohlfühlen - Verbinde Komfort und Erholung mit Abenteuer in den Wellen!"
                   />
                 </div>
               </div>
@@ -79,4 +81,4 @@ const ImageGallery = () => {
   );
 };
 
-export default ImageGallery;
+export default ImageGallery2;

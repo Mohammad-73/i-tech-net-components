@@ -21,7 +21,7 @@ const Description = () => {
           ]}
         />
         <DetailsWithImage />
-        <CardsSection />
+        <CardsSection title="Top-Surfcamps in Portugal" />
       </div>
     </div>
   );

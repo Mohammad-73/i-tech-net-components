@@ -7,21 +7,21 @@ import { ReactComponent as Owl } from "../../assets/images/owl.svg";
 
 const LocationCard = () => {
   return (
-    <div class="h-[25rem] bg-white rounded-[1.25rem] border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
+    <div className="h-[25rem] bg-white rounded-[1.25rem] border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
       <div className="rounded-t-[1.25rem]">
-        <img class="rounded-t-[1.25rem] w-full" src={CardImage} alt="" />
+        <img className="rounded-t-[1.25rem] w-full" src={CardImage} alt="" />
       </div>
-      <div class="p-4">
-        <h5 class="mb-2 text-[1rem] font-bold tracking-tight text-[#2B2D42] dark:text-white">
+      <div className="p-4">
+        <h5 className="mb-2 text-[1rem] font-bold tracking-tight text-[#2B2D42] dark:text-white">
           Noteworthy technology acquisitions 2021
         </h5>
-        <div class="flex items-center mb-3 font-normal">
+        <div className="flex items-center mb-3 font-normal">
           <span className="text-[#12A3BA] pr-2">
             <HiOutlineLocationMarker size={24} />
           </span>
           <p className="text-[#2B2D42] text-[0.8rem]">Oyambre, Spanien</p>
         </div>
-        <div class="flex items-center mb-3 font-normal  ">
+        <div className="flex items-center mb-3 font-normal  ">
           <span className="text-[#12A3BA] pr-2">
             <MdOutlineCalendarToday size={24} />
           </span>
