@@ -1,18 +1,12 @@
 import React from "react";
-import { BiLike } from "react-icons/bi";
 
-const HorizontalHint = () => {
+const HorizontalHint = ({ icon, title, description }) => {
   return (
     <div className="flex items-center w-[600px]">
-      <span className="text-orange-400 p-7 m-5 rounded-full text-white">
-        <BiLike size={58} />
-      </span>
+      <span className="text-orange-400 p-4 m-2 rounded-full">{icon}</span>
       <div className="flex flex-col">
-        <h1 className="font-bold text-lg">100% Rückerstattung</h1>
-        <p className="text-left text-gray-600">
-          Transparent und stressfrei! Erhalte mit unseren flexiblen
-          Stornierungsbedingungen den vollen Betrag zurückerstattet.
-        </p>
+        <h1 className="font-bold text-lg">{title}</h1>
+        <p className="text-[0.87rem] text-left text-gray-600">{description}</p>
       </div>
     </div>
   );

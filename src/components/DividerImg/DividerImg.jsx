@@ -1,8 +1,14 @@
 import React from "react";
 
-import { BiRightArrowAlt } from "react-icons/bi";
-
-const DividerImg = ({ align, image, dark }) => {
+const DividerImg = ({
+  align,
+  title,
+  description,
+  image,
+  dark,
+  buttonTitle,
+  icon,
+}) => {
   return (
     <div className="w-full my-3">
       <div className="relative">
@@ -18,15 +24,14 @@ const DividerImg = ({ align, image, dark }) => {
           className={`absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-${align} w-[70%]`}
         >
           <h1 className="text-[1.56rem] text-white font-bold drop-shadow-lg">
-            Entdecke alle Surfcamps in Europa
+            {title}
           </h1>
           <p className="py-1 text-[0.87rem] text-white drop-shadow-lg">
-            Über 100 qualitätsgeprüfte Surfcamps für dein Abenteuer in den
-            Wellen
+            {description}
           </p>
           <button className=" bg-[#FF9F1C] hover:bg-[#fc9a11] text-white font-bold py-2 px-4 my-1 rounded-full drop-shadow-lg">
             <span className="flex">
-              Zur Übersicht <BiRightArrowAlt size={30} />
+              {buttonTitle} {icon}
             </span>
           </button>
         </div>

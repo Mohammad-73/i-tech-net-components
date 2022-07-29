@@ -9,7 +9,7 @@ const HorizontalCard = () => {
           className="h-full lg:h-auto lg:w-48 rounded-l-[1.25rem] shadow-hShadow flex-none bg-hero-portugal bg-cover   text-center overflow-hidden"
           title="Mountain"
         ></div>
-        <div className="bg-white rounded-[1.25rem]  p-4 flex flex-col justify-between leading-normal">
+        <div className="bg-white rounded-r-[1.25rem]  p-4 flex flex-col justify-between leading-normal">
           <div className="mb-8">
             <p className="text-[#2B2D42] text-[0.87rem] text-base">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit.

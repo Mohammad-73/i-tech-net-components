@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 
-const Tabs = ({ items }) => {
+const Tabs = ({ items, cols }) => {
+  console.log("log>", cols);
   const activeClass = "border-[#12A3BA] bg-[#12A3BA] text-white";
   const [active, setActive] = useState(0);
 
@@ -9,7 +10,9 @@ const Tabs = ({ items }) => {
   };
   return (
     <div className="m-3">
-      <ul className="grid sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4 mx-auto">
+      <ul
+        className={`grid sm:grid-cols-3 md:grid-cols-4 ${cols} gap-4 mx-auto`}
+      >
         {items.map((item, index) => (
           <li
             onClick={() => handleClick(index)}
