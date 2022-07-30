@@ -15,6 +15,7 @@ const Tabs = ({ items, cols }) => {
       >
         {items.map((item, index) => (
           <li
+            key={index}
             onClick={() => handleClick(index)}
             className={`${
               active === index ? activeClass : "border-gray-600"

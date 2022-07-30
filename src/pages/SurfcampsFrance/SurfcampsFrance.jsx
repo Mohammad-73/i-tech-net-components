@@ -41,6 +41,17 @@ import Col33 from "../../assets/surfcampFrance/threeCol/Surfari-Surf-Guiding-Fra
 //DividerImg
 import DividerImg from "../../components/DividerImg/DividerImg";
 import Besonderheiten from "../../assets/images/Besonderheiten.jpg";
+//RateCardSection
+import RateCardSection from "../../components/RateCardSection/RateCardSection";
+import RateImg from "../../assets/images/g1.jpg";
+//ContactUsSection
+import ContactUsSection from "../../components/ContactUsSection/ContactUsSection";
+import Contact from "../../assets/images/contact.jpg";
+import { MdOutlineLocalPhone } from "react-icons/md";
+import { HiOutlineMail } from "react-icons/hi";
+import { BsWhatsapp } from "react-icons/bs";
+//TagSection
+import TagSection from "../../components/TagSection/TagSection";
 
 const SurfcampsFrance = () => {
   return (
@@ -212,6 +223,129 @@ const SurfcampsFrance = () => {
         description="Für jede Buchung im Dezember spenden wir 20 € an Ocean Patrol in Portugal!Für jede Buchung im Dezember spenden wir 20 € an Ocean Patrol in Portugal!"
         dark={true}
         buttonTitle="Mehr erfahren"
+      />
+      <RateCardSection
+        title="Das sagen Reisende über ihren Surfurlaub in Frankreich"
+        items={[
+          {
+            rateName: "Emmi",
+            rateDesc:
+              "Gerade im Deluxe Camp war es eine sehr tolle Erfahrung. Tolles Essen, tolle Atmosphäre, tolle Menschen und tolles Team im Camp. Ich bin immer noch ein bisschen da!",
+            rateImage: RateImg,
+            rateCalendar: "28.09.2021",
+            rateFootNote:
+              "Surfcamp in Moliets: Summer Vibes & gute Laune bewertet von",
+          },
+          {
+            rateName: "J Erb",
+            rateDesc:
+              "Coole Leute, sympathisches Team, hammer Essen, Freiheit und Natur pur! Geniales Camp mit allem, was das freiheitsliebende Herz begehrt.",
+            rateImage: RateImg,
+            rateCalendar: "02.08.2021",
+            rateFootNote:
+              "Surfcamp in Westfrankreich: Surfen weit weg vom Trubel bewertet von",
+          },
+          {
+            rateName: "Marlene",
+            rateDesc:
+              "Ein wunderschönes Camp mit einem tollem Team & hervorragendem Essen! Ein perfekter Ort, um neue Menschen verschiedenster Nationen kennen zu lernen & gleichzeitig den beliebten Surfspot zu nutzen oder surfen zu lernen. Langeweile kommt hier nicht auf und einsam ist man auch nie.",
+            rateImage: RateImg,
+            rateCalendar: "02.08.2021",
+            rateFootNote:
+              "Surfen & gute Laune in den Pinienwäldern Moliets bewertet von",
+          },
+          {
+            rateName: "Mara",
+            rateDesc:
+              "Both Andia and David take really care with their hearts about each guest. The surf course was also really well and we had a lot of fun. Andia cooks great & delicious dinner so that everyone will get satisfied. Overall great stay that I could recommend.",
+            rateImage: RateImg,
+            rateCalendar: "28.09.2021",
+            rateFootNote:
+              "Surfurlaub im lässigen Surfhaus nahe Capbreton bewertet von",
+          },
+          {
+            rateName: "Annik",
+            rateDesc:
+              "Das Camp ist mit schönen Zelten und Chillout- Bereichen ausgestattet und hat ein sehr freunliches und offenes Team. Die Aktivitäten und die Yoga-Stunden waren super!",
+            rateImage: RateImg,
+            rateCalendar: "28.09.2021",
+            rateFootNote:
+              "Surf- & Yogacamp in den Pinienwäldern Les Landes bewertet von",
+          },
+          {
+            rateName: "Jana",
+            rateDesc:
+              "Ich hatte eine wunderschöne Woche in Moliets mit neu gewonnenen Freunden und super Surf Lessons. Jederzeit wieder!",
+            rateImage: RateImg,
+            rateCalendar: "30.07.2021",
+            rateFootNote:
+              "Surfcamp in Moliets: Party & Campfeeling pur bewertet von",
+          },
+        ]}
+        rateCols="xl:grid-cols-3"
+      />
+      <ContactUsSection
+        title="Beliebte Kategorien für einen Surfurlaub in Europa"
+        formInputs={[
+          { type: "text", placeholder: "Your name*" },
+          { type: "text", placeholder: "Email Address*" },
+        ]}
+        formTextarea="Deine Nachricht*"
+        formButton="Nachricht abschicken"
+        cardImageSrc={Contact}
+        cardTitle="Wir sind rund um die Uhr für dich da!"
+        cardDesc="Kontaktiere uns ganz einfach per Telefon, E-Mail oder WhatsApp:"
+        cardItems={[
+          {
+            title: "Phone",
+            address: "+49 (0)228 7638 2040",
+            icon: <MdOutlineLocalPhone />,
+          },
+          {
+            title: "Email",
+            address: "team@moverii.de",
+            icon: <HiOutlineMail />,
+          },
+          {
+            title: "Whatsapp",
+            address: "+49 (0)163 3122 260",
+            icon: <BsWhatsapp />,
+          },
+        ]}
+      />
+      <TagSection
+        title="Mehr Inspiration für deinen Surfurlaub"
+        cols="xl:grid-cols-3"
+        items={[
+          {
+            title: "Top-Reiseziele",
+            items: [
+              "Surfcamps in Portugal",
+              "Surfcamps auf Fuerteventura",
+              "Surfcamps in Spanien",
+              "Surfcamps auf Teneriffa",
+            ],
+          },
+          {
+            title: "Beliebte Kategorien",
+            items: [
+              "Surfcamps in der Natur",
+              "Surfcamps für Alleinreisende",
+              "Surfurlaub für Familien",
+              "Surf & Yoga Reisen",
+            ],
+          },
+
+          {
+            title: "Unser Reisemagazin",
+            items: [
+              "Reisebericht: Surf & Yoga Camp in Portugal",
+              "Gemeinsam für den Meeresschutz",
+              "Surfen auf den Kanaren",
+              "Reisebericht: Mein erstes Surfcamp",
+            ],
+          },
+        ]}
       />
     </div>
   );

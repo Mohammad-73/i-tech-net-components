@@ -33,7 +33,7 @@ const ListAndImage = ({
           <h1 className="text-[#2B2D42] text-[1.56rem] py-4">{title}</h1>
           <p className="text-[#2B2D42] text-[0.87rem] py-4">{description}</p>
           {items?.map((item, index) => (
-            <span className="flex py-1">
+            <span key={index} className="flex py-1">
               <span className="pr-3">
                 <MdDone className="text-[#1DA3BA]" />
               </span>
