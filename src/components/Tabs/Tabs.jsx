@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 
 const Tabs = ({ items, cols }) => {
-  console.log("log>", cols);
   const activeClass = "border-[#12A3BA] bg-[#12A3BA] text-white";
   const [active, setActive] = useState(0);
 
