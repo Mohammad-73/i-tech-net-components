@@ -6,7 +6,11 @@ const HorizontalHintSection = ({ bgColor, items }) => {
     <div className={`w-full ${bgColor} py-8`}>
       <div className="w-full max-w-6xl mx-auto flex py-6">
         {items.map((item, index) => (
-          <HorizontalHint icon={item.icon} description={item.description} />
+          <HorizontalHint
+            icon={item?.icon}
+            title={item?.title}
+            description={item?.description}
+          />
         ))}
       </div>
     </div>

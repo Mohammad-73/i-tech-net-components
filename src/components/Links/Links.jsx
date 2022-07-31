@@ -10,6 +10,12 @@ const Links = () => {
         <Link to="/surfcamp-france">
           <li>Surfcamp France</li>
         </Link>
+        <Link to="/surfcamp-portugal">
+          <li>Surfcamp Portugal</li>
+        </Link>
+        <Link to="/surfcamp-fuerteventura">
+          <li>Surfcamp Fuerteventura</li>
+        </Link>
         <Link to="/test">
           <li>Test</li>
         </Link>

@@ -12,7 +12,7 @@ const ImageGallery2 = () => {
     <div className="w-full py-7">
       <div className="mx-auto max-w-6xl ">
         <div className="my-7 px-6 lg:px-0">
-          <h1 className="text-[1.56rem] text-[#2B2D42]">
+          <h1 className="text-[1.56rem] text-[#2B2D42] font-bold">
             Beliebte Kategorien für einen Surfurlaub in Europa
           </h1>
         </div>

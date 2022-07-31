@@ -39,7 +39,9 @@ const Newsletter = ({
           </div>
         </div>
         <div className="max-w-sm md:max-w-md lg:w-full flex flex-col justify-center px-4 pt-24 xl:pt-0  xl:px-0 ">
-          <h1 className="text-[#2B2D42] text-[1.56rem] py-4">{title}</h1>
+          <h1 className="text-[#2B2D42] text-[1.56rem] py-4 font-bold">
+            {title}
+          </h1>
           <p className="text-[#2B2D42] text-[0.87rem] pt-1 pb-4">
             {description}
           </p>

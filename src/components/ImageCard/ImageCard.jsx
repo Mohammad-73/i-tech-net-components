@@ -21,7 +21,7 @@ const ImageCard = ({
       <div
         className={`rounded-b-[20px] w-full h-[${shadowSize}%] flex flex-col justify-end absolute bottom-0 bg-gradient-to-t from-[#212121]`}
       >
-        <h1 className="text-[1.125rem] text-white p-3">{title}</h1>
+        <h1 className="text-[1.125rem] text-white p-3 font-bold">{title}</h1>
         {description && (
           <p className="text-[0.8rem] text-white pl-3 pr-3 pb-3">
             {description}

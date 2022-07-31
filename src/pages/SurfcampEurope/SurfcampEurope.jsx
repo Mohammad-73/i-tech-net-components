@@ -5,7 +5,10 @@ import Description from "../../components/Description/Description";
 import Kanaren from "../../assets/images/Kanaren.jpg";
 
 import Hero from "../../components/Hero/Hero";
+//HintSection
 import HintSection from "../../components/HintSection/HintSection";
+import { BiLike, BiStar, BiHeart } from "react-icons/bi";
+
 import ImageGallery from "../../components/ImageGallery/ImageGallery";
 import ImageGallery2 from "../../components/ImageGallery2/ImageGallery2";
 import ListAndImage from "../../components/ListAndImage/ListAndImage";
@@ -49,7 +52,31 @@ const SurfcampEurope = () => {
         title="Surface in Portugal"
         description="Erlebe die debesten Wellen Europas"
       />
-      <HintSection />
+      <HintSection
+        items={[
+          {
+            icon: <BiLike size={38} />,
+            title: "100% Rückerstattung",
+            description:
+              "Transparent und stressfrei! Erhalte mit unseren flexiblen Stornierungsbedingungen den vollen Betrag zurückerstattet.",
+            readMore: "Zu den Details",
+          },
+          {
+            icon: <BiStar size={38} />,
+            title: "Qualitätsgeprüfte Reisen",
+            description:
+              "Alle Reisen sind von Sportexperten ausgewählt und von unabhängigen Kunden mit mindestens 4,5 von 5 Sternen bewertet!",
+            readMore: "Zu den Details",
+          },
+          {
+            icon: <BiHeart size={38} />,
+            title: "Persönliche Beratung",
+            description:
+              "Wir lieben, was wir tun und sind immer an deiner Seite! Kontaktiere uns einfach per Email, Telefon oder WhatsApp.",
+            readMore: "Zu den Details",
+          },
+        ]}
+      />
       <Description
         titel="Die besten Reiseziele für einen Surfurlaub in Europa"
         tabItems={[
@@ -60,6 +87,7 @@ const SurfcampEurope = () => {
           "Teneriffa",
           "Gran Canaria",
         ]}
+        tabCols="lg:grid-cols-6"
         detailsImage={Kanaren}
         detailsTitle="Wandern"
         detailsDesc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -94,6 +122,7 @@ const SurfcampEurope = () => {
         detailsReadMore="Zu den Details"
         cardTitle="Top-Surfcamps in Portugal"
         cardItems={[1, 2, 3, 4]}
+        cardCols="lg:grid-cols-4"
       />
       <ImageGallery />
       <ListAndImage
@@ -105,6 +134,7 @@ const SurfcampEurope = () => {
           "...die Vielfalt unseres Kontintents erleben willst",
           "...unkompliziert und sicher reisen willst",
         ]}
+        readMore=""
       />
       <ImageGallery2 />
       <SingleCardSection
@@ -114,7 +144,13 @@ const SurfcampEurope = () => {
         items={[1, 2, 3, 4]}
         cols="lg:grid-cols-4"
       />
-      <DividerImg align="center" image={DividerImage} />
+      <DividerImg
+        align="center"
+        title="Entdecke alle Surfcamps in Europa"
+        description="Über 100 qualitätsgeprüfte Surfcamps für dein Abenteuer in den Wellen"
+        image={DividerImage}
+        buttonTitle="Zur Übersicht"
+      />
       <ThreeColImg
         title="Finde passende Surfcamps für dein Surflevel"
         description="Ganz gleich ob du noch nie auf einem Surfbrett standest oder schon Erfahrungen in den Wellen mitbringst - mit dem passenden Surfkurs für deine Vorkenntnisse hast du mehr Spaß im Wasser und erreichst garantiert das nächste Level!"

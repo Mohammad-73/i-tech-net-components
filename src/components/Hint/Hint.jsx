@@ -1,19 +1,16 @@
 import React from "react";
-import { BiLike, BiRightArrowAlt } from "react-icons/bi";
+import { BiRightArrowAlt } from "react-icons/bi";
 
-const Hint = () => {
+const Hint = ({ icon, title, description, readMore }) => {
   return (
     <div className="flex flex-col items-center">
       <span className="bg-custom-orange p-7 m-5 rounded-full text-white">
-        <BiLike size={38} />
+        {icon}
       </span>
-      <h1 className="font-bold text-lg">100% Rückerstattung</h1>
-      <p className="text-center text-gray-600">
-        Transparent und stressfrei! Erhalte mit unseren flexiblen
-        Stornierungsbedingungen den vollen Betrag zurückerstattet.
-      </p>
+      <h1 className="font-bold text-lg">{title}</h1>
+      <p className="text-center text-gray-600">{description}</p>
       <p className="flex text-gray-600">
-        Zu den Details
+        {readMore}
         <span>
           <BiRightArrowAlt size={30} />
         </span>

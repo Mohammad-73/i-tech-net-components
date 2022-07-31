@@ -5,6 +5,8 @@ import { MdOutlineDoubleArrow } from "react-icons/md";
 
 const ListAndImage = ({
   bgColor,
+  mainTitle,
+  mainDescription,
   imgAlign,
   image,
   title,
@@ -13,11 +15,17 @@ const ListAndImage = ({
   readMore,
 }) => {
   return (
-    <div className={`w-full ${bgColor}`}>
+    <div className={`w-full max-w-6xl mx-auto py-20 ${bgColor}`}>
+      <div>
+        <h1 className="text-[1.56rem] text-[#2B2D42] font-bold ">
+          {mainTitle}
+        </h1>
+        <p className="py-1 text-[0.87rem] text-[#2B2D42]">{mainDescription}</p>
+      </div>
       <div
         className={`max-w-6xl flex flex-col items-center justify-center ${
           imgAlign === "right" ? "xl:flex-row-reverse" : "xl:flex-row"
-        } mx-auto py-24`}
+        } mx-auto py-12`}
       >
         <div className="w-full flex items-center flex-col justify-center xl:flex-row">
           <div className="relative">
@@ -30,7 +38,9 @@ const ListAndImage = ({
           </div>
         </div>
         <div className="max-w-sm md:max-w-md lg:w-full flex flex-col justify-center px-4 pt-7 xl:pt-0  xl:px-0">
-          <h1 className="text-[#2B2D42] text-[1.56rem] py-4">{title}</h1>
+          <h1 className="text-[#2B2D42] text-[1.56rem] py-4 font-bold">
+            {title}
+          </h1>
           <p className="text-[#2B2D42] text-[0.87rem] py-4">{description}</p>
           {items?.map((item, index) => (
             <span key={index} className="flex py-1">
@@ -41,10 +51,12 @@ const ListAndImage = ({
             </span>
           ))}
 
-          <div className="flex items-center">
-            <p>{readMore}</p>
-            <MdOutlineDoubleArrow />
-          </div>
+          {readMore && (
+            <div className="flex items-center">
+              <p>{readMore}</p>
+              <MdOutlineDoubleArrow />
+            </div>
+          )}
         </div>
       </div>
     </div>

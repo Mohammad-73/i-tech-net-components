@@ -6,7 +6,7 @@ const ImageGallery3 = ({ title, description, items }) => {
     <div className="w-full py-7">
       <div className="mx-auto max-w-6xl ">
         <div className="my-7 px-6 lg:px-0">
-          <h1 className="text-[1.56rem] text-[#2B2D42]">{title}</h1>
+          <h1 className="text-[1.56rem] text-[#2B2D42] font-bold">{title}</h1>
           <p className="text-[1rem] text-[#2B2D42]">{description}</p>
         </div>
         <section className="overflow-hidden text-gray-700">

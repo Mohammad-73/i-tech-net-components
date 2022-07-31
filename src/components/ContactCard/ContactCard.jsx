@@ -11,7 +11,7 @@ const ContactCard = ({ imageSrc, items, title, descritpion }) => {
         />
       </div>
       <div className="p-4">
-        <h1 className="text-[#2B2D42] text-[1.25rem]">{title}</h1>
+        <h1 className="text-[#2B2D42] text-[1.25rem] font-bold">{title}</h1>
         <p className="text-[#2B2D42] text-[0.87rem]">{descritpion}</p>
       </div>
       <div className="p-4">

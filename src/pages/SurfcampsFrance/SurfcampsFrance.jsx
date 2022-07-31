@@ -21,6 +21,7 @@ import HorizontalHintSection from "../../components/HorizontalHintSection/Horizo
 import { MdWaves } from "react-icons/md";
 import { IoFootsteps } from "react-icons/io5";
 import { FaTelegramPlane, FaHeart } from "react-icons/fa";
+//SingleCardSection
 import SingleCardSection from "../../components/SingleCardSection/SingleCardSection";
 //ImageGallery3
 import ImageGallery3 from "../../components/ImageGallery3/ImageGallery3";
@@ -183,6 +184,7 @@ const SurfcampsFrance = () => {
           "Cap Ferret",
           "Biarritz",
         ]}
+        tabCols="lg:grid-cols-7"
         detailsImage={Moliets}
         detailsTitle="Moliets-et-Maa"
         detailsDesc="Moliets-et-Maa ist zweifelsohne der beliebteste Urlaubsort unter deutschen Surfer:innen in Frankreich. Insbesondere die Jüngeren unter euch kommen hier voll auf ihre Kosten: Der große Campingplatz “Les Cigales” beheimatet eine ganze Reihe an Surfcamps und verwandelt sich über die Sommermonate in ein kleines Festivalgelände.

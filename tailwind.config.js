@@ -6,6 +6,10 @@ module.exports = {
       backgroundImage: {
         "hero-europe": "url('/src/assets/images/HeroPortugal.jpg')",
         "hero-france": "url('/src/assets/surfcampFrance/Header/12.jpg')",
+        "hero-portugal":
+          "url('/src/assets/SurfcampPortugal/Header/Surfcamps-Portugal.jpg')",
+        "surfcamps-frankreich":
+          "url('/src/assets/SurfcampsFuerteventura/Header/1 (1).jpg')",
       },
       backgroundColor: {
         "custom-orange": "#FF9F1C",

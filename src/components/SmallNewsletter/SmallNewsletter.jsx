@@ -23,7 +23,7 @@ const SmallNewsletter = ({
         </div>
         <div className="w-full rounded-r-[1.25rem]  p-4 flex flex-col justify-around leading-normal">
           <div className="">
-            <h1 className="text-white text-[1.25rem]">{title}</h1>
+            <h1 className="text-white text-[1.25rem] font-bold">{title}</h1>
             <p className="text-white text-[0.87rem] text-base">{description}</p>
           </div>
           <div className="flex items-center">
