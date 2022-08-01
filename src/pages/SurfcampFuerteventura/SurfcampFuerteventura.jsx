@@ -53,7 +53,7 @@ const SurfcampFuerteventura = () => {
     <div>
       {" "}
       <Hero
-        image="bg-surfcamps-frankreich"
+        image="bg-hero-frankreich"
         title="Surfcamps in Frankreich"
         description="Erlebe Sonne, Wellen und gute Laune"
       />

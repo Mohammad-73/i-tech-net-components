@@ -4,6 +4,7 @@ import SurfcampEurope from "../../pages/SurfcampEurope/SurfcampEurope";
 import SurfcampFuerteventura from "../../pages/SurfcampFuerteventura/SurfcampFuerteventura";
 import SurfcampsFrance from "../../pages/SurfcampsFrance/SurfcampsFrance";
 import SurfcampsPortugal from "../../pages/SurfcampsPortugal/SurfcampsPortugal";
+import SurfcampTeneriffa from "../../pages/SurfcampTeneriffa/SurfcampTeneriffa";
 import Test from "../../pages/Test/Test";
 import Links from "../Links/Links";
 
@@ -18,6 +19,7 @@ const Layout = () => {
         path="/surfcamp-fuerteventura"
         element={<SurfcampFuerteventura />}
       />
+      <Route path="/surfcamp-teneriffa" element={<SurfcampTeneriffa />} />
       <Route path="/test" element={<Test />} />
     </Routes>
   );

@@ -18,13 +18,13 @@ const ImageGalleryFivePic = ({
           <p className="text-[1rem] text-[#2B2D42]">{description}</p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-          <ImageCard imageSrc={image1} title="Surfcamps für Alleinreisende" />
-          <ImageCard imageSrc={image2} title="Surfcamps für Alleinreisende" />
+          <ImageCard imageSrc={image1.img} title={image1.title} />
+          <ImageCard imageSrc={image2.img} title={image2.title} />
         </div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 py-4">
-          <ImageCard imageSrc={image3} title="Surfcamps für Alleinreisende" />
-          <ImageCard imageSrc={image4} title="Surfcamps für Alleinreisende" />
-          <ImageCard imageSrc={image5} title="Surfcamps für Alleinreisende" />
+          <ImageCard imageSrc={image3.img} title={image3.title} />
+          <ImageCard imageSrc={image4.img} title={image4.title} />
+          <ImageCard imageSrc={image5.img} title={image5.title} />
         </div>
       </div>
       ;

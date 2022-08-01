@@ -65,11 +65,11 @@ const SurfcampsFrance = () => {
       <ImageGalleryFivePic
         title="Finde das Surfcamp, das zu dir passt!"
         description="Die Grundvoraussetzung für einen unvergesslichen Surfurlaub ist die pDie Grundvoraussetzung für einen unvergesslichen Surfurlaub ist die passende Atmosphäre! Mit der richtigen Stimmung um dich herum fühlst du dich sofort wohl, triffst ganz natürlich auf Gleichgesinnte und kannst deinen Urlaub in vollen Zügen genießen."
-        image1={image1}
-        image2={image2}
-        image3={image3}
-        image4={image4}
-        image5={image5}
+        image1={{ img: image1, title: "Surfcamps für Alleinreisende" }}
+        image2={{ img: image2, title: "Surfurlaube für Familien" }}
+        image3={{ img: image3, title: "Surfcamps für Freund:innen" }}
+        image4={{ img: image4, title: "Surf-Reisen für Paare" }}
+        image5={{ img: image5, title: "Surfcamps für unter 18-Jährige" }}
       />
       <ColorDivider
         title="Urlaub buchen ohne Risiko"
