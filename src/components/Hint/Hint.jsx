@@ -3,7 +3,7 @@ import { BiRightArrowAlt } from "react-icons/bi";
 
 const Hint = ({ icon, title, description, readMore }) => {
   return (
-    <div className="flex flex-col items-center">
+    <div className="flex flex-col items-center px-4">
       <span className="bg-custom-orange p-7 m-5 rounded-full text-white">
         {icon}
       </span>

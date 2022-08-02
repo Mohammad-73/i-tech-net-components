@@ -18,6 +18,7 @@ const ImageGalleryFourPic = ({ title, description, items }) => {
                     shadowSize={items[0].shadow}
                     imageSrc={items[0].img}
                     title={items[0].title}
+                    description={items[0].description}
                   />
                 </div>
               </div>
@@ -27,6 +28,7 @@ const ImageGalleryFourPic = ({ title, description, items }) => {
                     shadowSize={items[1].shadow}
                     imageSrc={items[1].img}
                     title={items[1].title}
+                    description={items[1].description}
                   />
                 </div>
                 <div className="w-1/2 p-1 md:p-2">
@@ -34,6 +36,7 @@ const ImageGalleryFourPic = ({ title, description, items }) => {
                     shadowSize={items[2].shadow}
                     imageSrc={items[2].img}
                     title={items[2].title}
+                    description={items[2].description}
                   />
                 </div>
                 <div className="w-full p-1 md:p-2">
@@ -41,6 +44,7 @@ const ImageGalleryFourPic = ({ title, description, items }) => {
                     shadowSize={items[3].shadow}
                     imageSrc={items[3].img}
                     title={items[3].title}
+                    description={items[3].description}
                   />
                 </div>
               </div>

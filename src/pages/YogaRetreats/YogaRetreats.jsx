@@ -460,7 +460,6 @@ const YogaRetreats = () => {
           },
         ]}
       />
-
       <RateCardSection
         title="Das sagen Reisende über ihren Surfurlaub in Frankreich"
         items={[

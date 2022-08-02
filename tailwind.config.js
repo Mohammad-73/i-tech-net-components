@@ -18,6 +18,10 @@ module.exports = {
           "url('/src/assets/activeHoliday/Header/Aktivurlaub-1.jpg')",
         "hero-yoga-retreats":
           "url('/src/assets/yogaRetreats/Header/beste-yoga-retreats.jpg')",
+        "hero-hiking-holiday":
+          "url('/src/assets/hiking-holiday/Header/Wanderurlaub-Header-4.jpg')",
+        "hero-yoga-in-deutschland":
+          "url('/src/assets/YogaRetreatsGermany/Header/Yoga-Retreat-Deutschland-1.jpg')",
       },
       backgroundColor: {
         "custom-orange": "#FF9F1C",

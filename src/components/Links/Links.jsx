@@ -28,6 +28,12 @@ const Links = () => {
         <Link to="/yoga-retreats">
           <li>Yoga Retreats</li>
         </Link>
+        <Link to="/hiking-holidays">
+          <li>Hiking Holidays</li>
+        </Link>
+        <Link to="/yoga-retreats-germany">
+          <li>Yoga Retreats Germany</li>
+        </Link>
         <Link to="/test">
           <li>Test</li>
         </Link>
