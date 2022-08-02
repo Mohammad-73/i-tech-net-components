@@ -19,8 +19,8 @@ import ListAndImage from "../../components/ListAndImage/ListAndImage";
 import ListAndImage1 from "../../assets/teneriffa/Besonderheiten-Divider/Surfcamps-Teneriffa-Besonderheiten.jpg";
 //SingleCardSection
 import SingleCardSection from "../../components/SingleCardSection/SingleCardSection";
-//ThreeColImg
-import ThreeColImg from "../../components/ThreeColImg/ThreeColImg";
+//SingleColImg
+import SingleColImg from "../../components/SingleColImg/SingleColImg";
 import Col31 from "../../assets/teneriffa/Besondere-Extras_6er-Kacheln/SUP-Tour_Surfcamps-Teneriffa.jpg";
 import Col32 from "../../assets/teneriffa/Besondere-Extras_6er-Kacheln/Kajak-Tour-Delphine_Surfcamps-Teneriffa.jpg";
 import Col33 from "../../assets/teneriffa/Besondere-Extras_6er-Kacheln/Schnorchel-ausflug-Schildkröten_Surfcamps-Teneriffa.jpg";
@@ -126,7 +126,7 @@ const SurfcampTeneriffa = () => {
         items={[1, 2, 3, 4]}
         cols="lg:grid-cols-4"
       />
-      <ThreeColImg
+      <SingleColImg
         title="Erlebe die Vielfalt der Kanarischen Inseln"
         description="Ganz gleich für welche der Kanarischen Inseln du dich entscheidest, perfekte Wellen und Sonne sind dir garantiert. Daneben hast du die große Wahl:"
         items={[
@@ -158,7 +158,7 @@ const SurfcampTeneriffa = () => {
         image={dividerImage}
         buttonTitle="Zur Übersicht"
       />
-      <ThreeColImg
+      <SingleColImg
         title="Erlebe die Vielfalt der Kanarischen Inseln"
         description="Ganz gleich für welche der Kanarischen Inseln du dich entscheidest, perfekte Wellen und Sonne sind dir garantiert. Daneben hast du die große Wahl:"
         items={[

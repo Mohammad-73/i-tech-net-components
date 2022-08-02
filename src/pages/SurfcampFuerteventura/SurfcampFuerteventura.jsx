@@ -34,8 +34,8 @@ import slideDividerImg from "../../assets/SurfcampsFuerteventura/Header/surfcamp
 import DividerImg from "../../components/DividerImg/DividerImg";
 import Besonderheiten from "../../assets/images/Besonderheiten.jpg";
 import dividerImage from "../../assets/SurfcampsFuerteventura/Header/surfcamps-europa.jpg";
-//ThreeColImg
-import ThreeColImg from "../../components/ThreeColImg/ThreeColImg";
+//SingleColImg
+import SingleColImg from "../../components/SingleColImg/SingleColImg";
 import Col31 from "../../assets/SurfcampsFuerteventura/Angebote-4er-Elemente/Surfcamp-Frankreich-Vieux Boucau.jpg";
 import Col32 from "../../assets/SurfcampsFuerteventura/Angebote-4er-Elemente/Starsurfcamp-Moliets-Frankreich.jpg";
 import Col33 from "../../assets/SurfcampsFuerteventura/Angebote-4er-Elemente/Surf-Yoga-Camp-Frankreich-Seignosse.jpg";
@@ -220,7 +220,7 @@ const SurfcampFuerteventura = () => {
         dark={true}
         buttonTitle="Mehr erfahren"
       />
-      <ThreeColImg
+      <SingleColImg
         title="Entdecke die Vielfalt der Kanarischen Inseln"
         description="So unterschiedlich die jeweiligen Inseln auch sind - perfekte Wellen, Strand und Sonne findest du überall! Welche Insel passt zu dir?"
         items={[

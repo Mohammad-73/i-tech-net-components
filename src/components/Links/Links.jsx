@@ -25,6 +25,9 @@ const Links = () => {
         <Link to="/active-holidays">
           <li>Active Holidays</li>
         </Link>
+        <Link to="/yoga-retreats">
+          <li>Yoga Retreats</li>
+        </Link>
         <Link to="/test">
           <li>Test</li>
         </Link>

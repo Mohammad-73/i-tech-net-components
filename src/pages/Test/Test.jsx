@@ -7,6 +7,7 @@ import Newsletter from "../../components/Newsletter/Newsletter";
 import NewsletterImg1 from "../../assets/images/G23.jpg";
 import NewsletterImg2 from "../../assets/images/G25.jpg";
 import NewsletterImg3 from "../../assets/images/g1.jpg";
+import HorizontalCard from "../../components/HorizontalCard/HorizontalCard";
 
 const Test = () => {
   return (
@@ -27,6 +28,7 @@ const Test = () => {
         inputPlaceholder="Enter Your Email Address"
         buttonTitle="Submit"
       />
+      <HorizontalCard />
     </div>
   );
 };

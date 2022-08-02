@@ -16,8 +16,8 @@ import NavBar from "../../components/NavBar/NavBar";
 //DividerImg
 import DividerImg from "../../components/DividerImg/DividerImg";
 import { BiRightArrowAlt } from "react-icons/bi";
-//ThreeColImg
-import ThreeColImg from "../../components/ThreeColImg/ThreeColImg";
+//SingleColImg
+import SingleColImg from "../../components/SingleColImg/SingleColImg";
 import Col31 from "../../assets/images/col31.jpg";
 import Col32 from "../../assets/images/col32.jpg";
 import Col33 from "../../assets/images/col33.jpg";
@@ -151,7 +151,7 @@ const SurfcampEurope = () => {
         image={DividerImage}
         buttonTitle="Zur Übersicht"
       />
-      <ThreeColImg
+      <SingleColImg
         title="Finde passende Surfcamps für dein Surflevel"
         description="Ganz gleich ob du noch nie auf einem Surfbrett standest oder schon Erfahrungen in den Wellen mitbringst - mit dem passenden Surfkurs für deine Vorkenntnisse hast du mehr Spaß im Wasser und erreichst garantiert das nächste Level!"
         items={[

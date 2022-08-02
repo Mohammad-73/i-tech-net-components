@@ -34,8 +34,8 @@ import img6 from "../../assets/surfcampFrance/g3/Surfcamps-Frankreich-Natur.jpg"
 //Description
 import Description from "../../components/Description/Description";
 import Moliets from "../../assets/surfcampFrance/details/Surfcamps-Moliets-Frankreich.jpg";
-//ThreeColImg
-import ThreeColImg from "../../components/ThreeColImg/ThreeColImg";
+//SingleColImg
+import SingleColImg from "../../components/SingleColImg/SingleColImg";
 import Col31 from "../../assets/surfcampFrance/threeCol/Surfcamps-Frankreich-Anfänger.jpg";
 import Col32 from "../../assets/surfcampFrance/threeCol/Surfcamps-Frankreich-Intermediates.jpg";
 import Col33 from "../../assets/surfcampFrance/threeCol/Surfari-Surf-Guiding-Frankreich.jpg";
@@ -193,7 +193,7 @@ const SurfcampsFrance = () => {
         cardItems={[1, 2, 3, 4]}
         cardCols="lg:grid-cols-4"
       />
-      <ThreeColImg
+      <SingleColImg
         title="Welches Surflevel passt zu dir?"
         description="Ganz gleich ob du noch nie auf einem Surfbrett standest oder bereits grüne Wellen surfst, mit unserer handverlesenen Auswahl findest du das passende Surfcamp für dein Surflevel!"
         items={[

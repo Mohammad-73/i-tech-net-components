@@ -1,7 +1,7 @@
 import React from "react";
 import ImageCard from "../ImageCard/ImageCard";
 
-const ThreeColImg = ({ title, description, items, cols }) => {
+const SingleColImg = ({ title, description, items, cols }) => {
   return (
     <div className="w-full py-7">
       <div className="mx-auto max-w-6xl py-5">
@@ -26,4 +26,4 @@ const ThreeColImg = ({ title, description, items, cols }) => {
   );
 };
 
-export default ThreeColImg;
+export default SingleColImg;

@@ -8,6 +8,7 @@ import SurfcampSpanien from "../../pages/SurfcampSpanien/SurfcampSpanien";
 import SurfcampsPortugal from "../../pages/SurfcampsPortugal/SurfcampsPortugal";
 import SurfcampTeneriffa from "../../pages/SurfcampTeneriffa/SurfcampTeneriffa";
 import Test from "../../pages/Test/Test";
+import YogaRetreats from "../../pages/YogaRetreats/YogaRetreats";
 import Links from "../Links/Links";
 
 const Layout = () => {
@@ -24,6 +25,7 @@ const Layout = () => {
       <Route path="/surfcamp-teneriffa" element={<SurfcampTeneriffa />} />
       <Route path="/surfcamp-spanien" element={<SurfcampSpanien />} />
       <Route path="/active-holidays" element={<ActiveHolidays />} />
+      <Route path="/yoga-retreats" element={<YogaRetreats />} />
       <Route path="/test" element={<Test />} />
     </Routes>
   );

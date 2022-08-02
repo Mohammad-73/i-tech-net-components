@@ -30,8 +30,8 @@ import SingleCardSection from "../../components/SingleCardSection/SingleCardSect
 import DividerImg from "../../components/DividerImg/DividerImg";
 import dividerImage from "../../assets/SurfcampPortugal/Divider/surfcamps-portugal.jpg";
 import Besonderheiten from "../../assets/images/Besonderheiten.jpg";
-//ThreeColImg
-import ThreeColImg from "../../components/ThreeColImg/ThreeColImg";
+//SingleColImg
+import SingleColImg from "../../components/SingleColImg/SingleColImg";
 import Col31 from "../../assets/SurfcampPortugal/Vorkenntnisse/Surfcamps-Portugal-Anfänger.jpg";
 import Col32 from "../../assets/SurfcampPortugal/Vorkenntnisse/Surfcamps-Portugal_Intermediates.jpg";
 import Col33 from "../../assets/SurfcampPortugal/Vorkenntnisse/Surfari-Surf-Guiding-Portugal.jpg";
@@ -183,7 +183,7 @@ const SurfcampsPortugal = () => {
         image={dividerImage}
         buttonTitle="Zur Übersicht"
       />
-      <ThreeColImg
+      <SingleColImg
         title="Finde passende Surfcamps für dein Surflevel"
         description="Ganz gleich ob du noch nie auf einem Surfbrett standest oder schon Erfahrungen in den Wellen mitbringst - mit dem passenden Surfkurs für deine Vorkenntnisse hast du mehr Spaß im Wasser und erreichst garantiert das nächste Level!"
         items={[

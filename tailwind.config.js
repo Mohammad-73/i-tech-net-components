@@ -16,6 +16,8 @@ module.exports = {
           "url('/src/assets/spanien/Header/Surfcamps_Spanien.jpg')",
         "hero-active-holiday":
           "url('/src/assets/activeHoliday/Header/Aktivurlaub-1.jpg')",
+        "hero-yoga-retreats":
+          "url('/src/assets/yogaRetreats/Header/beste-yoga-retreats.jpg')",
       },
       backgroundColor: {
         "custom-orange": "#FF9F1C",

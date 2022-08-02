@@ -24,8 +24,8 @@ import ListAndImage4 from "../../assets/spanien/Unterkungt-RL/Surfurlaub-Spanien
 import SingleCardSection from "../../components/SingleCardSection/SingleCardSection";
 // ColorDivider
 import ColorDivider from "../../components/ColorDivider/ColorDivider";
-//ThreeColImg
-import ThreeColImg from "../../components/ThreeColImg/ThreeColImg";
+//SingleColImg
+import SingleColImg from "../../components/SingleColImg/SingleColImg";
 import Col31 from "../../assets/spanien/Vorkenntnisse/Surfcamps-Spanien-Anfaenger.jpg";
 import Col32 from "../../assets/spanien/Vorkenntnisse/Surfcamps-Spanien-Intermediates.jpg";
 import Col33 from "../../assets/spanien/Vorkenntnisse/Surfari-Surf-Guiding-Spanien.jpg";
@@ -156,7 +156,7 @@ const SurfcampSpanien = () => {
         description="Wir bieten dir flexible Stornierungsbedingungen mit 100% Rückerstattung!"
         buttonTitle="Mehr erfahren"
       />
-      <ThreeColImg
+      <SingleColImg
         title="Passende Surfcamps für dein Surflevel"
         description="Jeder kann Surfen lernen! Finde mit unserer Auswahl ganz einfach das passende Surfcamp für dein Surflevel."
         items={[

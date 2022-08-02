@@ -18,8 +18,8 @@ import ColorDivider from "../../components/ColorDivider/ColorDivider";
 import ListAndImage from "../../components/ListAndImage/ListAndImage";
 import ListAndImage1 from "../../assets/activeHoliday/Bild neben Text/Aktivurlaub-Oesterreich.jpg";
 import ListAndImage2 from "../../assets/activeHoliday/Bild neben Text/Aktivurlaub-Deutschland.jpg";
-//ThreeColImg
-import ThreeColImg from "../../components/ThreeColImg/ThreeColImg";
+//SingleColImg
+import SingleColImg from "../../components/SingleColImg/SingleColImg";
 import Col31 from "../../assets/activeHoliday/Reiseziele/Aktivurlaub-Spanien.jpg";
 import Col32 from "../../assets/activeHoliday/Reiseziele/Aktivurlaub-Portugal.jpg";
 import Col33 from "../../assets/activeHoliday/Reiseziele/Aktivurlaub-Italien.jpg";
@@ -131,7 +131,7 @@ const ActiveHolidays = () => {
         Egal ob Fitness oder Fahrrad, Strandurlaub oder Wintersport - das nächste Abenteuer wartet bereits vor deiner eigenen Haustür!"
         readMore="Entdecke Aktivreisen in Deutschland"
       />
-      <ThreeColImg
+      <SingleColImg
         title="Welches Surflevel passt zu dir?"
         description="Ganz gleich ob du noch nie auf einem Surfbrett standest oder bereits grüne Wellen surfst, mit unserer handverlesenen Auswahl findest du das passende Surfcamp für dein Surflevel!"
         items={[

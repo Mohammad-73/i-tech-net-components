@@ -33,7 +33,7 @@ const ListAndImage = ({
             <img
               src={image}
               alt=""
-              className="absolute w-[396px] h-[284px] md:w-[496px] md:h-[384px] rounded-[50px] top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
+              className="object-cover object-center absolute w-[396px] h-[284px] md:w-[496px] md:h-[384px] rounded-[50px] top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
             />
           </div>
         </div>
