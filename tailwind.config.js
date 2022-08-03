@@ -26,6 +26,7 @@ module.exports = {
       backgroundColor: {
         "custom-orange": "#FF9F1C",
         "custom-blue": "#E1F9FC",
+        "custom-white": "rgba(255, 255, 255, 0.3)",
       },
       background: {
         "linear-small":
@@ -33,6 +34,7 @@ module.exports = {
       },
       boxShadow: {
         hShadow: " 0px 4px 20px 0px #787B9A26",
+        imgShadow: "0px 15px 40px 0px #2121214D",
       },
       color: {
         "custom-orange": "#FF9F1C",
