@@ -31,14 +31,15 @@ const VideoPlayer = ({ title, description }) => {
           <h1 className="text-[1.56rem] text-[#2B2D42] font-bold">{title}</h1>
           <p className="text-[1rem] text-[#2B2D42]">{description}</p>
         </div>
-        <div className="relative w-[852px] h-[445px] border-1 border-emerald-800">
-          <div className="absolute top-0 right-0 w-[103px] h-[103px] bg-[#12A3BA] rounded-[20px]"></div>
-          <div className="absolute bottom-0 left-0 w-[172px] h-[172px] bg-[#FF9F1C] rounded-[20px]"></div>
-          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[802px] h-[405px] rounded-[20px]">
+        <div className="relative w-[450px] h-[300px] md:w-[852px] md:h-[445px] border-1 border-emerald-800">
+          <div className="absolute top-0 right-0 w-[90px] h-[90px] md:w-[103px] md:h-[103px] bg-[#12A3BA] rounded-[20px]"></div>
+          <div className="absolute bottom-0 left-0 w-[120px] h-[120px] md:w-[172px] md:h-[172px] bg-[#FF9F1C] rounded-[20px]"></div>
+          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[400px] h-[270px] md:w-[802px] md:h-[405px] rounded-[20px]">
             <video
               ref={videoRef}
-              className="rounded-[20px]"
-              width="100%"
+              className="rounded-[20px] w-full h-full"
+              // width="100%"
+              // height="100%"
               controls
               onClick={handleShowPlay}
             >

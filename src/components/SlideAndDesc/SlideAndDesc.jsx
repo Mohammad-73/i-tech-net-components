@@ -69,7 +69,7 @@ const ListAndDesc = ({
             </div>
           </div>
         </div>
-        <div className="flex flex-col items-start max-w-sm md:max-w-md lg:w-full">
+        <div className="flex flex-col items-center md:items-start max-w-sm md:max-w-md lg:w-full pt-[200px] md:pt-0">
           <div className="max-w-sm md:max-w-md lg:w-full flex flex-col justify-center px-4 pt-7 xl:pt-0  xl:px-0">
             <h1 className="text-[#2B2D42] text-[1.56rem] py-4 font-bold">
               {items[index].title}
