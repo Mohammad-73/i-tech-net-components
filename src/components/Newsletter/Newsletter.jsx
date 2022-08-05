@@ -47,15 +47,15 @@ const Newsletter = ({
           </p>
           <div className="flex items-center">
             <div className="flex items-center">
-              <div class=" bg-gray-200 rounded-[28px]  mt-5 lg:mt-0">
-                <div class="container flex justify-center items-center">
-                  <div class="relative">
+              <div className=" bg-gray-200 rounded-[28px]  mt-5 lg:mt-0">
+                <div className="container flex justify-center items-center">
+                  <div className="relative">
                     <input
                       type="text"
-                      class="h-12 w-full md:w-96 border-2 border-gray-400np pl-10 pr-20 rounded-[28px] z-0 focus:shadow focus:outline-none"
+                      className="h-12 w-full md:w-96 border-2 border-gray-400np pl-10 pr-20 rounded-[28px] z-0 focus:shadow focus:outline-none"
                       placeholder={inputPlaceholder}
                     />
-                    <div class="absolute top-0 right-1">
+                    <div className="absolute top-0 right-1">
                       <Button text={buttonTitle} />
                     </div>
                   </div>

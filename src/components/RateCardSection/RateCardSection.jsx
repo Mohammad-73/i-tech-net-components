@@ -11,7 +11,7 @@ const RateCardSection = ({ title, items, rateCols }) => {
           </h1>
         </div>
         <div
-          class={`px-6 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 ${rateCols} md:px-4 lg:px-0 gap-5`}
+          className={`px-6 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 ${rateCols} md:px-4 lg:px-0 gap-5`}
         >
           {items.map((item, index) => (
             <RateCard

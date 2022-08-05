@@ -35,7 +35,7 @@ const SlideDivider = ({ image, dark, items }) => {
         <div
           className={`absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-center max-w-2xl mx-auto w-[70%]`}
         >
-          <div class="flex items-center justify-center px-2">
+          <div className="flex items-center justify-center px-2">
             <AiFillStar className="text-yellow-400" />
             <AiFillStar className="text-yellow-400" />
             <AiFillStar className="text-yellow-400" />

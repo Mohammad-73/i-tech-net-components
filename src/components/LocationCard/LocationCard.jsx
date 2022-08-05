@@ -5,9 +5,12 @@ import { MdOutlineCalendarToday } from "react-icons/md";
 import { BsExclamationCircle } from "react-icons/bs";
 import { ReactComponent as Owl } from "../../assets/images/owl.svg";
 
-const LocationCard = () => {
+const LocationCard = ({ key }) => {
   return (
-    <div className=" bg-white rounded-[1.25rem] border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
+    <div
+      key={key}
+      className="bg-white rounded-[1.25rem] border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700"
+    >
       <div className="rounded-t-[1.25rem]">
         <img className="rounded-t-[1.25rem] w-full" src={CardImage} alt="" />
       </div>

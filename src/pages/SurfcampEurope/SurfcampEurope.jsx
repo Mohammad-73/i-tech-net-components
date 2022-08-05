@@ -43,6 +43,7 @@ import Besonderheiten from "../../assets/images/Besonderheiten.jpg";
 import DividerImage from "../../assets/images/dividerImage.jpg";
 //TagSection
 import TagSection from "../../components/TagSection/TagSection";
+
 const SurfcampEurope = () => {
   return (
     <div>
@@ -121,7 +122,7 @@ const SurfcampEurope = () => {
         purus viverra accumsan in nisl"
         detailsReadMore="Zu den Details"
         cardTitle="Top-Surfcamps in Portugal"
-        cardItems={[1, 2, 3, 4]}
+        cardItems={[1, 2, 3, 4, 5, 6, 7]}
         cardCols="lg:grid-cols-4"
       />
       <ImageGallery />
@@ -141,7 +142,7 @@ const SurfcampEurope = () => {
         title="Empfohlene Surfcamps in Europa"
         description="Entdecke Surfcamps, die von Reisenden mit mindestens 4,5 von 5 Sternen
       bewertet sind, und erlebe deinen Traumurlaub am Meer!"
-        items={[1, 2, 3, 4]}
+        items={[1, 2, 3, 4, 5, 6, 7, 8, 9]}
         cols="lg:grid-cols-4"
       />
       <DividerImg

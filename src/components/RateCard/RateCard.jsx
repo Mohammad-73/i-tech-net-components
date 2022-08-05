@@ -12,7 +12,7 @@ const RateCard = ({ name, description, image, footNote, calendar }) => {
               <h1 className="text-[#2B2D42] flex items-center font-bold">
                 {name}
               </h1>
-              <div class="flex items-center px-2">
+              <div className="flex items-center px-2">
                 <AiFillStar className="text-yellow-400" />
                 <AiFillStar className="text-yellow-400" />
                 <AiFillStar className="text-yellow-400" />

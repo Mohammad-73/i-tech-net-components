@@ -1,5 +1,7 @@
 import React from "react";
+import { SwiperSlide } from "swiper/react";
 import LocationCard from "../LocationCard/LocationCard";
+import SwiperContainer from "../Swiper/Swiper";
 
 const CardsSection = ({ title, description, items, cols }) => {
   return (
@@ -9,13 +11,13 @@ const CardsSection = ({ title, description, items, cols }) => {
           {title}
         </h1>
         <p className="pb-5 px-6 text-[#2B2D42] text-[1rem]">{description}</p>
-        <div
-          className={`grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 ${cols} gap-4 px-4`}
-        >
-          {items?.map((item, index) => (
-            <LocationCard />
+        <SwiperContainer>
+          {items.map((item, index) => (
+            <SwiperSlide>
+              <LocationCard />
+            </SwiperSlide>
           ))}
-        </div>
+        </SwiperContainer>
       </div>
     </div>
   );
