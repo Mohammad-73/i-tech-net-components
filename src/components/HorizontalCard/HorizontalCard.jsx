@@ -2,8 +2,8 @@ import React from "react";
 
 const HorizontalCard = ({ image, description, name, details }) => {
   return (
-    <div className="p-4 w-full h-auto">
-      <div className=" w-full lg:max-w-full lg:flex rounded-[1.25rem] shadow-hShadow">
+    <div className="p-4 w-full h-full">
+      <div className="w-full h-full lg:max-w-full lg:flex rounded-[1.25rem] shadow-hShadow">
         <div
           className="h-full lg:h-auto lg:w-48 rounded-l-[1.25rem] shadow-hShadow flex-none text-center overflow-hidden"
           title="Mountain"

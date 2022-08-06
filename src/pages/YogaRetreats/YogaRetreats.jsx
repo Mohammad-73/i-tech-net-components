@@ -55,6 +55,10 @@ import hImg1 from "../../assets/yogaRetreats/Lehrerinnen/Yoga-Lehrerin-Yogakasha
 import hImg2 from "../../assets/yogaRetreats/Lehrerinnen/yogalehrerin-yogaion-retreats.jpg";
 import hImg3 from "../../assets/yogaRetreats/Lehrerinnen/Yoga-Lehrerin-YoooYoga.jpg";
 import hImg4 from "../../assets/yogaRetreats/Lehrerinnen/Yoga-Lehrerin-Casa-Vegana.jpg";
+import hImg5 from "../../assets/yogaRetreats/Lehrerinnen/yogalehrerin-fastenhof-behm.jpg";
+import hImg6 from "../../assets/yogaRetreats/Lehrerinnen/Yoga-Lehrerin-Nella-Yoga.jpg";
+import hImg7 from "../../assets/yogaRetreats/Lehrerinnen/yogalehrerin-globeseekers.jpg";
+import hImg8 from "../../assets/yogaRetreats/Lehrerinnen/Yoga-Lehrer-simha.jpg";
 //Description
 import Description from "../../components/Description/Description";
 import Moliets from "../../assets/yogaRetreats/Yoga Arten/Hatha-Yoga.jpg";
@@ -300,6 +304,34 @@ const YogaRetreats = () => {
               "Ich stecke all meine Liebe und Leidenschaft in inspirierende und transformierende Yoga- und Meditationsurlaube an außergewöhnlichen Orten.",
             name: "Chiara Bürkle",
             details: "Yogalehrerin auf Gran Canaria",
+          },
+          {
+            image: hImg5,
+            description:
+              "Ich helfe den Menschen dabei, ihre Lebensenergie wieder aufzuladen und dauerhaft zu vervielfachen.",
+            name: "Susanne Behm",
+            details: "Fastenleiterin, CQM-Coach und Yogalehrerin",
+          },
+          {
+            image: hImg6,
+            description:
+              "Meine wunderschöne Arbeit in Marokko, bei der ich mich öffnen kann, unterstützt mich dabei ich selbst zu sein.",
+            name: "Daniela Holzer",
+            details: "Yogalehrerin aus Klagenfurt am Wörthersee",
+          },
+          {
+            image: hImg7,
+            description:
+              "Unsere Reisen sind mehr als ein Yoga Retreat oder Outdoor Urlaub. Mach mit uns eine Reise zu Bewusstheit, Leichtigkeit und Präsenz in atemberaubender Umgebung.",
+            name: "Denise Mitterer",
+            details: "Yogalehrerin im Zillertal",
+          },
+          {
+            image: hImg8,
+            description:
+              "Wir sehen den Menschen als ein schöpferisch tätiges Wesen, der die Welt durch die Kräfte seiner Seele – durch das Denken, Fühlen und Wollen ergründet.",
+            name: "Hans-Peter und Claudia Fritsche",
+            details: "Yogalehrer aus Baden-Württemberg",
           },
         ]}
       />
