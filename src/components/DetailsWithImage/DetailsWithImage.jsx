@@ -4,7 +4,7 @@ import { BiRightArrowAlt } from "react-icons/bi";
 const DetailsWithImage = ({ image, title, description, readMore }) => {
   return (
     <div className="w-full overflow-visible my-7 ">
-      <div className="float-left max-h-[600px] w-lg md:w-2xl h-auto m-9">
+      <div className="float-left max-w-xl max-h-[600px] w-lg md:w-2xl h-auto m-9">
         <img src={image} alt="" className="rounded-3xl" />
       </div>
       <div className="min-h-[600px]">

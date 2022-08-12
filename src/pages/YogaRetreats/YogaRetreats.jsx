@@ -62,6 +62,10 @@ import hImg8 from "../../assets/yogaRetreats/Lehrerinnen/Yoga-Lehrer-simha.jpg";
 //Description
 import Description from "../../components/Description/Description";
 import Moliets from "../../assets/yogaRetreats/Yoga Arten/Hatha-Yoga.jpg";
+import Yin from "../../assets/yogaRetreats/Yoga Arten/Yin-Yoga.jpg";
+import Iyengar from "../../assets/yogaRetreats/Yoga Arten/Iyengar-Yoga.jpg";
+import Vinyasa from "../../assets/yogaRetreats/Yoga Arten/Vinyasa-Yoga.jpg";
+import Aerial from "../../assets/yogaRetreats/Yoga Arten/Aerial-Yoga.jpg";
 //ImageGalleryWindow
 import ImageGalleryWindow from "../../components/ImageGalleryWindow/ImageGalleryWindow";
 import wImg1 from "../../assets/yogaRetreats/Kombis/Yoga-Wandern.jpg";
@@ -345,13 +349,58 @@ const YogaRetreats = () => {
           "Aerial Yoga",
         ]}
         tabCols="lg:grid-cols-5"
-        detailsImage={Moliets}
-        detailsTitle="Die Klassische Variante für Yoga-Neulinge"
-        detailsDesc="“Hatha” setzt sich aus den Wörtern “Ha” (Sonne) und “Tha” (Mond) zusammen. Während die Sonne für Hitze und Männlichkeit steht, assoziiert man den Mond mit der Rationalität und der Weiblichkeit. Ziel des Hatha Yogas ist es, ein Gleichgewicht zwischen diesen beiden Gegenpolen herzustellen und dem Körper so die nötige Energie für Meditationsübungen bereitzustellen.
-        Beim Hatha Yoga werden die Asanas (Körperstellungen)  sehr bewusst ausgeführt. Dabei bleibt das Verhältnis von Entspannung und Muskelbelastung ausgeglichen, um dein Gleichgewicht, deine Stabilität und deine Kraft gleichermaßen zu fordern und zu fördern. Die meisten in der westlichen Welt verbreiteten Yoga-Arten basieren auf dem Hatha Yoga. Seine ausgewogene Kombination aus Ruhe und Anstrengung macht diesen Stil außerdem ideal, um einen ersten Zugang zum Yoga zu finden."
-        cardTitle="Ausgewählte Hatha Yoga Retreats"
-        cardItems={[1, 2, 3, 4]}
-        cardCols="lg:grid-cols-4"
+        tabContents={[
+          {
+            detailsImage: Moliets,
+            detailsTitle: "Die Klassische Variante für Yoga-Neulinge",
+            detailsDesc:
+              "“Hatha” setzt sich aus den Wörtern “Ha” (Sonne) und “Tha” (Mond) zusammen. Während die Sonne für Hitze und Männlichkeit steht, assoziiert man den Mond mit der Rationalität und der Weiblichkeit. Ziel des Hatha Yogas ist es, ein Gleichgewicht zwischen diesen beiden Gegenpolen herzustellen und dem Körper so die nötige Energie für Meditationsübungen bereitzustellen. Beim Hatha Yoga werden die Asanas (Körperstellungen)  sehr bewusst ausgeführt. Dabei bleibt das Verhältnis von Entspannung und Muskelbelastung ausgeglichen, um dein Gleichgewicht, deine Stabilität und deine Kraft gleichermaßen zu fordern und zu fördern. Die meisten in der westlichen Welt verbreiteten Yoga-Arten basieren auf dem Hatha Yoga. Seine ausgewogene Kombination aus Ruhe und Anstrengung macht diesen Stil außerdem ideal, um einen ersten Zugang zum Yoga zu finden.",
+            detailsReadMore: "",
+            cardTitle: "Ausgewählte Hatha Yoga Retreats",
+            cardItems: [1, 2, 3, 4, 5, 6, 7],
+            cardCols: "lg:grid-cols-4",
+          },
+          {
+            detailsImage: Yin,
+            detailsTitle: "Ausgeglichenheit und Ruhe",
+            detailsDesc:
+              "Während Yang traditionell für das Bewegte, Männliche steht, symbolisiert Yin das Sanfte und Ruhige, was eher der Weiblichkeit nachgesagt wird. Die entspannende und meditative Praxis des Yin Yoga soll also einen Gegenpol zur hektischen Außenwelt darstellen. Die Haltungen werden weder in einem bestimmten Rhythmus, noch mit einer besonderen Dynamik durchgeführt: Beim Yin Yoga geht es vielmehr um lange gehaltene Dehnungen, die bis in die Faszien und Bindegewebsschichten vordringen. Deswegen ist der Stil auch besonders beliebt als Entlüftungseinheit für besonders geforderte Gelenke nach dem Sport oder als Anwendung zur Stressminderung. Entdecke die ruhige, meditative Seite des Yoga bei einem Yin Yoga Retreat, das dich den Alltagsstress nachhaltig verarbeiten lässt!",
+            detailsReadMore: "",
+            cardTitle: "Ausgewählte Yin Yoga Retreats",
+            cardItems: [1, 2, 3, 4, 5, 6, 7],
+            cardCols: "lg:grid-cols-4",
+          },
+          {
+            detailsImage: Iyengar,
+            detailsTitle: "Die Kunst der korrekten Körperausrichtung",
+            detailsDesc:
+              "B.K.S. Iyengar revolutionierte Yoga in den 1940er Jahren, indem er die Gelenkigkeit sowie die korrekte Körperausrichtung in den Mittelpunkt rückte. Um die herausfordernden Asanas zu verwirklichen, setzte er erstmals Hilfsmittel wie Gurte, Blöcke oder sogar Stühle ein und machte Yoga so um einiges zugänglicher. Heute helfen diese Hilfsmittel Yoginis und Yogis dabei, um Übungen individuell anzupassen und Positionen länger halten zu können. Iyengar Yoga ist daher besonders heilend für Menschen mit Gelenkschmerzen, Verspannungen oder unfallbedingten Beeinträchtigungen. Wenn du dein Inneres ausrichten und deine Haltung verbessern möchtest, sind diese Iyengar Yoga Retreats genau das richtige für dich.",
+            detailsReadMore: "",
+            cardTitle: "Ausgewählte Iyengar Yoga Retreats",
+            cardItems: [1, 2, 3, 4, 5, 6, 7],
+            cardCols: "lg:grid-cols-4",
+          },
+          {
+            detailsImage: Vinyasa,
+            detailsTitle: "Finde deinen eigenen Flow",
+            detailsDesc:
+              "Beim Vinyasa Yoga sind dir keinerlei Grenzen gesetzt: Die Idee des Vinyasa Flows ist es, die einzelnen Yoga-Haltungen dynamisch miteinander zu verbinden. Dieser Bewegungsfluss erfreut sich zunehmend bei jüngeren Yoginis und Yogis an Beliebtheit und versucht sich von den strengeren Regeln der traditionellen Stile zu lösen. Vinyasa ist Sanskrit und setzt sich aus dem Wörtern “vi” (auf eine bestimmte Weise) und “nyasa” (setzen, stellen, lesen) zusammen. Es geht also um die freie und kreative Verknüpfung der Yoga-Haltungen  (Asanas). Wenn du ein dynamischer Mensch bist, der an schwungvollen Bewegungen und modernen Interpretationen der Yogapraxis interessiert ist, ist dieser Yogastil genau das richtige für dich!",
+            detailsReadMore: "",
+            cardTitle: "Ausgewählte Vinyasa Yoga Retreats",
+            cardItems: [1, 2, 3, 4, 5, 6, 7],
+            cardCols: "lg:grid-cols-4",
+          },
+          {
+            detailsImage: Aerial,
+            detailsTitle: "Schwereloses Yoga ohne Bodenkontakt",
+            detailsDesc:
+              "Ein trapezförmiges Tuch, das von der Decke hängt und eine völlig neuartige Interpretation bekannter Yogastile: Das ist Aerial Yoga! Der Stil verlagert die Asanas in die Luft und du gibst dein Körpergewicht quasi an das Tuch ab. Dadurch wird der gesamte Körper nochmal stärker und gleichmäßiger beansprucht und Balance, Ausdauer, Atmung, Kraft und Beweglichkeit bekommen eine völlig neue Bedeutung. Vor allem die Körpermitte profitiert vom Aerial Yoga: Die Rumpf- und Bauchmuskulatur ist permanent im Einsatz, was sich besonders positiv auf die dort sitzenden Muskelgruppen auswirkt und Verspannungen im Rücken effektiv löst. Also beschenke dich selber mit einem Aerial Yoga Retreat und erlebe ein komplett neues Körpergefühl: schwebend, leicht und locker!",
+            detailsReadMore: "",
+            cardTitle: "Ausgewählte Aerial Yoga Retreats",
+            cardItems: [1, 2, 3, 4, 5, 6, 7],
+            cardCols: "lg:grid-cols-4",
+          },
+        ]}
       />
       <ImageGalleryWindow
         title="Kombiniere deine Yogapraxis mit anderen Sportarten"

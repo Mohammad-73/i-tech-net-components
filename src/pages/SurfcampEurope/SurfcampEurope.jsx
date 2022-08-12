@@ -2,13 +2,20 @@ import React from "react";
 import SingleCardSection from "../../components/SingleCardSection/SingleCardSection";
 //Description
 import Description from "../../components/Description/Description";
-import Kanaren from "../../assets/images/Kanaren.jpg";
+import Frankreich from "../../assets/euro/Regionen-20220811T072453Z-001/Regionen/Surfcamps-Frankreich.jpg";
+import Portugal from "../../assets/euro/Regionen-20220811T072453Z-001/Regionen/Surfcamps-Frankreich.jpg";
+import Spanien from "../../assets/euro/Regionen-20220811T072453Z-001/Regionen/Surfcamps-Spanien.jpg";
+import Fuerteventura from "../../assets/euro/Regionen-20220811T072453Z-001/Regionen/Surfcamps-Fuerteventura-Kanaren.jpg";
+import Teneriffa from "../../assets/euro/Regionen-20220811T072453Z-001/Regionen/Surfcamps-Teneriffa-Kanaren.jpg";
+import Gran from "../../assets/euro/Regionen-20220811T072453Z-001/Regionen/Surfcamps-Gran-Canaria.jpg";
+import cardImage from "../../assets/images/cardImage.jpg";
 
+//Hero
 import Hero from "../../components/Hero/Hero";
 //HintSection
 import HintSection from "../../components/HintSection/HintSection";
 import { BiLike, BiStar, BiHeart } from "react-icons/bi";
-
+//ImageGallery
 import ImageGallery from "../../components/ImageGallery/ImageGallery";
 import ImageGallery2 from "../../components/ImageGallery2/ImageGallery2";
 import ListAndImage from "../../components/ListAndImage/ListAndImage";
@@ -89,41 +96,344 @@ const SurfcampEurope = () => {
           "Gran Canaria",
         ]}
         tabCols="lg:grid-cols-6"
-        detailsImage={Kanaren}
-        detailsTitle="Wandern"
-        detailsDesc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-        eiusmod tempor incididunt ut labore et dolore magna aliqua Egestas
-        purus viverra accumsan in nisl nisi Arcu cursus vitae congue mauris
-        rhoncus aenean vel elit scelerisque In egestas erat imperdiet sed
-        euismod nisi porta lorem mollis Morbi tristique senectus et netus
-        Mattis pellentesque id nibh tortor id aliquet lectus proin Sapien
-        faucibus et molestie ac feugiat sed lectus vestibulum Ullamcorper
-        velit sed ullamcorper morbi. Lorem ipsum dolor sit amet, consectetur
-        adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-        magna aliqua Egestas purus viverra accumsan in nisl nisi Arcu cursus
-        vitae congue mauris rhoncus aenean vel elit Lorem ipsum dolor sit
-        amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-        labore et dolore magna aliqua Egestas purus viverra accumsan in nisl
-        nisi Arcu cursus vitae congue mauris rhoncus aenean vel elit
-        scelerisque In egestas erat imperdiet sed euismod nisi porta lorem
-        mollis Morbi tristique senectus et netus Mattis pellentesque id nibh
-        tortor id aliquet lectus proin Sapien faucibus et molestie ac feugiat
-        sed lectus vestibulum Ullamcorper velit sed ullamcorper morbi. Lorem
-        ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua Egestas purus
-        viverra accumsan in nisl nisi Arcu cursus vitae congue mauris rhoncus
-        aenean vel elit nisi Arcu cursus vitae congue mauris rhoncus aenean
-        vel elit scelerisque In egestas erat imperdiet sed euismod nisi porta
-        lorem mollis Morbi tristique senectus et netus Mattis pellentesque id
-        nibh tortor id aliquet lectus proin Sapien faucibus et molestie ac
-        feugiat sed lectus vestibulum Ullamcorper velit sed ullamcorper morbi.
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-        eiusmod tempor incididunt ut labore et dolore magna aliqua Egestas
-        purus viverra accumsan in nisl"
-        detailsReadMore="Zu den Details"
-        cardTitle="Top-Surfcamps in Portugal"
-        cardItems={[1, 2, 3, 4, 5, 6, 7]}
-        cardCols="lg:grid-cols-4"
+        tabContents={[
+          {
+            detailsImage: Frankreich,
+            detailsTitle: "Surfurlaub in Frankreich",
+            detailsDesc:
+              "Endlose Sandstrände und Pinienwälder wohin das Auge reicht: Die Atlantikküste Frankreichs erwartet dich mit einer einzigartigen Atmosphäre und den idealen Voraussetzungen für einen unvergesslichen Surfurlaub!Die beste Region für einen Surfurlaub in Frankreich ist die Atlantikküste von Bordeaux bis runter zur spanischen Grenze. Insbesondere im Sommer findest du hier die konstantesten Wellenbedingungen in Europa.Ein weiteres Plus ist die unkomplizierte Anreise. Vom eigenen Auto über eine Bus- oder Zugfahrt bis hin zum Fliegen stehen dir alle Möglichkeiten offen! Und bist du einmal angekommen, tauchst du sofort ein in eine eigene Welt.",
+            detailsReadMore:
+              "Mehr Inspiration für dein Surfurlaub in Frankreich",
+            cardTitle: "Top-Surfcamps in Frankreich",
+            cardItems: [
+              {
+                cardImage: cardImage,
+                title: "Surfcamp in Moliets: Party & Campfeeling pur",
+                location: "Moliets, Frankreich",
+                calender: "25.06. - 10.09.2022",
+                rateDesc: "",
+                price: "383 €",
+                priceTitle: "für 8 Tage",
+                info: "info",
+                ab: "Ab",
+              },
+              {
+                cardImage: cardImage,
+                title: "Surfurlaub im lässigen Surfhaus nahe Capbreton",
+                location: "Bénesse-Maremne, Frankreich",
+                calender: "02.04. - 01.10.2022",
+                rateDesc: "",
+                price: "378 €",
+                priceTitle: "für 7 Tage",
+                info: "info",
+                ab: "Ab",
+              },
+              {
+                cardImage: cardImage,
+                title: "Surfcamp weit weg vom Trubel",
+                location: "Le Pin Sec, Frankreich",
+                calender: "25.06. - 10.09.2022",
+                rateDesc: "",
+                price: "350 €",
+                priceTitle: "für 8 Tage",
+                info: "info",
+                ab: "Ab",
+              },
+              {
+                cardImage: cardImage,
+                title: "Surf & Yoga Urlaub für Naturliebhaber über 30",
+                location: "Mimizan-Plage ,Frankreich",
+                calender: "12.06. - 02.10.2022",
+                rateDesc: "",
+                price: "465 €",
+                priceTitle: "für 8 Tage",
+                info: "info",
+                ab: "Ab",
+              },
+            ],
+            cardCols: "lg:grid-cols-4",
+          },
+          {
+            detailsImage: Portugal,
+            detailsTitle: "Surfurlaub in Portugal",
+            detailsDesc:
+              "Unberührte Natur, die besten Wellen in Europa und die Qual der Wahl: Die verschiedenen Regionen und Surfcamps in Portugal bieten eine enorme Vielfalt und dadurch den passenden Surfurlaub für die unterschiedlichsten Wünsche und Bedürfnisse.Wenn du dir traumhafte grüne Landschaften und leere LineUps wünschst, ist der Norden Portugals die richtige Wahl für deinen Surfurlaub. Die Algarve im Süden ist hingegen die richtige Anlaufstelle für alle Sonnenanbeter: Hier erwarten dich selbst im Winter angenehme Temperaturen. Doch auch die Regionen rund um Lissabon bieten dir vielfältige Möglichkeiten: Angefangen mit Ericeira, dem einzigen World Surf Reserve in Europa, über Peniche, der Hauptstadt der Wellen, bis hin zu Lissabon selber. Was wünschst du dir für deinen Surfurlaub in Portugal?",
+            detailsReadMore: "Mehr Inspiration für dein Surfurlaub in Portugal",
+            cardTitle: "Top-Surfcamps in Portugal",
+            cardItems: [
+              {
+                cardImage: cardImage,
+                title: "Umgeben von Natur: Surfcamp im entspannten Sagres",
+                location: "Sagres, Portugal",
+                calender: "01.04. - 01.12.2022",
+                rateDesc: "",
+                price: "410 €",
+                priceTitle: "für 8 Tage",
+                info: "info",
+                ab: "Ab",
+              },
+              {
+                cardImage: cardImage,
+                title: "Gemütliches Surfhaus direkt am Surfspot",
+                location: "Peniche, Portugal",
+                calender: "Ganzjährig geöffnet",
+                rateDesc: "",
+                price: "380 €",
+                priceTitle: "für 8 Tage",
+                info: "info",
+                ab: "Ab",
+              },
+              {
+                cardImage: cardImage,
+                title:
+                  "Chill in Surfhaus mit Blick auf's Meer im Surfer-Paradies",
+                location: "Ericeira, Portugal",
+                calender: "01.04. - 04.01.",
+                rateDesc: "",
+                price: "336 €",
+                priceTitle: "für 7 Tage",
+                info: "info",
+                ab: "Ab",
+              },
+              {
+                cardImage: cardImage,
+                title: "Familiäres Surfhaus im unberührten Norden Portugals",
+                location: "Estela, Portugal",
+                calender: "01.03. - 01.11.2022",
+                rateDesc: "",
+                price: "403 €",
+                priceTitle: "für 8 Tage",
+                info: "info",
+                ab: "Ab",
+              },
+            ],
+            cardCols: "lg:grid-cols-4",
+          },
+          {
+            detailsImage: Spanien,
+            detailsTitle: "Surfurlaub in Spanien",
+            detailsDesc:
+              "Tapas, Sonne und gute Laune - ein Surfurlaub in Spanien, hält was er verspricht! Die besten Wellenbedingungen findest du dabei an der Atlantikküste im Norden Spaniens. Doch auch Andalusien im Süden erwartet dich mit schönen Wellen und traumhaften Stränden.Der Norden Spaniens ist an Vielfalt kaum zu übertreffen! Während das Baskenland mit sattgrüner Natur und lebendigen Städten auf dich wartet, erinnert Kantabrien mit seinen grünen Hügeln und glücklichen Milchkühen an das Allgäu - nur eben am Meer. Angekommen in Galizien wird die Landschaft trockener und die Strände leerer.In Andalusien erwartet dich Sonne das ganze Jahr über! Fernab der Touristenhochburgen kannst du dich auf kleine weiße Dörfer, lange Sandstrände und den typisch entspannten Lebensstil der Spanier freuen.",
+            detailsReadMore: "Erfahre mehr über einen Surfurlaub in Spanien",
+            cardTitle: "Top-Surfcamps in Spanien",
+            cardItems: [
+              {
+                cardImage: cardImage,
+                title: "Surfcamp im Nationalpark in Kantabrien",
+                location: "Ruilobuca, Spanien",
+                calender: "28.05. - 17.09.2022",
+                rateDesc: "",
+                price: "349 €",
+                priceTitle: "für 7 Tage",
+                info: "info",
+                ab: "Ab",
+              },
+              {
+                cardImage: cardImage,
+                title: "Surfcamp in der wärmsten Region Europas",
+                location: "El Palmar, Spanien",
+                calender: "13.09.2021 - 29.05.2022",
+                rateDesc: "",
+                price: "798 €",
+                priceTitle: "für 8 Tage",
+                info: "info",
+                ab: "Ab",
+              },
+              {
+                cardImage: cardImage,
+                title: "Surfhaus mit Apartments im Süden Spaniens",
+                location: "Conil De La Frontera, Spanien",
+                calender: "Ganzjährig geöffnet",
+                rateDesc: "",
+                price: "250 €",
+                priceTitle: "für 8 Tage",
+                info: "info",
+                ab: "Ab",
+              },
+              {
+                cardImage: cardImage,
+                title: "Moderne Surf Lodge am Traumstrand von Loredo",
+                location: "Loredo, Spanien",
+                calender: "04.04. - 14.11.2022",
+                rateDesc: "",
+                price: "189 €",
+                priceTitle: "für 8 Tage",
+                info: "info",
+                ab: "Ab",
+              },
+            ],
+            cardCols: "lg:grid-cols-4",
+          },
+          {
+            detailsImage: Fuerteventura,
+            detailsTitle: "Surfurlaub auf Fuerteventura",
+            detailsDesc:
+              "Fuerteventura gilt als das Hawaii Europas - und das nicht ohne Grund: Weiße Sandstrände, kristallklares Wasser und perfekte Surfbedingungen für jedes Level - was wünscht man sich mehr für seinen Surfurlaub?Die beliebtesten Surforte auf Fuerteventura sind Corralejo und El Cotillo im Norden beziehungsweise Nordwesten der Insel. Corralejo ist die Surf-Hochburg auf Fuerteventura. Neben den bekanntesten Surfspots der Insel kannst du dich hier auf eine große Auswahl an Restaurants, Shoppingmöglichkeiten und ein belebtes Nachtleben freuen. El Cotillo wiederum ist die deutlich ruhigere Variante: Der ursprüngliche Ort lädt zum Entschleunigen und Genießen ein!",
+            detailsReadMore:
+              "Mehr Inspiration für deinen Surfurlaub auf Fuerteventura",
+            cardTitle: "Top-Surfcamps auf Fuerteventura",
+            cardItems: [
+              {
+                cardImage: cardImage,
+                title: "Surfcamp mit Pool am Strand von Fuerteventura",
+                location: "Corralejo, Fuerteventura",
+                calender: "Ganzjährig geöffnet",
+                rateDesc: "",
+                price: "269 €",
+                priceTitle: "für 8 Tage",
+                info: "info",
+                ab: "Ab",
+              },
+              {
+                cardImage: cardImage,
+                title: "Surfcamp in Corralejo: Chillen, Surfen & neue Leute",
+                location: "Corralejo, Fuerteventura",
+                calender: "Ganzjährig geöffnet",
+                rateDesc: "",
+                price: "349 €",
+                priceTitle: "für 8 Tage",
+                info: "info",
+                ab: "Ab",
+              },
+              {
+                cardImage: cardImage,
+                title:
+                  "Surfen in der Sonne: Gemütliche Surfvilla in El Cotillo",
+                location: "El Cotillo, Fuerteventura",
+                calender: "Ganzjährig geöffnet",
+                rateDesc: "",
+                price: "440 €",
+                priceTitle: "für 8 Tage",
+                info: "info",
+                ab: "Ab",
+              },
+              {
+                cardImage: cardImage,
+                title:
+                  "Familiäre Surfvilla in El Cotillo: Surfen & Yoga im Paradies",
+                location: "El Cotillo, Fuerteventura",
+                calender: "Ganzjährig geöffnet",
+                rateDesc: "",
+                price: "560 €",
+                priceTitle: "für 8 Tage",
+                info: "info",
+                ab: "Ab",
+              },
+            ],
+            cardCols: "lg:grid-cols-4",
+          },
+          {
+            detailsImage: Teneriffa,
+            detailsTitle: "Surfurlaub auf Teneriffa",
+            detailsDesc:
+              "Eine vielfältige Flora und Fauna, wunderschöne Strände und der größte Vulkan Europas - Teneriffa bietet den passenden Surfurlaub für die verschiedensten Bedürfnisse! Angefangen mit Surfcamps inmitten unberührter Natur bis hin zum Playa Las Americas, wo du die Nacht zum Tag machen kannst.Durch den Vulkan Teide ist Teneriffa vor den teils starken Winden rund um die kanarischen Inseln geschützt und bietet dir dadurch neben den ganzjährig sonnigen Temperaturen auch konstant gute Wellen. Insbesondere als Anfänger:in oder fortgeschrittene Surfer:in ist Teneriffa eine exzellente Wahl für deinen Surfurlaub - ganz gleich zu welcher Jahreszeit!",
+            detailsReadMore:
+              "Mehr Inspiration für deinen Surfurlaub auf Teneriffa",
+            cardTitle: "Top-Surfcamps auf Teneriffa",
+            cardItems: [
+              {
+                cardImage: cardImage,
+                title: "Surfcamp mit entspannter Atmosphäre",
+                location: "Adeje, Teneriffa",
+                calender: "Ganzjährig geöffnet",
+                rateDesc: "",
+                price: "370 €",
+                priceTitle: "für 8 Tage",
+                info: "info",
+                ab: "Ab",
+              },
+              {
+                cardImage: cardImage,
+                title: "Surf & Yoga Urlaub am einsamen Strand",
+                location: "El Poris, Teneriffa",
+                calender: "Ganzjährig geöffnet",
+                rateDesc: "",
+                price: "390 €",
+                priceTitle: "für 8 Tage",
+                info: "info",
+                ab: "Ab",
+              },
+              {
+                cardImage: cardImage,
+                title: "Surfhaus im ursprünglichen Küstenort El Poris",
+                location: "El Poris, Teneriffa",
+                calender: "Ganzjährig geöffnet",
+                rateDesc: "",
+                price: "280 €",
+                priceTitle: "für 7 Tage",
+                info: "info",
+                ab: "Ab",
+              },
+              {
+                cardImage: cardImage,
+                title: "Surfhaus auf Teneriffa: Natur, Leidenschaft & Spaß",
+                location: "Adeje, Teneriffa",
+                calender: "Ganzjährig geöffnet",
+                rateDesc: "",
+                price: "379 €",
+                priceTitle: "für 8 Tage",
+                info: "info",
+                ab: "Ab",
+              },
+            ],
+            cardCols: "lg:grid-cols-4",
+          },
+          {
+            detailsImage: Gran,
+            detailsTitle: "Surfurlaub auf Gran Canaria",
+            detailsDesc:
+              "Gran Canaria ist bekannt für seine Bergdörfer, Strände und Las Palmas - die größte Stadt auf den Kanaren. Hier kannst du die Atmosphäre einer typisch spanischen Stadt mit seinen Tapas Bars und kleinen Gassen genießen und gleichzeitig mit deinem Surfbrett unter dem Arm direkt zum Strand laufen.Die typischen Tourismushochburgen sind weit entfernt von den Surfspots der Insel. So kannst du selbst mit einem Surfcamp in Las Palmas schnell raus in die Natur und die Vielfalt der Insel entdecken. Neben Wellen sind dir auf Gran Canaria auch das ganze Jahr über angenehme Temperaturen garantiert!",
+            detailsReadMore: "Zu den Details",
+            cardTitle: "Top-Surfcamp auf Gran Canaria",
+            cardItems: [
+              {
+                cardImage: cardImage,
+                title: "Surfurlaub in direkter Strandlage in Las Palmas",
+                location: "Las Palmas, Gran Canaria",
+                calender: "Ganzjährig geöffnet",
+                rateDesc: "",
+                price: "500 €",
+                priceTitle: "für 8 Tage",
+                info: "info",
+                ab: "Ab",
+              },
+              {
+                cardImage: cardImage,
+                title: "Surfen & Yoga: Erlebe die Magie von Las Palmas",
+                location: "Las Palmas, Gran Canaria",
+                calender: "Ganzjährig geöffnet",
+                rateDesc: "",
+                price: "382 €",
+                priceTitle: "für 7 Tage",
+                info: "info",
+                ab: "Ab",
+              },
+              {
+                cardImage: cardImage,
+                title: "Buntes Surfhostel mit Charme auf Gran Canaria",
+                location: "San Felipe, Gran Canaria",
+                calender: "Ganzjährig geöffnet",
+                rateDesc: "",
+                price: "335 €",
+                priceTitle: "für 8 Tage",
+                info: "info",
+                ab: "Ab",
+              },
+              {
+                cardImage: cardImage,
+                title: "Surfhaus mit Dachterrasse am Strand von Las Palmas",
+                location: "Las Palmas, Gran Canaria",
+                calender: "Ganzjährig geöffnet",
+                rateDesc: "",
+                price: "381 €",
+                priceTitle: "für 7 Tage",
+                info: "info",
+                ab: "Ab",
+              },
+            ],
+            cardCols: "lg:grid-cols-4",
+          },
+        ]}
       />
       <ImageGallery />
       <ListAndImage

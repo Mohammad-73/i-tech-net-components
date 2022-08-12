@@ -7,6 +7,9 @@ import { BiLike, BiStar, BiHeart } from "react-icons/bi";
 //Description
 import Description from "../../components/Description/Description";
 import Alleinreisende from "../../assets/teneriffa/Zielgruppen-Tab-Element/Surfcamps-Alleinreisende-Teneriffa.jpg";
+import Freund from "../../assets/teneriffa/Zielgruppen-Tab-Element/Surfcamps-Teneriffa-Gruppen-Freunde.jpg";
+import Paare from "../../assets/teneriffa/Zielgruppen-Tab-Element/Surf-Reisen-Teneriffa-Paare.jpg";
+import Familien from "../../assets/teneriffa/Zielgruppen-Tab-Element/Surfurlaub-Familien-Teneriffa.jpg";
 // ImageGalleryFivePic
 import ImageGalleryFivePic from "../../components/ImageGalleryFivePic/ImageGalleryFivePic";
 import image1 from "../../assets/teneriffa/Kategorien-5er_LI/Surfcamps-Teneriffa-Natur.jpg";
@@ -93,13 +96,48 @@ const SurfcampTeneriffa = () => {
           "Für Familien",
         ]}
         tabCols="lg:grid-cols-4"
-        detailsImage={Alleinreisende}
-        detailsTitle="Surfcamps für Alleinreisende"
-        detailsDesc="Langeweile ausgeschlossen und Spaß garantiert: Ein Surfcamp ist der perfekte Urlaub für Alleinreisende! Gleich mit deiner Ankunft fühlst du dich wohl und triffst dank der offenen und entspannten Atmosphäre ganz natürlich auf Gleichgesinnte. Gemeinsam erkundet ihr die besten Wellen Teneriffas, entspannt in der Sonne am Strand und tauscht Reisegeschichten von den verschiedensten Ecken der Welt aus. Gleichzeitig hast du immer die Möglichkeit dich zurückzuziehen und dein eigenes Ding zu machen. Mit einem Surfcamp auf Teneriffa lässt du deinen Alltag hinter dir und tauchst ein in eine eigene Welt."
-        detailsReadMore="Zu den Details"
-        cardTitle="Top-Surfcamps für Alleinreisende auf Teneriffa"
-        cardItems={[1, 2, 3, 4]}
-        cardCols="lg:grid-cols-4"
+        tabContents={[
+          {
+            detailsImage: Alleinreisende,
+            detailsTitle: "Surfcamps für Alleinreisende",
+            detailsDesc:
+              "Langeweile ausgeschlossen und Spaß garantiert: Ein Surfcamp ist der perfekte Urlaub für Alleinreisende! Gleich mit deiner Ankunft fühlst du dich wohl und triffst dank der offenen und entspannten Atmosphäre ganz natürlich auf Gleichgesinnte. Gemeinsam erkundet ihr die besten Wellen Teneriffas, entspannt in der Sonne am Strand und tauscht Reisegeschichten von den verschiedensten Ecken der Welt aus. Gleichzeitig hast du immer die Möglichkeit dich zurückzuziehen und dein eigenes Ding zu machen. Mit einem Surfcamp auf Teneriffa lässt du deinen Alltag hinter dir und tauchst ein in eine eigene Welt.",
+            detailsReadMore: "",
+            cardTitle: "Top-Surfcamps für Alleinreisende auf Teneriffa",
+            cardItems: [1, 2, 3, 4, 5, 6, 7],
+            cardCols: "lg:grid-cols-4",
+          },
+          {
+            detailsImage: Freund,
+            detailsTitle: "Surfcamps für Gruppen & Freunde",
+            detailsDesc:
+              "Willst du gemeinsam mit deinen besten Freund:innen einen Urlaub voll von Action, Spaß und Erholung erleben? Ganz gleich ob ihr nur zu zweit oder in einer größeren Gruppe seid, mit einem Surfcamp auf Teneriffa könnt ihr euch auf einen Urlaub freuen, den ihr so schnell nicht vergessen werdet! Zusammen feiert ihr jede gesurfte Welle und lacht über spektakuläre Wipe-outs. In der Zeit außerhalb des Ozeans habt ihr die Qual der Wahl und könnt Quality Time am Strand oder in der Hängematte genießen, gemeinsam um die Häuser ziehen oder die traumhafte Natur Teneriffas erkunden.",
+            detailsReadMore: "",
+            cardTitle: "Top-Surfcamps für Freund:innen auf Teneriffa",
+            cardItems: [1, 2, 3, 4, 5, 6, 7],
+            cardCols: "lg:grid-cols-4",
+          },
+          {
+            detailsImage: Paare,
+            detailsTitle: "Surf-Reisen für Paare",
+            detailsDesc:
+              "Wollt ihr euren Urlaub zu einem besonderen Erlebnis machen? Gemeinsam den Spaß eures Lebens haben, die Sonne Teneriffas genießen und einfach machen worauf ihr Lust habt? Dann ist ein Surfcamp auf Teneriffa genau das richtige für euch! Die gemeinsamen Surf-Einheiten versprechen Spaß und Action. Die Zeit drumherum könnt ihr frei nach euren Wünschen gestalten: Seien es Ausflüge in die Natur, wie eine Kajak-Tour oder Schnorcheln mit Delphinen, schöne Abendessen im Restaurant oder einfach entspannte Stunden in der Sonne am Strand. Für die Privatsphäre sorgen die privaten Doppelzimmer oder für die Naturliebhaber ein Deluxe Zelt mit Blick auf den Ozean.",
+            detailsReadMore: "",
+            cardTitle: "Top-Surfcamps für Paare auf Teneriffa",
+            cardItems: [1, 2, 3, 4, 5, 6, 7],
+            cardCols: "lg:grid-cols-4",
+          },
+          {
+            detailsImage: Familien,
+            detailsTitle: "Surfurlaub für Familien",
+            detailsDesc:
+              "Surfurlaub mit der ganzen Familie - was kann es schöneres geben? Von Klein bis Groß fühlt sich dank erfahrener Surflehrer:innen jeder im Wasser wohl und wird schnell seine ersten Erfolgserlebnisse in den Wellen haben! Und wenn ein Familienmitglied mal keine Lust hat, kann der- oder diejenige einfach am Strand entspannen und den anderen beim Surfen zuschauen.Abends könnt ihr entweder eines der vielen Restaurants auf Teneriffa besuchen oder gemeinsam kochen. Zudem erwarten euch neben dem Surfen wunderschöne Strände, entspannte Stunden am Pool oder Ausflüge für die ganze Familie in der umliegenden Natur. Und das Beste ist: Ihr müsst euch um nichts kümmern und kriegt die besten Tipps!",
+            detailsReadMore: "",
+            cardTitle: "Top-Surfcamps für Familien auf Teneriffa",
+            cardItems: [1, 2, 3, 4, 5, 6, 7],
+            cardCols: "lg:grid-cols-4",
+          },
+        ]}
       />
       <ImageGalleryFivePic
         title="Finde das Surfcamp, das zu dir passt!"

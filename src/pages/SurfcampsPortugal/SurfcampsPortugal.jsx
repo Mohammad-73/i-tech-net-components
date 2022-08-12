@@ -7,6 +7,11 @@ import { BiLike, BiStar, BiHeart } from "react-icons/bi";
 //Description
 import Description from "../../components/Description/Description";
 import Algarve from "../../assets/SurfcampPortugal/Regionen/Surfcamps-Portugal-Algarve.jpg";
+import Ericeira from "../../assets/SurfcampPortugal/Regionen/Surfcamps-Portugal-Ericeira.jpg";
+import Peniche from "../../assets/SurfcampPortugal/Regionen/Surfcamps-Portugal-Peniche.jpg";
+import Santa from "../../assets/SurfcampPortugal/Regionen/Surfcamps-Portugal-Santa-Cruz.jpg";
+import Lourinha from "../../assets/SurfcampPortugal/Regionen/Surfcamps-Portugal-Areia-Branca.jpg";
+import Region from "../../assets/SurfcampPortugal/Regionen/Surfcamps-Portugal-Porto.jpg";
 //ImageGalleryFourPic
 import ImageGalleryFourPic from "../../components/ImageGalleryFourPic/ImageGalleryFourPic";
 import img1 from "../../assets/SurfcampPortugal/Zielgruppe/Surfcamps-Portugal-Alleinreisende.jpg";
@@ -91,15 +96,68 @@ const SurfcampsPortugal = () => {
           "Region Porto",
         ]}
         tabCols="lg:grid-cols-6"
-        detailsImage={Algarve}
-        detailsTitle="Algarve"
-        detailsDesc="Einzigartige Steilküsten, Sonne das ganze Jahr über und unberührte Natur - die Algarve im Süden Portugals ist die beliebteste Region für einen Surfurlaub in Portugal.
-        Durch die zwei ewig langen und verschieden ausgerichteten Küstenabschnitte gibt es hier nicht nur jede Menge zu entdecken, sondern auch immer eine passende Welle - ganz gleich, ob du noch nie auf einem Surfbrett standest oder schon erfahren im Wellenreiten bist.
-        Die Algarve ist die richtige Wahl für deinen Surfurlaub, wenn du raus in die Natur, ohne Ende Surfen und die Sonne am Strand genießen willst!"
-        detailsReadMore="Zu den Details"
-        cardTitle="Top-Surfcamps an der Algarve"
-        cardItems={[1, 2, 3, 4]}
-        cardCols="lg:grid-cols-4"
+        tabContents={[
+          {
+            detailsImage: Algarve,
+            detailsTitle: "Algarve",
+            detailsDesc:
+              "Einzigartige Steilküsten, Sonne das ganze Jahr über und unberührte Natur - die Algarve im Süden Portugals ist die beliebteste Region für einen Surfurlaub in Portugal. Durch die zwei ewig langen und verschieden ausgerichteten Küstenabschnitte gibt es hier nicht nur jede Menge zu entdecken, sondern auch immer eine passende Welle - ganz gleich, ob du noch nie auf einem Surfbrett standest oder schon erfahren im Wellenreiten bist. Die Algarve ist die richtige Wahl für deinen Surfurlaub, wenn du raus in die Natur, ohne Ende Surfen und die Sonne am Strand genießen willst!",
+            detailsReadMore: "",
+            cardTitle: "Top-Surfcamps an der Algarve",
+            cardItems: [1, 2, 3, 4, 5, 6, 7],
+            cardCols: "lg:grid-cols-4",
+          },
+          {
+            detailsImage: Ericeira,
+            detailsTitle: "Ericeira",
+            detailsDesc:
+              "Früher ein kleines Fischerdorf, heute das einzige World Surfing Reserve in Europa: Ericeira begrüßt dich mit einer Reihe an Weltklasse Surfspots, traumhaften Stränden und einem ganz eigenen Charme. Durch die Lage oberhalb der Steilküsten bleibst du beim Schlendern durch das kleine Städtchen alle zwei Minuten wieder stehen und bist überwältigt von dem Ausblick auf das Meer und die umliegende Küste. Wenn du weiter durch die verwinkelten Gassen ziehst, spürst du an jeder Ecke den entspannten und weltoffenen Vibe, der hier vorherrscht: Sei es in einem der zahlreichen Surfshops, den vielen - teils veganen - Cafés oder in einer der Bars, die dazu einladen das Tanzbein zu schwingen. Wenn du den echten Surf-Lifestyle erleben willst, ist Ericeira dein place to be!",
+            detailsReadMore: "",
+            cardTitle: "Top-Surfcamps in Ericeira",
+            cardItems: [1, 2, 3, 4, 5, 6, 7],
+            cardCols: "lg:grid-cols-4",
+          },
+          {
+            detailsImage: Peniche,
+            detailsTitle: "Peniche",
+            detailsDesc:
+              "Bem vindo a capital da onda! (Herzlich Willkommen in der Hauptstadt der Wellen!) So lautet deine Begrüßung, wenn du nach Peniche reinfährst. Und das kommt nicht von irgendwoher: Kaum ein anderer Ort in Europa bietet dir das ganze Jahr über so konstante Wellen wie Peniche. Hier findest du zu jeder Jahreszeit die passende Welle für dein Surflevel! Angefangen mit soften Wellen für Anfänger:innen bis hin zu steilen Barrels für die absoluten Profis unter uns. Kein Wunder, dass auch die World Surf League für einen Stopp ihrer Weltmeisterschaft nach Peniche kommt. Wie du merkst, hier dreht sich wirklich alles nur ums Surfen! Komplettiert wird dein Surfurlaub durch die wunderschöne und vor allem unberührte Natur, sowie die vielen kleinen Strandbars, die dazu einladen den Sonnenuntergang mit einem Drink zu bestaunen und in ausgelassener Stimmung neue Leute kennenzulernen.",
+            detailsReadMore: "",
+            cardTitle: "Top-Surfcamps in Peniche",
+            cardItems: [1, 2, 3, 4, 5, 6, 7],
+            cardCols: "lg:grid-cols-4",
+          },
+          {
+            detailsImage: Santa,
+            detailsTitle: "Santa Cruz",
+            detailsDesc:
+              "Santa Cruz ist ein kleiner Surferort, an dem du selbst in den Sommermonaten den Massen an Touristen aus dem Weg gehst. Umgeben von traumhaften Stränden und unberührter Natur kannst du hier sofort abschalten und deinen Urlaub in vollen Zügen genießen. In den verwinkelten Gassen des kleinen Fischerorts findest du typisch portugiesische Cafés, die dazu einladen in der Sonne rumzusitzen, und Restaurants, in denen du frisch gefangenen Fisch genießen kannst. Dank der Lage zwischen den beiden Surferorten Ericeira und Peniche hast du entlang der Küste eine Auswahl an über 30 Surfspots und verschiedene Möglichkeiten für Ausflüge in die Umgebung. Wenn du es in deinem Surfurlaub ruhiger angehen lassen und dich voll auf das Surfen und die Natur fokussieren willst, ist Santa Cruz ein echter Geheimtipp!",
+            detailsReadMore: "",
+            cardTitle: "Top-Surfcamps in Santa Cruz",
+            cardItems: [1, 2, 3, 4, 5, 6, 7],
+            cardCols: "lg:grid-cols-4",
+          },
+          {
+            detailsImage: Lourinha,
+            detailsTitle: "Lourinha",
+            detailsDesc:
+              "Hier erlebst du authentischen portugiesischen Flair! 60 Kilometer nördlich von Lissabon und nur 12 Kilometer südlich von Peniche gelegen, erwarten dich in Lourinha und dem danebenliegenden Strand Areia Branca eine große Auswahl an wunderschönen Stränden zum Surfen und Sonnenbaden. Dabei hast du die Wahl zwischen abgelegenen Stränden, die du ganz für dich alleine haben kannst, oder dem Hauptstrand mit einer schönen Promenade und verschiedenen Lokalen, die zum Verweilen einladen. Die perfekten Voraussetzungen für einen unvergesslichen Surfurlaub - sei es mit der ganzen Familie oder alleine in der Surfer WG.",
+            detailsReadMore: "",
+            cardTitle: "Top-Surfcamps in Lourinha",
+            cardItems: [1, 2, 3, 4, 5, 6, 7],
+            cardCols: "lg:grid-cols-4",
+          },
+          {
+            detailsImage: Region,
+            detailsTitle: "Region Porto",
+            detailsDesc:
+              "Der Norden Portugals wird oft unterschätzt und von den meisten in ihren Reiseplanung völlig vernachlässigt. Dementsprechend findest du hier noch verlassene Strände, Wellen für dich ganz alleine und unberührte Landschaften - die perfekte Region für einen Surfurlaub mitten in der Natur! Auch die Auswahl an Surfspots lässt keine Wünsche offen: Esmoriz, Empinho, Maceda, Matosinhos und Cagalhotos sind nur einige der beliebtesten Surfspots im Norden Portugals. Zudem bietet sich ein Ausflug nach Porto an. Die wunderschöne Stadt am Fluss Douro erwartet dich mit einer großen Auswahl an Bars, Restaurants und natürlich dem allseits bekannten Portwein. Mit einem Surfurlaub im Norden Portugals bleiben keine Wünsche offen!",
+            detailsReadMore: "",
+            cardTitle: "Top-Surfcamps in der Region Porto",
+            cardItems: [1, 2, 3, 4, 5, 6, 7],
+            cardCols: "lg:grid-cols-4",
+          },
+        ]}
       />
       <ImageGalleryFourPic
         title="Die beliebtesten Kategorien für einen Surfurlaub in Frankreich"

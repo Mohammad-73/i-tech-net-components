@@ -19,7 +19,7 @@ const ImageGalleryBrick2 = ({
           <h1 className="text-[1.56rem] text-[#2B2D42] font-bold">{title}</h1>
           <p className="text-[1rem] text-[#2B2D42]">{description}</p>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 py-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-4 py-4">
           <ImageCard
             imageSrc={image1.img}
             title={image1.title}
@@ -31,7 +31,7 @@ const ImageGalleryBrick2 = ({
             description={image2.description}
           />
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+        <div className="grid grid-cols-1 sm:grid-col-3 md:grid-cols-3 gap-4">
           <ImageCard
             imageSrc={image3.img}
             title={image3.title}
@@ -48,7 +48,7 @@ const ImageGalleryBrick2 = ({
             description={image5.description}
           />
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 py-4">
+        <div className="grid grid-cols-1 sm:grid-col-2 md:grid-cols-2 gap-4 py-4">
           <ImageCard
             imageSrc={image6.img}
             title={image6.title}

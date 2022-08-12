@@ -1,12 +1,8 @@
 import React, { useState } from "react";
 
-const Tabs = ({ items, cols }) => {
+const Tabs = ({ items, cols, handleClick, active }) => {
   const activeClass = "border-[#12A3BA] bg-[#12A3BA] text-white";
-  const [active, setActive] = useState(0);
 
-  const handleClick = (index) => {
-    setActive(index);
-  };
   return (
     <div className="m-3">
       <ul
@@ -18,7 +14,7 @@ const Tabs = ({ items, cols }) => {
             onClick={() => handleClick(index)}
             className={`${
               active === index ? activeClass : "border-gray-600"
-            } text-center border-solid border-2  rounded-full py-3`}
+            } text-center border-solid border-2  rounded-full py-3 cursor-pointer`}
           >
             {item}
           </li>

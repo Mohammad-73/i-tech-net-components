@@ -15,7 +15,10 @@ import image11 from "../../assets/hiking-holiday/Kategorien/Wandern-Yoga.jpg";
 import image12 from "../../assets/hiking-holiday/Kategorien/Wandern-Alpenueberquerungen.jpg";
 //Description
 import Description from "../../components/Description/Description";
-import Moliets from "../../assets/hiking-holiday/Zielgruppen/Wandern-Gruppenreisen.jpg";
+import Alleinreisende from "../../assets/hiking-holiday/Zielgruppen/Wandern-Gruppenreisen.jpg";
+import Familien from "../../assets/hiking-holiday/Zielgruppen/Wandern-Familien.jpg";
+import Paare from "../../assets/hiking-holiday/Zielgruppen/Wandern-Paare.jpg";
+import Frauen from "../../assets/hiking-holiday/Zielgruppen/Wandern-Frauen.jpg";
 // ColorDivider
 import ColorDivider from "../../components/ColorDivider/ColorDivider";
 //SingleColImg
@@ -140,13 +143,48 @@ const HikingHolidays = () => {
           "Für Frauen",
         ]}
         tabCols="lg:grid-cols-4"
-        detailsImage={Moliets}
-        detailsTitle="Gemeinsam die Faszination Natur erleben"
-        detailsDesc="Den ganzen Urlaub unter Gleichgesinnten verbringen, gemeinsam die Umgebung erkunden und vielleicht sogar neue Bekanntschaften fürs Leben schließen: Welche Leidenschaft eignet sich besser für eine Gruppenreise als das Wandern?
-        Nach der obligatorischen Vorstellungsrunde verschwinden die anfänglichen Berührungsängste ganz von selbst. Deine Wanderführung achtet zu jeder Zeit auf die Bedürfnisse der gesamten Gruppe und kümmert sich mit großer Freude um die kollektive Wanderlust - denn geteilte Freude ist doppelte Freude!"
-        cardTitle="Ausgewählte Wandergruppenreisen"
-        cardItems={[1, 2, 3, 4]}
-        cardCols="lg:grid-cols-4"
+        tabContents={[
+          {
+            detailsImage: Alleinreisende,
+            detailsTitle: "Gemeinsam die Faszination Natur erleben",
+            detailsDesc:
+              "Den ganzen Urlaub unter Gleichgesinnten verbringen, gemeinsam die Umgebung erkunden und vielleicht sogar neue Bekanntschaften fürs Leben schließen: Welche Leidenschaft eignet sich besser für eine Gruppenreise als das Wandern? Nach der obligatorischen Vorstellungsrunde verschwinden die anfänglichen Berührungsängste ganz von selbst. Deine Wanderführung achtet zu jeder Zeit auf die Bedürfnisse der gesamten Gruppe und kümmert sich mit großer Freude um die kollektive Wanderlust - denn geteilte Freude ist doppelte Freude!",
+            detailsReadMore: "",
+            cardTitle: "Ausgewählte Wandergruppenreisen",
+            cardItems: [1, 2, 3, 4, 5, 6, 7],
+            cardCols: "lg:grid-cols-4",
+          },
+          {
+            detailsImage: Familien,
+            detailsTitle: "Ein Abenteuer für klein und groß",
+            detailsDesc:
+              "Wenn man die Kleinen für die Wunder der Natur begeistern möchte, ist ein Wanderurlaub genau das Richtige. Erkundet gemeinsam Wälder, Wiesen, Gipfel und Täler während die ganze Bande mal so richtig ausgelastet wird. Wenn die Eltern mal Zeit für sich brauchen, bieten manche Unterkünfte außerdem eine spezielle Kinderbetreuung an. Umliegende Familienattraktionen sorgen für die notwendige Abwechslung! Ein Wanderurlaub wird die Familie mit Sicherheit enger zusammenbringen und deswegen so schnell nicht in Vergessenheit geraten!",
+            detailsReadMore: "",
+            cardTitle: "Ausgewählte Wanderurlaube für Familien",
+            cardItems: [1, 2, 3, 4, 5, 6, 7],
+            cardCols: "lg:grid-cols-4",
+          },
+          {
+            detailsImage: Paare,
+            detailsTitle: "Zu zweit ist alles besser",
+            detailsDesc:
+              "Möchtest du mit deiner Partnerin oder deinem Partner unvergessliche Erlebnisse teilen, neue Gipfel erklimmen, Seen entdecken, Wälder durchwandern und dabei immer noch genug Zeit für gemeinsame Erholung haben? Dann schnapp dir deine bessere Hälfte, deinen Tagesrucksack und deine Wanderschuhe und entdecke die besten Wanderreisen in ausgewählten Wanderhotels! Entscheidet jeden Morgen aufs Neue, ob ihr euch einer geführten Wanderung anschließt und danach wohlverdient die Beine im Wellnessbereich hochlegt oder auf eigene Faust die Gegend erkundet.",
+            detailsReadMore: "",
+            cardTitle: "Ausgewählte Wanderurlaube für Paare",
+            cardItems: [1, 2, 3, 4, 5, 6, 7],
+            cardCols: "lg:grid-cols-4",
+          },
+          {
+            detailsImage: Frauen,
+            detailsTitle: "Von Frauen für Frauen gemacht",
+            detailsDesc:
+              "Gemeinsame Bewegung an der frischen Luft schweißt zusammen! Bei diesen exklusiven Wandergruppenreisen für weibliche Teilnehmerinnen kannst du dich auf achtsame Gespräche, einen verständnisvollen Freiraum und viele lustige Momente inmitten von wohltuender Natur freuen. Daraus entstehen oft Freundschaften, die ein Leben lang halten. Wenn du also eine unvergleichliche Auszeit und eine neue Erfahrung brauchst, dann gönne dir jetzt einen Wanderurlaub zusammen mit einer kleinen Gruppe aus wanderbegeisterten und naturverbundenen Frauen!",
+            detailsReadMore: "",
+            cardTitle: "Ausgewählte Wanderreisen nur für Frauen",
+            cardItems: [1, 2, 3, 4, 5, 6, 7],
+            cardCols: "lg:grid-cols-4",
+          },
+        ]}
       />
       <ColorDivider
         title="Welcher Wanderurlaub passt zu dir?"

@@ -7,6 +7,11 @@ import { BiLike, BiStar, BiHeart } from "react-icons/bi";
 //Description
 import Description from "../../components/Description/Description";
 import Kantabrien from "../../assets/spanien/Regionen-Tab-Element/Surfcamps-Kantabrien-Spanien.jpg";
+import Baskenland from "../../assets/spanien/Regionen-Tab-Element/Surfcamps-Baskenland-Spanien.jpg";
+import Andalusien from "../../assets/spanien/Regionen-Tab-Element/Surfcamps-Andalusien-Spanien.jpg";
+import Fuerteventura from "../../assets/spanien/Regionen-Tab-Element/Surfcamps-Fuerteventura.jpg";
+import Teneriffa from "../../assets/spanien/Regionen-Tab-Element/Surfcamps-Teneriffa.jpg";
+import Gran from "../../assets/spanien/Regionen-Tab-Element/Surfcamps-Gran-Canaria.jpg";
 // ImageGalleryFivePic
 import ImageGalleryFivePic from "../../components/ImageGalleryFivePic/ImageGalleryFivePic";
 import image1 from "../../assets/spanien/Zielgruppe/Surfcamps-Spanien-Alleinreisende.jpg";
@@ -96,14 +101,68 @@ const SurfcampSpanien = () => {
           "Gran Canaria",
         ]}
         tabCols="lg:grid-cols-6"
-        detailsImage={Kantabrien}
-        detailsTitle="Kantabrien"
-        detailsDesc="Die Region Kantabrien im Norden Spaniens erwartet dich mit einer einzigartigen Landschaft voll von grünen Hügeln mit glücklichen Milchkühen und Bergen im Hintergrund. Gepaart mit einer Vielzahl an schönen Buchten und Wellen für jedes Surflevel ist Kantabrien die perfekte Wahl für einen Surfurlaub in der Natur!
-        Anders als andere Regionen in Spanien ist Kantabrien vom Massentourismus verschont geblieben. Die Auswahl für deinen Surfurlaub entlang der Atlantikküste ist dabei groß: Sei es der kilometerlange Sandstrand von Loredo bis Somo, das kleine Fischerdorf Suances oder der Naturpark Oyambre mit seinen tollen Buchten und Steilklippen."
-        detailsReadMore="Zu den Details"
-        cardTitle="Top-Surfcamps in Kantabrien"
-        cardItems={[1, 2, 3, 4]}
-        cardCols="lg:grid-cols-4"
+        tabContents={[
+          {
+            detailsImage: Kantabrien,
+            detailsTitle: "Kantabrien",
+            detailsDesc:
+              "Die Region Kantabrien im Norden Spaniens erwartet dich mit einer einzigartigen Landschaft voll von grünen Hügeln mit glücklichen Milchkühen und Bergen im Hintergrund. Gepaart mit einer Vielzahl an schönen Buchten und Wellen für jedes Surflevel ist Kantabrien die perfekte Wahl für einen Surfurlaub in der Natur! Anders als andere Regionen in Spanien ist Kantabrien vom Massentourismus verschont geblieben. Die Auswahl für deinen Surfurlaub entlang der Atlantikküste ist dabei groß: Sei es der kilometerlange Sandstrand von Loredo bis Somo, das kleine Fischerdorf Suances oder der Naturpark Oyambre mit seinen tollen Buchten und Steilklippen.",
+            detailsReadMore: "",
+            cardTitle: "Top-Surfcamps in Kantabrien",
+            cardItems: [1, 2, 3, 4, 5, 6, 7],
+            cardCols: "lg:grid-cols-4",
+          },
+          {
+            detailsImage: Baskenland,
+            detailsTitle: "Baskenland",
+            detailsDesc:
+              "Pulsierende Städte und beruhigende Natur - das Baskenland wartet mit einer unglaublichen Vielfalt und so einigen Überraschungen auf dich! Wälder, Berge und steile Küsten - selbst im Hochsommer erwarten dich im Baskenland sattgrüne Landschaften anstelle von ausgetrockneten Feldern. Entlang der Küste entdeckst du immer wieder versteckte Buchten und einsame Surfspots. Hinzu kommt mit Mundaka die berühmteste linke Welle Europas. Wenn du zudem auf der Suche nach Kultur und einem belebten Nachtleben bist, hast du mit Bilbao und San Sebastian gleich zwei Städte, die definitiv einen Besuch wert sind. Hier kannst du dich treiben lassen und wünschst dir schnell, dass die Zeit stehen bleibt.",
+            detailsReadMore: "",
+            cardTitle: "Top-Surfcamp im Baskenland",
+            cardItems: [1, 2, 3, 4, 5, 6, 7],
+            cardCols: "lg:grid-cols-4",
+          },
+          {
+            detailsImage: Andalusien,
+            detailsTitle: "Andalusien",
+            detailsDesc:
+              "Ein niemals endender Sommer und eine Atmosphäre, die dich sofort in seinen Bann zieht: In Andalusien geht alles entspannter zu und die Lebensfreude der Menschen ist förmlich spürbar. Die Uhren ticken hier langsamer und du bist nach deinem Surfurlaub garantiert gelassener. Die besten Orte zum Wellenreiten in Andalusien sind Conil de la Frontera und El Palmar. Hier erwarten dich neben dieser einzigartigen Atmosphäre lange Sandstrände mit perfekten Wellen für beginnende und fortgeschrittene Surfer:innen. Abgerundet wird das Bild von den vielen weißen Häuschen, die typisch für Andalusien sind.",
+            detailsReadMore: "",
+            cardTitle: "Top-Surfcamps in Andalusien",
+            cardItems: [1, 2, 3, 4, 5, 6, 7],
+            cardCols: "lg:grid-cols-4",
+          },
+          {
+            detailsImage: Fuerteventura,
+            detailsTitle: "Fuerteventura",
+            detailsDesc:
+              "Fuerteventura ist die zweitgrößte Insel der Kanaren und gilt aufgrund der weißen Strände und Vielzahl an Surfspots als das Hawaii Europas. Vom totalen Beginner bis hin zum Profi findet hier jeder die perfekte Welle! Das Leben auf Fuerteventura geht deutlich gelassener zu als sonst wo auf der Welt. Sofort mit deiner Landung kommt dir die warme Luft entgegen und du tauchst ein in eine faszinierende Wüstenlandschaft, die dich sofort einen Gang zurückschalten lässt. Ab jetzt zählt nur noch Surfen, Entspannen und gute Laune - die perfekten Voraussetzungen für einen unvergesslichen Surfurlaub!",
+            detailsReadMore: "",
+            cardTitle: "Top-Surfcamps auf Fuerteventura",
+            cardItems: [1, 2, 3, 4, 5, 6, 7],
+            cardCols: "lg:grid-cols-4",
+          },
+          {
+            detailsImage: Teneriffa,
+            detailsTitle: "Teneriffa",
+            detailsDesc:
+              "Teneriffa ist die größte der Kanarischen Inseln vor der Westküste Afrikas und wird von dem Vulkan Teide dominiert. Der größte Berg Spaniens prägt dabei nicht nur das Landschaftsbild der Insel, sondern bietet auch Windschutz für die verschiedenen Surfspots. Dadurch bietet sich Teneriffa insbesondere für Beginner und Intermediates an, da die Wellen hier meist cleaner und kleiner sind als auf den anderen Inseln. Anders als auf Fuerteventura erwartet dich auf Teneriffa grüne und vielfältige Natur. Auch die zahlreichen Strände könnten unterschiedlicher nicht sein: Von goldenen Sandstränden bis hin zu felsigen Buchten mit schwarzem Sand ist für jeden das passende mit dabei. Je nachdem, was du dir für dein Surfcamp wünschst: Von Ruhe und Natur bis hin zu Action und Party ist auf Teneriffa alles möglich!",
+            detailsReadMore: "",
+            cardTitle: "Top-Surfcamps auf Teneriffa",
+            cardItems: [1, 2, 3, 4, 5, 6, 7],
+            cardCols: "lg:grid-cols-4",
+          },
+          {
+            detailsImage: Gran,
+            detailsTitle: "Gran Canaria",
+            detailsDesc:
+              "Willst du die Atmosphäre einer pulsierenden Stadt genießen und gleichzeitig mit deinem Surfbrett unter dem Arm zum Surfspot laufen? Dann ist Las Palmas auf Gran Canaria genau die richtige Wahl für deinen Surfurlaub in Spanien! Las Palmas ist mit über 350.000 Einwohnern die größte Stadt der Kanarischen Inseln und erwartet dich mit dem typisch spanischen Lebensgefühl: Überall sitzen die Menschen draußen, lachen zusammen, trinken Wein, essen Tapas und genießen ihr Leben. In Verbindung mit den langen Sandstränden und konstanten Wellen die perfekten Voraussetzungen für einen Surfurlaub in der Stadt!",
+            detailsReadMore: "",
+            cardTitle: "Top-Surfcamps auf Gran Canaria",
+            cardItems: [1, 2, 3, 4, 5, 6, 7],
+            cardCols: "lg:grid-cols-4",
+          },
+        ]}
       />
       <ImageGalleryFivePic
         title="Finde das Surfcamp, das zu dir passt!"

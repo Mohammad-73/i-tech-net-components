@@ -11,7 +11,12 @@ import {
 } from "react-icons/fa";
 //Description
 import Description from "../../components/Description/Description";
-import Moliets from "../../assets/YogaRetreatsGermany/Regionen/Yoga-Retreat-Deutschland-Ostsee.jpg";
+import Ostsee from "../../assets/YogaRetreatsGermany/Regionen/Yoga-Retreat-Deutschland-Ostsee.jpg";
+import Nordsee from "../../assets/YogaRetreatsGermany/Regionen/Yoga-Retreat-Deutschland-Nordsee.jpg";
+import Bayern from "../../assets/YogaRetreatsGermany/Regionen/Yoga-Retreat-Deutschland-Bayern.jpg";
+import Baden from "../../assets/YogaRetreatsGermany/Regionen/Yoga-Retreat-Deutschland-Schwarzwald.jpg";
+import Brandenburg from "../../assets/YogaRetreatsGermany/Regionen/Yoga-Retreat-Deutschland-Brandenburg.jpg";
+import Nordrhein from "../../assets/YogaRetreatsGermany/Regionen/Yoga-Retreat-Deutschland-NRW.jpg";
 //ImageGalleryFourPic
 import ImageGalleryFourPic from "../../components/ImageGalleryFourPic/ImageGalleryFourPic";
 import img1 from "../../assets/YogaRetreatsGermany/Retreat Arten/Yoga-Wochenenden.jpg";
@@ -108,13 +113,68 @@ const YogaRetreatsGermany = () => {
           "Nordrhein-Westfalen",
         ]}
         tabCols="lg:grid-cols-6"
-        detailsImage={Moliets}
-        detailsTitle="Von Usedom bis Flensburg: Urlaubsfeeling pur"
-        detailsDesc="Die Ostsee ist nicht umsonst eine der beliebtesten Ferienregionen Deutschlands. Weite Sandstrände und das milde Wetter laden dich dazu ein, deine Yogamatte unter freiem Himmel auszurollen. Die frische Meeresbrise lässt dich sofort gelassener werden und macht deine Yoga-Sessions zu einem ganz besonderen Erlebnis.
-        Freund:innen von ausgedehnten Spaziergängen und eindrucksvoller Natur kommen auf Rügen am meisten auf ihre Kosten. Die beeindruckenden weißen Felsen der Kreideküste, ursprüngliche Buchenwälder sowie unzählige Freizeitangebote bieten dir jeden Tag neue Erlebnisse. Aber auch die “Sonneninsel” Usedom lockt mit traumhaften Bedingungen, wenn du auf der Suche nach geistiger Ruhe und Entspannung bist."
-        cardTitle="Ausgewählte Yoga Retreats an der Ostsee"
-        cardItems={[1, 2, 3, 4]}
-        cardCols="lg:grid-cols-4"
+        tabContents={[
+          {
+            detailsImage: Ostsee,
+            detailsTitle: "Von Usedom bis Flensburg: Urlaubsfeeling pur",
+            detailsDesc:
+              "Die Ostsee ist nicht umsonst eine der beliebtesten Ferienregionen Deutschlands. Weite Sandstrände und das milde Wetter laden dich dazu ein, deine Yogamatte unter freiem Himmel auszurollen. Die frische Meeresbrise lässt dich sofort gelassener werden und macht deine Yoga-Sessions zu einem ganz besonderen Erlebnis. Freund:innen von ausgedehnten Spaziergängen und eindrucksvoller Natur kommen auf Rügen am meisten auf ihre Kosten. Die beeindruckenden weißen Felsen der Kreideküste, ursprüngliche Buchenwälder sowie unzählige Freizeitangebote bieten dir jeden Tag neue Erlebnisse. Aber auch die “Sonneninsel” Usedom lockt mit traumhaften Bedingungen, wenn du auf der Suche nach geistiger Ruhe und Entspannung bist.",
+            detailsReadMore: "",
+            cardTitle: "Ausgewählte Yoga Retreats an der Ostsee",
+            cardItems: [1, 2, 3, 4, 5, 6, 7],
+            cardCols: "lg:grid-cols-4",
+          },
+          {
+            detailsImage: Nordsee,
+            detailsTitle: "Spüre die Kraft der rauen Nordseeküste",
+            detailsDesc:
+              "Nirgendwo sonst kannst du in Deutschland die Natur so wahr- und aufnehmen wie an der Nordsee: Die wechselnden Gezeiten haben mit dem Wattenmeer ein einzigartiges Naturphänomen geschaffen, das 2009 zum UNESCO-Weltkulturerbe ernannt wurde. Endlose Sandstrände und rauschende Wellen lassen dich ein unverwechselbares Gefühl der Freiheit empfinden. Die Nordfriesischen Inseln Langeoog und Norderney bieten dir mit ihren autofreien Zonen und beruhigenden Dünenlandschaften einen ganz besonderen Rückzugsort. Abgeschieden vom Festland und mit genügend Zeit für dich und deine Yogapraxis hast du hier die Möglichkeit, deine Akkus wieder nachhaltig aufzuladen.",
+            detailsReadMore: "",
+            cardTitle: "Ausgewählte Yoga Retreats an der Nordsee",
+            cardItems: [1, 2, 3, 4, 5, 6, 7],
+            cardCols: "lg:grid-cols-4",
+          },
+          {
+            detailsImage: Bayern,
+            detailsTitle: "Yoga mit Ausblick auf Berge, Seen und Täler",
+            detailsDesc:
+              "Eine ausgedehnte Yogasession mit umwerfender Aussicht auf die umliegende Alpenlandschaft - was gibt es besseres? Die Menschen in Bayern zeichnet ihre starke Verbundenheit zur Natur sowie eine unvergleichliche Gelassenheit aus, welche sich direkt auf dich und deinen Aufenthalt überträgt. Neben Oberbayern bieten auch Regionen wie das Franken- oder das Schwabenland optimale Bedingungen für deine Yoga-Auszeit. In Bayern erwarten dich unvergessliche Erfahrungen wie das Schwimmen in erfrischenden Alpenseen, die Teilnahme an ganzheitlichen Yoga-Wanderungen oder andere inspirierende Ausflüge!",
+            detailsReadMore: "",
+            cardTitle: "Ausgewählte Yoga Retreats in Bayern",
+            cardItems: [1, 2, 3, 4, 5, 6, 7],
+            cardCols: "lg:grid-cols-4",
+          },
+          {
+            detailsImage: Baden,
+            detailsTitle: "Immergrüne Wälder und beruhigende Seen",
+            detailsDesc:
+              "Der berühmte Schwarzwald wirkt im mystischen Morgentau oft wie aus einer fernöstlichen Welt: Tiefe Wolken, unberührte Natur und die dichten, hügeligen Tannenwälder machen die Region zu einem idealen Ort für Yoga Retreats und spirituelle Erfahrungen. Die malerischen Dörfer und verschiedenen Heilbäder sorgen für eine facettenreiche Urlaubszeit. Weniger bekannt aber sehr zu empfehlen ist darüber hinaus der weiter nördlich liegende Naturpark Stromberg-Heuchelberg. Das nationale Schutzgebiet ist gesäumt mit Weinbergen, kleinen Seen und Wäldern und durch seine einzigartige Ruhe ideal für alle, die sich voll und ganz auf sich und ihren Körper fokussieren möchten.",
+            detailsReadMore: "",
+            cardTitle: "Ausgewählte Yoga Retreats in Baden-Württemberg",
+            cardItems: [1, 2, 3, 4, 5, 6, 7],
+            cardCols: "lg:grid-cols-4",
+          },
+          {
+            detailsImage: Brandenburg,
+            detailsTitle: "Weite Landschaften und Wasser vor jeder Tür",
+            detailsDesc:
+              "Das Berliner Umland kommt mit zahlreichen Urlaubsregionen daher: Die Uckermark, der Spreewald und das Havelland sind nur einige von ihnen. Die Gegenden sind nicht nur bei Berliner Yoga- und Natur-Fans beliebt: Erholungssuchende aus ganz Deutschland wissen das vielfältige Netz aus zahlreichen Flüssen und über 3000 Seen zu schätzen! Wenn du dir eine Auszeit von deinem hektischen Alltag wünschst und deinem Körper Entgiftung und deinem Geist Entschleunigung schenken möchtest, dann ist ein Yoga Retreat in in Brandenburg genau das Richtige für dich.",
+            detailsReadMore: "",
+            cardTitle: "Ausgewählte Yoga Retreats in Brandenburg",
+            cardItems: [1, 2, 3, 4, 5, 6, 7],
+            cardCols: "lg:grid-cols-4",
+          },
+          {
+            detailsImage: Nordrhein,
+            detailsTitle: "So viel mehr als nur Ruhrpott: Vielfältiges NRW",
+            detailsDesc:
+              "Vom Teutoburger Wald und dem Sauerland über das Bergische Land bis hin zum Rheinland und Teilen der Eifel gibt es in NRW einige wunderschöne Naherholungsgebiete. Touristisch weniger erschlossen als Deutschlands Küste oder die Alpen bieten dir diese Ferienegionen mehr Ruhe und Abgeschiedenheit. Weit über die Hälfte des Landes ist von Wäldern, Flüssen, Wiesen und Feldern bedeckt! Diese Vielfältigkeit spiegelt sich in deinem Yoga Retreat wider. Freu dich auf Yoga-Sessions auf saftigen Wiesen, direkt am Wasser oder bei einzigartigen Felsformationen wie den Externsteinen in Bad-Meinberg.",
+            detailsReadMore: "",
+            cardTitle: "Ausgewählte Yoga Retreats in Nordrhein-Westfalen",
+            cardItems: [1, 2, 3, 4, 5, 6, 7],
+            cardCols: "lg:grid-cols-4",
+          },
+        ]}
       />
       <ImageGalleryFourPic
         title="Was für ein Yoga Retreat wünschst du dir?"

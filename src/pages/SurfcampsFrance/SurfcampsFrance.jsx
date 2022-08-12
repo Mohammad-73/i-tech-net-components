@@ -34,6 +34,13 @@ import img6 from "../../assets/surfcampFrance/g3/Surfcamps-Frankreich-Natur.jpg"
 //Description
 import Description from "../../components/Description/Description";
 import Moliets from "../../assets/surfcampFrance/details/Surfcamps-Moliets-Frankreich.jpg";
+import Seignosse from "../../assets/surfcampFrance/details/Surfcamps-Seignosse-Frankreich.jpg";
+import Mimizan from "../../assets/surfcampFrance/details/Surfcamp-Mimizan-Plage-Frankreich.jpg";
+import Vieux from "../../assets/surfcampFrance/details/Surfcamp-Vieux-Boucau-Frankreich.jpg";
+import LePinSec from "../../assets/surfcampFrance/details/Surfcamps-Le-Pin-Sec-Frankreich.jpg";
+import Ferret from "../../assets/surfcampFrance/details/Surfcamp-Cap-Ferret-Frankreich.jpg";
+import Biarritz from "../../assets/surfcampFrance/details/Surfurlaub-Biarritz-Frankreich.jpg";
+
 //SingleColImg
 import SingleColImg from "../../components/SingleColImg/SingleColImg";
 import Col31 from "../../assets/surfcampFrance/threeCol/Surfcamps-Frankreich-Anfänger.jpg";
@@ -185,13 +192,78 @@ const SurfcampsFrance = () => {
           "Biarritz",
         ]}
         tabCols="lg:grid-cols-7"
-        detailsImage={Moliets}
-        detailsTitle="Moliets-et-Maa"
-        detailsDesc="Moliets-et-Maa ist zweifelsohne der beliebteste Urlaubsort unter deutschen Surfer:innen in Frankreich. Insbesondere die Jüngeren unter euch kommen hier voll auf ihre Kosten: Der große Campingplatz “Les Cigales” beheimatet eine ganze Reihe an Surfcamps und verwandelt sich über die Sommermonate in ein kleines Festivalgelände.
-        Bis zum Strand und Surfspot sind es nur wenige Gehminuten über die Dünen und der kleine Ortskern wartet mit verschiedenen Restaurants und Bars auf dich. Viele haben ihren ersten Surfurlaub in Moliets verbracht und kamen nicht drumherum auch die nächsten Jahre diese einzigartige Atmosphäre zu genießen. "
-        cardTitle="Top-Surfcamps in Moliets"
-        cardItems={[1, 2, 3, 4]}
-        cardCols="lg:grid-cols-4"
+        tabContents={[
+          {
+            detailsImage: Moliets,
+            detailsTitle: "Moliets-et-Maa",
+            detailsDesc:
+              "Moliets-et-Maa ist zweifelsohne der beliebteste Urlaubsort unter deutschen Surfer:innen in Frankreich. Insbesondere die Jüngeren unter euch kommen hier voll auf ihre Kosten: Der große Campingplatz “Les Cigales” beheimatet eine ganze Reihe an Surfcamps und verwandelt sich über die Sommermonate in ein kleines Festivalgelände. Bis zum Strand und Surfspot sind es nur wenige Gehminuten über die Dünen und der kleine Ortskern wartet mit verschiedenen Restaurants und Bars auf dich. Viele haben ihren ersten Surfurlaub in Moliets verbracht und kamen nicht drumherum auch die nächsten Jahre diese einzigartige Atmosphäre zu genießen. ",
+            detailsReadMore: "",
+            cardTitle: "Top-Surfcamps in Moliets",
+            cardItems: [1, 2, 3, 4, 5, 6, 7],
+            cardCols: "lg:grid-cols-4",
+          },
+          {
+            detailsImage: Seignosse,
+            detailsTitle: "Seignosse",
+            detailsDesc:
+              "Die kleine Gemeinde Seignosse gilt als Strandjuwel an Frankreichs Atlantikküste und ist berühmt für seine Surfspots. Dank der traditionellen Architektur und den vielen kleinen Restaurants und Bars kannst du dich dabei auf einen ganz besonderen Charme freuen. Auch Hossegor, die heimliche Surf-Hauptstadt Europas, kannst du bequem mit dem Fahrrad erreichen. Wenn du Morgens in perfekten Wellen surfen, mittags am Strand entspannen und den Tag mit einem leckeren Essen oder einem ruhigen Konzert abrunden möchtest, ist Seignosse genau die richtige Wahl für dich!",
+            detailsReadMore: "",
+            cardTitle: "Top-Surfcamps in Seignosse",
+            cardItems: [1, 2, 3, 4, 5, 6, 7],
+            cardCols: "lg:grid-cols-4",
+          },
+          {
+            detailsImage: Mimizan,
+            detailsTitle: "Mimizan-Plage",
+            detailsDesc:
+              "Zehn Kilometer feinster Sandstrand, vier Surfspots und endlose Pinienwälder - herzlich Willkommen in Mimizan-Plage. In diesem traumhaften Strandort überkommen dich sofort Sommer- und Urlaubsgefühle. Die Wellen sind das ganze Jahr über konstant und bieten abhängig von der Jahreszeit die passenden Bedingungen sowohl für die ersten Versuche auf dem Surfboard als auch für erfahrene Surfer:innen. Saisonale Märkte, lokale Restaurants und kleine Bars runden deinen Surfurlaub in der Natur ab. Hier bist du sofort raus aus deinem Alltag und genießt dein Leben in vollen Zügen.",
+            detailsReadMore: "",
+            cardTitle: "Top-Surfcamps in Mimizan Plage",
+            cardItems: [1, 2, 3, 4, 5, 6, 7],
+            cardCols: "lg:grid-cols-4",
+          },
+          {
+            detailsImage: Vieux,
+            detailsTitle: "Vieux-Boucau",
+            detailsDesc:
+              "Mit einem Salzwasserbadesee und dem typisch landaisischen Charme begrüßt dich die kleine Gemeinde Vieux-Boucau an der Atlantikküste Südfrankreichs. Wenn du den Sommer in vollen Zügen genießen willst, ist das der perfekte Ort: Der lange Sandstrand und die Weite des Ozeans sind zum Verlieben und die kleinen Restaurants und Bars an der Strandpromenade oder im Ort selber laden zum Verweilen ein. Zudem erwarten dich ein beliebter Skatepark sowie verschiedene saisonale Feste und Märkte, die es zu erkunden gilt. Hier erlebst du garantiert einen unvergesslichen Surfurlaub in entspannter Atmosphäre.",
+            detailsReadMore: "",
+            cardTitle: "Top-Surfcamp in Vieux Boucau",
+            cardItems: [1, 2, 3, 4, 5, 6, 7],
+            cardCols: "lg:grid-cols-4",
+          },
+          {
+            detailsImage: LePinSec,
+            detailsTitle: "Le Pin Sec",
+            detailsDesc:
+              "Le Pin Sec liegt mehr oder weniger auf der Höhe von Bordeaux und ist ein Paradies für alle, die sich einen Surfurlaub in entspannter Atmosphäre mitten in der Natur wünschen. Der Campingplatz liegt direkt hinter der Düne am Strand. Als einer der letzten Geheimtipps in Les Landes, ist hier selbst in den Sommermonaten vergleichsweise wenig los und du findest immer eine Welle, die nicht zu voll ist. Mit einem Surfurlaub in Le Pin Sec vergisst du sofort die Hektik des Stadtlebens und kannst deine Seele in der Sonne baumeln lassen.",
+            detailsReadMore: "",
+            cardTitle: "Top-Surfcamp in Le Pin Sec",
+            cardItems: [1, 2, 3, 4, 5, 6, 7],
+            cardCols: "lg:grid-cols-4",
+          },
+          {
+            detailsImage: Ferret,
+            detailsTitle: "Cap Ferret",
+            detailsDesc:
+              "Ein Ort, an dem Zeit nicht existiert: Mit deiner Ankunft vergisst du sofort alles um dich herum und tauchst ein in eine eigene Welt. Das Cap Ferret ist eine Halbinsel am westlichsten Ende von Gironde, circa 60 Kilometer von Bordeaux entfernt. Der Campingplatz Le Truc Vert liegt im Schatten der Pinienwäldern, nur 300 Meter vom Strand entfernt. Neben deiner Zeit im Wasser, stehen dir hier alle Möglichkeiten offen: Entspanne in der Hängematte, power dich beim Beachvolleyball aus oder erkunde das Nachtleben in einer der Bars.",
+            detailsReadMore: "",
+            cardTitle: "Top-Surfcamp am Cap Ferret",
+            cardItems: [1, 2, 3, 4, 5, 6, 7],
+            cardCols: "lg:grid-cols-4",
+          },
+          {
+            detailsImage: Biarritz,
+            detailsTitle: "Biarritz",
+            detailsDesc:
+              "Biarritz gilt als die Geburtsstätte des Surfens in Europa! Gelegen im französischen Baskenland sind es von hier aus keine 30 Minuten Autofahrt bis nach Spanien. Und das wird in der umgebenden Landschaft sofort deutlich: Anstelle von ewig langen Sandstränden und Pinienwälder dominieren hier felsige Steilküsten mit verschiedenen kleinen Buchten. Doch auch direkt in der Stadt erwarten dich lange Sandstrände. Ohne “Le Surf” geht hier nichts! Früher war die kleine Stadt den Kaisern vorbehalten und diesen königlichen Touch spürst du heute noch. Biarritz ist der perfekte Ort für deinen Surfurlaub, wenn du Surfen und die französische Lebensart erleben willst.",
+            detailsReadMore: "Zu den Details",
+            cardTitle: "Top-Surfcamp in Biarritz",
+            cardItems: [1, 2, 3, 4, 5, 6, 7],
+            cardCols: "lg:grid-cols-4",
+          },
+        ]}
       />
       <SingleColImg
         title="Welches Surflevel passt zu dir?"
