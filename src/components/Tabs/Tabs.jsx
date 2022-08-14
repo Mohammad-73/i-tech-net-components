@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 
 const Tabs = ({ items, cols, handleClick, active }) => {
   const activeClass = "border-[#12A3BA] bg-[#12A3BA] text-white";

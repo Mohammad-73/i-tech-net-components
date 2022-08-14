@@ -11,6 +11,7 @@ import ListAndImg from "../../assets/SurfcampsFuerteventura/Tab-Element-Regionen
 import ListAndImg2 from "../../assets/SurfcampsFuerteventura/Unterkunft/Surfurlaub-Apartments.jpg";
 //SingleCardSection
 import SingleCardSection from "../../components/SingleCardSection/SingleCardSection";
+import cardImage from "../../assets/images/cardImage.jpg";
 //ColorDivider
 import ColorDivider from "../../components/ColorDivider/ColorDivider";
 //ImageGallery3
@@ -95,7 +96,30 @@ const SurfcampFuerteventura = () => {
       />
       <SingleCardSection
         title="Top-Surfcamps in Corralejo"
-        items={[1, 2]}
+        items={[
+          {
+            cardImage: cardImage,
+            title: "Surfcamp mit Pool am Strand von Fuerteventura",
+            location: "Corralejo, Fuerteventura",
+            calender: "Ganzjährig geöffnet",
+            rateDesc: "",
+            price: "269 €",
+            priceTitle: "für 8 Tage",
+            info: "info",
+            ab: "Ab",
+          },
+          {
+            cardImage: cardImage,
+            title: "Surfcamp in Corralejo: Chillen, Surfen & neue Leute",
+            location: "Corralejo, Fuerteventura",
+            calender: "Ganzjährig geöffnet",
+            rateDesc: "",
+            price: "349 €",
+            priceTitle: "für 8 Tage",
+            info: "info",
+            ab: "Ab",
+          },
+        ]}
         cols="lg:grid-cols-3"
       />
       <ListAndImage
@@ -106,7 +130,42 @@ const SurfcampFuerteventura = () => {
       />
       <SingleCardSection
         title="Top-Surfcamps in El Cotillo"
-        items={[1, 2, 3]}
+        items={[
+          {
+            cardImage: cardImage,
+            title: "Surfcamp mit Meerblick auf Fuerteventura",
+            location: "El Cotillo, Fuerteventura",
+            calender: "Ganzjährig geöffnet",
+            rateDesc: "",
+            price: "249 €",
+            priceTitle: "für 8 Tage",
+            info: "info",
+            ab: "Ab",
+          },
+          {
+            cardImage: cardImage,
+            title:
+              "Familiäre Surfvilla in El Cotillo: Surfen & Yoga im Paradies",
+            location: "El Cotillo, Fuerteventura",
+            calender: "Ganzjährig geöffnet",
+            rateDesc: "",
+            price: "560 €",
+            priceTitle: "für 8 Tage",
+            info: "info",
+            ab: "Ab",
+          },
+          {
+            cardImage: cardImage,
+            title: "Surfen in der Sonne: Gemütliche Surfvilla in El Cotillo",
+            location: "El Cotillo, Fuerteventura",
+            calender: "Ganzjährig geöffnet",
+            rateDesc: "",
+            price: "440 €",
+            priceTitle: "für 8 Tage",
+            info: "info",
+            ab: "Ab",
+          },
+        ]}
         cols="lg:grid-cols-3"
       />
       <ColorDivider
@@ -209,7 +268,53 @@ const SurfcampFuerteventura = () => {
       />
       <SingleCardSection
         title="Die beliebtesten Surfcamps auf Fuerteventura"
-        items={[1, 2, 3, 4]}
+        items={[
+          {
+            cardImage: cardImage,
+            title: "Surfcamp in Corralejo: Chillen, Surfen & neue Leute",
+            location: "Corralejo, Fuerteventura",
+            calender: "Ganzjährig geöffnet",
+            rateDesc: "",
+            price: "349 €",
+            priceTitle: "für 8 Tage",
+            info: "info",
+            ab: "Ab",
+          },
+          {
+            cardImage: cardImage,
+            title: "Surfcamp mit Pool am Strand von Fuerteventura",
+            location: "Corralejo, Fuerteventura",
+            calender: "Ganzjährig geöffnet",
+            rateDesc: "",
+            price: "269 €",
+            priceTitle: "für 8 Tage",
+            info: "info",
+            ab: "Ab",
+          },
+          {
+            cardImage: cardImage,
+            title: "Surfen in der Sonne: Gemütliche Surfvilla in El Cotillo",
+            location: "El Cotillo, Fuerteventura",
+            calender: "Ganzjährig geöffnet",
+            rateDesc: "",
+            price: "440 €",
+            priceTitle: "für 8 Tage",
+            info: "info",
+            ab: "Ab",
+          },
+          {
+            cardImage: cardImage,
+            title:
+              "Familiäre Surfvilla in El Cotillo: Surfen & Yoga im Paradies",
+            location: "El Cotillo, Fuerteventura",
+            calender: "Ganzjährig geöffnet",
+            rateDesc: "",
+            price: "560 €",
+            priceTitle: "für 8 Tage",
+            info: "info",
+            ab: "Ab",
+          },
+        ]}
         cols="lg:grid-cols-4"
       />
       <DividerImg

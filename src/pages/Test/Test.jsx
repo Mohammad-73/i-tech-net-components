@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 //SmallNewsletter
 import SmallNewsletter from "../../components/SmallNewsletter/SmallNewsletter";
 import SmallNewsletterImg from "../../assets/images/extra1.jpg";
@@ -19,10 +19,27 @@ import slideImg3 from "../../assets/yogaRetreats/Reiseziele/Yoga-Retreat-Frankre
 import slideImg4 from "../../assets/yogaRetreats/Reiseziele/Yoga-Retreat-Indien.jpg";
 import slideImg5 from "../../assets/yogaRetreats/Reiseziele/Yoga-Retreat-Italien.jpg";
 import slideImg6 from "../../assets/yogaRetreats/Reiseziele/Yoga-Retreat-Kanaren.jpg";
+import i18next from "i18next";
+import { useTranslation } from "react-i18next";
 
 const Test = () => {
+  const { t } = useTranslation();
+  const [lang, setLang] = useState("en");
+
+  const handleLang = (e) => {
+    setLang(e.target.value);
+    i18next.changeLanguage(e.target.value);
+  };
+
   return (
     <div>
+      <form>
+        <select value={lang} onChange={handleLang}>
+          <option value="en">En</option>
+          <option value="du">Du</option>
+        </select>
+      </form>
+      <h1>{t("this_is_an_example")}</h1>
       <SmallNewsletter
         image={SmallNewsletterImg}
         title="NewsLetter"

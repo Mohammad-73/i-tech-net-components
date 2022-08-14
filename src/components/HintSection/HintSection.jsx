@@ -11,6 +11,7 @@ const HintSection = ({ title, description, items }) => {
       <div className="grid md:grid-cols-3">
         {items.map((item, index) => (
           <Hint
+            key={index}
             icon={item.icon}
             title={item.title}
             description={item.description}

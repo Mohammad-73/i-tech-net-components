@@ -85,6 +85,7 @@ const ListAndDesc = ({
             </span>
             {items.map((item, i) => (
               <span
+                key={i}
                 onClick={() => handleClickDot(i)}
                 className={`mx-1 rounded-full ${
                   index === i ? "bg-[#FF9F1C] px-2 py-1" : "bg-slate-500 p-1"
