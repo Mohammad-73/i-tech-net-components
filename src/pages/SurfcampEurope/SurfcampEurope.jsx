@@ -15,8 +15,6 @@ import Hero from "../../components/Hero/Hero";
 //HintSection
 import HintSection from "../../components/HintSection/HintSection";
 import { BiLike, BiStar, BiHeart } from "react-icons/bi";
-//ImageGallery
-import ImageGallery from "../../components/ImageGallery/ImageGallery";
 // ImageGalleryFivePic
 import ImageGalleryFivePic from "../../components/ImageGalleryFivePic/ImageGalleryFivePic";
 import image51 from "../../assets/euro/Zielgruppen/Zielgruppen/Surfcamps-Alleinreisende-Europa.jpg";
@@ -24,8 +22,12 @@ import image52 from "../../assets/euro/Zielgruppen/Zielgruppen/Surfcamps-Freunde
 import image53 from "../../assets/euro/Zielgruppen/Zielgruppen/Familien-Surfurlaub-Europa.jpg";
 import image54 from "../../assets/euro/Zielgruppen/Zielgruppen/Surfcamps-Paare-Europa.jpg";
 import image55 from "../../assets/euro/Zielgruppen/Zielgruppen/Surfcamps-Jugendliche-Europa.jpg";
-//imageGallery2
-import ImageGallery2 from "../../components/ImageGallery2/ImageGallery2";
+import image56 from "../../assets/euro/Kategorien/Kategorien/Surfcamps-Campingurlaub-Europa (2).jpg";
+import image57 from "../../assets/euro/Kategorien/Kategorien/Surfhaeuser-Apartments-Lodges-Europa.jpg";
+import image58 from "../../assets/euro/Kategorien/Kategorien/Surfcamps-in-der-Natur.jpg";
+import image59 from "../../assets/euro/Kategorien/Kategorien/Surfcamps-mit-flexiblen-Stornierungsbedingungen.jpg";
+import image60 from "../../assets/euro/Kategorien/Kategorien/Low-Budget-Surfcamps.jpg";
+//ListAndImage
 import ListAndImage from "../../components/ListAndImage/ListAndImage";
 import NavBar from "../../components/NavBar/NavBar";
 //DividerImg
@@ -452,11 +454,38 @@ const SurfcampEurope = () => {
         ]}
         readMore=""
       />
-      <ImageGallery2 />
+      <ImageGalleryFivePic
+        reverse={true}
+        title={t("euro_5_part_linked_image_title")}
+        image1={{
+          img: image56,
+          title: t("euro_5_part_linked_image_tab1"),
+          description: t("euro_5_part_linked_image_desc1"),
+        }}
+        image2={{
+          img: image57,
+          title: t("euro_5_part_linked_image_tab2"),
+          description: t("euro_5_part_linked_image_desc2"),
+        }}
+        image3={{
+          img: image58,
+          title: t("euro_5_part_linked_image_tab3"),
+          description: t("euro_5_part_linked_image_desc3"),
+        }}
+        image4={{
+          img: image59,
+          title: t("euro_5_part_linked_image_tab4"),
+          description: t("euro_5_part_linked_image_desc4"),
+        }}
+        image5={{
+          img: image60,
+          title: t("euro_5_part_linked_image_tab5"),
+          description: t("euro_5_part_linked_image_desc5"),
+        }}
+      />
       <SingleCardSection
-        title="Empfohlene Surfcamps in Europa"
-        description="Entdecke Surfcamps, die von Reisenden mit mindestens 4,5 von 5 Sternen
-      bewertet sind, und erlebe deinen Traumurlaub am Meer!"
+        title={t("euro_offer_element_title")}
+        description={t("euro_offer_element_text")}
         items={[
           {
             cardImage: cardImage,
@@ -683,81 +712,76 @@ const SurfcampEurope = () => {
       />
       <DividerImg
         align="center"
-        title="Entdecke alle Surfcamps in Europa"
-        description="Über 100 qualitätsgeprüfte Surfcamps für dein Abenteuer in den Wellen"
+        title={t("euro_divider_with_image_as_background_title")}
+        description={t("euro_divider_with_image_as_background_subtitle")}
         image={DividerImage}
-        buttonTitle="Zur Übersicht"
+        buttonTitle={t("euro_divider_with_image_as_background_button")}
       />
       <SingleColImg
-        title="Finde passende Surfcamps für dein Surflevel"
-        description="Ganz gleich ob du noch nie auf einem Surfbrett standest oder schon Erfahrungen in den Wellen mitbringst - mit dem passenden Surfkurs für deine Vorkenntnisse hast du mehr Spaß im Wasser und erreichst garantiert das nächste Level!"
+        title={t("euro_3_part_linked_image_element_title")}
+        description={t("euro_3_part_linked_image_element_text")}
         items={[
           {
             img: Col31,
-            title: "Surfcamps für Anfänger:innen",
-            description:
-              "Surfe die ersten Wellen deines Lebens und erlebe dieses unbeschreibliche Gefühl",
+            title: t("euro_3_part_linked_image_element_tab1"),
+            description: t("euro_3_part_linked_image_element_desc1"),
           },
           {
             img: Col32,
-            title: "Surfcamps für Fortgeschrittene",
-            description:
-              "Surfe grüne Wellen und lerne deine ersten Turns und Manöver",
+            title: t("euro_3_part_linked_image_element_tab2"),
+            description: t("euro_3_part_linked_image_element_desc2"),
           },
           {
             img: Col33,
-            title: "Surfaris für erfahrene Surfer:innen",
-            description:
-              "Sei immer zur richtigen Zeit am richtigen Ort und finde deine perfekte Welle",
+            title: t("euro_3_part_linked_image_element_tab3"),
+            description: t("euro_3_part_linked_image_element_desc3"),
           },
         ]}
         cols="md:grid-cols-3"
       />
       <ImageGallery3
-        title="Das gewisse Extra für deinen Surfurlaub"
-        description="Liebst du die Abwechslung? Dann erlebst du mit diesen
-       Kombinationen deinen Surfurlaub der besonderen Art:"
+        title={t("euro_6_part_linked_image_title")}
+        description={t("euro_6_part_linked_image_subtitle")}
         items={[
           {
             img: Extra1,
             shadow: "80",
-            title: "Surf- & Yoga-Camps",
+            title: t("euro_6_part_linked_image_tab1"),
           },
           {
             img: Extra2,
             shadow: "80",
-            title: "Surf & Pilates Reisen",
+            title: t("euro_6_part_linked_image_tab2"),
           },
           {
             img: Extra3,
             shadow: "80",
-            title: "Surf & Pole Dance Urlaub",
+            title: t("euro_6_part_linked_image_tab3"),
           },
           {
             img: Extra4,
             shadow: "80",
-            title: "Flexible Stornierung",
+            title: t("euro_6_part_linked_image_tab4"),
           },
           {
             img: Extra5,
             shadow: "80",
-            title: "Low Budget Surfcamps",
+            title: t("euro_6_part_linked_image_tab5"),
           },
           {
             img: Extra6,
             shadow: "80",
-            title: "Surfcamps in der Natur",
+            title: t("euro_6_part_linked_image_tab6"),
           },
         ]}
       />
       <DividerImg
         align="left"
-        title="Entdecke alle Surfcamps in Europa"
-        description="Über 100 qualitätsgeprüfte Surfcamps für dein Abenteuer in den
-      Wellen"
+        title={t("euro_divider_with_image_as_background_title2")}
+        description={t("euro_divider_with_image_as_background_subtitle2")}
         image={Besonderheiten}
         dark={true}
-        buttonTitle="Zur Übersicht"
+        buttonTitle={t("euro_divider_with_image_as_background_button2")}
         icon={<BiRightArrowAlt size={30} />}
       />
       <RateCardSection

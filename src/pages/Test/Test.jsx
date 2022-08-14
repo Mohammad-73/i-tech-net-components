@@ -39,7 +39,7 @@ const Test = () => {
           <option value="du">Du</option>
         </select>
       </form>
-      <h1>{t("this_is_an_example")}</h1>
+      <h1>{t("euro_big_tab_element_text2")}</h1>
       <SmallNewsletter
         image={SmallNewsletterImg}
         title="NewsLetter"
