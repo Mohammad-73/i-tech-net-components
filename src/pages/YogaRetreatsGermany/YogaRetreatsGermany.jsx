@@ -1,4 +1,5 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 // Hero
 import Hero from "../../components/Hero/Hero";
 //HorizontalHintSection
@@ -67,61 +68,57 @@ import { BsWhatsapp } from "react-icons/bs";
 import TagSection from "../../components/TagSection/TagSection";
 
 const YogaRetreatsGermany = () => {
+  const { t } = useTranslation();
   return (
     <div>
       <Hero
         image="bg-hero-yoga-in-deutschland"
-        title="Yoga Retreats in Deutschland"
-        description="Deine unkomplizierte Auszeit zum Wohlfühlen"
+        title={t("germany_header_title")}
+        description={t("germany_header_subtitle")}
       />
       <HorizontalHintSection
         bgColor=""
         items={[
           {
             icon: <FaBalanceScale size={56} />,
-            title: "Ganzheitliches Erlebnis",
-            description:
-              "Stärke deine innere Balance bei einer wohlverdienten Yoga-Auszeit und erfahre den Einklang von Körper, Geist und Seele durch ganzheitliche Retreat-Ansätze.",
+            title: t("germany_4_symbol_title1"),
+            description: t("germany_4_symbol_text1"),
           },
           {
             icon: <FaSearchLocation size={56} />,
-            title: "Wunderschönes Deutschland",
-            description:
-              "Lerne Deutschland von seiner schönsten Seite kennen bei einem Yoga-Urlaub ganz ohne weite Anreise und mit viel Zeit für dich und die Natur.",
+            title: t("germany_4_symbol_title2"),
+            description: t("germany_4_symbol_text2"),
           },
           {
             icon: <FaPrayingHands size={56} />,
-            title: "Liebe für Yoga",
-            description:
-              "Erlebe die passionierte Hingabe und das wertvolle Wissen deiner Retreatleiter:innen für einen ausgewogenen Lebensstil und Yoga - ganz ohne Sprachbarriere!",
+            title: t("germany_4_symbol_title3"),
+            description: t("germany_4_symbol_text3"),
           },
           {
             icon: <FaMapSigns size={56} />,
-            title: "Neue Lebensenergie",
-            description:
-              "Lasse dich von neuen Erfahrungen und Impulsen inspirieren und nehme die einzigartige Möglichkeit wahr, völlig abzuschalten und dabei neue Kraft zu schöpfen.",
+            title: t("germany_4_symbol_title4"),
+            description: t("germany_4_symbol_text4"),
           },
         ]}
       />
       <Description
-        titel="Ausgewählte Regionen für dein Yoga Retreat"
+        title={t("germany_divider_big_tab_title")}
         tabItems={[
-          "Ostsee",
-          "Nordsee",
-          "Bayern",
-          "Baden-Württemberg",
-          "Brandenburg",
-          "Nordrhein-Westfalen",
+          t("germany_divider_big_tab1"),
+          t("germany_divider_big_tab2"),
+          t("germany_divider_big_tab3"),
+          t("germany_divider_big_tab4"),
+          t("germany_divider_big_tab5"),
+          t("germany_divider_big_tab6"),
         ]}
         tabCols="lg:grid-cols-6"
         tabContents={[
           {
             detailsImage: Ostsee,
-            detailsTitle: "Von Usedom bis Flensburg: Urlaubsfeeling pur",
-            detailsDesc:
-              "Die Ostsee ist nicht umsonst eine der beliebtesten Ferienregionen Deutschlands. Weite Sandstrände und das milde Wetter laden dich dazu ein, deine Yogamatte unter freiem Himmel auszurollen. Die frische Meeresbrise lässt dich sofort gelassener werden und macht deine Yoga-Sessions zu einem ganz besonderen Erlebnis. Freund:innen von ausgedehnten Spaziergängen und eindrucksvoller Natur kommen auf Rügen am meisten auf ihre Kosten. Die beeindruckenden weißen Felsen der Kreideküste, ursprüngliche Buchenwälder sowie unzählige Freizeitangebote bieten dir jeden Tag neue Erlebnisse. Aber auch die “Sonneninsel” Usedom lockt mit traumhaften Bedingungen, wenn du auf der Suche nach geistiger Ruhe und Entspannung bist.",
+            detailsTitle: t("germany_divider_big_tab1_title"),
+            detailsDesc: t("germany_divider_big_tab1_text"),
             detailsReadMore: "",
-            cardTitle: "Ausgewählte Yoga Retreats an der Ostsee",
+            cardTitle: t("germany_divider_big_tab1_more"),
             cardItems: [
               {
                 cardImage: cardImage,
@@ -172,11 +169,10 @@ const YogaRetreatsGermany = () => {
           },
           {
             detailsImage: Nordsee,
-            detailsTitle: "Spüre die Kraft der rauen Nordseeküste",
-            detailsDesc:
-              "Nirgendwo sonst kannst du in Deutschland die Natur so wahr- und aufnehmen wie an der Nordsee: Die wechselnden Gezeiten haben mit dem Wattenmeer ein einzigartiges Naturphänomen geschaffen, das 2009 zum UNESCO-Weltkulturerbe ernannt wurde. Endlose Sandstrände und rauschende Wellen lassen dich ein unverwechselbares Gefühl der Freiheit empfinden. Die Nordfriesischen Inseln Langeoog und Norderney bieten dir mit ihren autofreien Zonen und beruhigenden Dünenlandschaften einen ganz besonderen Rückzugsort. Abgeschieden vom Festland und mit genügend Zeit für dich und deine Yogapraxis hast du hier die Möglichkeit, deine Akkus wieder nachhaltig aufzuladen.",
+            detailsTitle: t("germany_divider_big_tab2_title"),
+            detailsDesc: t("germany_divider_big_tab2_text"),
             detailsReadMore: "",
-            cardTitle: "Ausgewählte Yoga Retreats an der Nordsee",
+            cardTitle: t("germany_divider_big_tab2_more"),
             cardItems: [
               {
                 cardImage: cardImage,
@@ -227,11 +223,10 @@ const YogaRetreatsGermany = () => {
           },
           {
             detailsImage: Bayern,
-            detailsTitle: "Yoga mit Ausblick auf Berge, Seen und Täler",
-            detailsDesc:
-              "Eine ausgedehnte Yogasession mit umwerfender Aussicht auf die umliegende Alpenlandschaft - was gibt es besseres? Die Menschen in Bayern zeichnet ihre starke Verbundenheit zur Natur sowie eine unvergleichliche Gelassenheit aus, welche sich direkt auf dich und deinen Aufenthalt überträgt. Neben Oberbayern bieten auch Regionen wie das Franken- oder das Schwabenland optimale Bedingungen für deine Yoga-Auszeit. In Bayern erwarten dich unvergessliche Erfahrungen wie das Schwimmen in erfrischenden Alpenseen, die Teilnahme an ganzheitlichen Yoga-Wanderungen oder andere inspirierende Ausflüge!",
+            detailsTitle: t("germany_divider_big_tab3_title"),
+            detailsDesc: t("germany_divider_big_tab3_text"),
             detailsReadMore: "",
-            cardTitle: "Ausgewählte Yoga Retreats in Bayern",
+            cardTitle: t("germany_divider_big_tab3_more"),
             cardItems: [
               {
                 cardImage: cardImage,
@@ -272,11 +267,10 @@ const YogaRetreatsGermany = () => {
           },
           {
             detailsImage: Baden,
-            detailsTitle: "Immergrüne Wälder und beruhigende Seen",
-            detailsDesc:
-              "Der berühmte Schwarzwald wirkt im mystischen Morgentau oft wie aus einer fernöstlichen Welt: Tiefe Wolken, unberührte Natur und die dichten, hügeligen Tannenwälder machen die Region zu einem idealen Ort für Yoga Retreats und spirituelle Erfahrungen. Die malerischen Dörfer und verschiedenen Heilbäder sorgen für eine facettenreiche Urlaubszeit. Weniger bekannt aber sehr zu empfehlen ist darüber hinaus der weiter nördlich liegende Naturpark Stromberg-Heuchelberg. Das nationale Schutzgebiet ist gesäumt mit Weinbergen, kleinen Seen und Wäldern und durch seine einzigartige Ruhe ideal für alle, die sich voll und ganz auf sich und ihren Körper fokussieren möchten.",
+            detailsTitle: t("germany_divider_big_tab4_title"),
+            detailsDesc: t("germany_divider_big_tab4_text"),
             detailsReadMore: "",
-            cardTitle: "Ausgewählte Yoga Retreats in Baden-Württemberg",
+            cardTitle: t("germany_divider_big_tab4_more"),
             cardItems: [
               {
                 cardImage: cardImage,
@@ -327,11 +321,10 @@ const YogaRetreatsGermany = () => {
           },
           {
             detailsImage: Brandenburg,
-            detailsTitle: "Weite Landschaften und Wasser vor jeder Tür",
-            detailsDesc:
-              "Das Berliner Umland kommt mit zahlreichen Urlaubsregionen daher: Die Uckermark, der Spreewald und das Havelland sind nur einige von ihnen. Die Gegenden sind nicht nur bei Berliner Yoga- und Natur-Fans beliebt: Erholungssuchende aus ganz Deutschland wissen das vielfältige Netz aus zahlreichen Flüssen und über 3000 Seen zu schätzen! Wenn du dir eine Auszeit von deinem hektischen Alltag wünschst und deinem Körper Entgiftung und deinem Geist Entschleunigung schenken möchtest, dann ist ein Yoga Retreat in in Brandenburg genau das Richtige für dich.",
+            detailsTitle: t("germany_divider_big_tab5_title"),
+            detailsDesc: t("germany_divider_big_tab5_text"),
             detailsReadMore: "",
-            cardTitle: "Ausgewählte Yoga Retreats in Brandenburg",
+            cardTitle: t("germany_divider_big_tab5_more"),
             cardItems: [
               {
                 cardImage: cardImage,
@@ -383,11 +376,10 @@ const YogaRetreatsGermany = () => {
           },
           {
             detailsImage: Nordrhein,
-            detailsTitle: "So viel mehr als nur Ruhrpott: Vielfältiges NRW",
-            detailsDesc:
-              "Vom Teutoburger Wald und dem Sauerland über das Bergische Land bis hin zum Rheinland und Teilen der Eifel gibt es in NRW einige wunderschöne Naherholungsgebiete. Touristisch weniger erschlossen als Deutschlands Küste oder die Alpen bieten dir diese Ferienegionen mehr Ruhe und Abgeschiedenheit. Weit über die Hälfte des Landes ist von Wäldern, Flüssen, Wiesen und Feldern bedeckt! Diese Vielfältigkeit spiegelt sich in deinem Yoga Retreat wider. Freu dich auf Yoga-Sessions auf saftigen Wiesen, direkt am Wasser oder bei einzigartigen Felsformationen wie den Externsteinen in Bad-Meinberg.",
+            detailsTitle: t("germany_divider_big_tab6_title"),
+            detailsDesc: t("germany_divider_big_tab6_text"),
             detailsReadMore: "",
-            cardTitle: "Ausgewählte Yoga Retreats in Nordrhein-Westfalen",
+            cardTitle: t("germany_divider_big_tab6_more"),
             cardItems: [
               {
                 cardImage: cardImage,
@@ -439,114 +431,108 @@ const YogaRetreatsGermany = () => {
         ]}
       />
       <ImageGalleryFourPic
-        title="Was für ein Yoga Retreat wünschst du dir?"
+        title={t("germany_4_clickable_box_title")}
         items={[
           {
             img: img1,
             shadow: "80",
-            title: "Yoga Wochenenden",
-            description:
-              "Gönne dir eine kurze Auszeit vom Alltag und erlebe ein ausgeglichenes Wochenende voller Yoga und Entspannung",
+            title: t("germany_4_clickable_box_item1_title"),
+            description: t("germany_4_clickable_box_item1_text"),
           },
           {
             img: img2,
             shadow: "80",
-            title: "Stille Retreats",
-            description: "Erkunde dein Inneres beim kollektiven Schweigen",
+            title: t("germany_4_clickable_box_item2_title"),
+            description: t("germany_4_clickable_box_item2_text"),
           },
           {
             img: img3,
             shadow: "80",
-            title: "Spirituelle Yoga Retreats",
-            description: "Erlebe die Kraft deiner eigenen Spiritualität",
+            title: t("germany_4_clickable_box_item3_title"),
+            description: t("germany_4_clickable_box_item3_text"),
           },
           {
             img: img4,
             shadow: "80",
-            title: "Yoga & Meditations Retreats",
-            description:
-              "Beruhige deinen Geist bei regelmäßigen Achtsamkeitsübungen und Mediationen zwischen deinen Yoga-Einheiten",
+            title: t("germany_4_clickable_box_item4_title"),
+            description: t("germany_4_clickable_box_item4_text"),
           },
         ]}
       />
       <HorizontalCardSection
-        title="Yogalehrer:innen im Fokus"
-        description="Die Yogalehrer:innen gestalten das Programm ihrer Retreats mit viel Liebe sowie ihren persönlichen Erfahrungen und Vorstellungen, was jedes Retreat einzigartig werden lässt. Sie teilen ihren individuellen Ansatz und ihre Leidenschaft für Yoga mit dir vor, während und nach der gemeinsamen Yoga-Einheiten und sind zusammen mit dir die Seele eines jeden Retreats!"
+        title={t("germany_4_slide_title")}
+        description={t("germany_4_slide_subtitle")}
         items={[
           {
             image: hImg1,
-            description:
-              "Unsere Yogaschule bietet ein breites Spektrum an Wissen und Erfahrung der klassischen und modernen Yogastile des integralen Yoga, sowie das traditionelle Wissen des Ayurveda.",
+            description: t("germany_4_slide_item1_text"),
             name: "Frithjof Bluhm",
-            details: "Yogalehrer, Fitnesstrainer & Meditationslehrer auf Rügen",
+            details: t("germany_4_slide_item1_desc"),
           },
           {
             image: hImg2,
-            description:
-              "Für mich ist Yoga eine wunderbare Möglichkeit mich zu erspüren, mich besser kennen zu lernen und mich ganz und gar wohl zu fühlen.",
+            description: t("germany_4_slide_item2_text"),
             name: "Sylvia Asmodena Kurtar",
-            details: "Yoga- & Lu Jong-Lehrerin aus Ochsenfurt",
+            details: t("germany_4_slide_item2_desc"),
           },
           {
             image: hImg3,
-            description:
-              "Die Free Spirits Family heißt jeden willkommen, der sich mit offenem Herzen & Mindset einer besseren Welt öffnen möchte. Mit deiner einzigartigen Art & Weise bist du eine Inspiration für uns! ",
+            description: t("germany_4_slide_item3_text"),
             name: "Sara-Lyn Chana",
-            details: "Yogalehrerin & Pilatestrainerin aus Hamburg",
+            details: t("germany_4_slide_item3_desc"),
           },
           {
             image: hImg4,
-            description:
-              "Ein Retreat bedeutet für mich, sich Zeit zu nehmen, den Alltagstrott einige Momente hinter sich zu lassen und sich nach innen zu kehren um somit wieder Energie für all unsere Aufgaben zu schöpfen",
+            description: t("germany_4_slide_item4_text"),
             name: "Tammy Assanoff",
-            details: "Yogalehrerin aus Köln",
+            details: t("germany_4_slide_item4_desc"),
           },
         ]}
       />
       <ColorDivider
-        title="Yoga Retreats buchen ohne Risiko"
-        description="Wir bieten dir flexible Stornierungsbedingungen mit 100 % Rückerstattung!"
-        buttonTitle="Mehr erfahren"
+        title={t("germany_narrow_divider_element_title")}
+        description={t("germany_narrow_divider_element_text")}
+        buttonTitle={t("germany_narrow_divider_element_button")}
       />
       <ImageGallery3
-        title="Inspirierende Unterkünfte für dein Yoga Retreat"
-        description="Die Umgebung ist ausschlaggebend für jedes Yoga Retreat. Diese Retreats laden dich mit einzigartigen Unterkünften zu einem ganz besonderen Retreaterlebnis ein. Spüre den Einfluss deiner Umwelt auf dich und dein Bewusstsein bei außergewöhnlichen Yogasessions!"
+        title={t("germany_6_clickable_boxes_title")}
+        description={t("germany_6_clickable_boxes_subtitle")}
         items={[
           {
             img: imgGallery1,
             shadow: "80",
-            title: "Yoga Retreat im Chiemgauer Retreat Center",
+            title: t("germany_6_clickable_boxes_item1"),
           },
           {
             img: imgGallery2,
             shadow: "80",
-            title: "Yoga Reatreat im Fastenhof",
+            title: t("germany_6_clickable_boxes_item2"),
           },
           {
             img: imgGallery3,
             shadow: "80",
-            title: "Yoga Retreat im Bio-Strandhotel",
+            title: t("germany_6_clickable_boxes_item3"),
           },
           {
             img: imgGallery4,
             shadow: "80",
-            title: "Yoga Retreat im Designer-Holzhaus",
+            title: t("germany_6_clickable_boxes_item4"),
           },
           {
             img: imgGallery5,
             shadow: "80",
-            title: "Yoga Retreat im Reetdachhaus am Meer",
+            title: t("germany_6_clickable_boxes_item5"),
           },
           {
             img: imgGallery6,
             shadow: "80",
-            title: "Yoga Retreat im Kloster",
+            title: t("germany_6_clickable_boxes_item6"),
           },
         ]}
       />
       <SingleCardSection
-        title="Ausgewählte Yoga Retreats in Seminarhäusern"
-        description="Der Klassiker unter den Retreats: Seminarhäuser bieten Yogalehrer:innen die Möglichkeit, ihre Yogapraxis aus dem Studio in ein neues Umfeld zu verlagern und mit zusätzlichen Inhalten und Impulsen zu vereinen!"
+        title={t("germany_offer_element_title")}
+        description={t("germany_offer_element_subtitle")}
         items={[
           {
             cardImage: cardImage,
@@ -667,38 +653,38 @@ const YogaRetreatsGermany = () => {
         buttonTitle="Kontakt aufnehmen"
       />
       <ImageGalleryBrick2
-        title="Nachhaltige Yoga Retreats"
+        title={t("germany_7_clickable_boxex_title")}
         image1={{
           img: image6,
-          title: "Yoga & Wellness Reisen",
+          title: t("germany_7_clickable_boxex_item1"),
         }}
         image2={{
           img: image7,
-          title: "Yoga & Fasten Reisen",
+          title: t("germany_7_clickable_boxex_item2"),
         }}
         image3={{
           img: image8,
-          title: "Flexible Stornierungsbedingungen",
+          title: t("germany_7_clickable_boxex_item3"),
         }}
         image4={{
           img: image9,
-          title: "Yoga & Wander Urlaube",
+          title: t("germany_7_clickable_boxex_item4"),
         }}
         image5={{
           img: image10,
-          title: "Yoga Retreats für Anfänger:innen",
+          title: t("germany_7_clickable_boxex_item5"),
         }}
         image6={{
           img: image11,
-          title: "Yoga & Windsurfen",
+          title: t("germany_7_clickable_boxex_item6"),
         }}
         image7={{
           img: image12,
-          title: "Yoga & Fahrrad Urlaub",
+          title: t("germany_7_clickable_boxex_item7"),
         }}
       />
       <SingleCardSection
-        title="Empfohlene Yoga Retreats in Deutschland"
+        title={t("germany_offer_element2_title")}
         items={[
           {
             cardImage: cardImage,
@@ -838,31 +824,28 @@ const YogaRetreatsGermany = () => {
       <DividerImg
         image={Suchst}
         align="left"
-        title="Entdecke alle Yoga Retreats in Deutschland"
-        buttonTitle="Zur Übersicht"
+        title={t("germany_divider_title")}
+        buttonTitle={t("germany_divider_button")}
       />
       <HintSection
-        title="Unsere Versprechen für dein Yoga Retreat"
+        title={t("germany_3_symbol_element_title")}
         items={[
           {
             icon: <BiLike size={38} />,
-            title: "100% Rückerstattung",
-            description:
-              "Transparent und stressfrei! Erhalte mit unseren flexiblen Stornierungsbedingungen den vollen Betrag zurückerstattet.",
+            title: t("germany_3_symbol_element_item1_title"),
+            description: t("germany_3_symbol_element_item1_subtitle"),
             readMore: "Zu den Details",
           },
           {
             icon: <BiStar size={38} />,
-            title: "Qualitätsgeprüfte Reisen",
-            description:
-              "Alle Reisen sind von Sportexperten ausgewählt und von unabhängigen Kunden mit mindestens 4,5 von 5 Sternen bewertet!",
+            title: t("germany_3_symbol_element_item2_title"),
+            description: t("germany_3_symbol_element_item2_subtitle"),
             readMore: "Zu den Details",
           },
           {
             icon: <BiHeart size={38} />,
-            title: "Persönliche Beratung",
-            description:
-              "Wir lieben, was wir tun und sind immer an deiner Seite! Kontaktiere uns einfach per Email, Telefon oder WhatsApp.",
+            title: t("germany_3_symbol_element_item3_title"),
+            description: t("germany_3_symbol_element_item3_subtitle"),
             readMore: "Zu den Details",
           },
         ]}
@@ -898,38 +881,38 @@ const YogaRetreatsGermany = () => {
         ]}
       />
       <TagSection
-        title="Noch mehr Inspiration für dein Yoga Retreat"
+        title={t("germany_links_title")}
         cols="xl:grid-cols-3"
         items={[
           {
-            title: "Ausgewählte Reiseziele",
+            title: t("germany_links_col1_title"),
             items: [
-              "Yoga Retreats in Portugal",
-              "Yoga Retreats auf Mallorca",
-              "Yoga Retreats in Italien",
-              "Yoga Retreats in Österreich",
-              "Yoga Retreats in Spanien",
-              "Yoga Retreats in Griechenland",
+              t("germany_links_col1_item1"),
+              t("germany_links_col1_item2"),
+              t("germany_links_col1_item3"),
+              t("germany_links_col1_item4"),
+              t("germany_links_col1_item5"),
+              t("germany_links_col1_item6"),
             ],
           },
           {
-            title: "Top-Kategorien",
+            title: t("germany_links_col2_title"),
             items: [
-              "Yoga Wochenenden",
-              "Spirituelle Yoga Retreats",
-              "Yoga & Surf Reisen",
-              "Yoga & Wander Urlaube",
-              "Yoga & Wellness Reisen",
+              t("germany_links_col2_item1"),
+              t("germany_links_col2_item2"),
+              t("germany_links_col2_item3"),
+              t("germany_links_col2_item4"),
+              t("germany_links_col2_item5"),
             ],
           },
           {
-            title: "Unser Reisemagazin",
+            title: t("germany_links_col3_title"),
             items: [
-              "Yoga Retreat in Deutschland",
-              "Yoga für Anfänger:innen",
-              "Yoga-Arten",
-              "Nordic Walking + Yoga = Nordic Yoga",
-              "9 Yoga-Weisheiten",
+              t("germany_links_col3_item1"),
+              t("germany_links_col3_item2"),
+              t("germany_links_col3_item3"),
+              t("germany_links_col3_item4"),
+              t("germany_links_col3_item5"),
             ],
           },
         ]}

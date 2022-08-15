@@ -1,4 +1,5 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 // Hero
 import Hero from "../../components/Hero/Hero";
 //HorizontalHintSection
@@ -50,52 +51,49 @@ import { BsWhatsapp } from "react-icons/bs";
 import TagSection from "../../components/TagSection/TagSection";
 
 const SurfcampFuerteventura = () => {
+  const { t } = useTranslation();
   return (
     <div>
       {" "}
       <Hero
         image="bg-hero-frankreich"
-        title="Surfcamps in Frankreich"
-        description="Erlebe Sonne, Wellen und gute Laune"
+        title={t("fuerteventura_header_title")}
+        description={t("fuerteventura_header_subtitle")}
       />
       <HorizontalHintSection
         bgColor=""
         items={[
           {
             icon: <MdWaves size={56} />,
-            title: "Perfekte Wellen",
-            description:
-              "Von sanften Beachbreaks bis hin zu steilen Riffwellen - Fuerteventura bietet die passenden Wellen für alle Surflevel!",
+            title: t("fuerteventura_4_symbol_item1_title"),
+            description: t("fuerteventura_4_symbol_item1_subtitle"),
           },
           {
             icon: <FaSun size={56} />,
-            title: "Sommerliches Wetter",
-            description:
-              "Die Insel des ewigen Frühlings - mit durchschnittlich 23 Grad erwarten dich das ganze Jahr über Sonne und Sommergefühle!",
+            title: t("fuerteventura_4_symbol_item2_title"),
+            description: t("fuerteventura_4_symbol_item2_subtitle"),
           },
           {
             icon: <FaLeaf size={56} />,
-            title: "Einzigartige Landschaft",
-            description:
-              "Eine Landschaft wie auf dem Mond und über 100 kilometer weißer Sandstrand mit türkisem Wasser - eine faszinierende Kombination!",
+            title: t("fuerteventura_4_symbol_item3_title"),
+            description: t("fuerteventura_4_symbol_item3_subtitle"),
           },
           {
             icon: <FaHeart size={56} />,
-            title: "Entspannte Atmosphäre",
-            description:
-              "Erstmal entspannen und das Leben genießen - dieses Lebensmotto der Kanaren überträgt sich sofort auf dich und deinen Urlaub!",
+            title: t("fuerteventura_4_symbol_item4_title"),
+            description: t("fuerteventura_4_symbol_item4_subtitle"),
           },
         ]}
       />
       <ListAndImage
-        mainTitle="Die beliebtesten Orte für einen Surfurlaub auf Fuerteventura"
-        mainDescription="Einsame Strände, die du nur über Schotterpisten erreichst - das erwartet dich entlang der Westküste Fuerteventuras. Als Basis für dein Surfcamp bietet sich hier der kleine und noch ursprüngliche Ort El Cotillo an. Die Alternative zu El Cotillo ist Corralejo im Norden Fuerteventuras. Corralejo ist der beliebteste Ort für einen Surfurlaub. Hier ist deutlich mehr los und die Nordküste ist bekannt für ihre weltklasse Surfspots."
+        mainTitle={t("fuerteventura_image_and_text_element_title")}
+        mainDescription={t("fuerteventura_image_and_text_element_subtitle")}
         image={ListAndImg}
-        title="Corralejo"
-        description="Eine Altstadt mit verwinkelten Gassen, traumhafte weiße Sandstrände und ein Naturpark mit einer einzigartigen Dünenlandschaft - Corralejo bietet dir die perfekte Mischung aus Ruhe und Action: Hier hast du immer die Wahl, ob du am Strand entspannen oder in einer der vielen Tapas-Bars das kanarische Leben genießen willst. Die Auswahl an Surfspots rund um Corralejo ist riesig. Der Großteil der Surfspots eignet sich dabei insbesondere für fortgeschrittene Surfer:innen. Doch auch für die ersten Versuche auf dem Surfbrett findest du dank der Ortskenntnis der Surflehrer:innen immer eine passende Welle."
+        title={t("fuerteventura_image_and_text_element_item1_title")}
+        description={t("fuerteventura_image_and_text_element_item1_subtitle")}
       />
       <SingleCardSection
-        title="Top-Surfcamps in Corralejo"
+        title={t("fuerteventura_image_and_text_element_item1_offers")}
         items={[
           {
             cardImage: cardImage,
@@ -124,12 +122,11 @@ const SurfcampFuerteventura = () => {
       />
       <ListAndImage
         image={ListAndImg2}
-        title="El Cotillo"
-        description="El Cotillo im Nordwesten Fuerteventuras ist die deutlich ruhigere Alternative zu Corralejo. Wenn du durch den kleinen Strandort schlenderst, hast du das Gefühl in einer anderen Welt zu sein. Alles um dich herum wirkt nochmals entspannter und die Menschen begrüßen dich mit einem fröhlichen Lächeln. Hier kannst du alles um dich herum vergessen und einfach nur genießen!
-        Der lange Sandstrand liegt direkt vor deiner Haustür und bietet insbesondere für Anfänger:innen ideale Wellen. Fortgeschrittene erwartet eine große Auswahl an Surfspots entlang der Nord- und Ostküste."
+        title={t("fuerteventura_image_and_text_element_item2_title")}
+        description={t("fuerteventura_image_and_text_element_item2_subtitle")}
       />
       <SingleCardSection
-        title="Top-Surfcamps in El Cotillo"
+        title={t("fuerteventura_image_and_text_element_item2_offers")}
         items={[
           {
             cardImage: cardImage,
@@ -169,76 +166,72 @@ const SurfcampFuerteventura = () => {
         cols="lg:grid-cols-3"
       />
       <ColorDivider
-        title="Urlaub buchen ohne Risiko"
-        description="Wir bieten dir flexible Stornierungsbedingungen mit 100% Rückerstattung!"
-        buttonTitle="Mehr erfahren"
+        title={t("fuerteventura_narrow_divider_title")}
+        description={t("fuerteventura_narrow_divider_subtitle")}
+        buttonTitle={t("fuerteventura_narrow_divider_button")}
       />
       <ImageGallery3
-        title="Ausgewählte Kategorien für deinen Surfurlaub"
+        title={t("fuerteventura_6_part_linked_image_element_title")}
         items={[
           {
             img: imgGallery1,
             shadow: "80",
-            title: "Surfcamps für Anfänger:innen",
+            title: t("fuerteventura_6_part_linked_image_element_item1"),
           },
           {
             img: imgGallery2,
             shadow: "80",
-            title: "Surfcamps in der Natur",
+            title: t("fuerteventura_6_part_linked_image_element_item2"),
           },
           {
             img: imgGallery3,
             shadow: "80",
-            title: "Low Budget Surfcamps",
+            title: t("fuerteventura_6_part_linked_image_element_item3"),
           },
           {
             img: imgGallery4,
             shadow: "80",
-            title: "Surfcamps mit kostenfreier Stornierung",
+            title: t("fuerteventura_6_part_linked_image_element_item4"),
           },
           {
             img: imgGallery5,
             shadow: "80",
-            title: "Surfcamps für Freund:innen",
+            title: t("fuerteventura_6_part_linked_image_element_item5"),
           },
           {
             img: imgGallery6,
             shadow: "80",
-            title: "Surfcamps für Alleinreisende",
+            title: t("fuerteventura_6_part_linked_image_element_item6"),
           },
         ]}
       />
       <ImageGalleryWindow
-        title="Surfcamps mit besonderen Extras"
-        description="Reise abseits des Mainstreams und mache deinen Surfurlaub zu einem außergewöhnlichen Erlebnis!"
+        title={t("fuerteventura_4_part_linked_imaege_title")}
+        description={t("fuerteventura_4_part_linked_imaege_subtitle")}
         items={[
           {
             shadowSize: "80",
             img: wImg1,
-            title: "Fuerteventura durch die Linse",
-            description:
-              "Surfe die besten Wellen Fuerteventuras und entdecke einzigartige Landschaften bei Fotografie-Sessions mit lokalen Guides.",
+            title: t("fuerteventura_4_part_linked_imaege_item1_title"),
+            description: t("fuerteventura_4_part_linked_imaege_item1_subtitle"),
           },
           {
             shadowSize: "80",
             img: wImg2,
-            title: "Spanisch lernen im Surfurlaub",
-            description:
-              "Lerne in einem authentischen Umfeld spanisch und freu dich auf Menschen von überall auf der Welt. Der perfekte Bildungsurlaub mit Action und Spaß.",
+            title: t("fuerteventura_4_part_linked_imaege_item2_title"),
+            description: t("fuerteventura_4_part_linked_imaege_item2_subtitle"),
           },
           {
             shadowSize: "80",
             img: wImg3,
-            title: "Wohlfühlurlaub mit Yoga, Surfen & Pilates",
-            description:
-              "Eine typisch kanarische Villa mit Pool & Jacuzzi, täglich Yoga & Pilates, drei Surftage und vegetarische Verpflegung: Der perfekte rundum Wohlfühlurlaub.",
+            title: t("fuerteventura_4_part_linked_imaege_item3_title"),
+            description: t("fuerteventura_4_part_linked_imaege_item3_subtitle"),
           },
           {
             shadowSize: "80",
             img: wImg4,
-            title: "Yoga & Surfen in der Künstlerstadt Lajares",
-            description:
-              "Ein ganzheitliches Retreat in familiärer Atmosphäre: Freu dich auf Yoga, Surfen, vegetarisch-vegane Verpflegung und eine Vulkanwanderung.",
+            title: t("fuerteventura_4_part_linked_imaege_item4_title"),
+            description: t("fuerteventura_4_part_linked_imaege_item4_subtitle"),
           },
         ]}
       />
@@ -247,27 +240,24 @@ const SurfcampFuerteventura = () => {
         dark={true}
         items={[
           {
-            description:
-              "Ich hab mich sehr gut aufgehoben gefühlt. Die Surflehrer haben einen wirklich guten Job gemacht. Sie haben es geschafft mir als Anfängerin eine Mänge Wissen über das Surfen zu vermitteln. Auch die Unterkunft war toll, hab mich sehr wohl gefühlt. Abends wurde gemeinsam gegessen (auch zusammen mit den Surflehrern), sodass man sofort zu einem Teil der Gruppe wurde. Ich komm gerne wieder!!!",
+            description: t("fuerteventura_riview_element_divider_tab1_title"),
             name: "Svenja",
             date: "15.08.2022",
           },
           {
-            description:
-              "Es war traumhaft. Sehr liebevoll,gute Kurse und wunderbares Essen",
+            description: t("fuerteventura_riview_element_divider_tab2_title"),
             name: "Beate",
             date: "23.02.2022",
           },
           {
-            description:
-              "Der Aufenthalt im Homegrown Camp hat mir sehr gut gefallen. Das 'Hostel' war sehr sauber. Sie haben sehr auf Hygiene geachtet. Die Surflehrer waren sehr lieb und nett und haben sich sehr viele Mühe gegeben und es hat sehr viel Spaß gemacht. Ich werde definitiv wieder kommen. Danke für den tollen Aufenthalt auf Fuerteventura :)",
+            description: t("fuerteventura_riview_element_divider_tab3_title"),
             name: "Johanna",
             date: "25.05.2022",
           },
         ]}
       />
       <SingleCardSection
-        title="Die beliebtesten Surfcamps auf Fuerteventura"
+        title={t("fuerteventura_offer_title")}
         items={[
           {
             cardImage: cardImage,
@@ -326,36 +316,33 @@ const SurfcampFuerteventura = () => {
         buttonTitle="Mehr erfahren"
       />
       <SingleColImg
-        title="Entdecke die Vielfalt der Kanarischen Inseln"
-        description="So unterschiedlich die jeweiligen Inseln auch sind - perfekte Wellen, Strand und Sonne findest du überall! Welche Insel passt zu dir?"
+        title={t("fuerteventura_3_part_linked_image_title")}
+        description={t("fuerteventura_3_part_linked_image_subtitle")}
         items={[
           {
             img: Col31,
-            title: "Teneriffa",
-            description:
-              "Entdecke vielfältige Natur, konstante Wellen und den beeindruckenden Vulkan Teide.",
+            title: t("fuerteventura_3_part_linked_image_item1_title"),
+            description: t("fuerteventura_3_part_linked_image_item1_subtitle"),
           },
           {
             img: Col32,
-            title: "Gran Canaria",
-            description:
-              "Von den Wellen direkt in eine Tapas-Bar: Erlebe einen Surfurlaub mit Großstadtfeeling.",
+            title: t("fuerteventura_3_part_linked_image_item2_title"),
+            description: t("fuerteventura_3_part_linked_image_item2_subtitle"),
           },
           {
             img: Col33,
-            title: "Lanzarote",
-            description:
-              "Atemberaubende Natur und leere Strände: Der Geheimtipp unter den kanarischen Inseln.",
+            title: t("fuerteventura_3_part_linked_image_item3_title"),
+            description: t("fuerteventura_3_part_linked_image_item3_subtitle"),
           },
         ]}
         cols="md:grid-cols-3"
       />
       <DividerImg
         align="center"
-        title="Entdecke alle Surfcamps auf den Kanarischen Inseln"
-        description="Fuerteventura • Teneriffa • Gran Canaria • Lanzarote"
+        title={t("fuerteventura_wide_divider_title")}
+        description={t("fuerteventura_wide_divider_subtitle")}
         image={dividerImage}
-        buttonTitle="Zur Übersicht"
+        buttonTitle={t("fuerteventura_wide_divider_button")}
       />
       <ContactUsSection
         title="Hast du Fragen oder Wünsche?"
@@ -388,34 +375,34 @@ const SurfcampFuerteventura = () => {
         ]}
       />
       <TagSection
-        title="Mehr Inspiration für dein Surfurlaub"
+        title={t("fuerteventura_link_element_title")}
         cols="xl:grid-cols-3"
         items={[
           {
-            title: "Top-Reiseziele",
+            title: t("fuerteventura_link_element_col1_title"),
             items: [
-              "Surfcamps in Frankreich",
-              "Surfcamps in Portugal",
-              "Surfcamps in Spanien",
-              "Surfcamps auf Teneriffa",
+              t("fuerteventura_link_element_col1_item1"),
+              t("fuerteventura_link_element_col1_item2"),
+              t("fuerteventura_link_element_col1_item3"),
+              t("fuerteventura_link_element_col1_item4"),
             ],
           },
           {
-            title: "Ausgewählte Kategorien",
+            title: t("fuerteventura_link_element_col2_title"),
             items: [
-              "Surfcamps für Alleinreisende",
-              "Surfcamps in der Natue",
-              "Surfcamps für Gruppen & Freunde",
-              "Surf & Yoga Camps",
+              t("fuerteventura_link_element_col2_item1"),
+              t("fuerteventura_link_element_col2_item2"),
+              t("fuerteventura_link_element_col2_item3"),
+              t("fuerteventura_link_element_col2_item4"),
             ],
           },
           {
-            title: "Unser Reisemagazin",
+            title: t("fuerteventura_link_element_col3_title"),
             items: [
-              "Gemeinsam für den Meeresschutz",
-              "Reisebericht: Surf & Yogacamp in Portugal",
-              "Die 13 besten Surf-Filme für einen Kinoabend",
-              "Reisebericht: Mein erstes Surfcamp",
+              t("fuerteventura_link_element_col3_item1"),
+              t("fuerteventura_link_element_col3_item2"),
+              t("fuerteventura_link_element_col3_item3"),
+              t("fuerteventura_link_element_col3_item4"),
             ],
           },
         ]}

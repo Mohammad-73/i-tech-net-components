@@ -1,4 +1,5 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 //Hero
 import Hero from "../../components/Hero/Hero";
 //HintSection
@@ -59,57 +60,54 @@ import { BsWhatsapp } from "react-icons/bs";
 import TagSection from "../../components/TagSection/TagSection";
 
 const SurfcampSpanien = () => {
+  const { t } = useTranslation();
   return (
     <div>
       <Hero
         image="bg-hero-spanien"
-        title="Surfcamps in Spanien"
-        description="Erlebe‌ ‌Sonne,‌ ‌Wellen‌ ‌&‌ ‌spanische‌ ‌Lebensfreude"
+        title={t("spain_header_title")}
+        description={t("spain_header_subtitletitle")}
       />
       <HintSection
         items={[
           {
             icon: <BiLike size={38} />,
-            title: "100% Rückerstattung",
-            description:
-              "Transparent und stressfrei! Erhalte mit unseren flexiblen Stornierungsbedingungen den vollen Betrag zurückerstattet.",
+            title: t("spain_3_symbol_item1_title"),
+            description: t("spain_3_symbol_item1_subtitle"),
             readMore: "Zu den Details",
           },
           {
             icon: <BiStar size={38} />,
-            title: "Qualitätsgeprüfte Reisen",
-            description:
-              "Alle Reisen sind von Sportexperten ausgewählt und von unabhängigen Kunden mit mindestens 4,5 von 5 Sternen bewertet!",
+            title: t("spain_3_symbol_item2_title"),
+            description: t("spain_3_symbol_item2_subtitle"),
             readMore: "Zu den Details",
           },
           {
             icon: <BiHeart size={38} />,
-            title: "Persönliche Beratung",
-            description:
-              "Wir lieben, was wir tun und sind immer an deiner Seite! Kontaktiere uns einfach per Email, Telefon oder WhatsApp.",
+            title: t("spain_3_symbol_item3_title"),
+            description: t("spain_3_symbol_item3_subtitle"),
             readMore: "Zu den Details",
           },
         ]}
       />
       <Description
-        titel="Die schönsten Surforte in Spanien"
+        title={t("spain_big_tab_title")}
         tabItems={[
-          "Kantabrien",
-          "Baskenland",
-          "Andalusien",
-          "Fuerteventura",
-          "Teneriffa",
-          "Gran Canaria",
+          t("spain_big_tab_tab1"),
+          t("spain_big_tab_tab2"),
+          t("spain_big_tab_tab3"),
+          t("spain_big_tab_tab4"),
+          t("spain_big_tab_tab5"),
+          t("spain_big_tab_tab6"),
         ]}
         tabCols="lg:grid-cols-6"
         tabContents={[
           {
             detailsImage: Kantabrien,
-            detailsTitle: "Kantabrien",
-            detailsDesc:
-              "Die Region Kantabrien im Norden Spaniens erwartet dich mit einer einzigartigen Landschaft voll von grünen Hügeln mit glücklichen Milchkühen und Bergen im Hintergrund. Gepaart mit einer Vielzahl an schönen Buchten und Wellen für jedes Surflevel ist Kantabrien die perfekte Wahl für einen Surfurlaub in der Natur! Anders als andere Regionen in Spanien ist Kantabrien vom Massentourismus verschont geblieben. Die Auswahl für deinen Surfurlaub entlang der Atlantikküste ist dabei groß: Sei es der kilometerlange Sandstrand von Loredo bis Somo, das kleine Fischerdorf Suances oder der Naturpark Oyambre mit seinen tollen Buchten und Steilklippen.",
+            detailsTitle: t("spain_big_tab_tab1_title"),
+            detailsDesc: t("spain_big_tab_tab1_text"),
             detailsReadMore: "",
-            cardTitle: "Top-Surfcamps in Kantabrien",
+            cardTitle: t("spain_big_tab_tab1_more"),
             cardItems: [
               {
                 cardImage: cardImage,
@@ -161,11 +159,10 @@ const SurfcampSpanien = () => {
           },
           {
             detailsImage: Baskenland,
-            detailsTitle: "Baskenland",
-            detailsDesc:
-              "Pulsierende Städte und beruhigende Natur - das Baskenland wartet mit einer unglaublichen Vielfalt und so einigen Überraschungen auf dich! Wälder, Berge und steile Küsten - selbst im Hochsommer erwarten dich im Baskenland sattgrüne Landschaften anstelle von ausgetrockneten Feldern. Entlang der Küste entdeckst du immer wieder versteckte Buchten und einsame Surfspots. Hinzu kommt mit Mundaka die berühmteste linke Welle Europas. Wenn du zudem auf der Suche nach Kultur und einem belebten Nachtleben bist, hast du mit Bilbao und San Sebastian gleich zwei Städte, die definitiv einen Besuch wert sind. Hier kannst du dich treiben lassen und wünschst dir schnell, dass die Zeit stehen bleibt.",
+            detailsTitle: t("spain_big_tab_tab2_title"),
+            detailsDesc: t("spain_big_tab_tab2_text"),
             detailsReadMore: "",
-            cardTitle: "Top-Surfcamp im Baskenland",
+            cardTitle: t("spain_big_tab_tab2_more"),
             cardItems: [
               {
                 cardImage: cardImage,
@@ -183,11 +180,10 @@ const SurfcampSpanien = () => {
           },
           {
             detailsImage: Andalusien,
-            detailsTitle: "Andalusien",
-            detailsDesc:
-              "Ein niemals endender Sommer und eine Atmosphäre, die dich sofort in seinen Bann zieht: In Andalusien geht alles entspannter zu und die Lebensfreude der Menschen ist förmlich spürbar. Die Uhren ticken hier langsamer und du bist nach deinem Surfurlaub garantiert gelassener. Die besten Orte zum Wellenreiten in Andalusien sind Conil de la Frontera und El Palmar. Hier erwarten dich neben dieser einzigartigen Atmosphäre lange Sandstrände mit perfekten Wellen für beginnende und fortgeschrittene Surfer:innen. Abgerundet wird das Bild von den vielen weißen Häuschen, die typisch für Andalusien sind.",
+            detailsTitle: t("spain_big_tab_tab3_title"),
+            detailsDesc: t("spain_big_tab_tab3_text"),
             detailsReadMore: "",
-            cardTitle: "Top-Surfcamps in Andalusien",
+            cardTitle: t("spain_big_tab_tab3_more"),
             cardItems: [
               {
                 cardImage: cardImage,
@@ -239,11 +235,10 @@ const SurfcampSpanien = () => {
           },
           {
             detailsImage: Fuerteventura,
-            detailsTitle: "Fuerteventura",
-            detailsDesc:
-              "Fuerteventura ist die zweitgrößte Insel der Kanaren und gilt aufgrund der weißen Strände und Vielzahl an Surfspots als das Hawaii Europas. Vom totalen Beginner bis hin zum Profi findet hier jeder die perfekte Welle! Das Leben auf Fuerteventura geht deutlich gelassener zu als sonst wo auf der Welt. Sofort mit deiner Landung kommt dir die warme Luft entgegen und du tauchst ein in eine faszinierende Wüstenlandschaft, die dich sofort einen Gang zurückschalten lässt. Ab jetzt zählt nur noch Surfen, Entspannen und gute Laune - die perfekten Voraussetzungen für einen unvergesslichen Surfurlaub!",
+            detailsTitle: t("spain_big_tab_tab4_title"),
+            detailsDesc: t("spain_big_tab_tab4_text"),
             detailsReadMore: "",
-            cardTitle: "Top-Surfcamps auf Fuerteventura",
+            cardTitle: t("spain_big_tab_tab4_more"),
             cardItems: [
               {
                 cardImage: cardImage,
@@ -296,11 +291,10 @@ const SurfcampSpanien = () => {
           },
           {
             detailsImage: Teneriffa,
-            detailsTitle: "Teneriffa",
-            detailsDesc:
-              "Teneriffa ist die größte der Kanarischen Inseln vor der Westküste Afrikas und wird von dem Vulkan Teide dominiert. Der größte Berg Spaniens prägt dabei nicht nur das Landschaftsbild der Insel, sondern bietet auch Windschutz für die verschiedenen Surfspots. Dadurch bietet sich Teneriffa insbesondere für Beginner und Intermediates an, da die Wellen hier meist cleaner und kleiner sind als auf den anderen Inseln. Anders als auf Fuerteventura erwartet dich auf Teneriffa grüne und vielfältige Natur. Auch die zahlreichen Strände könnten unterschiedlicher nicht sein: Von goldenen Sandstränden bis hin zu felsigen Buchten mit schwarzem Sand ist für jeden das passende mit dabei. Je nachdem, was du dir für dein Surfcamp wünschst: Von Ruhe und Natur bis hin zu Action und Party ist auf Teneriffa alles möglich!",
+            detailsTitle: t("spain_big_tab_tab5_title"),
+            detailsDesc: t("spain_big_tab_tab5_text"),
             detailsReadMore: "",
-            cardTitle: "Top-Surfcamps auf Teneriffa",
+            cardTitle: t("spain_big_tab_tab5_more"),
             cardItems: [
               {
                 cardImage: cardImage,
@@ -351,11 +345,10 @@ const SurfcampSpanien = () => {
           },
           {
             detailsImage: Gran,
-            detailsTitle: "Gran Canaria",
-            detailsDesc:
-              "Willst du die Atmosphäre einer pulsierenden Stadt genießen und gleichzeitig mit deinem Surfbrett unter dem Arm zum Surfspot laufen? Dann ist Las Palmas auf Gran Canaria genau die richtige Wahl für deinen Surfurlaub in Spanien! Las Palmas ist mit über 350.000 Einwohnern die größte Stadt der Kanarischen Inseln und erwartet dich mit dem typisch spanischen Lebensgefühl: Überall sitzen die Menschen draußen, lachen zusammen, trinken Wein, essen Tapas und genießen ihr Leben. In Verbindung mit den langen Sandstränden und konstanten Wellen die perfekten Voraussetzungen für einen Surfurlaub in der Stadt!",
+            detailsTitle: t("spain_big_tab_tab6_title"),
+            detailsDesc: t("spain_big_tab_tab6_text"),
             detailsReadMore: "",
-            cardTitle: "Top-Surfcamps auf Gran Canaria",
+            cardTitle: t("spain_big_tab_tab6_more"),
             cardItems: [
               {
                 cardImage: cardImage,
@@ -407,48 +400,63 @@ const SurfcampSpanien = () => {
         ]}
       />
       <ImageGalleryFivePic
-        title="Finde das Surfcamp, das zu dir passt!"
-        description="Die Grundvoraussetzung für einen unvergesslichen Surfurlaub ist die pDie Grundvoraussetzung für einen unvergesslichen Surfurlaub ist die passende Atmosphäre! Mit der richtigen Stimmung um dich herum fühlst du dich sofort wohl, triffst ganz natürlich auf Gleichgesinnte und kannst deinen Urlaub in vollen Zügen genießen."
-        image1={{ img: image1, title: "Surfcamps für Alleinreisende" }}
-        image2={{ img: image2, title: "Surfcamps für Freund:innen" }}
-        image3={{ img: image3, title: "Surfurlaub für Familien" }}
-        image4={{ img: image4, title: "Surf-Reisen für Paare" }}
-        image5={{ img: image5, title: "Junior Surfcamps für unter 18 Jährige" }}
+        title={t("spain_5_clickable_boxes_title")}
+        description={t("spain_5_clickable_boxes_subtitle")}
+        image1={{
+          img: image1,
+          title: t("spain_5_clickable_boxes_item1_title"),
+        }}
+        image2={{
+          img: image2,
+          title: t("spain_5_clickable_boxes_item2_title"),
+        }}
+        image3={{
+          img: image3,
+          title: t("spain_5_clickable_boxes_item3_title"),
+        }}
+        image4={{
+          img: image4,
+          title: t("spain_5_clickable_boxes_item4_title"),
+        }}
+        image5={{
+          img: image5,
+          title: t("spain_5_clickable_boxes_item5_title"),
+        }}
       />
       <ListAndImage
         image={ListAndImage1}
-        title="Ein Surfcamp in Spanien passt zu dir, wenn du…"
+        title={t("spain_divider_with_symbol_title")}
         items={[
-          "...vielfältige und wunderschöne Strände und Landschaften entdecken willst",
-          "...den nie endenden Sommer in Andalusien und den Kanaren genießen willst",
-          "...garantiert alles um dich herum vergessen und auf andere Gedanken kommen willst",
-          "...spanische Gelassenheit und ein einzigartiges Lebensgefühl erleben willst",
+          t("spain_divider_with_symbol_item1"),
+          t("spain_divider_with_symbol_item2"),
+          t("spain_divider_with_symbol_item3"),
+          t("spain_divider_with_symbol_item4"),
         ]}
       />
       <ListAndImage
-        mainTitle="Entdecke die Traumunterkunft für deinen Surfurlaub"
-        mainDescription="Entdecke die Traumunterkunft für deinen Surfurlaub"
+        mainTitle={t("spain_text_and_image_element_title")}
+        mainDescription={t("spain_text_and_image_element_subtitle")}
         image={ListAndImage2}
-        title="Surfhäuser & Lodges"
-        description="Unsere handverlesenen Surfhäuser & Lodges in Spanien sind individuell gestaltet und mit viel Liebe zum Detail eingerichtet. Mit einer begrenzten Anzahl an Zimmern bleibt die Atmosphäre immer persönlich und du triffst schnell auf Gleichgesinnte. Die großen Outdoor Bereiche laden zum Entspannen in der Sonne und gemeinsamen Stunden am Abend ein. Die perfekte Mischung aus Komfort und Spaß unter Gleichgesinnten!"
-        readMore="Entdecke Surfhäuser & Lodges in Spanien"
+        title={t("spain_text_and_image_element_item1_title")}
+        description={t("spain_text_and_image_element_item1_subtitle")}
+        readMore={t("spain_text_and_image_element_item1_more")}
       />
       <ListAndImage
         imgAlign="right"
         image={ListAndImage3}
-        title="Surfcamps auf Campingplätzen"
-        description="Insbesondere der Norden Spaniens mit seiner vielfältigen Natur und den traumhaften Landschaften bietet sich für einen Campingurlaub an: Du tauchst sofort mit deiner Ankunft in eine eigene Welt ab, beobachtest abends beim Lagerfeuer die Sterne und läufst morgens barfuß mit deinem Surfbrett zum Strand. Kurz gesagt: Ein Low Budget Surfurlaub inmitten der Natur, den du nie wieder vergessen wirst!"
-        readMore="Zu allen Surfcamps auf Campingplätzen"
+        title={t("spain_text_and_image_element_item2_title")}
+        description={t("spain_text_and_image_element_item2_subtitle")}
+        readMore={t("spain_text_and_image_element_item2_more")}
       />
       <ListAndImage
         image={ListAndImage4}
-        title="Surfurlaub in privaten Apartments"
-        description="Sehnst du dich nach Quality-Time mit deinen Liebsten? Bei einem Surfurlaub in privaten Apartments erwartet euch gemeinsamer Spaß in den Wellen und ganz viel Zeit, die ihr individuell nach euren Wünschen gestalten könnt: Seien es Ausflüge in die Region, entspannte Stunden am Strand oder ein Restaurantbesuch am Abend - euer Alltag ist schnell vergessen und die Welt steht euch offen!"
-        readMore="Zu allen Surfurlauben in privaten Apartments"
+        title={t("spain_text_and_image_element_item3_title")}
+        description={t("spain_text_and_image_element_item3_subtitle")}
+        readMore={t("spain_text_and_image_element_item3_more")}
       />
       <SingleCardSection
-        title="Die beliebtesten Surfcamps in Spanien"
-        description="Von Nordspanien über Andalusien bis hin zu den Kanarischen Inseln - entdecke die am besten bewerteten Surfcamps in Spanien."
+        title={t("spain_offer_element_title")}
+        description={t("spain_offer_element_subtitle")}
         items={[
           {
             cardImage: cardImage,
@@ -675,67 +683,64 @@ const SurfcampSpanien = () => {
         cols="lg:grid-cols-4"
       />
       <ColorDivider
-        title="Urlaub buchen ohne Risiko"
-        description="Wir bieten dir flexible Stornierungsbedingungen mit 100% Rückerstattung!"
-        buttonTitle="Mehr erfahren"
+        title={t("spain_narrow_divider_title")}
+        description={t("spain_narrow_divider_text")}
+        buttonTitle={t("spain_narrow_divider_button")}
       />
       <SingleColImg
-        title="Passende Surfcamps für dein Surflevel"
-        description="Jeder kann Surfen lernen! Finde mit unserer Auswahl ganz einfach das passende Surfcamp für dein Surflevel."
+        title={t("spain_3_clickable_boxes_title")}
+        description={t("spain_3_clickable_boxes_subtitle")}
         items={[
           {
             img: Col31,
-            title: "Surfcamps für Anfänger:innen",
-            description:
-              "Surfe die ersten Wellen deines Lebens und erlebe ein unbeschreibliches Gefühl!",
+            title: t("spain_3_clickable_boxes_item1_title"),
+            description: t("spain_3_clickable_boxes_item1_subtitle"),
           },
           {
             img: Col32,
-            title: "Surfcamps für Fortgeschrittene",
-            description:
-              "Hast du deine ersten Surfkurse bereits hinter dir? Dann erreiche jetzt das nächste Level!",
+            title: t("spain_3_clickable_boxes_item2_title"),
+            description: t("spain_3_clickable_boxes_item2_subtitle"),
           },
           {
             img: Col33,
-            title: "Surfaris für Profis",
-            description:
-              "Lass dich von lokalen Guides zu den besten Spots bringen und finde deine perfekte Welle!",
+            title: t("spain_3_clickable_boxes_item3_title"),
+            description: t("spain_3_clickable_boxes_item3_subtitle"),
           },
         ]}
         cols="md:grid-cols-3"
       />
       <ImageGallery3
-        title="Ausgewählte Kategorien für deinen Surfurlaub"
+        title={t("spain_6_clickable_boxes_title")}
         items={[
           {
             img: imgGallery1,
             shadow: "80",
-            title: "Surfcamps in der Natur",
+            title: t("spain_6_clickable_boxes_item1"),
           },
           {
             img: imgGallery2,
             shadow: "80",
-            title: "Ökologisches Surfcamp",
+            title: t("spain_6_clickable_boxes_item2"),
           },
           {
             img: imgGallery3,
             shadow: "80",
-            title: "Low Budget Surfcamps",
+            title: t("spain_6_clickable_boxes_item3"),
           },
           {
             img: imgGallery4,
             shadow: "80",
-            title: "Reisen mit 100% Rückerstattung",
+            title: t("spain_6_clickable_boxes_item4"),
           },
           {
             img: imgGallery5,
             shadow: "80",
-            title: "Surf & Skate Camp",
+            title: t("spain_6_clickable_boxes_item5"),
           },
           {
             img: imgGallery6,
             shadow: "80",
-            title: "Surf & Yoga Camps",
+            title: t("spain_6_clickable_boxes_item6"),
           },
         ]}
       />
@@ -748,59 +753,49 @@ const SurfcampSpanien = () => {
         buttonTitle="Mehr erfahren"
       />
       <RateCardSection
-        title="Das sagen Reisende über ihren Surfurlaub in Spanien"
+        title={t("spain_review_element_title")}
         items={[
           {
             rateName: "Chloe",
-            rateDesc: "Kleine Gruppe, gutes Essen, schöne Aussicht!",
+            rateDesc: t("spain_review_element_item1_text"),
             rateImage: RateImg,
             rateCalendar: "27.08.2021",
-            rateFootNote:
-              "Surfcamp in Nordspanien: Surfen im Naturpark Oyambre bewertet von",
+            rateFootNote: t("spain_review_element_item1_more"),
           },
           {
             rateName: "Yves",
-            rateDesc: "Einer der besten Urlaube die ich erleben durfte",
+            rateDesc: t("spain_review_element_item2_text"),
             rateImage: RateImg,
             rateCalendar: "08.12.2021",
-            rateFootNote:
-              "Surfcamp in Corralejo: Chillen, Surfen & neue Leute bewertet von",
+            rateFootNote: t("spain_review_element_item2_more"),
           },
           {
             rateName: "Fabi",
-            rateDesc:
-              "Sehr sauber, tolle Atmosphäre, super Lage direkt am Strand, mega Blick aufs Meer von der Dachterasse und nette Gäste :)",
+            rateDesc: t("spain_review_element_item3_text"),
             rateImage: RateImg,
             rateCalendar: "22.08.2021",
-            rateFootNote:
-              "Modernes Surfhaus direkt am Strand von Las Palmas bewertet von",
+            rateFootNote: t("spain_review_element_item3_more"),
           },
           {
             rateName: "Christina",
-            rateDesc:
-              "War ein tolles Erlebnis, und ich durfte sehr viele tolle Menschen kennenlernen!!",
+            rateDesc: t("spain_review_element_item4_text"),
             rateImage: RateImg,
             rateCalendar: "06.12.2021",
-            rateFootNote:
-              "Surfcamp in Corralejo: Chillen, Surfen & neue Leute bewertet von",
+            rateFootNote: t("spain_review_element_item4_more"),
           },
           {
             rateName: "Ella",
-            rateDesc:
-              "Ich habe ein super Sommer Urlaub mit Volcano surfcamp gemacht! Unser Surftrainer Umberto ist einfach die besten! Die Unterkunft ist auch mega schön, man kann so einfach andere coole Leuten aus der Welt kennenlernen und jeden Tag etwas zusammen unternehmen. I‘ll come back there again for sure :D",
+            rateDesc: t("spain_review_element_item5_text"),
             rateImage: RateImg,
             rateCalendar: "27.08.2021",
-            rateFootNote:
-              "Gemeinschaftliches Surfhaus im Süden Teneriffas bewertet von",
+            rateFootNote: t("spain_review_element_item5_more"),
           },
           {
             rateName: "Alexander",
-            rateDesc:
-              "Perfect waves for Beginner / Intermediates and a nice Hostel as well as a nice Service from moverii. Just pay attention: there are two (or three) latas hostels and we did not stay in the main one so we always had to walk there (15min). However, it has still been very good but I would recommend to stay in the main Hostel.",
+            rateDesc: t("spain_review_element_item6_text"),
             rateImage: RateImg,
             rateCalendar: "17.08.2021",
-            rateFootNote:
-              "Surfhaus in Kantabrien: Ruhe, Natur & perfekte Wellen bewertet von",
+            rateFootNote: t("spain_review_element_item6_more"),
           },
         ]}
         rateCols="xl:grid-cols-3"
@@ -836,34 +831,34 @@ const SurfcampSpanien = () => {
         ]}
       />
       <TagSection
-        title="Mehr Inspiration für dein Surfurlaub"
+        title={t("spain_links_title")}
         cols="xl:grid-cols-3"
         items={[
           {
-            title: "Top-Reiseziele",
+            title: t("spain_links_col1_title"),
             items: [
-              "Surfcamps in Portugal",
-              "Surfcamps auf Fuerteventura",
-              "Surfcamps in Frankreich",
-              "Surfcamps auf Teneriffa",
+              t("spain_links_col1_item1"),
+              t("spain_links_col1_item2"),
+              t("spain_links_col1_item3"),
+              t("spain_links_col1_item4"),
             ],
           },
           {
-            title: "Beliebte Kategorien",
+            title: t("spain_links_col2_title"),
             items: [
-              "Surfcamps für Alleinreisende",
-              "Surfcamps in der Natur",
-              "Surfcamps für Freund:innen",
-              "Surf & Yoga Reisen",
+              t("spain_links_col2_item1"),
+              t("spain_links_col2_item2"),
+              t("spain_links_col2_item3"),
+              t("spain_links_col2_item4"),
             ],
           },
           {
-            title: "Unser Reisemagazin",
+            title: t("spain_links_col3_title"),
             items: [
-              "Surfen auf den Kanaren",
-              "Gemeinsam für den Meeresschutz",
-              "Reisebericht: Surf & Yoga Camp in Portugal",
-              "Reisebericht: Mein erstes Surfcamp",
+              t("spain_links_col3_item1"),
+              t("spain_links_col3_item2"),
+              t("spain_links_col3_item3"),
+              t("spain_links_col3_item4"),
             ],
           },
         ]}

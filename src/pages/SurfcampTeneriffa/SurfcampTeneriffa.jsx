@@ -1,4 +1,5 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 //Hero
 import Hero from "../../components/Hero/Hero";
 //HintSection
@@ -56,55 +57,52 @@ import { BsWhatsapp } from "react-icons/bs";
 import TagSection from "../../components/TagSection/TagSection";
 
 const SurfcampTeneriffa = () => {
+  const { t } = useTranslation();
   return (
     <div>
       <Hero
         image="bg-hero-teneriffa"
-        title="Surfcamps auf Teneriffa"
-        description="Erlebe Sonne, Wellen und Traumstrände"
+        title={t("teneriffa_header_title")}
+        description={t("teneriffa_header_subtitle")}
       />
       <HintSection
         items={[
           {
             icon: <BiLike size={38} />,
-            title: "100% Rückerstattung",
-            description:
-              "Transparent und stressfrei! Erhalte mit unseren flexiblen Stornierungsbedingungen den vollen Betrag zurückerstattet.",
+            title: t("teneriffa_3_symbol_title1"),
+            description: t("teneriffa_3_symbol_subtitle1"),
             readMore: "Zu den Details",
           },
           {
             icon: <BiStar size={38} />,
-            title: "Qualitätsgeprüfte Reisen",
-            description:
-              "Alle Reisen sind von Sportexperten ausgewählt und von unabhängigen Kunden mit mindestens 4,5 von 5 Sternen bewertet!",
+            title: t("teneriffa_3_symbol_title2"),
+            description: t("teneriffa_3_symbol_subtitle2"),
             readMore: "Zu den Details",
           },
           {
             icon: <BiHeart size={38} />,
-            title: "Persönliche Beratung",
-            description:
-              "Wir lieben, was wir tun und sind immer an deiner Seite! Kontaktiere uns einfach per Email, Telefon oder WhatsApp.",
+            title: t("teneriffa_3_symbol_title3"),
+            description: t("teneriffa_3_symbol_subtitle3"),
             readMore: "Zu den Details",
           },
         ]}
       />
       <Description
-        titel="Finde den Surfurlaub, der zu dir passt!"
+        title={t("teneriffa_big_tab_title")}
         tabItems={[
-          "Für Alleinreisende",
-          "Für Freund:innen",
-          "Für Paare",
-          "Für Familien",
+          t("teneriffa_big_tab_tab1"),
+          t("teneriffa_big_tab_tab2"),
+          t("teneriffa_big_tab_tab3"),
+          t("teneriffa_big_tab_tab4"),
         ]}
         tabCols="lg:grid-cols-4"
         tabContents={[
           {
             detailsImage: Alleinreisende,
-            detailsTitle: "Surfcamps für Alleinreisende",
-            detailsDesc:
-              "Langeweile ausgeschlossen und Spaß garantiert: Ein Surfcamp ist der perfekte Urlaub für Alleinreisende! Gleich mit deiner Ankunft fühlst du dich wohl und triffst dank der offenen und entspannten Atmosphäre ganz natürlich auf Gleichgesinnte. Gemeinsam erkundet ihr die besten Wellen Teneriffas, entspannt in der Sonne am Strand und tauscht Reisegeschichten von den verschiedensten Ecken der Welt aus. Gleichzeitig hast du immer die Möglichkeit dich zurückzuziehen und dein eigenes Ding zu machen. Mit einem Surfcamp auf Teneriffa lässt du deinen Alltag hinter dir und tauchst ein in eine eigene Welt.",
+            detailsTitle: t("teneriffa_big_tab_tab1_title"),
+            detailsDesc: t("teneriffa_big_tab_tab1_subtitle"),
             detailsReadMore: "",
-            cardTitle: "Top-Surfcamps für Alleinreisende auf Teneriffa",
+            cardTitle: t("teneriffa_big_tab_tab1_more"),
             cardItems: [
               {
                 cardImage: cardImage,
@@ -155,11 +153,10 @@ const SurfcampTeneriffa = () => {
           },
           {
             detailsImage: Freund,
-            detailsTitle: "Surfcamps für Gruppen & Freunde",
-            detailsDesc:
-              "Willst du gemeinsam mit deinen besten Freund:innen einen Urlaub voll von Action, Spaß und Erholung erleben? Ganz gleich ob ihr nur zu zweit oder in einer größeren Gruppe seid, mit einem Surfcamp auf Teneriffa könnt ihr euch auf einen Urlaub freuen, den ihr so schnell nicht vergessen werdet! Zusammen feiert ihr jede gesurfte Welle und lacht über spektakuläre Wipe-outs. In der Zeit außerhalb des Ozeans habt ihr die Qual der Wahl und könnt Quality Time am Strand oder in der Hängematte genießen, gemeinsam um die Häuser ziehen oder die traumhafte Natur Teneriffas erkunden.",
+            detailsTitle: t("teneriffa_big_tab_tab2_title"),
+            detailsDesc: t("teneriffa_big_tab_tab2_subtitle"),
             detailsReadMore: "",
-            cardTitle: "Top-Surfcamps für Freund:innen auf Teneriffa",
+            cardTitle: t("teneriffa_big_tab_tab2_more"),
             cardItems: [
               {
                 cardImage: cardImage,
@@ -210,11 +207,10 @@ const SurfcampTeneriffa = () => {
           },
           {
             detailsImage: Paare,
-            detailsTitle: "Surf-Reisen für Paare",
-            detailsDesc:
-              "Wollt ihr euren Urlaub zu einem besonderen Erlebnis machen? Gemeinsam den Spaß eures Lebens haben, die Sonne Teneriffas genießen und einfach machen worauf ihr Lust habt? Dann ist ein Surfcamp auf Teneriffa genau das richtige für euch! Die gemeinsamen Surf-Einheiten versprechen Spaß und Action. Die Zeit drumherum könnt ihr frei nach euren Wünschen gestalten: Seien es Ausflüge in die Natur, wie eine Kajak-Tour oder Schnorcheln mit Delphinen, schöne Abendessen im Restaurant oder einfach entspannte Stunden in der Sonne am Strand. Für die Privatsphäre sorgen die privaten Doppelzimmer oder für die Naturliebhaber ein Deluxe Zelt mit Blick auf den Ozean.",
+            detailsTitle: t("teneriffa_big_tab_tab3_title"),
+            detailsDesc: t("teneriffa_big_tab_tab3_subtitle"),
             detailsReadMore: "",
-            cardTitle: "Top-Surfcamps für Paare auf Teneriffa",
+            cardTitle: t("teneriffa_big_tab_tab3_more"),
             cardItems: [
               {
                 cardImage: cardImage,
@@ -254,11 +250,10 @@ const SurfcampTeneriffa = () => {
           },
           {
             detailsImage: Familien,
-            detailsTitle: "Surfurlaub für Familien",
-            detailsDesc:
-              "Surfurlaub mit der ganzen Familie - was kann es schöneres geben? Von Klein bis Groß fühlt sich dank erfahrener Surflehrer:innen jeder im Wasser wohl und wird schnell seine ersten Erfolgserlebnisse in den Wellen haben! Und wenn ein Familienmitglied mal keine Lust hat, kann der- oder diejenige einfach am Strand entspannen und den anderen beim Surfen zuschauen.Abends könnt ihr entweder eines der vielen Restaurants auf Teneriffa besuchen oder gemeinsam kochen. Zudem erwarten euch neben dem Surfen wunderschöne Strände, entspannte Stunden am Pool oder Ausflüge für die ganze Familie in der umliegenden Natur. Und das Beste ist: Ihr müsst euch um nichts kümmern und kriegt die besten Tipps!",
+            detailsTitle: t("teneriffa_big_tab_tab4_title"),
+            detailsDesc: t("teneriffa_big_tab_tab4_subtitle"),
             detailsReadMore: "",
-            cardTitle: "Top-Surfcamps für Familien auf Teneriffa",
+            cardTitle: t("teneriffa_big_tab_tab4_more"),
             cardItems: [
               {
                 cardImage: cardImage,
@@ -288,27 +283,27 @@ const SurfcampTeneriffa = () => {
         ]}
       />
       <ImageGalleryFivePic
-        title="Finde das Surfcamp, das zu dir passt!"
-        description="Die Grundvoraussetzung für einen unvergesslichen Surfurlaub ist die pDie Grundvoraussetzung für einen unvergesslichen Surfurlaub ist die passende Atmosphäre! Mit der richtigen Stimmung um dich herum fühlst du dich sofort wohl, triffst ganz natürlich auf Gleichgesinnte und kannst deinen Urlaub in vollen Zügen genießen."
-        image1={{ img: image1, title: "Surfcamps in der Natur" }}
-        image2={{ img: image2, title: "Surf & Yoga Camps" }}
-        image3={{ img: image3, title: "Low Budget Surfcamps" }}
-        image4={{ img: image4, title: "Flexible Stornierungsbedingungen" }}
-        image5={{ img: image5, title: "Surfcamps im Zelt" }}
+        title={t("teneriffa_5_linked_image_title")}
+        description={t("teneriffa_5_linked_image_subtitle")}
+        image1={{ img: image1, title: t("teneriffa_5_linked_image_item1") }}
+        image2={{ img: image2, title: t("teneriffa_5_linked_image_item2") }}
+        image3={{ img: image3, title: t("teneriffa_5_linked_image_item3") }}
+        image4={{ img: image4, title: t("teneriffa_5_linked_image_item4") }}
+        image5={{ img: image5, title: t("teneriffa_5_linked_image_item5") }}
       />
       <ListAndImage
         image={ListAndImage1}
-        title="Surfcamps auf Campingplätzen"
+        title={t("teneriffa_big_divider_with_sumbol_title")}
         items={[
-          "...Sonne und angenehme Temperaturen das ganze Jahr über genießen willst",
-          "...auf der Suche nach den perfekten Wellen für Anfänger und Fortgeschrittene bist",
-          "...einsame Strände und unberührte Natur entdecken willst",
-          "…die Wahl zwischen Entspannen in der Hängematte und Feiern unter Gleichgesinnten haben willst",
+          t("teneriffa_big_divider_with_sumbol_item1"),
+          t("teneriffa_big_divider_with_sumbol_item2"),
+          t("teneriffa_big_divider_with_sumbol_item3"),
+          t("teneriffa_big_divider_with_sumbol_item4"),
         ]}
       />
       <SingleCardSection
-        title="Beliebte Surfcamps auf Teneriffa"
-        description="Von Surfern ausgewählt und von Reisenden mit mindestens 4,5 von 5 Sternen bewertet: Entdecke die besten Surfcamps auf Teneriffa:"
+        title={t("teneriffa_4_part_linked_offer_title")}
+        description={t("teneriffa_4_part_linked_offer_subtitle")}
         items={[
           {
             cardImage: cardImage,
@@ -369,58 +364,52 @@ const SurfcampTeneriffa = () => {
         cols="lg:grid-cols-4"
       />
       <SingleColImg
-        title="Erlebe die Vielfalt der Kanarischen Inseln"
-        description="Ganz gleich für welche der Kanarischen Inseln du dich entscheidest, perfekte Wellen und Sonne sind dir garantiert. Daneben hast du die große Wahl:"
+        title={t("teneriffa_3_part_link_image_title")}
+        description={t("teneriffa_3_part_link_image_subtitle")}
         items={[
           {
             img: Col31,
-            title: "Fuerteventura",
-            description:
-              "Weiße Sandstrände und perfekte Wellen: Erlebe das Hawaii Europas.",
+            title: t("teneriffa_3_part_link_image_item1_title"),
+            description: t("teneriffa_3_part_link_image_item1_subtitle"),
           },
           {
             img: Col32,
-            title: "Gran Canaria",
-            description:
-              "Von den Wellen direkt in eine Tapas-Bar: Dein Surfurlaub mit Großstadtfeeling.",
+            title: t("teneriffa_3_part_link_image_item2_title"),
+            description: t("teneriffa_3_part_link_image_item2_subtitle"),
           },
           {
             img: Col33,
-            title: "Lanzarote",
-            description:
-              "Atemberaubende Natur und leere Strände: Der Geheimtipp unter den kanarischen Inseln.",
+            title: t("teneriffa_3_part_link_image_item3_title"),
+            description: t("teneriffa_3_part_link_image_item3_subtitle"),
           },
         ]}
         cols="md:grid-cols-3"
       />
       <DividerImg
         align="center"
-        title="Entdecke alle Surfcamps auf den Kanaren"
-        description="Teneriffa • Fuerteventura • Gran Canaria • Lanzarote"
+        title={t("teneriffa_big_divider_title")}
+        description={t("teneriffa_big_divider_subtitle")}
         image={dividerImage}
-        buttonTitle="Zur Übersicht"
+        buttonTitle={t("teneriffa_big_divider_button")}
       />
       <SingleColImg
-        title="Erlebe die Vielfalt der Kanarischen Inseln"
-        description="Ganz gleich für welche der Kanarischen Inseln du dich entscheidest, perfekte Wellen und Sonne sind dir garantiert. Daneben hast du die große Wahl:"
+        title={t("teneriffa_3_part_link_image2_title")}
+        description={t("teneriffa_3_part_link_image2_sutitle")}
         items={[
           {
             img: Col34,
-            title: "Surfcamps für Anfänger:innen",
-            description:
-              "Surfe die ersten Wellen deines Lebens und erlebe ein unbeschreibliches Gefühl!",
+            title: t("teneriffa_3_part_link_image2_item1_title"),
+            description: t("teneriffa_3_part_link_image2_item1_sutitle"),
           },
           {
             img: Col35,
-            title: "Surfcamps für Fortgeschrittene",
-            description:
-              "Vertiefe die Grundlagen und surfe deine ersten langen grünen Wellen!",
+            title: t("teneriffa_3_part_link_image2_item2_title"),
+            description: t("teneriffa_3_part_link_image2_item2_sutitle"),
           },
           {
             img: Col36,
-            title: "Surfaris für Profis",
-            description:
-              "Die Suche nach der perfekten Welle - gemeinsam mit einheimischen Surfer:innen.",
+            title: t("teneriffa_3_part_link_image2_item3_title"),
+            description: t("teneriffa_3_part_link_image2_item3_sutitle"),
           },
         ]}
         cols="md:grid-cols-3"
@@ -434,50 +423,44 @@ const SurfcampTeneriffa = () => {
         buttonTitle="Mehr erfahren"
       />
       <ImageGalleryWindow
-        title="Außergewöhnliche Erlebnisse für deinen Surfurlaub"
-        description="Action in den Wellen und Erholung am Strand reicht dir nicht aus? Dann entdecke einzigartie Erlebnisse für die ganz besonderen Momente!"
+        title={t("teneriffa_6_part_linked_image_title")}
+        description={t("teneriffa_6_part_linked_image_subtitle")}
         items={[
           {
             shadowSize: "80",
             img: wImg1,
-            title: "Schnorcheln mit Schildkröten",
-            description:
-              "Schwimme gemeinsam mit Schildkröten in einer eigenen Welt und lerne von professionellen Meeresbiolog:innen wie du sie mit Respekt behandelst.",
+            title: t("teneriffa_6_part_linked_image_item1_title"),
+            description: t("teneriffa_6_part_linked_image_item1_subtitle"),
           },
           {
             shadowSize: "80",
             img: wImg2,
-            title: "Paragliding",
-            description:
-              "Teneriffa aus einer ganz anderen Perspektive: Gleite aus 1000 Meter Höhe über die Insel und verspüre den ultimativen Adrenalinkick!",
+            title: t("teneriffa_6_part_linked_image_item2_title"),
+            description: t("teneriffa_6_part_linked_image_item2_subtitle"),
           },
           {
             shadowSize: "80",
             img: wImg3,
-            title: "Stand-Up-Paddle Tour",
-            description:
-              "Entdecke mit dem Stand-Up-Paddle die seichten Gewässer Teneriffas und freu dich auf traumhafte Strände und einsame Buchten.",
+            title: t("teneriffa_6_part_linked_image_item3_title"),
+            description: t("teneriffa_6_part_linked_image_item3_subtitle"),
           },
           {
             shadowSize: "80",
             img: wImg4,
-            title: "Ausflug zum Vulkan Teide",
-            description:
-              "Wandere auf die Spitze des größten Vulkans in Europa, fühle dich wie auf dem Mars und erlebe einen einzigartigen Sonnenuntergang.",
+            title: t("teneriffa_6_part_linked_image_item4_title"),
+            description: t("teneriffa_6_part_linked_image_item4_subtitle"),
           },
           {
             shadowSize: "80",
             img: wImg5,
-            title: "Freediving",
-            description:
-              "Deine Chance auf einenEin ganzheitliches Retreat in familiärer Atmosphäre: Freu dich auf Yoga, Surfen, vegetarisch-vegane Verpflegung und eine Vulkanwanderung.",
+            title: t("teneriffa_6_part_linked_image_item5_title"),
+            description: t("teneriffa_6_part_linked_image_item5_subtitle"),
           },
           {
             shadowSize: "80",
             img: wImg6,
-            title: "Kajak-Tour mit Delphinen",
-            description:
-              "Entdecke bei einer Kajak-Tour auf Teneriffa Delphine in ihrem natürlichen Lebensraum und beobachte sie ohne sie zu stören.",
+            title: t("teneriffa_6_part_linked_image_item6_title"),
+            description: t("teneriffa_6_part_linked_image_item6_subtitle"),
           },
         ]}
       />
@@ -486,8 +469,7 @@ const SurfcampTeneriffa = () => {
         dark={true}
         items={[
           {
-            description:
-              "Ein super schöner Urlaub. Umberto war ein super Lehrer und Gastgeber. Es lief sehr familär und locker ab. Neben den Surfstunden hatten waren wir auch Skaten, um die Technik zu verbessern. Hat sehr viel Spaß gemacht und war top",
+            description: t("teneriffa_review_element_item1_title"),
             name: "Lena",
             date: "21.01.2022",
           },
@@ -524,43 +506,43 @@ const SurfcampTeneriffa = () => {
         ]}
       />
       <TagSection
-        title="Mehr Inspiration für dein Surfurlaub"
+        title={t("teneriffa_link_title")}
         cols="xl:grid-cols-4"
         items={[
           {
-            title: "Top-Reiseziele",
+            title: t("teneriffa_link_col1_title"),
             items: [
-              "Surfcamps in Frankreich",
-              "Surfcamps in Portugal",
-              "Surfcamps in Spanien",
-              "Surfcamps auf Fuerteventura",
+              t("teneriffa_link_col1_item1"),
+              t("teneriffa_link_col1_item1"),
+              t("teneriffa_link_col1_item1"),
+              t("teneriffa_link_col1_item1"),
             ],
           },
           {
-            title: "Ausgewählte Kategorien",
+            title: t("teneriffa_link_col2_title"),
             items: [
-              "Surfcamps in der Natur",
-              "Surf & Yoga Camps",
-              "Low Budget Surfcamps",
-              "Surfcamps nur für Frauen",
+              t("teneriffa_link_col2_item1"),
+              t("teneriffa_link_col2_item1"),
+              t("teneriffa_link_col2_item1"),
+              t("teneriffa_link_col2_item1"),
             ],
           },
           {
-            title: "Gewünschte Atmosphäre",
+            title: t("teneriffa_link_col3_title"),
             items: [
-              "Surfcamps für Alleinreisende",
-              "Surfurlaub für Familien",
-              "Surfcamps für Freund:innen",
-              "Surf-Reisen für Paare",
+              t("teneriffa_link_col3_item1"),
+              t("teneriffa_link_col3_item1"),
+              t("teneriffa_link_col3_item1"),
+              t("teneriffa_link_col3_item1"),
             ],
           },
           {
-            title: "Unser Reisemagazin",
+            title: t("teneriffa_link_col4_title"),
             items: [
-              "Gemeinsam für den Meeresschutz",
-              "Reisebericht: Surf & Yoga Camp in Portugal",
-              "Die 13 besten Surf-Filme für einen Kino Abend",
-              "Reisebericht: Mein erstes Surfcamp",
+              t("teneriffa_link_col4_item1"),
+              t("teneriffa_link_col4_item1"),
+              t("teneriffa_link_col4_item1"),
+              t("teneriffa_link_col4_item1"),
             ],
           },
         ]}
