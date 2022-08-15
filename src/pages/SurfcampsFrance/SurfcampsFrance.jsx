@@ -1,4 +1,5 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 // Hero
 import Hero from "../../components/Hero/Hero";
 // ImageGalleryFivePic
@@ -62,75 +63,72 @@ import { BsWhatsapp } from "react-icons/bs";
 import TagSection from "../../components/TagSection/TagSection";
 
 const SurfcampsFrance = () => {
+  const { t } = useTranslation();
   return (
     <div>
       <Hero
         image="bg-hero-france"
-        title="Surfcamps in Frankreich"
-        description="Erlebe Sonne, Wellen und gute Laune"
+        title={t("france_header_title")}
+        description={t("france_header_subtitle")}
       />
       <ImageGalleryFivePic
-        title="Finde das Surfcamp, das zu dir passt!"
-        description="Die Grundvoraussetzung für einen unvergesslichen Surfurlaub ist die pDie Grundvoraussetzung für einen unvergesslichen Surfurlaub ist die passende Atmosphäre! Mit der richtigen Stimmung um dich herum fühlst du dich sofort wohl, triffst ganz natürlich auf Gleichgesinnte und kannst deinen Urlaub in vollen Zügen genießen."
-        image1={{ img: image1, title: "Surfcamps für Alleinreisende" }}
-        image2={{ img: image2, title: "Surfurlaube für Familien" }}
-        image3={{ img: image3, title: "Surfcamps für Freund:innen" }}
-        image4={{ img: image4, title: "Surf-Reisen für Paare" }}
-        image5={{ img: image5, title: "Surfcamps für unter 18-Jährige" }}
+        title={t("france_5_linked_image_element_title")}
+        description={t("france_5_linked_image_element_subtitle")}
+        image1={{ img: image1, title: t("france_5_linked_image_element_tab1") }}
+        image2={{ img: image2, title: t("france_5_linked_image_element_tab2") }}
+        image3={{ img: image3, title: t("france_5_linked_image_element_tab3") }}
+        image4={{ img: image4, title: t("france_5_linked_image_element_tab4") }}
+        image5={{ img: image5, title: t("france_5_linked_image_element_tab5") }}
       />
       <ColorDivider
-        title="Urlaub buchen ohne Risiko"
-        description="Wir bieten dir flexible Stornierungsbedingungen mit 100% Rückerstattung!"
-        buttonTitle="Mehr erfahren"
+        title={t("france_narrow_divider_element_title")}
+        description={t("france_narrow_divider_element_text")}
+        buttonTitle={t("france_narrow_divider_element_button")}
         buttonIcon={<BiRightArrowAlt size={30} />}
       />
       <ListAndImage
         image={ListAndImage1}
-        title="Surfcamps auf Campingplätzen"
-        description="Umgeben von Pinienwäldern und nur wenige Gehminuten vom Strand entfernt: Bei einem Surfurlaub auf einem Campingplatz tauchst du ein in eine eigene Welt, vergisst alles um dich herum und erlebst eine unvergessliche Zeit mit alten und neuen Freund:innen. Mit den verschiedenen Glamping-Optionen kann das Zelten sogar richtig gemütlich sein!"
-        readMore="Zu allen Surfcamps auf Campingplätzen"
+        title={t("france_image_and_text_element_title1")}
+        description={t("france_image_and_text_element_text1")}
+        readMore={t("france_image_and_text_element_more1")}
       />
       <ListAndImage
         imgAlign="right"
         image={ListAndImage2}
-        title="Surfhäuser & Lodges"
-        description="Wünschst du dir für deinen Urlaub Komfort und ein gemütliches Bett? Am besten noch einen Pool und einen Garten zum Entspannen? Dann sind die charmanten Surfhäuser & Lodges in Frankreich die passende Wahl für dich! Hier genießt du eine ausgelassene Stimmung in einer kleinen Gruppe und hast gleichzeitig immer ausreichend Zeit für dich."
-        readMore="Entdecke alle Surfhäuser & Lodges"
+        title={t("france_image_and_text_element_title2")}
+        description={t("france_image_and_text_element_text2")}
+        readMore={t("france_image_and_text_element_more2")}
       />
       <ListAndImage
         image={ListAndImage3}
-        title="Private Apartments"
-        description="Private Apartments als Unterkunft für den Surfurlaub sind die passende Wahl für alle, die ihren Urlaub in Ruhe mit ihren Liebsten verbringen wollen. Hier seid ihr ganz unter euch und könnt euren Urlaub nach euren individuellen Wünschen und Vorstellungen gestalten."
-        readMore="Zu allen Surfcamps mit privaten Apartments"
+        title={t("france_image_and_text_element_title3")}
+        description={t("france_image_and_text_element_text3")}
+        readMore={t("france_image_and_text_element_more3")}
       />
       <HorizontalHintSection
         bgColor="bg-custom-blue"
         items={[
           {
             icon: <MdWaves size={56} />,
-            description:
-              "... auf der Suche nach den konstantesten Wellen im Sommer bist!",
+            description: t("france_4_symbol_element_item1"),
           },
           {
             icon: <IoFootsteps size={56} />,
-            description:
-              "... in nur wenigen Minuten barfuß zum Surfstrand laufen willst!",
+            description: t("france_4_symbol_element_item2"),
           },
           {
             icon: <FaTelegramPlane size={56} />,
-            description:
-              "... dir eine unkomplizierte Anreise mit dem Auto, Bus oder Zug wünschst!",
+            description: t("france_4_symbol_element_item3"),
           },
           {
             icon: <FaHeart size={56} />,
-            description:
-              "... von einer einzigartigen Atmosphäre inmitten von Pinienwäldern träumst!",
+            description: t("france_4_symbol_element_item4"),
           },
         ]}
       />
       <SingleCardSection
-        title="Surfen & Entspannen: Die beste Auswahl in Frankreich"
-        description="Freust du dich über ein gemeinsamen Grillabend am Lagerfeuer, willst danach aber schnell ins Bett, um fit für die Wellen am nächsten Morgen zu sein? Dann entdecke unsere beliebtesten Surfcamps für die richtige Balance zwischen Action in den Wellen und Erholung in der Natur:"
+        title={t("france_offer_element_4_part_carousel_title")}
+        description={t("france_offer_element_4_part_carousel_subtitle")}
         items={[
           {
             cardImage: cardImage,
@@ -290,8 +288,8 @@ const SurfcampsFrance = () => {
         cols="lg:grid-cols-4"
       />
       <SingleCardSection
-        title="Surfen & Feiern: Die beliebtesten Surfcamps mit Partylaune"
-        description="Action in den Wellen und ausgelassene Feierstimmung am Abend! Entdecke die beliebtesten Surfcamps, um mit alten und neuen Freunden den Sommer deines Lebens in Frankreich zu erleben:"
+        title={t("france_offer_element_3_part_title")}
+        description={t("france_offer_element_3_part_subtitle")}
         items={[
           {
             cardImage: cardImage,
@@ -330,63 +328,62 @@ const SurfcampsFrance = () => {
         cols="lg:grid-cols-3"
       />
       <ColorDivider
-        title="Welches Surfcamp passt zu dir?"
-        description="Lass dich von unseren Experten beraten und finde deinen Traumurlaub!"
-        buttonTitle="Kontakt aufnehmen"
+        title={t("france_small_divider_title")}
+        description={t("france_small_divider_text")}
+        buttonTitle={t("france_small_divider_button")}
       />
       <ImageGallery3
-        title="Die beliebtesten Kategorien für einen Surfurlaub in Frankreich"
+        title={t("france_6_part_linked_image_element_title")}
         items={[
           {
             img: img1,
             shadow: "80",
-            title: "Surf- & Yoga-Camps",
+            title: t("france_6_part_linked_image_element_item1"),
           },
           {
             img: img2,
             shadow: "80",
-            title: "Surf & Fotografie Urlaub",
+            title: t("france_6_part_linked_image_element_item2"),
           },
           {
             img: img3,
             shadow: "80",
-            title: "Surf & Spanisch Reise",
+            title: t("france_6_part_linked_image_element_item3"),
           },
           {
             img: img4,
             shadow: "80",
-            title: "Surf & Fitness Reisen",
+            title: t("france_6_part_linked_image_element_item4"),
           },
           {
             img: img5,
             shadow: "80",
-            title: "Surf & Skate Camp",
+            title: t("france_6_part_linked_image_element_item5"),
           },
           {
             img: img6,
             shadow: "80",
-            title: "Surf & Mountainbike Urlaub",
+            title: t("france_6_part_linked_image_element_item6"),
           },
         ]}
       />
       <Description
-        titel="Die besten Reiseziele für einen Surfurlaub in Europa"
+        titel={t("france_big_tab_element_title")}
         tabItems={[
-          "Moliets",
-          "Seignosse",
-          "Mimizan-Plage",
-          "Vieux-Boucau",
-          "Le Pin Sec",
-          "Cap Ferret",
-          "Biarritz",
+          t("france_big_tab_element_tab1"),
+          t("france_big_tab_element_tab2"),
+          t("france_big_tab_element_tab3"),
+          t("france_big_tab_element_tab4"),
+          t("france_big_tab_element_tab5"),
+          t("france_big_tab_element_tab6"),
+          t("france_big_tab_element_tab7"),
         ]}
         tabCols="lg:grid-cols-7"
         tabContents={[
           {
             detailsImage: Moliets,
-            detailsTitle: "Moliets-et-Maa",
-            detailsDesc:
-              "Moliets-et-Maa ist zweifelsohne der beliebteste Urlaubsort unter deutschen Surfer:innen in Frankreich. Insbesondere die Jüngeren unter euch kommen hier voll auf ihre Kosten: Der große Campingplatz “Les Cigales” beheimatet eine ganze Reihe an Surfcamps und verwandelt sich über die Sommermonate in ein kleines Festivalgelände. Bis zum Strand und Surfspot sind es nur wenige Gehminuten über die Dünen und der kleine Ortskern wartet mit verschiedenen Restaurants und Bars auf dich. Viele haben ihren ersten Surfurlaub in Moliets verbracht und kamen nicht drumherum auch die nächsten Jahre diese einzigartige Atmosphäre zu genießen. ",
+            detailsTitle: t("france_big_tab_element_title1"),
+            detailsDesc: t("france_big_tab_element_text1"),
             detailsReadMore: "",
             cardTitle: "Top-Surfcamps in Moliets",
             cardItems: [
@@ -439,9 +436,8 @@ const SurfcampsFrance = () => {
           },
           {
             detailsImage: Seignosse,
-            detailsTitle: "Seignosse",
-            detailsDesc:
-              "Die kleine Gemeinde Seignosse gilt als Strandjuwel an Frankreichs Atlantikküste und ist berühmt für seine Surfspots. Dank der traditionellen Architektur und den vielen kleinen Restaurants und Bars kannst du dich dabei auf einen ganz besonderen Charme freuen. Auch Hossegor, die heimliche Surf-Hauptstadt Europas, kannst du bequem mit dem Fahrrad erreichen. Wenn du Morgens in perfekten Wellen surfen, mittags am Strand entspannen und den Tag mit einem leckeren Essen oder einem ruhigen Konzert abrunden möchtest, ist Seignosse genau die richtige Wahl für dich!",
+            detailsTitle: t("france_big_tab_element_title2"),
+            detailsDesc: t("france_big_tab_element_text2"),
             detailsReadMore: "",
             cardTitle: "Top-Surfcamps in Seignosse",
             cardItems: [
@@ -494,9 +490,8 @@ const SurfcampsFrance = () => {
           },
           {
             detailsImage: Mimizan,
-            detailsTitle: "Mimizan-Plage",
-            detailsDesc:
-              "Zehn Kilometer feinster Sandstrand, vier Surfspots und endlose Pinienwälder - herzlich Willkommen in Mimizan-Plage. In diesem traumhaften Strandort überkommen dich sofort Sommer- und Urlaubsgefühle. Die Wellen sind das ganze Jahr über konstant und bieten abhängig von der Jahreszeit die passenden Bedingungen sowohl für die ersten Versuche auf dem Surfboard als auch für erfahrene Surfer:innen. Saisonale Märkte, lokale Restaurants und kleine Bars runden deinen Surfurlaub in der Natur ab. Hier bist du sofort raus aus deinem Alltag und genießt dein Leben in vollen Zügen.",
+            detailsTitle: t("france_big_tab_element_title3"),
+            detailsDesc: t("france_big_tab_element_text3"),
             detailsReadMore: "",
             cardTitle: "Top-Surfcamps in Mimizan Plage",
             cardItems: [
@@ -538,9 +533,8 @@ const SurfcampsFrance = () => {
           },
           {
             detailsImage: Vieux,
-            detailsTitle: "Vieux-Boucau",
-            detailsDesc:
-              "Mit einem Salzwasserbadesee und dem typisch landaisischen Charme begrüßt dich die kleine Gemeinde Vieux-Boucau an der Atlantikküste Südfrankreichs. Wenn du den Sommer in vollen Zügen genießen willst, ist das der perfekte Ort: Der lange Sandstrand und die Weite des Ozeans sind zum Verlieben und die kleinen Restaurants und Bars an der Strandpromenade oder im Ort selber laden zum Verweilen ein. Zudem erwarten dich ein beliebter Skatepark sowie verschiedene saisonale Feste und Märkte, die es zu erkunden gilt. Hier erlebst du garantiert einen unvergesslichen Surfurlaub in entspannter Atmosphäre.",
+            detailsTitle: t("france_big_tab_element_title4"),
+            detailsDesc: t("france_big_tab_element_text4"),
             detailsReadMore: "",
             cardTitle: "Top-Surfcamp in Vieux Boucau",
             cardItems: [
@@ -560,9 +554,8 @@ const SurfcampsFrance = () => {
           },
           {
             detailsImage: LePinSec,
-            detailsTitle: "Le Pin Sec",
-            detailsDesc:
-              "Le Pin Sec liegt mehr oder weniger auf der Höhe von Bordeaux und ist ein Paradies für alle, die sich einen Surfurlaub in entspannter Atmosphäre mitten in der Natur wünschen. Der Campingplatz liegt direkt hinter der Düne am Strand. Als einer der letzten Geheimtipps in Les Landes, ist hier selbst in den Sommermonaten vergleichsweise wenig los und du findest immer eine Welle, die nicht zu voll ist. Mit einem Surfurlaub in Le Pin Sec vergisst du sofort die Hektik des Stadtlebens und kannst deine Seele in der Sonne baumeln lassen.",
+            detailsTitle: t("france_big_tab_element_title5"),
+            detailsDesc: t("france_big_tab_element_text5"),
             detailsReadMore: "",
             cardTitle: "Top-Surfcamp in Le Pin Sec",
             cardItems: [
@@ -582,9 +575,8 @@ const SurfcampsFrance = () => {
           },
           {
             detailsImage: Ferret,
-            detailsTitle: "Cap Ferret",
-            detailsDesc:
-              "Ein Ort, an dem Zeit nicht existiert: Mit deiner Ankunft vergisst du sofort alles um dich herum und tauchst ein in eine eigene Welt. Das Cap Ferret ist eine Halbinsel am westlichsten Ende von Gironde, circa 60 Kilometer von Bordeaux entfernt. Der Campingplatz Le Truc Vert liegt im Schatten der Pinienwäldern, nur 300 Meter vom Strand entfernt. Neben deiner Zeit im Wasser, stehen dir hier alle Möglichkeiten offen: Entspanne in der Hängematte, power dich beim Beachvolleyball aus oder erkunde das Nachtleben in einer der Bars.",
+            detailsTitle: t("france_big_tab_element_title6"),
+            detailsDesc: t("france_big_tab_element_text6"),
             detailsReadMore: "",
             cardTitle: "Top-Surfcamp am Cap Ferret",
             cardItems: [
@@ -604,9 +596,8 @@ const SurfcampsFrance = () => {
           },
           {
             detailsImage: Biarritz,
-            detailsTitle: "Biarritz",
-            detailsDesc:
-              "Biarritz gilt als die Geburtsstätte des Surfens in Europa! Gelegen im französischen Baskenland sind es von hier aus keine 30 Minuten Autofahrt bis nach Spanien. Und das wird in der umgebenden Landschaft sofort deutlich: Anstelle von ewig langen Sandstränden und Pinienwälder dominieren hier felsige Steilküsten mit verschiedenen kleinen Buchten. Doch auch direkt in der Stadt erwarten dich lange Sandstrände. Ohne “Le Surf” geht hier nichts! Früher war die kleine Stadt den Kaisern vorbehalten und diesen königlichen Touch spürst du heute noch. Biarritz ist der perfekte Ort für deinen Surfurlaub, wenn du Surfen und die französische Lebensart erleben willst.",
+            detailsTitle: t("france_big_tab_element_title7"),
+            detailsDesc: t("france_big_tab_element_text7"),
             detailsReadMore: "Zu den Details",
             cardTitle: "Top-Surfcamp in Biarritz",
             cardItems: [
@@ -627,26 +618,23 @@ const SurfcampsFrance = () => {
         ]}
       />
       <SingleColImg
-        title="Welches Surflevel passt zu dir?"
-        description="Ganz gleich ob du noch nie auf einem Surfbrett standest oder bereits grüne Wellen surfst, mit unserer handverlesenen Auswahl findest du das passende Surfcamp für dein Surflevel!"
+        title={t("france_3_liked_iamges_title")}
+        description={t("france_3_liked_iamges_subtitle")}
         items={[
           {
             img: Col31,
-            title: "Surfcamps für Anfänger:innen",
-            description:
-              "Surfe die ersten Wellen deines Lebens - ein Gefühl, das dich nie wieder loslässt!",
+            title: t("france_3_liked_iamges_tab1_title"),
+            description: t("france_3_liked_iamges_tab1_subtitle"),
           },
           {
             img: Col32,
-            title: "Surfcamps für Fortgeschrittene",
-            description:
-              "Erreiche dein nächstes Surflevel gemeinsam mit Surflehrern, die individuell auf dich eingehen!",
+            title: t("france_3_liked_iamges_tab2_title"),
+            description: t("france_3_liked_iamges_tab2_subtitle"),
           },
           {
             img: Col33,
-            title: "Surfaris für Profis",
-            description:
-              "Die Suche nach der perfekten Welle: Sei immer zur richtigen Zeit am richtigen Ort!",
+            title: t("france_3_liked_iamges_tab3_title"),
+            description: t("france_3_liked_iamges_tab3_subtitle"),
           },
         ]}
         cols="md:grid-cols-3"
@@ -660,61 +648,49 @@ const SurfcampsFrance = () => {
         buttonTitle="Mehr erfahren"
       />
       <RateCardSection
-        title="Das sagen Reisende über ihren Surfurlaub in Frankreich"
+        title={t("frande_review_element_title")}
         items={[
           {
             rateName: "Emmi",
-            rateDesc:
-              "Gerade im Deluxe Camp war es eine sehr tolle Erfahrung. Tolles Essen, tolle Atmosphäre, tolle Menschen und tolles Team im Camp. Ich bin immer noch ein bisschen da!",
+            rateDesc: t("france_review_element1"),
             rateImage: RateImg,
             rateCalendar: "28.09.2021",
-            rateFootNote:
-              "Surfcamp in Moliets: Summer Vibes & gute Laune bewertet von",
+            rateFootNote: t("france_review_element_more1"),
           },
           {
             rateName: "J Erb",
-            rateDesc:
-              "Coole Leute, sympathisches Team, hammer Essen, Freiheit und Natur pur! Geniales Camp mit allem, was das freiheitsliebende Herz begehrt.",
+            rateDesc: t("france_review_element2"),
             rateImage: RateImg,
             rateCalendar: "02.08.2021",
-            rateFootNote:
-              "Surfcamp in Westfrankreich: Surfen weit weg vom Trubel bewertet von",
+            rateFootNote: t("france_review_element_more2"),
           },
           {
             rateName: "Marlene",
-            rateDesc:
-              "Ein wunderschönes Camp mit einem tollem Team & hervorragendem Essen! Ein perfekter Ort, um neue Menschen verschiedenster Nationen kennen zu lernen & gleichzeitig den beliebten Surfspot zu nutzen oder surfen zu lernen. Langeweile kommt hier nicht auf und einsam ist man auch nie.",
+            ateDesc: t("france_review_element3"),
             rateImage: RateImg,
             rateCalendar: "02.08.2021",
-            rateFootNote:
-              "Surfen & gute Laune in den Pinienwäldern Moliets bewertet von",
+            rateFootNote: t("france_review_element_more3"),
           },
           {
             rateName: "Mara",
-            rateDesc:
-              "Both Andia and David take really care with their hearts about each guest. The surf course was also really well and we had a lot of fun. Andia cooks great & delicious dinner so that everyone will get satisfied. Overall great stay that I could recommend.",
+            ateDesc: t("france_review_element4"),
             rateImage: RateImg,
             rateCalendar: "28.09.2021",
-            rateFootNote:
-              "Surfurlaub im lässigen Surfhaus nahe Capbreton bewertet von",
+            rateFootNote: t("france_review_element_more4"),
           },
           {
             rateName: "Annik",
-            rateDesc:
-              "Das Camp ist mit schönen Zelten und Chillout- Bereichen ausgestattet und hat ein sehr freunliches und offenes Team. Die Aktivitäten und die Yoga-Stunden waren super!",
+            ateDesc: t("france_review_element5"),
             rateImage: RateImg,
             rateCalendar: "28.09.2021",
-            rateFootNote:
-              "Surf- & Yogacamp in den Pinienwäldern Les Landes bewertet von",
+            rateFootNote: t("france_review_element_more5"),
           },
           {
             rateName: "Jana",
-            rateDesc:
-              "Ich hatte eine wunderschöne Woche in Moliets mit neu gewonnenen Freunden und super Surf Lessons. Jederzeit wieder!",
+            ateDesc: t("france_review_element6"),
             rateImage: RateImg,
             rateCalendar: "30.07.2021",
-            rateFootNote:
-              "Surfcamp in Moliets: Party & Campfeeling pur bewertet von",
+            rateFootNote: t("france_review_element_more6"),
           },
         ]}
         rateCols="xl:grid-cols-3"
@@ -749,35 +725,35 @@ const SurfcampsFrance = () => {
         ]}
       />
       <TagSection
-        title="Mehr Inspiration für deinen Surfurlaub"
+        title={t("france_link_element_title")}
         cols="xl:grid-cols-3"
         items={[
           {
-            title: "Top-Reiseziele",
+            title: t("france_link_element_col1_title"),
             items: [
-              "Surfcamps in Portugal",
-              "Surfcamps auf Fuerteventura",
-              "Surfcamps in Spanien",
-              "Surfcamps auf Teneriffa",
+              t("france_link_element_col1_item1"),
+              t("france_link_element_col1_item2"),
+              t("france_link_element_col1_item3"),
+              t("france_link_element_col1_item4"),
             ],
           },
           {
-            title: "Beliebte Kategorien",
+            title: t("france_link_element_col2_title"),
             items: [
-              "Surfcamps in der Natur",
-              "Surfcamps für Alleinreisende",
-              "Surfurlaub für Familien",
-              "Surf & Yoga Reisen",
+              t("france_link_element_col2_item1"),
+              t("france_link_element_col2_item2"),
+              t("france_link_element_col2_item3"),
+              t("france_link_element_col2_item4"),
             ],
           },
 
           {
-            title: "Unser Reisemagazin",
+            title: t("france_link_element_col3_title"),
             items: [
-              "Reisebericht: Surf & Yoga Camp in Portugal",
-              "Gemeinsam für den Meeresschutz",
-              "Surfen auf den Kanaren",
-              "Reisebericht: Mein erstes Surfcamp",
+              t("france_link_element_col3_item1"),
+              t("france_link_element_col3_item2"),
+              t("france_link_element_col3_item3"),
+              t("france_link_element_col3_item4"),
             ],
           },
         ]}

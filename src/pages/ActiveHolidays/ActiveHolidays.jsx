@@ -1,4 +1,5 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 // Hero
 import Hero from "../../components/Hero/Hero";
 //HorizontalHintSection
@@ -61,61 +62,57 @@ import { BsWhatsapp } from "react-icons/bs";
 import TagSection from "../../components/TagSection/TagSection";
 
 const ActiveHolidays = () => {
+  const { t } = useTranslation();
   return (
     <div>
       <Hero
         image="bg-hero-active-holiday"
-        title="Aktivurlaub"
-        description="Unvergessliche Erlebnisse in der Natur"
+        title={t("active_header_title")}
+        description={t("active_header_subtitle")}
       />
       <HorizontalHintSection
         bgColor=""
         items={[
           {
             icon: <FaRunning size={56} />,
-            title: "Endlich Zeit für Sport",
-            description:
-              "Ein guter Aktivurlaub zeichnet sich durch ein abwechslungsreiches Sportprogramm aus, welches dich zugleich fordert und fördert!",
+            title: t("active_4symbol_title1"),
+            description: t("active_4symbol_text1"),
           },
           {
             icon: <FaTree size={56} />,
-            title: "Natur erleben",
-            description:
-              "Frische Luft und Bewegung unter dem freien Himmel sind gesund und machen deinen Urlaub zur vitalen Aktivauszeit!",
+            title: t("active_4symbol_title2"),
+            description: t("active_4symbol_text2"),
           },
           {
             icon: <FaBatteryFull size={56} />,
-            title: "Nachhaltige Erholung",
-            description:
-              "Deine Beine wohlverdient hochzulegen und dich zu entspannen fühlt sich nach einem aktiven Tag in der Natur einfach unvergleichlich an!",
+            title: t("active_4symbol_title3"),
+            description: t("active_4symbol_text3"),
           },
           {
             icon: <FaSearchLocation size={56} />,
-            title: "Lokale Tipps",
-            description:
-              "Unsere Trainer:innen kennen sich in der Umgebung bestens aus und versorgen dich mit wertvollen Geheimtipps!",
+            title: t("active_4symbol_title4"),
+            description: t("active_4symbol_text4"),
           },
         ]}
       />
       <Description
-        titel="Finde den Aktivurlaub, der zu dir passt"
+        title={t("active_big_tab_element_title")}
         tabItems={[
-          "Berge",
-          "Meer",
-          "Wellness",
-          "Für Alleinreisende",
-          "Für Paare",
-          "Für Freund:innen",
-          "Familien",
+          t("active_big_tab_element_tab1"),
+          t("active_big_tab_element_tab2"),
+          t("active_big_tab_element_tab3"),
+          t("active_big_tab_element_tab4"),
+          t("active_big_tab_element_tab5"),
+          t("active_big_tab_element_tab6"),
+          t("active_big_tab_element_tab7"),
         ]}
         tabCols="lg:grid-cols-7"
         tabContents={[
           {
             detailsImage: Berge,
-            detailsTitle: "Die Berge rufen: Aktiv sein mit Ausblick",
-            detailsDesc:
-              "Nicht umsonst gelten die Berge als das absolute Paradies für Aktivreisende. Neben den unendlichen Möglichkeiten sich sportlich zu betätigen, sorgen das traumhafte Bergpanorama und zahlreiche Seen für die perfekte Abwechslung bei deinem Aktivurlaub. Dicht verwobene Wandernetze führen dich durch Wälder, Wiesen, Almen und Täler, während die erholsame Bergluft durch deine Lungen strömt.Ganz gleich ob Action, Natur oder Erholung, in den Bergen kommt jeder Outdoor-Fan auf seine Kosten! Neben den vielfältigen Angeboten wie Klettern, Canyoning, Rafting, Paragliding, Mountainbiking sind die meisten Unterkünfte außerdem mit weitläufigen Wellnessbereichen ausgestattet, die zum Entspannen einladen.",
-            detailsReadMore: "",
+            detailsTitle: t("active_big_tab_element_title1"),
+            detailsDesc: "",
+            detailsReadMore: t("active_big_tab_element_text1"),
             cardTitle: "Top-Aktivreisen in den Bergen",
             cardItems: [
               {
@@ -167,9 +164,8 @@ const ActiveHolidays = () => {
           },
           {
             detailsImage: Meer,
-            detailsTitle: "Auspowern am Strand: Sommer, Sonne & Meer",
-            detailsDesc:
-              "Am Meer macht einfach alles mehr Spaß - besonders Sport und Bewegung werden an der Küste nicht ohne Grund großgeschrieben. Denn was gibt es besseres als nach einem aktiven Urlaubstag ins erfrischende Meer zu springen? Aktivreisen am Meer zeichnen sich meist durch ein abwechslungsreiches Sportprogramm am Strand oder in der Unterkunft aus und lassen dir genug Freiraum, um entspannt an der Promenade zu bummeln, die lokale Kultur zu entdecken oder einen faulen Strandtag einzulegen.",
+            detailsTitle: t("active_big_tab_element_title2"),
+            detailsDesc: t("active_big_tab_element_text2"),
             detailsReadMore: "",
             cardTitle: "Top-Aktivreisen am Meer",
             cardItems: [
@@ -222,9 +218,8 @@ const ActiveHolidays = () => {
           },
           {
             detailsImage: Wellness,
-            detailsTitle: "Aktivreisen mit Wohlfühlfaktor und Spa-Bereich",
-            detailsDesc:
-              "Zwischen Arbeit und Alltagsstress bleibt nach dem Sport selten Zeit für nachhaltige Entspannung. Höchste Zeit für deinen wohlverdienten Wellnessurlaub! Nach kräftezehrenden Wanderungen oder Workouts kann eine ausgedehnte Massage wahre Wunder bewirken. Bei einer aktiven Wellness-Auszeit warten exklusive Saunabereiche, auf dein Aktivprogramm angepasste Wellnessanwendungen sowie die längst überfällige Portion Tiefenentspannung auf dich.Wann sonst hast du die Zeit, dich mal so richtig verwöhnen zu lassen?",
+            detailsTitle: t("active_big_tab_element_title3"),
+            detailsDesc: t("active_big_tab_element_text3"),
             detailsReadMore: "Erfahre mehr über einen Surfurlaub in Spanien",
             cardTitle: "Top-Aktivreisen mit Wellnessangebot",
             cardItems: [
@@ -277,9 +272,8 @@ const ActiveHolidays = () => {
           },
           {
             detailsImage: Alleinreisende,
-            detailsTitle: "Gemeinsam an einem Strang ziehen",
-            detailsDesc:
-              "… und mit Gleichgesinnten seine Leidenschaft teilen - das macht eine gute Gruppenreise aus. Frei nach dem Motto “Alles kann, nichts muss” sind Gruppenreisen perfekt für Alleinreisende. Du nimmst täglich an verschiedenen Einheiten teil und bestimmst dabei selbst, ob du dich zum abendlichen Essen verabredest oder dein eigenes Ding machst. Deine Reiseleitungen achten stets darauf, die Bedürfnisse der gesamten Gruppe zu berücksichtigen und haben großen Spaß daran, ihre Leidenschaft sowie hilfreiche Geheimtipps mit dir zu teilen!",
+            detailsTitle: t("active_big_tab_element_title4"),
+            detailsDesc: t("active_big_tab_element_text4"),
             detailsReadMore: "",
             cardTitle: "Top-Aktivreisen in der Gruppe",
             cardItems: [
@@ -332,9 +326,8 @@ const ActiveHolidays = () => {
           },
           {
             detailsImage: Paare,
-            detailsTitle: "Zu zweit den Horizont erweitern",
-            detailsDesc:
-              "Ein Aktivurlaub ist der beste Weg, um unvergessliche Erlebnisse miteinander zu teilen! Testet gemeinsam neue Sportarten oder Trainingsmethoden aus, entdeckt neue Lieblingsorte und lasst es euch mal so richtig gut gehen. Eure aktive Auszeit wird euch mit Sicherheit enger zusammenschweißen und nachhaltig vitalisieren. Auf euch warten Candle-Light-Dinner, Partnermassagen, Ausflüge und eine unvergessliche Zeit - worauf wartet ihr?",
+            detailsTitle: t("active_big_tab_element_title5"),
+            detailsDesc: t("active_big_tab_element_text5"),
             detailsReadMore: "",
             cardTitle: "Top-Aktivreisen für Paare",
             cardItems: [
@@ -388,9 +381,8 @@ const ActiveHolidays = () => {
           },
           {
             detailsImage: Freund,
-            detailsTitle: "Aktiv sein mit den engsten Vertrauten",
-            detailsDesc:
-              "Die Welt zusammen mit den besten Freund:innen entdecken - wir können uns nichts besseres vorstellen! Gemeinsam durch ferne Landschaften wandern oder am Strand joggen, neue Sportarten oder Trainingsmethoden ausprobieren und unvergessliche Abende mit neuen Bekanntschaften verbringen: Das und mehr erwartet dich bei einer gemeinsamen Aktivreise! Also schnapp dir die Menschen, die dir wirklich wichtig sind und erlebe deinen Aktivurlaub entweder gemeinsam mit deinen besten Freunden oder Freundinnen oder lasse alte Freundschaften neu aufleben. Der Spaßfaktor ist auf jeden Fall garantiert!",
+            detailsTitle: t("active_big_tab_element_title6"),
+            detailsDesc: t("active_big_tab_element_text6"),
             detailsReadMore: "",
             cardTitle: "Top-Aktivreisen für Freund:innen",
             cardItems: [
@@ -443,10 +435,8 @@ const ActiveHolidays = () => {
           },
           {
             detailsImage: Familien,
-            detailsTitle:
-              "Aktive Familien-Auszeit: Hier kommen alle auf ihre Kosten",
-            detailsDesc:
-              "Wir alle wissen wie schwierig es sein kann, jedes Familienmitglied gleichermaßen zufrieden zu stellen. Ein Aktivurlaub bietet viele verschiedene Möglichkeiten, Klein und Groß glücklich zu machen und dabei mal so richtig zu entspannen! Nach einem aktiven Tag voller Bewegung fallen die Augen am Abend meist wie von selbst zu und Mama und Papa können in Ruhe ein Glas Wein genießen.  Deswegen sind Bewegung, Natur und jede Menge Vergnügen die idealen Zutaten für den perfekten Familienurlaub, bei dem die Familie zusammenwächst und alle Beteiligten ihren Alltag gemeinsam hinter sich lassen können!",
+            detailsTitle: t("active_big_tab_element_title7"),
+            detailsDesc: t("active_big_tab_element_text7"),
             detailsReadMore: "",
             cardTitle: "Top-Aktivreisen für Familien",
             cardItems: [
@@ -500,41 +490,39 @@ const ActiveHolidays = () => {
         ]}
       />
       <ColorDivider
-        title="Aktivurlaub buchen ohne Risiko!"
-        description="Wir bieten dir flexible Stornierungsbedingungen mit 100 % Rückerstattung"
-        buttonTitle="Mehr erfahren"
+        title={t("active_narrow_divider_element_title")}
+        description={t("active_narrow_divider_element_text")}
+        buttonTitle={t("active_narrow_divider_element_button")}
       />
       <ListAndImage
         mainTitle="Die besten Reiseziele für deinen Aktivurlaub"
         image={ListAndImage1}
-        title="Österreich: Das Aktiv-Paradies"
-        description="Berge, Täler und Seen soweit das Auge reicht: Actiongeladene Flüsse und Wasserfälle und eine unglaubliche Vielfalt an Wander- und Radwegen machen Österreich zur optimalen Spielwiese für Outdoor-Fans!
-        Nirgendwo anders macht das gemeinsame Ausloten der eigenen Grenzen so viel Spaß wie in den Alpen. Aufgrund der einzigartigen Natur ist das Aktivangebot in Österreich so vielfältig wie nirgendwo anders - und darüber hinaus ganz einfach mit dem Auto zu erreichen."
-        readMore="Entdecke Aktivreisen in Österreich"
+        title={t("active_image_and_text_element_title1")}
+        description={t("active_image_and_text_element_text1")}
+        readMore={t("active_image_and_text_element_more1")}
       />
       <ListAndImage
         imgAlign="right"
         image={ListAndImage2}
-        title="Deutschland: Die Qual der Wahl"
-        description="Unser Heimatland hat mehr zu bieten, als die meisten vermuten! Von den unendlichen Weiten der rauen Nordseestrände über die einzigartigen Wanderwege der Eifel oder der Sächsischen Schweiz bis hin zu der Idyllik des Schwarzwaldes und den Alpen: In Deutschland bestimmst du selbst, wie dein Aktivurlaub aussieht.
-        Egal ob Fitness oder Fahrrad, Strandurlaub oder Wintersport - das nächste Abenteuer wartet bereits vor deiner eigenen Haustür!"
-        readMore="Entdecke Aktivreisen in Deutschland"
+        title={t("active_image_and_text_element_title2")}
+        description={t("active_image_and_text_element_text2")}
+        readMore={t("active_image_and_text_element_more2")}
       />
       <SingleColImg
-        title="Welches Surflevel passt zu dir?"
-        description="Ganz gleich ob du noch nie auf einem Surfbrett standest oder bereits grüne Wellen surfst, mit unserer handverlesenen Auswahl findest du das passende Surfcamp für dein Surflevel!"
+        title={t("active_3_linked_images_title")}
+        description={t("active_3_linked_images_subtitle")}
         items={[
           {
             img: Col31,
-            title: "Spanien",
+            title: t("active_3_linked_images_item1"),
           },
           {
             img: Col32,
-            title: "Portugal",
+            title: t("active_3_linked_images_item2"),
           },
           {
             img: Col33,
-            title: "Italien",
+            title: t("active_3_linked_images_item3"),
           },
         ]}
         cols="md:grid-cols-3"
@@ -542,26 +530,26 @@ const ActiveHolidays = () => {
       <DividerImg
         image={Besonderheiten}
         align="left"
-        title="Die ultimative Herausforderung"
-        description="Bist du bereit für die Königsdisziplin? Dann schließe dich jetzt einer unserer Alpentraversalen an und lote deine Grenzen aus!"
-        buttonTitle="Zu den besten Alpenüberquerungen"
+        title={t("active_divider_wide_with_image_background_title")}
+        description={t("active_divider_wide_with_image_background_text")}
+        buttonTitle={t("active_divider_wide_with_image_background_button")}
       />
       <ImageGalleryBrick
         reverse={true}
-        title="Beliebte Kategorien für deinen Aktivurlaub"
-        description="Es gibt so viele Möglichkeiten aktiv zu sein - lass dich inspirieren!"
-        image1={{ img: image1, title: "Fitness & Yoga Reisen" }}
-        image2={{ img: image2, title: "Wander Gruppenreisen" }}
-        image3={{ img: image3, title: "Wander & Yoga Reisen" }}
-        image4={{ img: image4, title: "Wander Wochenenden" }}
-        image5={{ img: image5, title: "Kampfsport Reisen" }}
-        image6={{ img: image6, title: "Surfcamps" }}
-        image7={{ img: image7, title: "Genuss Wander Urlaube" }}
-        image8={{ img: image8, title: "Mountainbike Reisen" }}
+        title={t("active_8_parted_linked_image_title")}
+        description={t("active_8_parted_linked_image")}
+        image1={{ img: image1, title: t("active_8_parted_linked_image_tab1") }}
+        image2={{ img: image2, title: t("active_8_parted_linked_image_tab2") }}
+        image3={{ img: image3, title: t("active_8_parted_linked_image_tab3") }}
+        image4={{ img: image4, title: t("active_8_parted_linked_image_tab4") }}
+        image5={{ img: image5, title: t("active_8_parted_linked_image_tab5") }}
+        image6={{ img: image6, title: t("active_8_parted_linked_image_tab6") }}
+        image7={{ img: image7, title: t("active_8_parted_linked_image_tab7") }}
+        image8={{ img: image8, title: t("active_8_parted_linked_image_tab8") }}
       />
       <SingleCardSection
-        title="Ausgewählte Aktivurlaube"
-        description="Entdecke ausgewählte Reisen mit vielfältigem Sportprogramm und passionierten Trainer:innen. Du hast die Wahl zwischen klassischen Fitnessangeboten und spezifischen Wanderreisen, Yoga Retreats und vielen anderen Sportarten!"
+        title={t("active_offer_element_title")}
+        description={t("active_offer_element")}
         items={[
           {
             cardImage: cardImage,
@@ -747,21 +735,30 @@ const ActiveHolidays = () => {
         dark={true}
         items={[
           {
-            description:
-              "Das Essen war hausgemacht, die Yoga und Qi Gong Stunden waren wirklich etwas Besonderes und auf den 1800m Höhe kann man super abschalten, den Alltag vergessen und sich um sich selbst kümmern. Es gab viele Angebote wie Klettern, Rafting oder einen Workshoptag, deshalb ist der Preis sehr fair. Danke an Denise, Wendy & Chris für ein rundum gelungenes Retreat!",
-            name: "Silke Roth",
+            description: t(
+              "active_big_divider_with_image_as_background_review_element_text1"
+            ),
+            name: t(
+              "active_big_divider_with_image_as_background_review_element_name1"
+            ),
             date: "21.01.2022",
           },
           {
-            description:
-              "Super nettes Personal, fantastisches Essen, tolle Umgebung, schöner Wellness Bereich.",
-            name: "Maike Stahl",
+            description: t(
+              "active_big_divider_with_image_as_background_review_element_text2"
+            ),
+            name: t(
+              "active_big_divider_with_image_as_background_review_element_name2"
+            ),
             date: "21.04.2022",
           },
           {
-            description:
-              "Eine unvergessliche Woche liegt hinter mir! Sie war nicht nur entspannend sondern auch inspirierend. Das gesamte Team war sehr freundlich und kompetent, die Massage war genau das richtige um die beanspruchten Muskeln zu lockern und das Essen mit so viel Liebe und Freude zubereitet, das man es tatsächlich schmecken konnte!",
-            name: "Tina",
+            description: t(
+              "active_big_divider_with_image_as_background_review_element_text3"
+            ),
+            name: t(
+              "active_big_divider_with_image_as_background_review_element_name3"
+            ),
             date: "11.11.2022",
           },
         ]}
@@ -770,23 +767,20 @@ const ActiveHolidays = () => {
         items={[
           {
             icon: <BiLike size={38} />,
-            title: "100% Rückerstattung",
-            description:
-              "Transparent und stressfrei! Erhalte mit unseren flexiblen Stornierungsbedingungen den vollen Betrag zurückerstattet.",
+            title: t("symbol_element_title1"),
+            description: t("symbol_element_text1"),
             readMore: "Zu den Details",
           },
           {
             icon: <BiStar size={38} />,
-            title: "Qualitätsgeprüfte Reisen",
-            description:
-              "Alle Reisen sind von Sportexperten ausgewählt und von unabhängigen Kunden mit mindestens 4,5 von 5 Sternen bewertet!",
+            title: t("symbol_element_title2"),
+            description: t("symbol_element_text2"),
             readMore: "Zu den Details",
           },
           {
             icon: <BiHeart size={38} />,
-            title: "Persönliche Beratung",
-            description:
-              "Wir lieben, was wir tun und sind immer an deiner Seite! Kontaktiere uns einfach per Email, Telefon oder WhatsApp.",
+            title: t("symbol_element_title3"),
+            description: t("symbol_element_text3"),
             readMore: "Zu den Details",
           },
         ]}
@@ -826,51 +820,51 @@ const ActiveHolidays = () => {
         cols="xl:grid-cols-4"
         items={[
           {
-            title: "Aktivurlaub nach Region",
+            title: t("active_link_element_col1_title"),
             items: [
-              "Deutschland",
-              "Österreich",
-              "Spanien",
-              "Portugal",
-              "Griechenland",
-              "Italien",
+              t("active_link_element_col1_item1"),
+              t("active_link_element_col1_item2"),
+              t("active_link_element_col1_item3"),
+              t("active_link_element_col1_item4"),
+              t("active_link_element_col1_item5"),
+              t("active_link_element_col1_item6"),
             ],
           },
           {
-            title: "Beliebte Kategorien",
+            title: t("active_link_element_col2_title"),
             items: [
-              "Genuss Wander Urlaube",
-              "Fitness & Yoga Reisen",
-              "Wander Wochenenden",
-              "Wander Gruppenreisen",
-              "Surfcamps",
-              "Surfcamps",
-              "Yoga & Wander Urlaube",
-              "Kampfsport Reisen",
+              t("active_link_element_col2_item1"),
+              t("active_link_element_col2_item2"),
+              t("active_link_element_col2_item3"),
+              t("active_link_element_col2_item4"),
+              t("active_link_element_col2_item5"),
+              t("active_link_element_col2_item6"),
+              t("active_link_element_col2_item7"),
+              t("active_link_element_col2_item8"),
             ],
           },
           {
-            title: "Ausgewählte Aktivhotels",
+            title: t("active_link_element_col3_title"),
             items: [
-              "Hotel Vier Jahreszeiten",
-              "Das Rübezahl",
-              "Verwöhnhotel Kristall",
-              "Hotel Edelweiss",
-              "Porto Elounda",
-              "FeelViana",
+              t("active_link_element_col3_item1"),
+              t("active_link_element_col3_item2"),
+              t("active_link_element_col3_item3"),
+              t("active_link_element_col3_item4"),
+              t("active_link_element_col3_item5"),
+              t("active_link_element_col3_item6"),
             ],
           },
           {
-            title: "Reisemagazin",
+            title: t("active_link_element_col4_title"),
             items: [
-              "Wandern für Anfänger",
-              "12 Sportreisen für 2021",
-              "Bootcamp Urlaube",
-              "8 Faszien Training Übungen",
-              "Frauenboxen",
-              "Lohnt sich ein Personal Trainer?",
-              "HIIT Training",
-              "Faszination Mud-Run",
+              t("active_link_element_col4_item1"),
+              t("active_link_element_col4_item2"),
+              t("active_link_element_col4_item3"),
+              t("active_link_element_col4_item4"),
+              t("active_link_element_col4_item5"),
+              t("active_link_element_col4_item6"),
+              t("active_link_element_col4_item7"),
+              t("active_link_element_col4_item8"),
             ],
           },
         ]}

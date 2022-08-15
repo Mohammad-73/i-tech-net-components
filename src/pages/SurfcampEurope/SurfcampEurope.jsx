@@ -785,60 +785,49 @@ const SurfcampEurope = () => {
         icon={<BiRightArrowAlt size={30} />}
       />
       <RateCardSection
-        title="Das sagen Reisende über ihren Surfurlaub in Europa"
+        title={t("euro_reviews_title")}
         items={[
           {
             rateName: "Febi",
-            rateDesc:
-              "Sehr sauber, tolle Atmosphäre, super Lage direkt am Strand, mega Blick aufs Meer von der Dachterasse und nette Gäste :)",
+            rateDesc: t("euro_reviews_review1"),
             rateImage: RateImg,
             rateCalendar: "22.08.2021",
-            rateFootNote:
-              "Modernes Surfhaus direkt am Strand von Las Palmas bewertet von",
+            rateFootNote: t("euro_reviews_more1"),
           },
           {
             rateName: "Yves",
-            rateDesc: "Einer der besten Urlaube die ich erleben durfte",
+            rateDesc: t("euro_reviews_review2"),
             rateImage: RateImg,
             rateCalendar: " 08.12.2021",
-            rateFootNote:
-              "Surfcamp in Corralejo: Chillen, Surfen & neue Leute bewertet von Yves,",
+            rateFootNote: t("euro_reviews_more2"),
           },
           {
             rateName: "Pia",
-            rateDesc:
-              "Wenn ihr nach Portugal reist und Surfen lernen wollt, seid ihr im Estela Surf Hostel bestens aufgehoben. Die Hosts Marco und Rachel sind super herzlich und gastfreundlich. Betonen möchte ich auch die Sauberkeit der Unterkunft. Wir haben noch nie so ein sauberes Hostel gesehen. Wir freuen uns schon auf den nächsten Besuch!:)",
+            rateDesc: t("euro_reviews_review3"),
             rateImage: RateImg,
             rateCalendar: " 28.09.2021",
-            rateFootNote:
-              "Familiäres Surfhaus im unberührten Norden Portugals bewertet von ",
+            rateFootNote: t("euro_reviews_more3"),
           },
           {
             rateName: "Paula",
-            rateDesc:
-              "Ich werd diese Woche nie vergessen und kann das Surfcamp nur weiterempfehlen! Ihr werdet eine unvergesslich geile Zeit haben. Alle Leute sind super chillig drauf, die Partys sind nice, das Surfen ist der Hammer und das Essen super lecker. Was will man mehr?",
+            rateDesc: t("euro_reviews_review4"),
             rateImage: RateImg,
             rateCalendar: "09.09.2021",
-            rateFootNote:
-              "Surfcamp in Westfrankreich: Surfen weit weg vom Trubel bewertet von ",
+            rateFootNote: t("euro_reviews_more3"),
           },
           {
             rateName: "Ella",
-            rateDesc:
-              "Ich habe ein super Sommer Urlaub mit Volcano surfcamp gemacht! Unser Surftrainer Umberto ist einfach die besten! Die Unterkunft ist auch mega schön, man kann so einfach andere coole Leuten aus der Welt kennenlernen und jeden Tag etwas zusammen unternehmen. I‘ll come back there again for sure :D",
+            rateDesc: t("euro_reviews_review5"),
             rateImage: RateImg,
             rateCalendar: "27.08.2021",
-            rateFootNote:
-              "Gemeinschaftliches Surfhaus im Süden Teneriffas bewertet von Ella",
+            rateFootNote: t("euro_reviews_more5"),
           },
           {
             rateName: "Melina",
-            rateDesc:
-              "Einfach klasse! Daniel von moverii hat mir super bei der kurzfristigen Reiseplanung weitergeholfen. Das Hostel lag direkt am Strand, das Team dort war super nett und hilfsbereit und die surfstunden haben auch Spaß gemacht. Sehr verdiente 5 Sterne!",
+            rateDesc: t("euro_reviews_review6"),
             rateImage: RateImg,
             rateCalendar: "19.08.2021",
-            rateFootNote:
-              "Surfhaus mit Dachterrasse direkt am Surfspot in Ericeira bewertet von",
+            rateFootNote: t("euro_reviews_more6"),
           },
         ]}
         rateCols="xl:grid-cols-3"
@@ -873,48 +862,48 @@ const SurfcampEurope = () => {
         ]}
       />
       <TagSection
-        title="Mehr Inspiration für deinen Surfurlaub"
+        title={t("euro_link_element_title")}
         cols="xl:grid-cols-4"
         items={[
           {
-            title: "Top-Reiseziele",
+            title: t("euro_link_element_col1_title"),
             items: [
-              "Surfcamps in Frankreich",
-              "Surfcamps in Portugal",
-              "Surfcamps auf Fuerteventura",
-              "Surfcamps in Spanien",
-              "Surfcamps auf Teneriffa",
+              t("euro_link_element_col1_item1"),
+              t("euro_link_element_col1_item2"),
+              t("euro_link_element_col1_item3"),
+              t("euro_link_element_col1_item4"),
+              t("euro_link_element_col1_item5"),
             ],
           },
           {
-            title: "Beliebte Kategorien",
+            title: t("euro_link_element_col2_title"),
             items: [
-              "Surfcamps in der Natur",
-              "Surf & Yoga Camps",
-              "Low Budget Surfcamps",
-              "Surfcamps für Anfänger:innen",
-              "Surfhäuser & Lodges",
+              t("euro_link_element_col2_item1"),
+              t("euro_link_element_col2_item2"),
+              t("euro_link_element_col2_item3"),
+              t("euro_link_element_col2_item4"),
+              t("euro_link_element_col2_item5"),
             ],
           },
 
           {
-            title: "Gewünschte Atmosphäre",
+            title: t("euro_link_element_col3_title"),
             items: [
-              "Surfcamps für Alleinreisende",
-              "Surfurlaub für Familien",
-              "Surfcamps für Freund:innen",
-              "Surf-Reisen für Paare",
-              "Surfcamps für unter 18 Jährige",
+              t("euro_link_element_col3_item1"),
+              t("euro_link_element_col3_item2"),
+              t("euro_link_element_col3_item3"),
+              t("euro_link_element_col3_item4"),
+              t("euro_link_element_col3_item5"),
             ],
           },
           {
-            title: "Unser Reisemagazin",
+            title: t("euro_link_element_col4_title"),
             items: [
-              "Gemeinsam für den Meeresschutz",
-              "Reisebericht: Surf & Yoga Camp in Portugal",
-              "Die 13 besten Surf-Filme für einen Kino Abend",
-              "Reisebericht: Mein erstes Surfcamp",
-              "Surfen lernen: Dein Weg in die Freiheit",
+              t("euro_link_element_col4_item1"),
+              t("euro_link_element_col4_item2"),
+              t("euro_link_element_col4_item3"),
+              t("euro_link_element_col4_item4"),
+              t("euro_link_element_col4_item5"),
             ],
           },
         ]}
