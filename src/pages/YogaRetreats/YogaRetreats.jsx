@@ -1,4 +1,5 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 // Hero
 import Hero from "../../components/Hero/Hero";
 //HorizontalHintSection
@@ -98,39 +99,36 @@ import { BsWhatsapp } from "react-icons/bs";
 import TagSection from "../../components/TagSection/TagSection";
 
 const YogaRetreats = () => {
+  const { t } = useTranslation();
   return (
     <div>
       <Hero
         image="bg-hero-yoga-retreats"
-        title="Yoga Retreats"
-        description="Einklang und Harmonie für Körper, Geist und Seele"
+        title={t("yoga_retreats_header_title")}
+        description={t("yoga_retreats_header_subtitle")}
       />
       <HorizontalHintSection
         bgColor=""
         items={[
           {
             icon: <FaBalanceScale size={56} />,
-            title: "Ganzheitliches Erlebnis",
-            description:
-              "Stärke dein inneres Gleichgewicht mit einem Wohlfühlprogramm aus ausgewogener Verpflegung, Naturverbundenheit und angeleiteten Yoga-Einheiten.",
+            title: t("yoga_retreats_4_symbols_title1"),
+            description: t("yoga_retreats_4_symbols_text1"),
           },
           {
             icon: <FaPrayingHands size={56} />,
-            title: "Liebe für Yoga",
-            description:
-              "Die inspirierende Umgebung erlaubt es dir, dich voll und ganz auf deine Asanas, Pranayamas sowie deine Ernährung und das Meditieren zu fokussieren und große Fortschritte in deiner Yogapraxis zu erlangen.",
+            title: t("yoga_retreats_4_symbols_title2"),
+            description: t("yoga_retreats_4_symbols_text2"),
           },
           {
             icon: <FaSpa size={56} />,
-            title: "Zeit für dich",
-            description:
-              "Auf der Suche nach seelischem und körperlichem Wohlbefinden sowie neuer Lebensenergie wirst du nach einem Yoga Retreat erfüllt sein und neue Motivation und Kraft mit nach Hause nehmen.",
+            title: t("yoga_retreats_4_symbols_title3"),
+            description: t("yoga_retreats_4_symbols_text3"),
           },
           {
             icon: <FaMapSigns size={56} />,
-            title: "Raum für neue Erfahrungen",
-            description:
-              "Die entschleunigende Lebensphilosophie eines Yoga Retreats gibt dir neue Impulse und Antworten und spendet dir wichtige Inspiration für deinen Lebensalltag.",
+            title: t("yoga_retreats_4_symbols_title4"),
+            description: t("yoga_retreats_4_symbols_text4"),
           },
         ]}
       />
@@ -138,27 +136,26 @@ const YogaRetreats = () => {
         mainTitle="Entdecke die besten Reiseziele für dein Yoga Retreat"
         mainDescription="Die Umgebung spielt eine zentrale Rolle für die Atmosphäre und die Yogapraxis bei deinem Retreat. Wohin soll deine Reise gehen? Eine Welt voller Inspiration und unvergesslichen Erlebnissen wartet auf dich!"
         image={ListAndImage1}
-        title="Yoga Retreats in Europa"
-        description="Yoga Retreats in Europa stecken voller Vielfalt und neuer Erfahrungen. Von Retreats am Meer, bis hin zu atemberaubenden Berglandschaften und wohltuenden Wäldern, von angemieteten Seminarhäusern, bis hin zu luxuriösen Hotelaufenthalten: Hier sind deiner Yoga-Erfahrung keinerlei Grenzen gesetzt!
-        Gönn dir eine Auszeit und entdecke dich neu bei einem Yoga Retreat in Europa."
+        title={t("yoga_retreats_white_box1_title")}
+        description={t("yoga_retreats_white_box1_text1")}
       />
       <SingleColImg
         items={[
           {
             img: Col31,
-            title: "Deutschland",
+            title: t("yoga_retreats_box1_4_clickable_box1"),
           },
           {
             img: Col32,
-            title: "Österreich",
+            title: t("yoga_retreats_box1_4_clickable_box2"),
           },
           {
             img: Col33,
-            title: "Portugal",
+            title: t("yoga_retreats_box1_4_clickable_box3"),
           },
           {
             img: Col34,
-            title: "Mallorca",
+            title: t("yoga_retreats_box1_4_clickable_box4"),
           },
         ]}
         cols="md:grid-cols-4"
@@ -166,72 +163,66 @@ const YogaRetreats = () => {
       <ListAndImage
         imgAlign="right"
         image={ListAndImage2}
-        title="Yoga Retreats in Asien"
-        description="Reise zum Ursprung des Yoga! Nicht nur traditionelle indische Ashrams, sondern auch Länder wie Indonesien oder Thailand pflegen eine langjährige Yoga-Tradition und bieten dir einzigartige Rückzugsorte mitten im Dschungel, direkt am Strand oder in ursprünglichen Dörfern.
-        Lass deinen Alltagsstress hinter dir und tauche gemeinsam mit anderen Yogis und Yoginis ein in die lokale Kultur und die paradiesische Natur Asiens!"
+        title={t("yoga_retreats_white_box2_title")}
+        description={t("yoga_retreats_white_box2_text1")}
       />
       <SingleColImg
         items={[
           {
             img: Col35,
-            title: "Indien",
+            title: t("yoga_retreats_box2_4_clickable_box1"),
           },
           {
             img: Col36,
-            title: "Sri Lanka",
+            title: t("yoga_retreats_box2_4_clickable_box2"),
           },
           {
             img: Col37,
-            title: "Bali",
+            title: t("yoga_retreats_box2_4_clickable_box3"),
           },
           {
             img: Col38,
-            title: "Thailand",
+            title: t("yoga_retreats_box2_4_clickable_box4"),
           },
         ]}
         cols="md:grid-cols-4"
       />
       <ColorDivider
-        title="Yoga Retreats buchen ohne Risiko"
-        description="Wir bieten dir flexible Stornierungsbedingungen mit 100 % Rückerstattung!"
-        buttonTitle="Mehr erfahren"
+        title={t("yoga_retreats_narrow_divider_element_title")}
+        description={t("yoga_retreats_narrow_divider_element_text")}
+        buttonTitle={t("yoga_retreats_narrow_divider_element_button")}
       />
       <ImageGalleryFivePic
-        title="Was für ein Yoga Retreat wünschst du dir?"
+        title={t("yoga_retreats_5_clickable_box_title")}
         reverse={true}
         image1={{
           img: image1,
-          title: "Ayurveda Retreats",
-          description:
-            "Lerne die ayurvedische Lehre gezielt einzusetzen und von ihrer energiespendenden Heilsamkeit zu profitieren",
+          title: t("yoga_retreats_5_clickable_box_item4_title"),
+          description: t("yoga_retreats_5_clickable_box_item4_title"),
         }}
         image2={{
           img: image2,
-          title: "Yoga-Therapie Reisen",
-          description:
-            "Spüre die heilende Wirkung der Kombination aus Yoga, Meditation und gezielten Wellnessanwendungen",
+          title: t("yoga_retreats_5_clickable_box_item2_title"),
+          description: t("yoga_retreats_5_clickable_box_item2_title"),
         }}
         image5={{
           img: image5,
-          title: "Stille Retreats",
-          description:
-            "Erkunde dein tiefstes Inneres beim kollektiven Schweigen",
+          title: t("yoga_retreats_5_clickable_box_item5_title"),
+          description: t("yoga_retreats_5_clickable_box_item5_title"),
         }}
         image3={{
           img: image3,
-          title: "Yoga & Meditations Retreats",
-          description:
-            "Erlebe den perfekten Mix aus geistiger Ruhe und körperlicher Aktivität",
+          title: t("yoga_retreats_5_clickable_box_item3_title"),
+          description: t("yoga_retreats_5_clickable_box_item3_title"),
         }}
         image4={{
           img: image4,
-          title: "Spirituelle Retreats",
-          description:
-            "Erfahre die Kraft der Spiritualität, die dich mit dir und der Umwelt verbindet",
+          title: t("yoga_retreats_5_clickable_box_item1_title"),
+          description: t("yoga_retreats_5_clickable_box_item1_title"),
         }}
       />
       <SingleCardSection
-        title="Ausgewählte Yoga Retreats"
+        title={t("yoga_retreats_offer_element_4_part")}
         items={[
           {
             cardImage: cardImage,
@@ -437,126 +428,116 @@ const YogaRetreats = () => {
       <DividerImg
         image={Suchst}
         align="left"
-        title="Suchst du nach einer kurzen Auszeit vom Alltag?"
-        description="Ein Yoga Wochenende bietet die perfekte Gelegenheit, seinen Geist von Ängsten, Sorgen und Stress zu befreien und seinem Körper eine Auszeit von toxischen Alltagsroutinen zu schenken. So kannst du dich intensiv erholen und deine innere Balance wiederherstellen!"
-        buttonTitle="Zu allen Yoga Wochenenden"
+        title={t("yoga_retreats_divider_title")}
+        description={t("yoga_retreats_divider_text")}
+        buttonTitle={t("yoga_retreats_divider_button")}
       />
       <ImageGallery3
-        title="Ausgewählte Kategorien für dein Yoga Retreat"
+        title={t("yoga_retreats_6_clickable_boxes_title")}
         items={[
           {
             img: imgGallery1,
             shadow: "80",
-            title: "Yoga & Wellness Reisen",
+            title: t("yoga_retreats_6_clickable_boxes_item1"),
           },
           {
             img: imgGallery2,
             shadow: "80",
-            title: "Luxus Yoga Reisen",
+            title: t("yoga_retreats_6_clickable_boxes_item2"),
           },
           {
             img: imgGallery3,
             shadow: "80",
-            title: "Yoga Safari",
+            title: t("yoga_retreats_6_clickable_boxes_item3"),
           },
           {
             img: imgGallery4,
             shadow: "80",
-            title: "Yoga Retreats nur für Frauen",
+            title: t("yoga_retreats_6_clickable_boxes_item4"),
           },
           {
             img: imgGallery5,
             shadow: "80",
-            title: "Flexible Stornierung",
+            title: t("yoga_retreats_6_clickable_boxes_item5"),
           },
           {
             img: imgGallery6,
             shadow: "80",
-            title: "Budget Yoga Camps",
+            title: t("yoga_retreats_6_clickable_boxes_item6"),
           },
         ]}
       />
       <HorizontalCardSection
-        title="Yogalehrer:innen im Fokus"
-        description="Lerne die Persönlichkeiten hinter den Retreats kennen und lass dich von ihrer jahrelangen Erfahrung, ihrer Lebensfreude sowie ihrer Leidenschaft für Yoga inspirieren."
+        title={t("yoga_retreats_2_slide_title")}
+        description={t("yoga_retreats_2_slide_subTitle")}
         items={[
           {
             image: hImg1,
-
-            description:
-              "Ein Retreat bedeutet für mich, sich Zeit zu nehmen, den Alltagstrott einige Momente hinter sich zu lassen und sich nach innen zu kehren um somit wieder Energie für all unsere Aufgaben zu schöpfen",
-            name: "Tammy Assanoff",
+            description: t("yoga_retreats_2_slide_desc1"),
+            name: t("yoga_retreats_2_slide_name1"),
             details: "Yogalehrerin aus Köln",
           },
           {
             image: hImg2,
-            description:
-              "Bei unseren Retreats teilen wir einen natürlichen Lebensstil mit lokaler Verpflegung und erneuerbaren Energien sowie kleinen Gruppen statt Massentourismus.",
-            name: "Shaini Verdon",
+            description: t("yoga_retreats_2_slide_desc2"),
+            name: t("yoga_retreats_2_slide_name2"),
             details: "Iyengar Yogalehrerin in Portugal",
           },
           {
             image: hImg3,
-            description:
-              "Meine Miniretreats sollen zeigen, dass es nicht viel Zeit braucht um durchzuatmen und Impulse zu geben für mehr Gelassenheit und Frieden mit sich und der Welt.",
-            name: "Leander Graf",
+            description: t("yoga_retreats_2_slide_desc3"),
+            name: t("yoga_retreats_2_slide_name3"),
             details: "Yogalehrer aus Berlin",
           },
           {
             image: hImg4,
-            description:
-              "Ich stecke all meine Liebe und Leidenschaft in inspirierende und transformierende Yoga- und Meditationsurlaube an außergewöhnlichen Orten.",
-            name: "Chiara Bürkle",
+            description: t("yoga_retreats_2_slide_desc4"),
+            name: t("yoga_retreats_2_slide_name4"),
             details: "Yogalehrerin auf Gran Canaria",
           },
           {
             image: hImg5,
-            description:
-              "Ich helfe den Menschen dabei, ihre Lebensenergie wieder aufzuladen und dauerhaft zu vervielfachen.",
-            name: "Susanne Behm",
+            description: t("yoga_retreats_2_slide_desc5"),
+            name: t("yoga_retreats_2_slide_name5"),
             details: "Fastenleiterin, CQM-Coach und Yogalehrerin",
           },
           {
             image: hImg6,
-            description:
-              "Meine wunderschöne Arbeit in Marokko, bei der ich mich öffnen kann, unterstützt mich dabei ich selbst zu sein.",
-            name: "Daniela Holzer",
+            description: t("yoga_retreats_2_slide_desc6"),
+            name: t("yoga_retreats_2_slide_name6"),
             details: "Yogalehrerin aus Klagenfurt am Wörthersee",
           },
           {
             image: hImg7,
-            description:
-              "Unsere Reisen sind mehr als ein Yoga Retreat oder Outdoor Urlaub. Mach mit uns eine Reise zu Bewusstheit, Leichtigkeit und Präsenz in atemberaubender Umgebung.",
-            name: "Denise Mitterer",
+            description: t("yoga_retreats_2_slide_desc7"),
+            name: t("yoga_retreats_2_slide_name7"),
             details: "Yogalehrerin im Zillertal",
           },
           {
             image: hImg8,
-            description:
-              "Wir sehen den Menschen als ein schöpferisch tätiges Wesen, der die Welt durch die Kräfte seiner Seele – durch das Denken, Fühlen und Wollen ergründet.",
-            name: "Hans-Peter und Claudia Fritsche",
+            description: t("yoga_retreats_2_slide_desc8"),
+            name: t("yoga_retreats_2_slide_name8"),
             details: "Yogalehrer aus Baden-Württemberg",
           },
         ]}
       />
       <Description
-        titel="Yoga Retreats nach Yoga-Arten"
+        titel={t("yoga_retreats_big_tab_element_title")}
         tabItems={[
-          "Hatha Yoga",
-          "Yin Yoga",
-          "Iyengar Yoga",
-          "Vinyasa Yoga",
-          "Aerial Yoga",
+          t("yoga_retreats_big_tab_element_tab1"),
+          t("yoga_retreats_big_tab_element_tab2"),
+          t("yoga_retreats_big_tab_element_tab3"),
+          t("yoga_retreats_big_tab_element_tab4"),
+          t("yoga_retreats_big_tab_element_tab5"),
         ]}
         tabCols="lg:grid-cols-5"
         tabContents={[
           {
             detailsImage: Moliets,
-            detailsTitle: "Die Klassische Variante für Yoga-Neulinge",
-            detailsDesc:
-              "“Hatha” setzt sich aus den Wörtern “Ha” (Sonne) und “Tha” (Mond) zusammen. Während die Sonne für Hitze und Männlichkeit steht, assoziiert man den Mond mit der Rationalität und der Weiblichkeit. Ziel des Hatha Yogas ist es, ein Gleichgewicht zwischen diesen beiden Gegenpolen herzustellen und dem Körper so die nötige Energie für Meditationsübungen bereitzustellen. Beim Hatha Yoga werden die Asanas (Körperstellungen)  sehr bewusst ausgeführt. Dabei bleibt das Verhältnis von Entspannung und Muskelbelastung ausgeglichen, um dein Gleichgewicht, deine Stabilität und deine Kraft gleichermaßen zu fordern und zu fördern. Die meisten in der westlichen Welt verbreiteten Yoga-Arten basieren auf dem Hatha Yoga. Seine ausgewogene Kombination aus Ruhe und Anstrengung macht diesen Stil außerdem ideal, um einen ersten Zugang zum Yoga zu finden.",
+            detailsTitle: t("yoga_retreats_big_tab_element_tab1_title"),
+            detailsDesc: t("yoga_retreats_big_tab_element_tab1_subtitle"),
             detailsReadMore: "",
-            cardTitle: "Ausgewählte Hatha Yoga Retreats",
+            cardTitle: t("yoga_retreats_big_tab_element_tab1_more"),
             cardItems: [
               {
                 cardImage: cardImage,
@@ -607,11 +588,10 @@ const YogaRetreats = () => {
           },
           {
             detailsImage: Yin,
-            detailsTitle: "Ausgeglichenheit und Ruhe",
-            detailsDesc:
-              "Während Yang traditionell für das Bewegte, Männliche steht, symbolisiert Yin das Sanfte und Ruhige, was eher der Weiblichkeit nachgesagt wird. Die entspannende und meditative Praxis des Yin Yoga soll also einen Gegenpol zur hektischen Außenwelt darstellen. Die Haltungen werden weder in einem bestimmten Rhythmus, noch mit einer besonderen Dynamik durchgeführt: Beim Yin Yoga geht es vielmehr um lange gehaltene Dehnungen, die bis in die Faszien und Bindegewebsschichten vordringen. Deswegen ist der Stil auch besonders beliebt als Entlüftungseinheit für besonders geforderte Gelenke nach dem Sport oder als Anwendung zur Stressminderung. Entdecke die ruhige, meditative Seite des Yoga bei einem Yin Yoga Retreat, das dich den Alltagsstress nachhaltig verarbeiten lässt!",
+            detailsTitle: t("yoga_retreats_big_tab_element_tab2_title"),
+            detailsDesc: t("yoga_retreats_big_tab_element_tab2_subtitle"),
             detailsReadMore: "",
-            cardTitle: "Ausgewählte Yin Yoga Retreats",
+            cardTitle: t("yoga_retreats_big_tab_element_tab2_more"),
             cardItems: [
               {
                 cardImage: cardImage,
@@ -651,11 +631,10 @@ const YogaRetreats = () => {
           },
           {
             detailsImage: Iyengar,
-            detailsTitle: "Die Kunst der korrekten Körperausrichtung",
-            detailsDesc:
-              "B.K.S. Iyengar revolutionierte Yoga in den 1940er Jahren, indem er die Gelenkigkeit sowie die korrekte Körperausrichtung in den Mittelpunkt rückte. Um die herausfordernden Asanas zu verwirklichen, setzte er erstmals Hilfsmittel wie Gurte, Blöcke oder sogar Stühle ein und machte Yoga so um einiges zugänglicher. Heute helfen diese Hilfsmittel Yoginis und Yogis dabei, um Übungen individuell anzupassen und Positionen länger halten zu können. Iyengar Yoga ist daher besonders heilend für Menschen mit Gelenkschmerzen, Verspannungen oder unfallbedingten Beeinträchtigungen. Wenn du dein Inneres ausrichten und deine Haltung verbessern möchtest, sind diese Iyengar Yoga Retreats genau das richtige für dich.",
+            detailsTitle: t("yoga_retreats_big_tab_element_tab3_title"),
+            detailsDesc: t("yoga_retreats_big_tab_element_tab3_subtitle"),
             detailsReadMore: "",
-            cardTitle: "Ausgewählte Iyengar Yoga Retreats",
+            cardTitle: t("yoga_retreats_big_tab_element_tab3_more"),
             cardItems: [
               {
                 cardImage: cardImage,
@@ -706,11 +685,10 @@ const YogaRetreats = () => {
           },
           {
             detailsImage: Vinyasa,
-            detailsTitle: "Finde deinen eigenen Flow",
-            detailsDesc:
-              "Beim Vinyasa Yoga sind dir keinerlei Grenzen gesetzt: Die Idee des Vinyasa Flows ist es, die einzelnen Yoga-Haltungen dynamisch miteinander zu verbinden. Dieser Bewegungsfluss erfreut sich zunehmend bei jüngeren Yoginis und Yogis an Beliebtheit und versucht sich von den strengeren Regeln der traditionellen Stile zu lösen. Vinyasa ist Sanskrit und setzt sich aus dem Wörtern “vi” (auf eine bestimmte Weise) und “nyasa” (setzen, stellen, lesen) zusammen. Es geht also um die freie und kreative Verknüpfung der Yoga-Haltungen  (Asanas). Wenn du ein dynamischer Mensch bist, der an schwungvollen Bewegungen und modernen Interpretationen der Yogapraxis interessiert ist, ist dieser Yogastil genau das richtige für dich!",
+            detailsTitle: t("yoga_retreats_big_tab_element_tab4_title"),
+            detailsDesc: t("yoga_retreats_big_tab_element_tab4_subtitle"),
             detailsReadMore: "",
-            cardTitle: "Ausgewählte Vinyasa Yoga Retreats",
+            cardTitle: t("yoga_retreats_big_tab_element_tab4_more"),
             cardItems: [
               {
                 cardImage: cardImage,
@@ -761,11 +739,10 @@ const YogaRetreats = () => {
           },
           {
             detailsImage: Aerial,
-            detailsTitle: "Schwereloses Yoga ohne Bodenkontakt",
-            detailsDesc:
-              "Ein trapezförmiges Tuch, das von der Decke hängt und eine völlig neuartige Interpretation bekannter Yogastile: Das ist Aerial Yoga! Der Stil verlagert die Asanas in die Luft und du gibst dein Körpergewicht quasi an das Tuch ab. Dadurch wird der gesamte Körper nochmal stärker und gleichmäßiger beansprucht und Balance, Ausdauer, Atmung, Kraft und Beweglichkeit bekommen eine völlig neue Bedeutung. Vor allem die Körpermitte profitiert vom Aerial Yoga: Die Rumpf- und Bauchmuskulatur ist permanent im Einsatz, was sich besonders positiv auf die dort sitzenden Muskelgruppen auswirkt und Verspannungen im Rücken effektiv löst. Also beschenke dich selber mit einem Aerial Yoga Retreat und erlebe ein komplett neues Körpergefühl: schwebend, leicht und locker!",
+            detailsTitle: t("yoga_retreats_big_tab_element_tab5_title"),
+            detailsDesc: t("yoga_retreats_big_tab_element_tab5_subtitle"),
             detailsReadMore: "",
-            cardTitle: "Ausgewählte Aerial Yoga Retreats",
+            cardTitle: t("yoga_retreats_big_tab_element_tab5_more"),
             cardItems: [
               {
                 cardImage: cardImage,
@@ -806,58 +783,55 @@ const YogaRetreats = () => {
         ]}
       />
       <ImageGalleryWindow
-        title="Kombiniere deine Yogapraxis mit anderen Sportarten"
+        title={t("yoga_retreats_4_clickable_box_title")}
         items={[
           {
             shadowSize: "80",
             img: wImg1,
-            title: "Yoga & Wandern",
+            title: t("yoga_retreats_4_clickable_box_item1"),
             description:
               "Genieße ganzheitliche Wanderungen in der Natur gespickt mit Meditationen und Atemübungen.",
           },
           {
             shadowSize: "80",
             img: wImg2,
-            title: "Yoga & Pilates",
+            title: t("yoga_retreats_4_clickable_box_item2"),
             description:
               "Stärke deinen Rücken und deine innere Mitte mit dieser faszinierenden Mischung aus Workout und Erdung.",
           },
           {
             shadowSize: "80",
             img: wImg3,
-            title: "Yoga & Fitness",
+            title: t("yoga_retreats_4_clickable_box_item3"),
             description:
               "Wenn dir der sportliche Aspekt beim Yoga zu kurz kommt, dann kombiniere Yoga mit Fitness um dich voll auszulasten!",
           },
           {
             shadowSize: "80",
             img: wImg4,
-            title: "Yoga & Surfen",
+            title: t("yoga_retreats_4_clickable_box_item4"),
             description:
               "Zwei Sportarten, die Hand in Hand gehen und nur voneinander profitieren: Erlebe den ultimativen Spaßfaktor!",
           },
         ]}
       />
       <SingleColImg
-        title="Yoga Retreats nach Erfahrungslevel"
+        title={t("yoga_retreats_3_clickable_box_title")}
         items={[
           {
             img: Col39,
-            title: "Anfänger:innen",
-            description:
-              "Probiere dich aus und lerne die heilsame Welt des Yoga kennen",
+            title: t("yoga_retreats_3_clickable_box_item1"),
+            description: t("yoga_retreats_3_clickable_box_item1_desc"),
           },
           {
             img: Col40,
-            title: "Fortgeschrittene",
-            description:
-              "Sammle neue Erfahrungen und Einflüsse für deine Yogapraxis",
+            title: t("yoga_retreats_3_clickable_box_item2"),
+            description: t("yoga_retreats_3_clickable_box_item2_desc"),
           },
           {
             img: Col41,
-            title: "Profi",
-            description:
-              "Erweitere deinen Horizont mit fordernden Techniken und Ansätzen",
+            title: t("yoga_retreats_3_clickable_box_item3"),
+            description: t("yoga_retreats_3_clickable_box_item3_desc"),
           },
         ]}
         cols="md:grid-cols-3"
@@ -868,138 +842,116 @@ const YogaRetreats = () => {
         buttonTitle="Kontakt aufnehmen"
       />
       <ImageGalleryBrick2
-        title="Nachhaltige Yoga Retreats"
+        title={t("yoga_retreats_7_clickable_box_title")}
         image1={{
           img: image6,
-          title: "Lokaler Ökotourismus",
-          description:
-            "Erlebe die Bedeutung von Gemeinschaft und lokaler Tradition in Balis ältestem Ashram",
+          title: t("yoga_retreats_7_clickable_box_item1_title"),
+          description: t("yoga_retreats_7_clickable_box_item1_desc"),
         }}
         image2={{
           img: image7,
-          title: "Nachhaltig konzipierte Quinta",
-          description:
-            "Lass dich komplett von hauseigenen Ressourcen versorgen - inmitten einem der schönsten Nationalparks Portugals",
+          title: t("yoga_retreats_7_clickable_box_item2_title"),
+          description: t("yoga_retreats_7_clickable_box_item2_desc"),
         }}
         image3={{
           img: image8,
-          title: "Ökologisch gestaltete Entgiftungskur",
-          description:
-            "Resette Körper & Geist auf einem restaurierten Biohof in Norddeutschland",
+          title: t("yoga_retreats_7_clickable_box_item3_title"),
+          description: t("yoga_retreats_7_clickable_box_item3_desc"),
         }}
         image4={{
           img: image9,
-          title: "Kreative vegane Gerichte",
-          description:
-            "Genieße ausschließlich vegane Speisen in diesem Yogahaus auf Gran Canaria",
+          title: t("yoga_retreats_7_clickable_box_item4_title"),
+          description: t("yoga_retreats_7_clickable_box_item4_desc"),
         }}
         image5={{
           img: image10,
-          title: "Surf- und Yogacamp mit Upcycling-Konzept",
-          description:
-            "Entspanne auf recycleten selbstgebauten Möbeln mit Stil an Portugals Küste",
+          title: t("yoga_retreats_7_clickable_box_item5_title"),
+          description: t("yoga_retreats_7_clickable_box_item5_desc"),
         }}
         image6={{
           img: image11,
-          title: "Biologisch nachhaltig erbautes Retreat Center",
-          description:
-            "Verreise mit gutem Gewissen und voll Faszination in eine luxuriöse Unterkunft aus komplett ökologischen Baumaterialen",
+          title: t("yoga_retreats_7_clickable_box_item6_title"),
+          description: t("yoga_retreats_7_clickable_box_item6_desc"),
         }}
         image7={{
           img: image12,
-          title: "Spirituelles Öko-Retreat",
-          description:
-            "Erlebe Indien hautnah auf reichhaltigem Gemeinschaftsboden, der mit viel Wert auf Biodiversität und Ayurveda neu angesiedelt wurde",
+          title: t("yoga_retreats_7_clickable_box_item7_title"),
+          description: t("yoga_retreats_7_clickable_box_item7_desc"),
         }}
       />
       <DividerImg
         image={welt}
         align="center"
-        title="Entdecke alle Yoga Retreats"
-        buttonTitle="Zur Übersicht"
+        title={t("yoga_retreats_divider2_title")}
+        buttonTitle={t("yoga_retreats_divider2_button")}
       />
       <HintSection
-        title="Unsere Versprechen für dein Yoga Retreat"
+        title={t("yoga_retreats_3_symbol_title")}
         items={[
           {
             icon: <BiLike size={38} />,
-            title: "100% Rückerstattung",
-            description:
-              "Transparent und stressfrei! Erhalte mit unseren flexiblen Stornierungsbedingungen den vollen Betrag zurückerstattet.",
+            title: t("yoga_retreats_3_symbol_title1"),
+            description: t("yoga_retreats_3_symbol_subtitle1"),
             readMore: "Zu den Details",
           },
           {
             icon: <BiStar size={38} />,
-            title: "Qualitätsgeprüfte Reisen",
-            description:
-              "Alle Reisen sind von Sportexperten ausgewählt und von unabhängigen Kunden mit mindestens 4,5 von 5 Sternen bewertet!",
+            title: t("yoga_retreats_3_symbol_title2"),
+            description: t("yoga_retreats_3_symbol_subtitle2"),
             readMore: "Zu den Details",
           },
           {
             icon: <BiHeart size={38} />,
-            title: "Persönliche Beratung",
-            description:
-              "Wir lieben, was wir tun und sind immer an deiner Seite! Kontaktiere uns einfach per Email, Telefon oder WhatsApp.",
+            title: t("yoga_retreats_3_symbol_title2"),
+            description: t("yoga_retreats_3_symbol_subtitle3"),
             readMore: "Zu den Details",
           },
         ]}
       />
       <RateCardSection
-        title="Das sagen Reisende über ihren Surfurlaub in Frankreich"
+        title={t("yoga_retreats_review_element_title")}
         items={[
           {
             rateName: " Julia Gitzler",
-            rateDesc:
-              "Perfekt um dem tristen Alltag zu entkommen: Im Boa Onda Guesthouse herrscht eine sehr angenehme, familiäre Atmosphäre.Das Haus und die Zimmer waren sehr sauber. Die Yogaeinheiten auf dem Sonnendeck und im Studio waren perfekt um entspannt in den Tag zu starten oder diesen ausklingen zu lassen. Das Frühstück war immer lecker und dabei sehr gesund und zudem abwechslungsreich.Besonders hervorzuheben ist das Team, das sich sehr aufmerksam um die Gäste kümmert und hilfreiche Tipps für alle hat, die die Gegend erkunden wollen. Von daher ganz klar eine Empfehlung!",
+            rateDesc: t("yoga_retreats_review_element_desc1"),
             rateImage: RateImg,
             rateCalendar: "30.04.2021",
-            rateFootNote:
-              "Yoga Urlaub inmitten von Traumstränden & ruhiger Natur bewertet von",
+            rateFootNote: t("yoga_retreats_review_element_more1"),
           },
           {
             rateName: "Michaela",
-            rateDesc:
-              "Ich habe mich sehr wohl gefühlt im Casa Vegana. Chiara ist eine sehr gute yoga Lehrerin und eine immer gut gelaunte tolle Gastgeberin. Thomas ist ein Meister in seiner Küche, in der er fürs Frühstück selbst gebackenen veganen Semmeln mit vielen anderen veganen Leckereien und abends sehr abwechslungsreiche, super leckeren veganen Speisen zaubert. Die zwei sind tolle Gastgeber und immer am schauen dass sich die Gäste wohl fühlen. Lisel ihr Hund ist ruhig und verschmust und trägt zu der guten Laune im Casa Vegana bei!Auch die Ausflüge mit den beiden waren toll! Ich hab mich rund um wohl gefühlt. Gefühlt bin ich als Gast gekommen und als Freund gegangen. Vielen Dank für alles 🙏",
+            rateDesc: t("yoga_retreats_review_element_desc2"),
             rateImage: RateImg,
             rateCalendar: "01.02.2021",
-            rateFootNote:
-              "Veganes Yoga Retreat: Achtsamkeit auf Gran Canaria bewertet von",
+            rateFootNote: t("yoga_retreats_review_element_more2"),
           },
           {
             rateName: "Uwe Poppitz,",
-            rateDesc:
-              "Traumhaftes Hotel in den Alpen und ein sehr persönlicher Yogakurs. Freundliche, zuvorkommende Athmosphäre mit phantastischem Essen und Wohlgefühl an jeder Ecke.",
+            rateDesc: t("yoga_retreats_review_element_desc3"),
             rateImage: RateImg,
             rateCalendar: "12.10.2020",
-            rateFootNote:
-              "Komfort Yoga- & Meditations-Auszeit in Österreich bewertet von",
+            rateFootNote: t("yoga_retreats_review_element_more3"),
           },
           {
             rateName: "Silke Roth",
-            rateDesc:
-              "Das Essen war hausgemacht, die Yoga und Qi Gong Stunden waren wirklich etwas Besonderes und auf den 1800m Höhe kann man super abschalten, den Alltag vergessen und sich um sich selbst kümmern. Es gab viele Angebote wie Klettern, Rafting oder einen Workshoptag, deshalb ist der Preis sehr fair. Danke an Denise, Wendy & Chris für ein rundum gelunges retreat! Gerne wieder!",
+            rateDesc: t("yoga_retreats_review_element_desc4"),
             rateImage: RateImg,
             rateCalendar: "18.09.2020",
-            rateFootNote:
-              "Abwechslungsreiches Outdoor- und Yoga-Retreat auf 1800 Metern bewertet von",
+            rateFootNote: t("yoga_retreats_review_element_more4"),
           },
           {
             rateName: "Melanie",
-            rateDesc:
-              "Das Mondo Lifestyle Village ist eine echte Oase der Ruhe im geschäftigen Canggu. Die Zimmer sind schön und gemütlich eingerichtet, der Pool lädt zum Schwimmen und Relaxen ein und die gesamte Crew ist wirklich sehr freundlich. Ich kann das Mondo Surf Village nur wärmstens empfehlen!",
+            rateDesc: t("yoga_retreats_review_element_desc5"),
             rateImage: RateImg,
             rateCalendar: "29.10.2019",
-            rateFootNote:
-              "Yoga Village in Canggu: Luxus & Erholung bewertet von",
+            rateFootNote: t("yoga_retreats_review_element_more5"),
           },
           {
             rateName: "Tina",
-            rateDesc:
-              "Eine unvergessliche Woche liegt hinter mir! Sie war nicht nur entspannend sondern auch inspirierend. Das gesamte Team war sehr freundlich und kompetent, die Massage war genau das richtige um die beanspruchten Muskeln zu lockern und das Essen mit so viel Liebe und Freude zubereitet, das man es tatsächlich schmecken konnte!",
+            rateDesc: t("yoga_retreats_review_element_desc6"),
             rateImage: RateImg,
             rateCalendar: "17.06.2019",
-            rateFootNote:
-              "Yoga & Pilates Retreat: Deine Auszeit zum Wohlfühlen bewertet von",
+            rateFootNote: t("yoga_retreats_review_element_more6"),
           },
         ]}
         rateCols="xl:grid-cols-3"
@@ -1035,65 +987,65 @@ const YogaRetreats = () => {
         ]}
       />
       <TagSection
-        title="Mehr Inspiration für dein Yoga Retreat"
+        title={t("yoga_retreats_link_element_title")}
         cols="xl:grid-cols-4"
         items={[
           {
-            title: "Beliebte Reiseziele",
+            title: t("yoga_retreats_link_element_col1_title"),
             items: [
-              "Deutschland",
-              "Österreich",
-              "Portugal",
-              "Kanarische Inseln",
-              "Italien",
-              "Griechenland",
-              "Slowenien",
-              "Kroatien",
-              "Indien",
-              "Bali",
+              t("yoga_retreats_link_element_col1_item1"),
+              t("yoga_retreats_link_element_col1_item2"),
+              t("yoga_retreats_link_element_col1_item3"),
+              t("yoga_retreats_link_element_col1_item4"),
+              t("yoga_retreats_link_element_col1_item5"),
+              t("yoga_retreats_link_element_col1_item6"),
+              t("yoga_retreats_link_element_col1_item7"),
+              t("yoga_retreats_link_element_col1_item8"),
+              t("yoga_retreats_link_element_col1_item9"),
+              t("yoga_retreats_link_element_col1_item10"),
             ],
           },
           {
-            title: "Top-Kategorien",
+            title: t("yoga_retreats_link_element_col2_title"),
             items: [
-              "Yoga Wochenenden",
-              "Yoga & Wellness Reisen",
-              "Yoga & Meditations Retreats",
-              "Stille Retreats",
-              "Yoga-Therapie Reisen",
-              "Spirituelle Retreats",
-              "Luxus Yoga Reisen",
-              "Yoga Retreats für Frauen",
-              "Budget Yoga Camps",
+              t("yoga_retreats_link_element_col2_item1"),
+              t("yoga_retreats_link_element_col2_item2"),
+              t("yoga_retreats_link_element_col2_item3"),
+              t("yoga_retreats_link_element_col2_item4"),
+              t("yoga_retreats_link_element_col2_item5"),
+              t("yoga_retreats_link_element_col2_item6"),
+              t("yoga_retreats_link_element_col2_item7"),
+              t("yoga_retreats_link_element_col2_item8"),
+              t("yoga_retreats_link_element_col2_item9"),
             ],
           },
           {
-            title: "Ausgewählte Partner",
+            title: t("yoga_retreats_link_element_col3_title"),
             items: [
-              "AzulFit",
-              "Yogakasha",
-              "Traumhotel Alpina",
-              "Indigourlaub",
-              "globeseekers",
-              " Tuscan Fitness",
-              "leben & reisen",
-              "Joy of Mediterranean",
-              "Yogazentrum Rügen",
-              "Art of Living",
+              t("yoga_retreats_link_element_col3_item1"),
+              t("yoga_retreats_link_element_col3_item2"),
+              t("yoga_retreats_link_element_col3_item3"),
+              t("yoga_retreats_link_element_col3_item4"),
+              t("yoga_retreats_link_element_col3_item5"),
+              t("yoga_retreats_link_element_col3_item6"),
+              t("yoga_retreats_link_element_col3_item7"),
+              t("yoga_retreats_link_element_col3_item8"),
+              t("yoga_retreats_link_element_col3_item9"),
+              t("yoga_retreats_link_element_col3_item10"),
             ],
           },
           {
-            title: "Reisemagazin",
+            title: t("yoga_retreats_link_element_col4_title"),
             items: [
-              "9 Yoga-Weisheiten",
-              "Yoga Retreat in Deutschland",
-              "Surf- & Yogacamp in Portugal",
-              "Yoga Retreat auf Bali",
-              "Yoga für Anfänger",
-              "11 Yoga-Arten",
-              "Aerial Yoga",
-              "Der Traum vom eigenen Yogastudio",
-              "Surfboard Balance Yoga",
+              t("yoga_retreats_link_element_col4_item1"),
+              t("yoga_retreats_link_element_col4_item2"),
+              t("yoga_retreats_link_element_col4_item3"),
+              t("yoga_retreats_link_element_col4_item4"),
+              t("yoga_retreats_link_element_col4_item5"),
+              t("yoga_retreats_link_element_col4_item6"),
+              t("yoga_retreats_link_element_col4_item7"),
+              t("yoga_retreats_link_element_col4_item8"),
+              t("yoga_retreats_link_element_col4_item9"),
             ],
           },
         ]}
