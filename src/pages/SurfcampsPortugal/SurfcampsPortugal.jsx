@@ -1,4 +1,5 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 //Hero
 import Hero from "../../components/Hero/Hero";
 //HintSection
@@ -54,55 +55,52 @@ import { BsWhatsapp } from "react-icons/bs";
 import TagSection from "../../components/TagSection/TagSection";
 
 const SurfcampsPortugal = () => {
+  const { t } = useTranslation();
   return (
     <div>
       <Hero
         image="bg-hero-portugal"
-        title="Surface in Portugal"
-        description="Erlebe die besten Wellen Europas"
+        title={t("portugal_header_title")}
+        description={t("portugal_header_text")}
       />
       <HintSection
         items={[
           {
             icon: <BiLike size={38} />,
-            title: "100% Rückerstattung",
-            description:
-              "Transparent und stressfrei! Erhalte mit unseren flexiblen Stornierungsbedingungen den vollen Betrag zurückerstattet.",
+            title: t("portugal_3_symbol_element_title1"),
+            description: t("portugal_3_symbol_element_text1"),
             readMore: "Zu den Details",
           },
           {
             icon: <BiStar size={38} />,
-            title: "Qualitätsgeprüfte Reisen",
-            description:
-              "Alle Reisen sind von Sportexperten ausgewählt und von unabhängigen Kunden mit mindestens 4,5 von 5 Sternen bewertet!",
+            title: t("portugal_3_symbol_element_title2"),
+            description: t("portugal_3_symbol_element_text2"),
             readMore: "Zu den Details",
           },
           {
             icon: <BiHeart size={38} />,
-            title: "Persönliche Beratung",
-            description:
-              "Wir lieben, was wir tun und sind immer an deiner Seite! Kontaktiere uns einfach per Email, Telefon oder WhatsApp.",
+            title: t("portugal_3_symbol_element_title3"),
+            description: t("portugal_3_symbol_element_text3"),
             readMore: "Zu den Details",
           },
         ]}
       />
       <Description
-        titel="Die besten Reiseziele für einen Surfurlaub in Europa"
+        title={t("portugal_big_tab_element_title")}
         tabItems={[
-          "Algarve",
-          "Ericeira",
-          "Peniche",
-          "Santa Cruz",
-          "Lourinha",
-          "Region Porto",
+          t("portugal_big_tab_element_tab1"),
+          t("portugal_big_tab_element_tab2"),
+          t("portugal_big_tab_element_tab3"),
+          t("portugal_big_tab_element_tab4"),
+          t("portugal_big_tab_element_tab5"),
+          t("portugal_big_tab_element_tab6"),
         ]}
         tabCols="lg:grid-cols-6"
         tabContents={[
           {
             detailsImage: Algarve,
-            detailsTitle: "Algarve",
-            detailsDesc:
-              "Einzigartige Steilküsten, Sonne das ganze Jahr über und unberührte Natur - die Algarve im Süden Portugals ist die beliebteste Region für einen Surfurlaub in Portugal. Durch die zwei ewig langen und verschieden ausgerichteten Küstenabschnitte gibt es hier nicht nur jede Menge zu entdecken, sondern auch immer eine passende Welle - ganz gleich, ob du noch nie auf einem Surfbrett standest oder schon erfahren im Wellenreiten bist. Die Algarve ist die richtige Wahl für deinen Surfurlaub, wenn du raus in die Natur, ohne Ende Surfen und die Sonne am Strand genießen willst!",
+            detailsTitle: t("portugal_big_tab_element_tab1_title"),
+            detailsDesc: t("portugal_big_tab_element_tab1_text"),
             detailsReadMore: "",
             cardTitle: "Top-Surfcamps an der Algarve",
             cardItems: [
@@ -155,9 +153,8 @@ const SurfcampsPortugal = () => {
           },
           {
             detailsImage: Ericeira,
-            detailsTitle: "Ericeira",
-            detailsDesc:
-              "Früher ein kleines Fischerdorf, heute das einzige World Surfing Reserve in Europa: Ericeira begrüßt dich mit einer Reihe an Weltklasse Surfspots, traumhaften Stränden und einem ganz eigenen Charme. Durch die Lage oberhalb der Steilküsten bleibst du beim Schlendern durch das kleine Städtchen alle zwei Minuten wieder stehen und bist überwältigt von dem Ausblick auf das Meer und die umliegende Küste. Wenn du weiter durch die verwinkelten Gassen ziehst, spürst du an jeder Ecke den entspannten und weltoffenen Vibe, der hier vorherrscht: Sei es in einem der zahlreichen Surfshops, den vielen - teils veganen - Cafés oder in einer der Bars, die dazu einladen das Tanzbein zu schwingen. Wenn du den echten Surf-Lifestyle erleben willst, ist Ericeira dein place to be!",
+            detailsTitle: t("portugal_big_tab_element_tab2_title"),
+            detailsDesc: t("portugal_big_tab_element_tab2_text"),
             detailsReadMore: "",
             cardTitle: "Top-Surfcamps in Ericeira",
             cardItems: [
@@ -212,9 +209,8 @@ const SurfcampsPortugal = () => {
           },
           {
             detailsImage: Peniche,
-            detailsTitle: "Peniche",
-            detailsDesc:
-              "Bem vindo a capital da onda! (Herzlich Willkommen in der Hauptstadt der Wellen!) So lautet deine Begrüßung, wenn du nach Peniche reinfährst. Und das kommt nicht von irgendwoher: Kaum ein anderer Ort in Europa bietet dir das ganze Jahr über so konstante Wellen wie Peniche. Hier findest du zu jeder Jahreszeit die passende Welle für dein Surflevel! Angefangen mit soften Wellen für Anfänger:innen bis hin zu steilen Barrels für die absoluten Profis unter uns. Kein Wunder, dass auch die World Surf League für einen Stopp ihrer Weltmeisterschaft nach Peniche kommt. Wie du merkst, hier dreht sich wirklich alles nur ums Surfen! Komplettiert wird dein Surfurlaub durch die wunderschöne und vor allem unberührte Natur, sowie die vielen kleinen Strandbars, die dazu einladen den Sonnenuntergang mit einem Drink zu bestaunen und in ausgelassener Stimmung neue Leute kennenzulernen.",
+            detailsTitle: t("portugal_big_tab_element_tab3_title"),
+            detailsDesc: t("portugal_big_tab_element_tab3_text"),
             detailsReadMore: "",
             cardTitle: "Top-Surfcamps in Peniche",
             cardItems: [
@@ -267,9 +263,8 @@ const SurfcampsPortugal = () => {
           },
           {
             detailsImage: Santa,
-            detailsTitle: "Santa Cruz",
-            detailsDesc:
-              "Santa Cruz ist ein kleiner Surferort, an dem du selbst in den Sommermonaten den Massen an Touristen aus dem Weg gehst. Umgeben von traumhaften Stränden und unberührter Natur kannst du hier sofort abschalten und deinen Urlaub in vollen Zügen genießen. In den verwinkelten Gassen des kleinen Fischerorts findest du typisch portugiesische Cafés, die dazu einladen in der Sonne rumzusitzen, und Restaurants, in denen du frisch gefangenen Fisch genießen kannst. Dank der Lage zwischen den beiden Surferorten Ericeira und Peniche hast du entlang der Küste eine Auswahl an über 30 Surfspots und verschiedene Möglichkeiten für Ausflüge in die Umgebung. Wenn du es in deinem Surfurlaub ruhiger angehen lassen und dich voll auf das Surfen und die Natur fokussieren willst, ist Santa Cruz ein echter Geheimtipp!",
+            detailsTitle: t("portugal_big_tab_element_tab4_title"),
+            detailsDesc: t("portugal_big_tab_element_tab4_text"),
             detailsReadMore: "",
             cardTitle: "Top-Surfcamps in Santa Cruz",
             cardItems: [
@@ -312,9 +307,8 @@ const SurfcampsPortugal = () => {
           },
           {
             detailsImage: Lourinha,
-            detailsTitle: "Lourinha",
-            detailsDesc:
-              "Hier erlebst du authentischen portugiesischen Flair! 60 Kilometer nördlich von Lissabon und nur 12 Kilometer südlich von Peniche gelegen, erwarten dich in Lourinha und dem danebenliegenden Strand Areia Branca eine große Auswahl an wunderschönen Stränden zum Surfen und Sonnenbaden. Dabei hast du die Wahl zwischen abgelegenen Stränden, die du ganz für dich alleine haben kannst, oder dem Hauptstrand mit einer schönen Promenade und verschiedenen Lokalen, die zum Verweilen einladen. Die perfekten Voraussetzungen für einen unvergesslichen Surfurlaub - sei es mit der ganzen Familie oder alleine in der Surfer WG.",
+            detailsTitle: t("portugal_big_tab_element_tab5_title"),
+            detailsDesc: t("portugal_big_tab_element_tab5_text"),
             detailsReadMore: "",
             cardTitle: "Top-Surfcamps in Lourinha",
             cardItems: [
@@ -367,9 +361,8 @@ const SurfcampsPortugal = () => {
           },
           {
             detailsImage: Region,
-            detailsTitle: "Region Porto",
-            detailsDesc:
-              "Der Norden Portugals wird oft unterschätzt und von den meisten in ihren Reiseplanung völlig vernachlässigt. Dementsprechend findest du hier noch verlassene Strände, Wellen für dich ganz alleine und unberührte Landschaften - die perfekte Region für einen Surfurlaub mitten in der Natur! Auch die Auswahl an Surfspots lässt keine Wünsche offen: Esmoriz, Empinho, Maceda, Matosinhos und Cagalhotos sind nur einige der beliebtesten Surfspots im Norden Portugals. Zudem bietet sich ein Ausflug nach Porto an. Die wunderschöne Stadt am Fluss Douro erwartet dich mit einer großen Auswahl an Bars, Restaurants und natürlich dem allseits bekannten Portwein. Mit einem Surfurlaub im Norden Portugals bleiben keine Wünsche offen!",
+            detailsTitle: t("portugal_big_tab_element_tab6_title"),
+            detailsDesc: t("portugal_big_tab_element_tab6_text"),
             detailsReadMore: "",
             cardTitle: "Top-Surfcamps in der Region Porto",
             cardItems: [
@@ -423,77 +416,77 @@ const SurfcampsPortugal = () => {
         ]}
       />
       <ImageGalleryFourPic
-        title="Die beliebtesten Kategorien für einen Surfurlaub in Frankreich"
+        title={t("portugal_4_linked_image_title")}
         items={[
           {
             img: img1,
             shadow: "80",
-            title: "Surfcamps für Alleinreisende",
+            title: t("portugal_4_linked_image_item1"),
           },
           {
             img: img2,
             shadow: "80",
-            title: "Surfcamps für Freund:innen",
+            title: t("portugal_4_linked_image_item2"),
           },
           {
             img: img3,
             shadow: "80",
-            title: "Surfurlaub für Familien",
+            title: t("portugal_4_linked_image_item3"),
           },
           {
             img: img4,
             shadow: "80",
-            title: "Surf-Reisen für Paare",
+            title: t("portugal_4_linked_image_item4"),
           },
         ]}
       />
       <ListAndImage
         image={ListAndImage1}
-        title="Ein Surfcamp in Portugal passt zu dir, wenn du..."
+        title={t("portugal_big_divider_element_title")}
         items={[
-          "...vielfältige und unberührte Natur entdecken willst",
-          "...gemeinsam mit Einheimischen die besten Wellen Europas surfen willst",
-          "...Sonne das ganze Jahr über genießen willst",
-          "...einen authentischen und entspannten Lebensstil erleben willst",
+          t("portugal_big_divider_element_item1"),
+          t("portugal_big_divider_element_item2"),
+          t("portugal_big_divider_element_item3"),
+          t("portugal_big_divider_element_item4"),
         ]}
       />
       <ImageGallery3
-        title="Die beliebtesten Kategorien für einen Surfurlaub in Frankreich"
+        title={t("portugal_6_part_linked_image_element_title")}
         items={[
           {
             img: imgGallery1,
             shadow: "80",
-            title: "Surf- & Yoga-Camps",
+            title: t("portugal_6_part_linked_image_element_item1"),
           },
           {
             img: imgGallery2,
             shadow: "80",
-            title: "Surf & Fotografie Urlaub",
+            title: t("portugal_6_part_linked_image_element_item2"),
           },
           {
             img: imgGallery3,
             shadow: "80",
-            title: "Surf & Spanisch Reise",
+            title: t("portugal_6_part_linked_image_element_item3"),
           },
           {
             img: imgGallery4,
             shadow: "80",
-            title: "Surf & Fitness Reisen",
+            title: t("portugal_6_part_linked_image_element_item4"),
           },
           {
             img: imgGallery5,
             shadow: "80",
-            title: "Surf & Skate Camp",
+            title: t("portugal_6_part_linked_image_element_item5"),
           },
           {
             img: imgGallery6,
             shadow: "80",
-            title: "Surf & Mountainbike Urlaub",
+            title: t("portugal_6_part_linked_image_element_item6"),
           },
         ]}
       />
       <SingleCardSection
-        title="Surfen & Entspannen: Die beste Auswahl in Frankreich"
+        title={t("portugal_offer_element_title2")}
         description="Freust du dich über ein gemeinsamen Grillabend am Lagerfeuer, willst danach aber schnell ins Bett, um fit für die Wellen am nächsten Morgen zu sein? Dann entdecke unsere beliebtesten Surfcamps für die richtige Balance zwischen Action in den Wellen und Erholung in der Natur:"
         items={[
           {
@@ -699,31 +692,28 @@ const SurfcampsPortugal = () => {
       />
       <DividerImg
         align="center"
-        title="Entdecke alle Surfcamps in Portugal"
+        title={t("portugal_big_divider_with_image_bg_title")}
         image={dividerImage}
-        buttonTitle="Zur Übersicht"
+        buttonTitle={t("portugal_big_divider_with_image_bg_button")}
       />
       <SingleColImg
-        title="Finde passende Surfcamps für dein Surflevel"
-        description="Ganz gleich ob du noch nie auf einem Surfbrett standest oder schon Erfahrungen in den Wellen mitbringst - mit dem passenden Surfkurs für deine Vorkenntnisse hast du mehr Spaß im Wasser und erreichst garantiert das nächste Level!"
+        title={t("portugal_3_linked_image_element_title")}
+        description={t("portugal_3_linked_image_element_subtitle")}
         items={[
           {
             img: Col31,
-            title: "Surfcamps für Anfänger:innen",
-            description:
-              "Lerne die Grundlagen des Surfens kennen und erlebe die Faszination Wellenreiten!",
+            title: t("portugal_3_linked_image_element_tab1_title"),
+            description: t("portugal_3_linked_image_element_tab1_text"),
           },
           {
             img: Col32,
-            title: "Surfcamps für Intermediates",
-            description:
-              "Surfe lange grüne Wellen und erreiche mit erfahrenen Surflehrern dein nächstes Level!",
+            title: t("portugal_3_linked_image_element_tab2_title"),
+            description: t("portugal_3_linked_image_element_tab2_text"),
           },
           {
             img: Col33,
-            title: "Surf-Guiding für Profis",
-            description:
-              "Erlebe gemeinsam mit Locals die Suche nach der perfekten Welle!",
+            title: t("portugal_3_linked_image_element_tab3_title"),
+            description: t("portugal_3_linked_image_element_tab3_text"),
           },
         ]}
         cols="md:grid-cols-3"
@@ -737,61 +727,49 @@ const SurfcampsPortugal = () => {
         buttonTitle="Mehr erfahren"
       />
       <RateCardSection
-        title="Das sagen Reisende über ihren Surfurlaub in Portugal"
+        title={t("portugal_review_element_title")}
         items={[
           {
             rateName: "Amelie",
-            rateDesc:
-              "Der Aufenthalt bei Marco und Raquel war einfach wunderbar. Die beiden sind einfach wunderbare Hosts und tun wirklich alles für ihre Gäste. Ich habe mich ab Minute 1 wohlgefühlt und kann das Hostel nur jedem ans Herz legen, der eine tolle Surferfahrung mit sehr sauberem Hostel und liebevollen Hosts genießen möchte. Raquel kocht jeden Abend ein wunderbares Dinner. So gut habe ich sogar manchmal in keinem Restaurant gegessen. Auch das Surfen war klasse und der Spot ebenfalls nur empfehlenswert!",
+            rateDesc: t("portugal_review_element_text1"),
             rateImage: RateImg,
             rateCalendar: "28.09.2021",
-            rateFootNote:
-              "Familiäres Surfhaus im unberührten Norden Portugals bewertet von",
+            rateFootNote: t("portugal_review_element_more1"),
           },
           {
             rateName: "Taty",
-            rateDesc:
-              "Wir fühlten uns sehr gut aufgehoben im Chill In in Ericeira. Die Surfstunden waren gut organisiert, man konnte sich jeweils bis am Abend vorher auf einer Liste eintragen und wurde jeweils pünktlich abgeholt. Die Zimmer waren sauber, ebenfalls die Gemeinschaftsbäder. Ins Zentrum von Ericeira mit diversen Einkaufs- und Essensmöglichkeiten ist es nur ein ca. 5 Gehminuten.",
+            rateDesc: t("portugal_review_element_text2"),
             rateImage: RateImg,
             rateCalendar: "03.12.2021",
-            rateFootNote:
-              "Chill in Surfhaus mit Blick auf's Meer im Surfer-Paradies Ericeira bewertet von",
+            rateFootNote: t("portugal_review_element_more2"),
           },
           {
             rateName: "Sarah",
-            rateDesc:
-              "Schöne Unterkunft, tolle Gastgeber, gutes Essen, super Surfkurse und Freizeitangebot (Massage, Yoga, Fitness, Tischtennis, Themenabende …)",
+            rateDesc: t("portugal_review_element_text3"),
             rateImage: RateImg,
             rateCalendar: "28.09.2021",
-            rateFootNote:
-              "Ganzheitliches Surfcamp für Naturliebhaber an der Algarve bewertet von",
+            rateFootNote: t("portugal_review_element_more3"),
           },
           {
             rateName: "Christine",
-            rateDesc:
-              "Tolle Unterkunft, tolles Frühstück, super Service. Sehr professionelle Yoga Classes und super Lage.",
+            rateDesc: t("portugal_review_element_text4"),
             rateImage: RateImg,
             rateCalendar: "30.07.2021",
-            rateFootNote:
-              "Surf & Yoga Urlaub direkt am Strand in der Sonne Portugals bewertet von",
+            rateFootNote: t("portugal_review_element_more4"),
           },
           {
             rateName: "Pia",
-            rateDesc:
-              "Wenn ihr nach Portugal reist und Surfen lernen wollt, seid ihr im Estela Surf Hostel bestens aufgehoben. Die Hosts Marco und Rachel sind super herzlich und gastfreundlich. Betonen möchte ich auch die Sauberkeit der Unterkunft. Wir haben noch nie so ein sauberes Hostel gesehen. Wir freuen uns schon auf den nächsten Besuch!:)",
+            rateDesc: t("portugal_review_element_text5"),
             rateImage: RateImg,
             rateCalendar: "28.09.2021",
-            rateFootNote:
-              "Familiäres Surfhaus im unberührten Norden Portugals bewertet von",
+            rateFootNote: t("portugal_review_element_more5"),
           },
           {
             rateName: "Melina",
-            rateDesc:
-              "Einfach klasse! Daniel von moverii hat mir super bei der kurzfristigen Reiseplanung weitergeholfen. Das Hostel lag direkt am Strand, das Team dort war super nett und hilfsbereit und die surfstunden haben auch Spaß gemacht. Sehr verdiente 5 Sterne!",
+            rateDesc: t("portugal_review_element_text6"),
             rateImage: RateImg,
             rateCalendar: "19.08.2021",
-            rateFootNote:
-              "Surfhaus mit Dachterrasse direkt am Surfspot in Ericeira bewertet von",
+            rateFootNote: t("portugal_review_element_more6"),
           },
         ]}
         rateCols="xl:grid-cols-3"
@@ -827,34 +805,34 @@ const SurfcampsPortugal = () => {
         ]}
       />
       <TagSection
-        title="Mehr Inspiration für dein Surfurlaub"
+        title={t("portugal_link_element_title")}
         cols="xl:grid-cols-3"
         items={[
           {
-            title: "Top-Reiseziele",
+            title: t("portugal_link_element_col1_title"),
             items: [
-              "Surfcamps in Frankreich",
-              "Surfcamps auf Fuerteventura",
-              "Surfcamps in Spanien",
-              "Surfcamps auf Teneriffa",
+              t("portugal_link_element_col1_item1"),
+              t("portugal_link_element_col1_item2"),
+              t("portugal_link_element_col1_item3"),
+              t("portugal_link_element_col1_item4"),
             ],
           },
           {
-            title: "Beliebte Kategorien",
+            title: t("portugal_link_element_col2_title"),
             items: [
-              "Surfcamps für Alleinreisende",
-              "Surf & Yoga Reisen",
-              "Surfcamps für Freund:innen",
-              "Surfcamps in der Natur",
+              t("portugal_link_element_col2_item1"),
+              t("portugal_link_element_col2_item2"),
+              t("portugal_link_element_col2_item3"),
+              t("portugal_link_element_col2_item4"),
             ],
           },
           {
-            title: "Unser Reisemagazin",
+            title: t("portugal_link_element_col3_title"),
             items: [
-              "Reisebericht: Mein erstes Surfcamp",
-              "Gemeinsam für den Meeresschutz",
-              "Surfen auf den Kanaren",
-              "Reisebericht: Surf & Yogacamp in Portugal",
+              t("portugal_link_element_col3_item1"),
+              t("portugal_link_element_col3_item2"),
+              t("portugal_link_element_col3_item3"),
+              t("portugal_link_element_col3_item4"),
             ],
           },
         ]}

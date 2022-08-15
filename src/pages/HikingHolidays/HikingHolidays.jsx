@@ -1,4 +1,5 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 // Hero
 import Hero from "../../components/Hero/Hero";
 //HintSection
@@ -57,101 +58,91 @@ import slideDividerImg from "../../assets/hiking-holiday/Divider/Wandern-Divider
 import TagSection from "../../components/TagSection/TagSection";
 
 const HikingHolidays = () => {
+  const { t } = useTranslation();
   return (
     <div>
       <Hero
         image="bg-hero-hiking-holiday"
-        title="Wanderurlaub"
-        description="Erlebe die Natur von ihrer schönsten Seite"
+        title={t("hiking_header_title")}
+        description={t("hiking_header_subtitle")}
       />
       <HintSection
         items={[
           {
             icon: <BiLike size={38} />,
-            title: "100% Rückerstattung",
-            description:
-              "Transparent und stressfrei! Erhalte mit unseren flexiblen Stornierungsbedingungen den vollen Betrag zurückerstattet.",
+            title: t("hiking_3_symbol_title1"),
+            description: t("hiking_3_symbol_text1"),
             readMore: "Zu den Details",
           },
           {
             icon: <BiStar size={38} />,
-            title: "Qualitätsgeprüfte Reisen",
-            description:
-              "Alle Reisen sind von Sportexperten ausgewählt und von unabhängigen Kunden mit mindestens 4,5 von 5 Sternen bewertet!",
+            title: t("hiking_3_symbol_title2"),
+            description: t("hiking_3_symbol_text2"),
             readMore: "Zu den Details",
           },
           {
             icon: <BiHeart size={38} />,
-            title: "Persönliche Beratung",
-            description:
-              "Wir lieben, was wir tun und sind immer an deiner Seite! Kontaktiere uns einfach per Email, Telefon oder WhatsApp.",
+            title: t("hiking_3_symbol_title3"),
+            description: t("hiking_3_symbol_text3"),
             readMore: "Zu den Details",
           },
         ]}
       />
       <ImageGalleryBrick2
-        title="Welche Art von Wanderurlaub wünschst du dir?"
-        description="Wandern kann so vielseitig sein! Von der erholsamen Strandwanderung bis zur herausfordernden Alpenüberquerung: Die Grenzen für deinen Wanderurlaub setzt einzig und allein du. "
+        title={t("hiking_7_clickable_box_title")}
+        description={t("hiking_7_clickable_box_subtitle")}
         image1={{
           img: image6,
-          title: "Wander Wochenenden",
-          description:
-            "Deine Chance, um unkompliziert rauszukommen, den Kopf frei zu kriegen und die Natur zu genießen!",
+          title: t("hiking_7_clickable_box_item1_title"),
+          description: t("hiking_7_clickable_box_item1_desc"),
         }}
         image2={{
           img: image7,
-          title: "Wandern & Wellness",
-          description:
-            "Lass es dir so richtig gut gehen: Nach einem aktiven Tag in der Natur warten Sauna, Massagen und Entspannung auf dich!",
+          title: t("hiking_7_clickable_box_item2_title"),
+          description: t("hiking_7_clickable_box_item2_desc"),
         }}
         image3={{
           img: image8,
-          title: "Standort Wandern",
-          description:
-            "Tagesrucksack und Hotel: Entdecke die entspannte Art zu wandern!",
+          title: t("hiking_7_clickable_box_item3_title"),
+          description: t("hiking_7_clickable_box_item3_desc"),
         }}
         image4={{
           img: image9,
-          title: "Genuss Wandern",
-          description:
-            "Genieße deine Wanderungen mit allen Sinnen und genug Zeit für dich selbst!",
+          title: t("hiking_7_clickable_box_item4_title"),
+          description: t("hiking_7_clickable_box_item4_desc"),
         }}
         image5={{
           img: image10,
-          title: "Trekking",
-          description:
-            "Erlebe unvergessliche Abenteuer auf fordernden Mehrtageswanderungen!",
+          title: t("hiking_7_clickable_box_item5_title"),
+          description: t("hiking_7_clickable_box_item5_desc"),
         }}
         image6={{
           img: image11,
-          title: "Wandern & Yoga",
-          description:
-            "Die perfekte Kombination aus Bewegung, Natur und Meditation entführt dich in ein ganzheitliches Erlebnis für Körper und Geist!",
+          title: t("hiking_7_clickable_box_item6_title"),
+          description: t("hiking_7_clickable_box_item6_desc"),
         }}
         image7={{
           img: image12,
-          title: "Alpenüberquerungen",
-          description:
-            "Bist du bereit für die ultimative Herausforderung? Dann schließe dich jetzt einer unserer Alpentraversalen an!",
+          title: t("hiking_7_clickable_box_item7_title"),
+          description: t("hiking_7_clickable_box_item7_desc"),
         }}
       />
       <Description
-        titel="Finde den Wanderurlaub, der zu dir passt"
+        titel={t("hiking_big_tab_element_title")}
         tabItems={[
-          "Für Alleinreisende",
-          "Für Familien",
-          "Für Paare",
-          "Für Frauen",
+          t("hiking_big_tab_element_tab1"),
+          t("hiking_big_tab_element_tab2"),
+          t("hiking_big_tab_element_tab3"),
+          t("hiking_big_tab_element_tab4"),
         ]}
         tabCols="lg:grid-cols-4"
         tabContents={[
           {
             detailsImage: Alleinreisende,
-            detailsTitle: "Gemeinsam die Faszination Natur erleben",
-            detailsDesc:
-              "Den ganzen Urlaub unter Gleichgesinnten verbringen, gemeinsam die Umgebung erkunden und vielleicht sogar neue Bekanntschaften fürs Leben schließen: Welche Leidenschaft eignet sich besser für eine Gruppenreise als das Wandern? Nach der obligatorischen Vorstellungsrunde verschwinden die anfänglichen Berührungsängste ganz von selbst. Deine Wanderführung achtet zu jeder Zeit auf die Bedürfnisse der gesamten Gruppe und kümmert sich mit großer Freude um die kollektive Wanderlust - denn geteilte Freude ist doppelte Freude!",
+            detailsTitle: t("hiking_big_tab_element_tab1_title"),
+            detailsDesc: t("hiking_big_tab_element_tab1_subtitle"),
             detailsReadMore: "",
-            cardTitle: "Ausgewählte Wandergruppenreisen",
+            cardTitle: t("hiking_big_tab_element_tab1_more"),
             cardItems: [
               {
                 cardImage: cardImage,
@@ -202,11 +193,10 @@ const HikingHolidays = () => {
           },
           {
             detailsImage: Familien,
-            detailsTitle: "Ein Abenteuer für klein und groß",
-            detailsDesc:
-              "Wenn man die Kleinen für die Wunder der Natur begeistern möchte, ist ein Wanderurlaub genau das Richtige. Erkundet gemeinsam Wälder, Wiesen, Gipfel und Täler während die ganze Bande mal so richtig ausgelastet wird. Wenn die Eltern mal Zeit für sich brauchen, bieten manche Unterkünfte außerdem eine spezielle Kinderbetreuung an. Umliegende Familienattraktionen sorgen für die notwendige Abwechslung! Ein Wanderurlaub wird die Familie mit Sicherheit enger zusammenbringen und deswegen so schnell nicht in Vergessenheit geraten!",
+            detailsTitle: t("hiking_big_tab_element_tab2_title"),
+            detailsDesc: t("hiking_big_tab_element_tab2_subtitle"),
             detailsReadMore: "",
-            cardTitle: "Ausgewählte Wanderurlaube für Familien",
+            cardTitle: t("hiking_big_tab_element_tab2_more"),
             cardItems: [
               {
                 cardImage: cardImage,
@@ -235,11 +225,10 @@ const HikingHolidays = () => {
           },
           {
             detailsImage: Paare,
-            detailsTitle: "Zu zweit ist alles besser",
-            detailsDesc:
-              "Möchtest du mit deiner Partnerin oder deinem Partner unvergessliche Erlebnisse teilen, neue Gipfel erklimmen, Seen entdecken, Wälder durchwandern und dabei immer noch genug Zeit für gemeinsame Erholung haben? Dann schnapp dir deine bessere Hälfte, deinen Tagesrucksack und deine Wanderschuhe und entdecke die besten Wanderreisen in ausgewählten Wanderhotels! Entscheidet jeden Morgen aufs Neue, ob ihr euch einer geführten Wanderung anschließt und danach wohlverdient die Beine im Wellnessbereich hochlegt oder auf eigene Faust die Gegend erkundet.",
+            detailsTitle: t("hiking_big_tab_element_tab3_title"),
+            detailsDesc: t("hiking_big_tab_element_tab3_subtitle"),
             detailsReadMore: "",
-            cardTitle: "Ausgewählte Wanderurlaube für Paare",
+            cardTitle: t("hiking_big_tab_element_tab3_more"),
             cardItems: [
               {
                 cardImage: cardImage,
@@ -279,11 +268,10 @@ const HikingHolidays = () => {
           },
           {
             detailsImage: Frauen,
-            detailsTitle: "Von Frauen für Frauen gemacht",
-            detailsDesc:
-              "Gemeinsame Bewegung an der frischen Luft schweißt zusammen! Bei diesen exklusiven Wandergruppenreisen für weibliche Teilnehmerinnen kannst du dich auf achtsame Gespräche, einen verständnisvollen Freiraum und viele lustige Momente inmitten von wohltuender Natur freuen. Daraus entstehen oft Freundschaften, die ein Leben lang halten. Wenn du also eine unvergleichliche Auszeit und eine neue Erfahrung brauchst, dann gönne dir jetzt einen Wanderurlaub zusammen mit einer kleinen Gruppe aus wanderbegeisterten und naturverbundenen Frauen!",
+            detailsTitle: t("hiking_big_tab_element_tab4_title"),
+            detailsDesc: t("hiking_big_tab_element_tab4_subtitle"),
             detailsReadMore: "",
-            cardTitle: "Ausgewählte Wanderreisen nur für Frauen",
+            cardTitle: t("hiking_big_tab_element_tab4_more"),
             cardItems: [
               {
                 cardImage: cardImage,
@@ -329,56 +317,56 @@ const HikingHolidays = () => {
         buttonTitle="Mehr erfahren"
       />
       <SingleColImg
-        title="Wanderreisen nach Erfahrungslevel"
+        title={t("hiking_3_clickable_boxes_title")}
         items={[
           {
             img: Col31,
-            title: "Wanderreisen für Anfänger:innen",
+            title: t("hiking_3_clickable_boxes_item1"),
           },
           {
             img: Col32,
-            title: "Wanderreisen für Fortgeschrittene",
+            title: t("hiking_3_clickable_boxes_item2"),
           },
           {
             img: Col33,
-            title: "Wanderreisen für Profis",
+            title: t("hiking_3_clickable_boxes_item3"),
           },
         ]}
         cols="md:grid-cols-3"
       />
       <ImageGalleryFourPic
-        title="Ausgewählte Reiseziele für deinen Wanderurlaub"
+        title={t("hiking_4_clickable_box_title")}
         items={[
           {
             img: img1,
             shadow: "80",
-            title: "Deutschland",
+            title: t("hiking_4_clickable_box_item1"),
           },
           {
             img: img2,
             shadow: "80",
-            title: "Italien",
+            title: t("hiking_4_clickable_box_item2"),
           },
           {
             img: img3,
             shadow: "80",
-            title: "Schweiz",
+            title: t("hiking_4_clickable_box_item3"),
           },
           {
             img: img4,
             shadow: "80",
-            title: "Österreich",
+            title: t("hiking_4_clickable_box_item4"),
           },
         ]}
       />
       <ColorDivider
-        title="Wanderurlaub buchen ohne Risiko"
-        description="Wir bieten dir flexible Stornierungsbedingungen mit 100 % Rückerstattung!"
-        buttonTitle="Mehr erfahren"
+        title={t("hiking_divider_title")}
+        description={t("hiking_divider_text")}
+        buttonTitle={t("hiking_divider_button")}
       />
       <SingleCardSection
-        title="Erholsame Wanderurlaube zum Genießen"
-        description="Du möchtest es langsam angehen lassen? Mit diesen Reisen verbindest du Erholung mit Wanderungen in eindrucksvoller Natur!"
+        title={t("hiking_offer_title")}
+        description={t("hiking_offer_subtitle")}
         items={[
           {
             cardImage: cardImage,
@@ -494,8 +482,8 @@ const HikingHolidays = () => {
         cols="lg:grid-cols-4"
       />
       <SingleCardSection
-        title="Abenteuerliche Wanderreisen mit Erlebnisfaktor"
-        description="Hast du schon den ein oder anderen Gipfel hinter dir gelassen und bist auf der Suche nach der nächsten Herausforderung? Dann erlebe mit diesen Reisen dein nächstes Abenteuer in der Natur!"
+        title={t("hiking_offer_title2")}
+        description={t("hiking_offer_subtitle2")}
         items={[
           {
             cardImage: cardImage,
@@ -580,42 +568,37 @@ const HikingHolidays = () => {
       <DividerImg
         image={Suchst}
         align="left"
-        title="Entdecke alle Wanderurlaube"
-        description="Bei einem Wanderurlaub mit moverii hast du immer einen professionellen Guide an deiner Seite, mit dem du in kleinen Gruppen unberührte Natur und interessante Geheimtipps entdeckst!"
-        buttonTitle="Zur Übersicht"
+        title={t("hiking_divider_title2")}
+        description={t("hiking_divider_text2")}
+        buttonTitle={t("hiking_divider_button2")}
       />
       <ImageGalleryWindow
-        title="Ausgewählte Wanderrouten in den Alpen"
-        description="Entdecke unsere ausgewählten Wanderrouten und erfahre mehr über ihre einzigartige Naturpracht."
+        title={t("hiking_4_clickable_box2_title")}
+        description={t("hiking_4_clickable_box2_subtitle")}
         items={[
           {
             shadowSize: "80",
             img: wImg1,
-            title:
-              "Das beliebteste Wanderziel der italienischen Alpen: Die Drei Zinnen",
-            description:
-              "Die einzigartigen Felsformationen der südlichen Kalkalpen sorgen für beeindruckende Fotomotive!",
+            title: t("hiking_4_clickable_box2_item1_title"),
+            description: t("hiking_4_clickable_box2_item1_subtitle"),
           },
           {
             shadowSize: "80",
             img: wImg2,
-            title: "Atemberaubende Blicke auf die Zugspitze: Das Kramerspitz",
-            description:
-              'In Garmisch-Partenkirchen beginnt eine der schönsten Tagestouren Oberbayerns zum Gipfel des "Kramers".',
+            title: t("hiking_4_clickable_box2_item2_title"),
+            description: t("hiking_4_clickable_box2_item2_subtitle"),
           },
           {
             shadowSize: "80",
             img: wImg3,
-            title: "Auf den Spuren der alten Römer: Der Septimerpass",
-            description:
-              "Einer der ältesten Alpenübergänge lässt dich die Schweiz in ihrer schönsten Form erleben.",
+            title: t("hiking_4_clickable_box2_item3_title"),
+            description: t("hiking_4_clickable_box2_item3_subtitle"),
           },
           {
             shadowSize: "80",
             img: wImg4,
-            title: "Seeumrundung mit optionaler Abkühlung: Der Traunsee",
-            description:
-              "Perfekt für entspannte Genusswandertouren eignet sich der beliebte Traunsee in Oberösterreich!",
+            title: t("hiking_4_clickable_box2_item4_title"),
+            description: t("hiking_4_clickable_box2_item4_subtitle"),
           },
         ]}
       />
@@ -654,49 +637,51 @@ const HikingHolidays = () => {
         dark={true}
         items={[
           {
-            description:
-              "Mega! Der Ort ist magisch und das Team toll. Jederzeit wieder!",
+            description: t("hiking_divider_review_item1_text"),
             name: "Regina",
             date: "04.01.2021",
           },
           {
-            description:
-              "Das Essen war hausgemacht, die Yoga und Qi Gong Stunden waren wirklich etwas Besonderes und auf den 1800m Höhe kann man super abschalten, den Alltag vergessen und sich um sich selbst kümmern. Es gab viele Angebote wie Klettern, Rafting oder einen Workshoptag, deshalb ist der Preis sehr fair. Danke an Denise, Wendy & Chris für ein rundum gelunges retreat! Gerne wieder!",
+            description: t("hiking_divider_review_item2_text"),
             name: "Silke Roth",
             date: "21.04.2021",
           },
           {
-            description:
-              "Super nettes Personal, fantastisches Essen, tolle Umgebung, schöner Wellness Bereich.",
+            description: t("hiking_divider_review_item3_text"),
             name: "Maike Stahl",
             date: "11.11.2022",
           },
         ]}
       />
       <TagSection
-        title="Noch mehr Inspiration für deinen Wanderurlaub"
+        title={t("hiking_links_element_title")}
         cols="xl:grid-cols-3"
         items={[
           {
-            title: "Wanderurlaub nach Reiseziel",
-            items: ["Deutschland", "Österreich", "Schweiz", "Italien"],
-          },
-          {
-            title: "Beliebte Kategorien",
+            title: t("hiking_links_element_col1_title"),
             items: [
-              "Genuss Wandern",
-              "Gruppenreisen",
-              "Trekking Reisen",
-              "Wander Wochenenden",
+              t("hiking_links_element_col1_item1"),
+              t("hiking_links_element_col1_item2"),
+              t("hiking_links_element_col1_item3"),
+              t("hiking_links_element_col1_item4"),
             ],
           },
           {
-            title: "Ausgewählte Partner",
+            title: t("hiking_links_element_col2_title"),
             items: [
-              "Hauser-Exkursionen",
-              "Inselzeitreisen",
-              "Alpinkreativ",
-              "Hotel Vier Jahreszeiten",
+              t("hiking_links_element_col2_item1"),
+              t("hiking_links_element_col2_item2"),
+              t("hiking_links_element_col2_item3"),
+              t("hiking_links_element_col2_item4"),
+            ],
+          },
+          {
+            title: t("hiking_links_element_col3_title"),
+            items: [
+              t("hiking_links_element_col3_item1"),
+              t("hiking_links_element_col3_item2"),
+              t("hiking_links_element_col3_item3"),
+              t("hiking_links_element_col3_item4"),
             ],
           },
         ]}
