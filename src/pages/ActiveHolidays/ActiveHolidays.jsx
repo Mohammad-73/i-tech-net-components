@@ -786,30 +786,33 @@ const ActiveHolidays = () => {
         ]}
       />
       <ContactUsSection
-        title="Hast du Fragen oder Wünsche?"
-        descritpion="Wir lieben was wir tun und sind stets an deiner Seite! Schreib uns einfach eine Nachricht und wir melden uns in wenigen Stunden persönlich bei dir:"
+        title={t("active_contact_us_title")}
+        descritpion={t("active_contact_us_subtitle")}
         formInputs={[
-          { type: "text", placeholder: "Your name*" },
-          { type: "text", placeholder: "Email Address*" },
+          {
+            type: "text",
+            placeholder: t("active_contact_us_input_first_name"),
+          },
+          { type: "text", placeholder: t("active_contact_us_input_email") },
         ]}
-        formTextarea="Deine Nachricht*"
-        formButton="Nachricht abschicken"
+        formTextarea={t("active_contact_us_input_write_message")}
+        formButton={t("active_contact_us_input_send_message")}
         cardImageSrc={Contact}
-        cardTitle="Wir sind rund um die Uhr für dich da!"
-        cardDesc="Wir stehen dir zu jedem Zeitpunkt deiner Reise persönlich zur Seite - kontaktiere uns einfach:"
+        cardTitle={t("active_contact_us_card_title")}
+        cardDesc={t("active_contact_us_card_subtitle")}
         cardItems={[
           {
-            title: "Phone",
+            title: t("active_contact_us_card_phone"),
             address: "+49 (0)228 7638 2040",
             icon: <MdOutlineLocalPhone />,
           },
           {
-            title: "Email",
+            title: t("active_contact_us_card_email"),
             address: "team@moverii.de",
             icon: <HiOutlineMail />,
           },
           {
-            title: "Whatsapp",
+            title: t("active_contact_us_card_whatsapp"),
             address: "+49 (0)163 3122 260",
             icon: <BsWhatsapp />,
           },

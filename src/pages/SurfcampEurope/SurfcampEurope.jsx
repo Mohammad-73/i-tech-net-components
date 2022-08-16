@@ -77,24 +77,24 @@ const SurfcampEurope = () => {
             icon: <BiLike size={38} />,
             title: t("euro_3symbol_title1"),
             description: t("euro_3symbol_text1"),
-            readMore: "Zu den Details",
+            readMore: t("euro_3symbol_more"),
           },
           {
             icon: <BiStar size={38} />,
             title: t("euro_3symbol_title2"),
             description: t("euro_3symbol_text2"),
-            readMore: "Zu den Details",
+            readMore: t("euro_3symbol_more"),
           },
           {
             icon: <BiHeart size={38} />,
             title: t("euro_3symbol_title3"),
             description: t("euro_3symbol_text3"),
-            readMore: "Zu den Details",
+            readMore: t("euro_3symbol_more"),
           },
         ]}
       />
       <Description
-        titel="Die besten Reiseziele für einen Surfurlaub in Europa"
+        title={t("euro_big_tab_element_title")}
         tabItems={[
           t("euro_big_tab_element_tab1"),
           t("euro_big_tab_element_tab2"),
@@ -833,29 +833,29 @@ const SurfcampEurope = () => {
         rateCols="xl:grid-cols-3"
       />
       <ContactUsSection
-        title="Beliebte Kategorien für einen Surfurlaub in Europa"
+        title={t("euro_contact_us_title")}
         formInputs={[
-          { type: "text", placeholder: "Your name" },
-          { type: "text", placeholder: "Phone Number" },
-          { type: "text", placeholder: "Email Address" },
-          { type: "text", placeholder: "Subject" },
+          { type: "text", placeholder: t("euro_contact_us_input_first_name") },
+          { type: "text", placeholder: t("euro_contact_us_input_email") },
+          { type: "text", placeholder: t("euro_contact_us_input_phone") },
+          { type: "text", placeholder: t("euro_contact_us_input_subject") },
         ]}
-        formTextarea="Write your message"
-        formButton="Send a Message"
+        formTextarea={t("euro_contact_us_input_write_message")}
+        formButton={t("euro_contact_us_input_send_message")}
         cardImageSrc={Contact}
         cardItems={[
           {
-            title: "Phone",
+            title: t("euro_contact_us_card_phone"),
             address: "+49 (0)228 7638 2040",
             icon: <MdOutlineLocalPhone />,
           },
           {
-            title: "Email",
+            title: t("euro_contact_us_card_email"),
             address: "team@moverii.de",
             icon: <HiOutlineMail />,
           },
           {
-            title: "Whatsapp",
+            title: t("euro_contact_us_card_whatsapp"),
             address: "+49 (0)163 3122 260",
             icon: <BsWhatsapp />,
           },
