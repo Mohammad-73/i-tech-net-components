@@ -14,7 +14,7 @@ import cardImage from "../../assets/images/cardImage.jpg";
 import Hero from "../../components/Hero/Hero";
 //HintSection
 import HintSection from "../../components/HintSection/HintSection";
-import { BiLike, BiStar, BiHeart } from "react-icons/bi";
+import { Like, Star, Heart, RightArrow } from "../../assets/icons/icons";
 // ImageGalleryFivePic
 import ImageGalleryFivePic from "../../components/ImageGalleryFivePic/ImageGalleryFivePic";
 import image51 from "../../assets/euro/Zielgruppen/Zielgruppen/Surfcamps-Alleinreisende-Europa.jpg";
@@ -32,7 +32,6 @@ import ListAndImage from "../../components/ListAndImage/ListAndImage";
 import NavBar from "../../components/NavBar/NavBar";
 //DividerImg
 import DividerImg from "../../components/DividerImg/DividerImg";
-import { BiRightArrowAlt } from "react-icons/bi";
 //SingleColImg
 import SingleColImg from "../../components/SingleColImg/SingleColImg";
 import Col31 from "../../assets/images/col31.jpg";
@@ -52,9 +51,8 @@ import RateImg from "../../assets/images/g1.jpg";
 //ContactUsSection
 import ContactUsSection from "../../components/ContactUsSection/ContactUsSection";
 import Contact from "../../assets/images/contact.jpg";
-import { MdOutlineLocalPhone } from "react-icons/md";
-import { HiOutlineMail } from "react-icons/hi";
-import { BsWhatsapp } from "react-icons/bs";
+import { Phone, Email, Whatsapp } from "../../assets/icons/icons";
+
 //
 import Besonderheiten from "../../assets/images/Besonderheiten.jpg";
 import DividerImage from "../../assets/images/dividerImage.jpg";
@@ -74,19 +72,19 @@ const SurfcampEurope = () => {
       <HintSection
         items={[
           {
-            icon: <BiLike size={38} />,
+            icon: <Like size={38} />,
             title: t("euro_3symbol_title1"),
             description: t("euro_3symbol_text1"),
             readMore: t("euro_3symbol_more"),
           },
           {
-            icon: <BiStar size={38} />,
+            icon: <Star size={38} />,
             title: t("euro_3symbol_title2"),
             description: t("euro_3symbol_text2"),
             readMore: t("euro_3symbol_more"),
           },
           {
-            icon: <BiHeart size={38} />,
+            icon: <Heart size={38} />,
             title: t("euro_3symbol_title3"),
             description: t("euro_3symbol_text3"),
             readMore: t("euro_3symbol_more"),
@@ -782,7 +780,7 @@ const SurfcampEurope = () => {
         image={Besonderheiten}
         dark={true}
         buttonTitle={t("euro_divider_with_image_as_background_button2")}
-        icon={<BiRightArrowAlt size={30} />}
+        icon={<RightArrow size={30} />}
       />
       <RateCardSection
         title={t("euro_reviews_title")}
@@ -847,17 +845,17 @@ const SurfcampEurope = () => {
           {
             title: t("euro_contact_us_card_phone"),
             address: "+49 (0)228 7638 2040",
-            icon: <MdOutlineLocalPhone />,
+            icon: <Phone />,
           },
           {
             title: t("euro_contact_us_card_email"),
             address: "team@moverii.de",
-            icon: <HiOutlineMail />,
+            icon: <Email />,
           },
           {
             title: t("euro_contact_us_card_whatsapp"),
             address: "+49 (0)163 3122 260",
-            icon: <BsWhatsapp />,
+            icon: <Whatsapp />,
           },
         ]}
       />

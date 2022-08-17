@@ -1,5 +1,5 @@
 import React from "react";
-import { BiRightArrowAlt } from "react-icons/bi";
+import { RightArrow } from "../../assets/icons/icons";
 
 const DetailsWithImage = ({ image, title, description, readMore }) => {
   return (
@@ -11,10 +11,10 @@ const DetailsWithImage = ({ image, title, description, readMore }) => {
         <h1 className="mt-5 pt-9 px-6 text-3xl font-bold">{title}</h1>
         <p className="p-6 text-[#2B2D42] text-[16px]">{description}</p>
         {readMore && (
-          <p className="px-6 flex text-[#2B2D42] text-[16px] font-bold">
+          <p className="px-6 flex items-center text-[#2B2D42] text-[16px] font-bold">
             {readMore}
-            <span>
-              <BiRightArrowAlt size={26} />
+            <span className="px-2">
+              <RightArrow size={26} />
             </span>
           </p>
         )}

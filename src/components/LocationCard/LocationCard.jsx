@@ -1,8 +1,6 @@
 import React from "react";
-import { HiOutlineLocationMarker } from "react-icons/hi";
-import { MdOutlineCalendarToday } from "react-icons/md";
-import { BsExclamationCircle } from "react-icons/bs";
-import { ReactComponent as Owl } from "../../assets/images/owl.svg";
+import { Calendar, Location, Info } from "../../assets/icons/icons";
+import { Owl } from "../../assets/icons/icons";
 
 const LocationCard = ({
   key,
@@ -30,13 +28,13 @@ const LocationCard = ({
         </h5>
         <div className="flex items-center mb-3 font-normal">
           <span className="text-[#12A3BA] pr-2">
-            <HiOutlineLocationMarker size={24} />
+            <Location size={24} />
           </span>
           <p className="text-[#2B2D42] text-[0.8rem]">{location}</p>
         </div>
         <div className="flex items-center mb-3 font-normal  ">
           <span className="text-[#12A3BA] pr-2">
-            <MdOutlineCalendarToday size={24} />
+            <Calendar size={24} />
           </span>
           <p className="text-[#2B2D42] text-[0.8rem]">{calender}</p>
         </div>
@@ -66,7 +64,7 @@ const LocationCard = ({
           </div>
           <div className="flex">
             <p className="text-[#2B2D42] text-[0.6rem] px-1">{info}</p>
-            <BsExclamationCircle />
+            <Info />
           </div>
         </div>
       </div>

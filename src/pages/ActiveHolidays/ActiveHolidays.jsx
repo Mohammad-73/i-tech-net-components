@@ -1,15 +1,20 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
+import {
+  Heart,
+  Like,
+  Star,
+  HeartOrange,
+  LikeOrange,
+  StarOrange,
+  Phone,
+  Email,
+  Whatsapp,
+} from "../../assets/icons/icons";
 // Hero
 import Hero from "../../components/Hero/Hero";
 //HorizontalHintSection
 import HorizontalHintSection from "../../components/HorizontalHintSection/HorizontalHintSection";
-import {
-  FaRunning,
-  FaTree,
-  FaBatteryFull,
-  FaSearchLocation,
-} from "react-icons/fa";
 //Description
 import Description from "../../components/Description/Description";
 import Berge from "../../assets/activeHoliday/Tab Element Oben/Aktivurlaub-Berge.jpg";
@@ -51,13 +56,11 @@ import SlideDivider from "../../components/SlideDivider/SlideDivider";
 import slideDividerImg from "../../assets/activeHoliday/Divider/Aktivurlaub-Erfahrungen.jpg";
 //HintSection
 import HintSection from "../../components/HintSection/HintSection";
-import { BiLike, BiStar, BiHeart } from "react-icons/bi";
+
 //ContactUsSection
 import ContactUsSection from "../../components/ContactUsSection/ContactUsSection";
 import Contact from "../../assets/images/contact.jpg";
-import { MdOutlineLocalPhone } from "react-icons/md";
-import { HiOutlineMail } from "react-icons/hi";
-import { BsWhatsapp } from "react-icons/bs";
+
 //TagSection
 import TagSection from "../../components/TagSection/TagSection";
 
@@ -74,22 +77,22 @@ const ActiveHolidays = () => {
         bgColor=""
         items={[
           {
-            icon: <FaRunning size={56} />,
+            icon: <HeartOrange size={56} />,
             title: t("active_4symbol_title1"),
             description: t("active_4symbol_text1"),
           },
           {
-            icon: <FaTree size={56} />,
+            icon: <LikeOrange size={56} />,
             title: t("active_4symbol_title2"),
             description: t("active_4symbol_text2"),
           },
           {
-            icon: <FaBatteryFull size={56} />,
+            icon: <StarOrange size={56} />,
             title: t("active_4symbol_title3"),
             description: t("active_4symbol_text3"),
           },
           {
-            icon: <FaSearchLocation size={56} />,
+            icon: <HeartOrange size={56} />,
             title: t("active_4symbol_title4"),
             description: t("active_4symbol_text4"),
           },
@@ -766,21 +769,21 @@ const ActiveHolidays = () => {
       <HintSection
         items={[
           {
-            icon: <BiLike size={38} />,
-            title: t("symbol_element_title1"),
-            description: t("symbol_element_text1"),
+            icon: <Like size={38} />,
+            title: t("active_3_symbol_element_title1"),
+            description: t("active_3_symbol_element_text1"),
             readMore: "Zu den Details",
           },
           {
-            icon: <BiStar size={38} />,
-            title: t("symbol_element_title2"),
-            description: t("symbol_element_text2"),
+            icon: <Star size={38} />,
+            title: t("active_3_symbol_element_title2"),
+            description: t("active_3_symbol_element_text2"),
             readMore: "Zu den Details",
           },
           {
-            icon: <BiHeart size={38} />,
-            title: t("symbol_element_title3"),
-            description: t("symbol_element_text3"),
+            icon: <Heart size={38} />,
+            title: t("active_3_symbol_element_title3"),
+            description: t("active_3_symbol_element_text3"),
             readMore: "Zu den Details",
           },
         ]}
@@ -804,17 +807,17 @@ const ActiveHolidays = () => {
           {
             title: t("active_contact_us_card_phone"),
             address: "+49 (0)228 7638 2040",
-            icon: <MdOutlineLocalPhone />,
+            icon: <Phone />,
           },
           {
             title: t("active_contact_us_card_email"),
             address: "team@moverii.de",
-            icon: <HiOutlineMail />,
+            icon: <Email />,
           },
           {
             title: t("active_contact_us_card_whatsapp"),
             address: "+49 (0)163 3122 260",
-            icon: <BsWhatsapp />,
+            icon: <Whatsapp />,
           },
         ]}
       />

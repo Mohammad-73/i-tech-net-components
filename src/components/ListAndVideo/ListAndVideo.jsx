@@ -1,7 +1,7 @@
 import React from "react";
-import { MdDone } from "react-icons/md";
+import { Done } from "../../assets/icons/icons";
 
-import { MdOutlineDoubleArrow } from "react-icons/md";
+import { RightArrow } from "../../assets/icons/icons";
 import VideoPlayer from "../VideoPlayer/VideoPlayer";
 
 const ListAndVideo = ({
@@ -38,7 +38,7 @@ const ListAndVideo = ({
           {items?.map((item, index) => (
             <span key={index} className="flex py-1">
               <span className="pr-3">
-                <MdDone className="text-[#1DA3BA]" />
+                <Done className="text-[#1DA3BA]" />
               </span>
               <p className="text-[0.87rem] text-[#2B2D42]">{item}</p>
             </span>
@@ -47,7 +47,7 @@ const ListAndVideo = ({
           {readMore && (
             <div className="flex items-center">
               <p>{readMore}</p>
-              <MdOutlineDoubleArrow />
+              <RightArrow />
             </div>
           )}
         </div>

@@ -1,10 +1,18 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
+import {
+  Heart,
+  Like,
+  Star,
+  Phone,
+  Email,
+  Whatsapp,
+} from "../../assets/icons/icons";
 // Hero
 import Hero from "../../components/Hero/Hero";
 //HintSection
 import HintSection from "../../components/HintSection/HintSection";
-import { BiLike, BiStar, BiHeart } from "react-icons/bi";
+
 //ImageGalleryBrick2
 import ImageGalleryBrick2 from "../../components/ImageGalleryBrick2/ImageGalleryBrick2";
 import image6 from "../../assets/hiking-holiday/Kategorien/Wander-Wochenenden.jpg";
@@ -48,9 +56,7 @@ import wImg4 from "../../assets/hiking-holiday/Routen/Wandern-Traunsee.jpg";
 //ContactUsSection
 import ContactUsSection from "../../components/ContactUsSection/ContactUsSection";
 import Contact from "../../assets/images/contact.jpg";
-import { MdOutlineLocalPhone } from "react-icons/md";
-import { HiOutlineMail } from "react-icons/hi";
-import { BsWhatsapp } from "react-icons/bs";
+
 //SlideDivider
 import SlideDivider from "../../components/SlideDivider/SlideDivider";
 import slideDividerImg from "../../assets/hiking-holiday/Divider/Wandern-Divider-1.jpg";
@@ -69,19 +75,19 @@ const HikingHolidays = () => {
       <HintSection
         items={[
           {
-            icon: <BiLike size={38} />,
+            icon: <Like size={38} />,
             title: t("hiking_3_symbol_title1"),
             description: t("hiking_3_symbol_text1"),
             readMore: "Zu den Details",
           },
           {
-            icon: <BiStar size={38} />,
+            icon: <Star size={38} />,
             title: t("hiking_3_symbol_title2"),
             description: t("hiking_3_symbol_text2"),
             readMore: "Zu den Details",
           },
           {
-            icon: <BiHeart size={38} />,
+            icon: <Heart size={38} />,
             title: t("hiking_3_symbol_title3"),
             description: t("hiking_3_symbol_text3"),
             readMore: "Zu den Details",
@@ -621,17 +627,17 @@ const HikingHolidays = () => {
           {
             title: t("hiking_contact_us_card_phone"),
             address: "+49 (0)228 7638 2040",
-            icon: <MdOutlineLocalPhone />,
+            icon: <Phone />,
           },
           {
             title: t("hiking_contact_us_card_email"),
             address: "team@moverii.de",
-            icon: <HiOutlineMail />,
+            icon: <Email />,
           },
           {
             title: t("hiking_contact_us_card_whatsapp"),
             address: "+49 (0)163 3122 260",
-            icon: <BsWhatsapp />,
+            icon: <Whatsapp />,
           },
         ]}
       />

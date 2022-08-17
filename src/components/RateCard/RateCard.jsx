@@ -1,6 +1,5 @@
 import React from "react";
-import { AiFillStar } from "react-icons/ai";
-import { MdOutlineCalendarToday } from "react-icons/md";
+import { CalendarGray, RateStar } from "../../assets/icons/icons";
 
 const RateCard = ({ name, description, image, footNote, calendar }) => {
   return (
@@ -13,16 +12,16 @@ const RateCard = ({ name, description, image, footNote, calendar }) => {
                 {name}
               </h1>
               <div className="flex items-center px-2">
-                <AiFillStar className="text-yellow-400" />
-                <AiFillStar className="text-yellow-400" />
-                <AiFillStar className="text-yellow-400" />
-                <AiFillStar className="text-yellow-400" />
-                <AiFillStar className="text-yellow-400" />
+                <RateStar className="text-yellow-400" />
+                <RateStar className="text-yellow-400" />
+                <RateStar className="text-yellow-400" />
+                <RateStar className="text-yellow-400" />
+                <RateStar className="text-yellow-400" />
               </div>
             </div>
             <div className="flex items-center">
               <span className="text-[#959499] pr-2">
-                <MdOutlineCalendarToday size={24} />
+                <CalendarGray size={24} />
               </span>
               <p className="text-[#959499]">{calendar}</p>
             </div>

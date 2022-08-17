@@ -1,5 +1,15 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
+import {
+  HeartOrange,
+  LikeOrange,
+  StarOrange,
+  Phone,
+  Email,
+  Whatsapp,
+  RightArrow,
+} from "../../assets/icons/icons";
+
 // Hero
 import Hero from "../../components/Hero/Hero";
 // ImageGalleryFivePic
@@ -11,7 +21,7 @@ import image4 from "../../assets/surfcampFrance/imageGalleryFiveImage/Surfcamps-
 import image5 from "../../assets/surfcampFrance/imageGalleryFiveImage/Surfcamps-Frankreich-Jugendliche.jpg";
 // ColorDivider
 import ColorDivider from "../../components/ColorDivider/ColorDivider";
-import { BiRightArrowAlt } from "react-icons/bi";
+
 // ListAndImage
 import ListAndImage from "../../components/ListAndImage/ListAndImage";
 import ListAndImage1 from "../../assets/surfcampFrance/listAndImage/Surfcamp-Campingurlaub-Frankreich.jpg";
@@ -19,9 +29,7 @@ import ListAndImage2 from "../../assets/surfcampFrance/listAndImage/Surfhaus_Sur
 import ListAndImage3 from "../../assets/surfcampFrance/listAndImage/Surfurlaub-Apartments.jpg";
 //HorizontalHintSection
 import HorizontalHintSection from "../../components/HorizontalHintSection/HorizontalHintSection";
-import { MdWaves } from "react-icons/md";
-import { IoFootsteps } from "react-icons/io5";
-import { FaTelegramPlane, FaHeart } from "react-icons/fa";
+
 //SingleCardSection
 import SingleCardSection from "../../components/SingleCardSection/SingleCardSection";
 //ImageGallery3
@@ -56,9 +64,7 @@ import RateImg from "../../assets/images/g1.jpg";
 //ContactUsSection
 import ContactUsSection from "../../components/ContactUsSection/ContactUsSection";
 import Contact from "../../assets/images/contact.jpg";
-import { MdOutlineLocalPhone } from "react-icons/md";
-import { HiOutlineMail } from "react-icons/hi";
-import { BsWhatsapp } from "react-icons/bs";
+
 //TagSection
 import TagSection from "../../components/TagSection/TagSection";
 
@@ -84,7 +90,7 @@ const SurfcampsFrance = () => {
         title={t("france_narrow_divider_element_title")}
         description={t("france_narrow_divider_element_text")}
         buttonTitle={t("france_narrow_divider_element_button")}
-        buttonIcon={<BiRightArrowAlt size={30} />}
+        buttonIcon={<RightArrow size={30} />}
       />
       <ListAndImage
         image={ListAndImage1}
@@ -109,19 +115,19 @@ const SurfcampsFrance = () => {
         bgColor="bg-custom-blue"
         items={[
           {
-            icon: <MdWaves size={56} />,
+            icon: <HeartOrange size={56} />,
             description: t("france_4_symbol_element_item1"),
           },
           {
-            icon: <IoFootsteps size={56} />,
+            icon: <LikeOrange size={56} />,
             description: t("france_4_symbol_element_item2"),
           },
           {
-            icon: <FaTelegramPlane size={56} />,
+            icon: <StarOrange size={56} />,
             description: t("france_4_symbol_element_item3"),
           },
           {
-            icon: <FaHeart size={56} />,
+            icon: <HeartOrange size={56} />,
             description: t("france_4_symbol_element_item4"),
           },
         ]}
@@ -714,17 +720,17 @@ const SurfcampsFrance = () => {
           {
             title: t("france_contact_us_card_phone"),
             address: "+49 (0)228 7638 2040",
-            icon: <MdOutlineLocalPhone />,
+            icon: <Phone />,
           },
           {
             title: t("france_contact_us_card_email"),
             address: "team@moverii.de",
-            icon: <HiOutlineMail />,
+            icon: <Email />,
           },
           {
             title: t("france_contact_us_card_whatsapp"),
             address: "+49 (0)163 3122 260",
-            icon: <BsWhatsapp />,
+            icon: <Whatsapp />,
           },
         ]}
       />

@@ -1,6 +1,6 @@
 import React, { useState, useRef } from "react";
 import videoSrc from "../../assets/SurfcampPortugal/Angebote-3er/Atlantic-Coast-Surfcamp-Santa-Cruz-Portugal.jpg";
-import { FaPlay } from "react-icons/fa";
+import { Play } from "../../assets/icons/icons";
 
 const VideoPlayer = ({ title, description }) => {
   const videoRef = useRef();
@@ -55,10 +55,9 @@ const VideoPlayer = ({ title, description }) => {
             } cursor-pointer absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-custom-white backdrop-blur rounded-full w-[84px] h-[84px]`}
           >
             <div className="cursor-pointer absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-[#12A3BA]  rounded-full w-[52px] h-[52px]">
-              <FaPlay
-                className="cursor-pointer absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-white"
-                size={26}
-              />
+              <div className="cursor-pointer absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-white">
+                <Play size={26} />
+              </div>
             </div>
           </div>
         </div>

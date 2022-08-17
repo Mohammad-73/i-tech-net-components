@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import HorizontalCard from "../HorizontalCard/HorizontalCard";
-import { FaChevronRight, FaChevronLeft } from "react-icons/fa";
+import { RightArrow, LeftArrow } from "../../assets/icons/icons";
 
 const HorizontalCardSection = ({ title, description, items }) => {
   const [index, setIndex] = useState(0);
@@ -28,7 +28,7 @@ const HorizontalCardSection = ({ title, description, items }) => {
                 index === 0 ? "hidden" : "visible"
               } absolute cursor-pointer top-1/2 -left-2`}
             >
-              <FaChevronLeft className="text-[#FF9F1C]" size={50} />
+              <LeftArrow className="text-[#FF9F1C]" size={50} />
             </span>
             <span
               onClick={increase}
@@ -36,7 +36,7 @@ const HorizontalCardSection = ({ title, description, items }) => {
                 index + 4 === items.length ? "hidden" : "visible"
               } absolute cursor-pointer top-1/2 -right-2`}
             >
-              <FaChevronRight className="text-[#FF9F1C]" size={50} />
+              <RightArrow className="text-[#FF9F1C]" size={50} />
             </span>
             <div className="flex flex-col md:flex-wrap md:flex-row -m-1 md:-m-2">
               <div className="grid sm:grid-cols-1 md:grid-cols-2 w-full gap-4 px-6 md:px-2">

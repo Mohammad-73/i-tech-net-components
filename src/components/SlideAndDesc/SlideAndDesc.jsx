@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Button from "../Button/Button";
-import { BsArrowRight, BsArrowLeft } from "react-icons/bs";
+import { LeftArrow, RightArrow } from "../../assets/icons/icons";
 
 const ListAndDesc = ({
   bgColor,
@@ -81,7 +81,7 @@ const ListAndDesc = ({
           <Button text={buttonText} />
           <div className="flex items-center justify-center pt-5">
             <span onClick={handleClickPrev} className="cursor-pointer mx-1">
-              <BsArrowLeft className="text-slate-500" />
+              <LeftArrow className="text-slate-500" />
             </span>
             {items.map((item, i) => (
               <span
@@ -93,7 +93,7 @@ const ListAndDesc = ({
               ></span>
             ))}
             <span onClick={handleClickNext} className="cursor-pointer mx-1">
-              <BsArrowRight className="text-slate-500" />
+              <RightArrow className="text-slate-500" />
             </span>
           </div>
         </div>

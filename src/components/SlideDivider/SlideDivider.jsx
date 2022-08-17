@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import { AiFillStar } from "react-icons/ai";
-import { BsArrowRight, BsArrowLeft } from "react-icons/bs";
+
+import { RightArrow, LeftArrow, RateStar } from "../../assets/icons/icons";
 
 const SlideDivider = ({ image, dark, items }) => {
   const [index, setIndex] = useState(0);
@@ -36,11 +36,11 @@ const SlideDivider = ({ image, dark, items }) => {
           className={`absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-center max-w-2xl mx-auto w-[70%]`}
         >
           <div className="flex items-center justify-center px-2">
-            <AiFillStar className="text-yellow-400" />
-            <AiFillStar className="text-yellow-400" />
-            <AiFillStar className="text-yellow-400" />
-            <AiFillStar className="text-yellow-400" />
-            <AiFillStar className="text-yellow-400" />
+            <RateStar className="text-yellow-400" />
+            <RateStar className="text-yellow-400" />
+            <RateStar className="text-yellow-400" />
+            <RateStar className="text-yellow-400" />
+            <RateStar className="text-yellow-400" />
           </div>
           <h1 className="text-[1.56rem] text-white font-bold drop-shadow-lg">
             {items[index]?.title}
@@ -56,7 +56,7 @@ const SlideDivider = ({ image, dark, items }) => {
           </p>
           <div className="flex items-center justify-center ">
             <span onClick={handleClickPrev} className="cursor-pointer mx-1">
-              <BsArrowLeft className="text-white" />
+              <LeftArrow className="text-white" />
             </span>
             {items.map((item, i) => (
               <span
@@ -67,7 +67,7 @@ const SlideDivider = ({ image, dark, items }) => {
               ></span>
             ))}
             <span onClick={handleClickNext} className="cursor-pointer mx-1">
-              <BsArrowRight className="text-white" />
+              <RightArrow className="text-white" />
             </span>
           </div>
         </div>

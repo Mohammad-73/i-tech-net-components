@@ -1,11 +1,18 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
+import {
+  HeartOrange,
+  LikeOrange,
+  StarOrange,
+  Phone,
+  Email,
+  Whatsapp,
+} from "../../assets/icons/icons";
 // Hero
 import Hero from "../../components/Hero/Hero";
 //HorizontalHintSection
 import HorizontalHintSection from "../../components/HorizontalHintSection/HorizontalHintSection";
-import { MdWaves } from "react-icons/md";
-import { FaHeart, FaSun, FaLeaf } from "react-icons/fa";
+
 //ListAndImage
 import ListAndImage from "../../components/ListAndImage/ListAndImage";
 import ListAndImg from "../../assets/SurfcampsFuerteventura/Tab-Element-Regionen/Surfcamp-Vieux-Boucau-Frankreich.jpg";
@@ -44,9 +51,7 @@ import Col33 from "../../assets/SurfcampsFuerteventura/Angebote-4er-Elemente/Sur
 //ContactUsSection
 import ContactUsSection from "../../components/ContactUsSection/ContactUsSection";
 import Contact from "../../assets/images/contact.jpg";
-import { MdOutlineLocalPhone } from "react-icons/md";
-import { HiOutlineMail } from "react-icons/hi";
-import { BsWhatsapp } from "react-icons/bs";
+
 //TagSection
 import TagSection from "../../components/TagSection/TagSection";
 
@@ -64,22 +69,22 @@ const SurfcampFuerteventura = () => {
         bgColor=""
         items={[
           {
-            icon: <MdWaves size={56} />,
+            icon: <HeartOrange size={56} />,
             title: t("fuerteventura_4_symbol_item1_title"),
             description: t("fuerteventura_4_symbol_item1_subtitle"),
           },
           {
-            icon: <FaSun size={56} />,
+            icon: <LikeOrange size={56} />,
             title: t("fuerteventura_4_symbol_item2_title"),
             description: t("fuerteventura_4_symbol_item2_subtitle"),
           },
           {
-            icon: <FaLeaf size={56} />,
+            icon: <StarOrange size={56} />,
             title: t("fuerteventura_4_symbol_item3_title"),
             description: t("fuerteventura_4_symbol_item3_subtitle"),
           },
           {
-            icon: <FaHeart size={56} />,
+            icon: <HeartOrange size={56} />,
             title: t("fuerteventura_4_symbol_item4_title"),
             description: t("fuerteventura_4_symbol_item4_subtitle"),
           },
@@ -366,17 +371,17 @@ const SurfcampFuerteventura = () => {
           {
             title: t("fuerteventura_contact_us_card_phone"),
             address: "+49 (0)228 7638 2040",
-            icon: <MdOutlineLocalPhone />,
+            icon: <Phone />,
           },
           {
             title: t("fuerteventura_contact_us_card_email"),
             address: "team@moverii.de",
-            icon: <HiOutlineMail />,
+            icon: <Email />,
           },
           {
             title: t("fuerteventura_contact_us_card_whatsapp"),
             address: "+49 (0)163 3122 260",
-            icon: <BsWhatsapp />,
+            icon: <Whatsapp />,
           },
         ]}
       />

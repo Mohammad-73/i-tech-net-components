@@ -1,15 +1,21 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
+import {
+  Heart,
+  Like,
+  Star,
+  HeartOrange,
+  LikeOrange,
+  StarOrange,
+  Phone,
+  Email,
+  Whatsapp,
+} from "../../assets/icons/icons";
 // Hero
 import Hero from "../../components/Hero/Hero";
 //HorizontalHintSection
 import HorizontalHintSection from "../../components/HorizontalHintSection/HorizontalHintSection";
-import {
-  FaBalanceScale,
-  FaPrayingHands,
-  FaSearchLocation,
-  FaMapSigns,
-} from "react-icons/fa";
+
 //Description
 import Description from "../../components/Description/Description";
 import Ostsee from "../../assets/YogaRetreatsGermany/Regionen/Yoga-Retreat-Deutschland-Ostsee.jpg";
@@ -57,13 +63,11 @@ import DividerImg from "../../components/DividerImg/DividerImg";
 import Suchst from "../../assets/YogaRetreatsGermany/Divider/sunset-3087288_1920 (1).jpg";
 //HintSection
 import HintSection from "../../components/HintSection/HintSection";
-import { BiLike, BiStar, BiHeart } from "react-icons/bi";
+
 //ContactUsSection
 import ContactUsSection from "../../components/ContactUsSection/ContactUsSection";
 import Contact from "../../assets/images/contact.jpg";
-import { MdOutlineLocalPhone } from "react-icons/md";
-import { HiOutlineMail } from "react-icons/hi";
-import { BsWhatsapp } from "react-icons/bs";
+
 //TagSection
 import TagSection from "../../components/TagSection/TagSection";
 
@@ -80,22 +84,22 @@ const YogaRetreatsGermany = () => {
         bgColor=""
         items={[
           {
-            icon: <FaBalanceScale size={56} />,
+            icon: <HeartOrange size={56} />,
             title: t("germany_4_symbol_title1"),
             description: t("germany_4_symbol_text1"),
           },
           {
-            icon: <FaSearchLocation size={56} />,
+            icon: <LikeOrange size={56} />,
             title: t("germany_4_symbol_title2"),
             description: t("germany_4_symbol_text2"),
           },
           {
-            icon: <FaPrayingHands size={56} />,
+            icon: <StarOrange size={56} />,
             title: t("germany_4_symbol_title3"),
             description: t("germany_4_symbol_text3"),
           },
           {
-            icon: <FaMapSigns size={56} />,
+            icon: <HeartOrange size={56} />,
             title: t("germany_4_symbol_title4"),
             description: t("germany_4_symbol_text4"),
           },
@@ -831,19 +835,19 @@ const YogaRetreatsGermany = () => {
         title={t("germany_3_symbol_element_title")}
         items={[
           {
-            icon: <BiLike size={38} />,
+            icon: <Like size={38} />,
             title: t("germany_3_symbol_element_item1_title"),
             description: t("germany_3_symbol_element_item1_subtitle"),
             readMore: "Zu den Details",
           },
           {
-            icon: <BiStar size={38} />,
+            icon: <Star size={38} />,
             title: t("germany_3_symbol_element_item2_title"),
             description: t("germany_3_symbol_element_item2_subtitle"),
             readMore: "Zu den Details",
           },
           {
-            icon: <BiHeart size={38} />,
+            icon: <Heart size={38} />,
             title: t("germany_3_symbol_element_item3_title"),
             description: t("germany_3_symbol_element_item3_subtitle"),
             readMore: "Zu den Details",
@@ -869,17 +873,17 @@ const YogaRetreatsGermany = () => {
           {
             title: t("germany_contact_us_card_phone"),
             address: "+49 (0)228 7638 2040",
-            icon: <MdOutlineLocalPhone />,
+            icon: <Phone />,
           },
           {
             title: t("germany_contact_us_card_email"),
             address: "team@moverii.de",
-            icon: <HiOutlineMail />,
+            icon: <Email />,
           },
           {
             title: t("germany_contact_us_card_whatsapp"),
             address: "+49 (0)163 3122 260",
-            icon: <BsWhatsapp />,
+            icon: <Whatsapp />,
           },
         ]}
       />

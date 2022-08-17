@@ -1,5 +1,5 @@
 import React from "react";
-import { BiRightArrowAlt } from "react-icons/bi";
+import { RightArrow } from "../../assets/icons/icons";
 
 const Hint = ({ key, icon, title, description, readMore }) => {
   return (
@@ -9,10 +9,10 @@ const Hint = ({ key, icon, title, description, readMore }) => {
       </span>
       <h1 className="font-bold text-lg">{title}</h1>
       <p className="text-center text-gray-600">{description}</p>
-      <p className="flex text-gray-600">
+      <p className="flex items-center gap-1 text-gray-600">
         {readMore}
         <span>
-          <BiRightArrowAlt size={30} />
+          <RightArrow size={30} />
         </span>
       </p>
     </div>

@@ -1,7 +1,5 @@
 import React, { useState } from "react";
-import { HiMenu } from "react-icons/hi";
-import { CgClose } from "react-icons/cg";
-import { BsSearch, BsSuitHeart } from "react-icons/bs";
+import { Like } from "../../assets/icons/icons";
 import Moverii from "../../assets/logo/moverii.png";
 
 const NavBar = () => {
@@ -27,10 +25,10 @@ const NavBar = () => {
       <div>
         <div className="flex items-center">
           <span className="px-3">
-            <BsSearch size={26} />
+            <Like size={26} />
           </span>
           <span className="px-5">
-            <BsSuitHeart size={26} />
+            <Like size={26} />
           </span>
           <button className="bg-[#12A3BA] hover:bg-blue-500 text-white font-bold py-1 px-3 rounded-[15px]">
             Registrieren
@@ -38,7 +36,7 @@ const NavBar = () => {
         </div>
       </div>
       <div onClick={handleNav} className="block md:hidden">
-        {nav ? <CgClose size={24} /> : <HiMenu size={24} />}
+        {nav ? <Like size={24} /> : <Like size={24} />}
       </div>
       <ul
         className={
