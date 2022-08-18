@@ -15,59 +15,26 @@ import {
 import Hero from "../../components/Hero/Hero";
 //HorizontalHintSection
 import HorizontalHintSection from "../../components/HorizontalHintSection/HorizontalHintSection";
-
 //Description
 import Description from "../../components/Description/Description";
-import Ostsee from "../../assets/YogaRetreatsGermany/Regionen/Yoga-Retreat-Deutschland-Ostsee.jpg";
-import Nordsee from "../../assets/YogaRetreatsGermany/Regionen/Yoga-Retreat-Deutschland-Nordsee.jpg";
-import Bayern from "../../assets/YogaRetreatsGermany/Regionen/Yoga-Retreat-Deutschland-Bayern.jpg";
-import Baden from "../../assets/YogaRetreatsGermany/Regionen/Yoga-Retreat-Deutschland-Schwarzwald.jpg";
-import Brandenburg from "../../assets/YogaRetreatsGermany/Regionen/Yoga-Retreat-Deutschland-Brandenburg.jpg";
-import Nordrhein from "../../assets/YogaRetreatsGermany/Regionen/Yoga-Retreat-Deutschland-NRW.jpg";
-import cardImage from "../../assets/images/cardImage.jpg";
 //ImageGalleryFourPic
 import ImageGalleryFourPic from "../../components/ImageGalleryFourPic/ImageGalleryFourPic";
-import img1 from "../../assets/YogaRetreatsGermany/Retreat Arten/Yoga-Wochenenden.jpg";
-import img2 from "../../assets/YogaRetreatsGermany/Retreat Arten/Stille-Retreats.jpg";
-import img3 from "../../assets/YogaRetreatsGermany/Retreat Arten/Spirituelle-Retreats.jpg";
-import img4 from "../../assets/YogaRetreatsGermany/Retreat Arten/Yoga-Meditation.jpg";
 //HorizontalCardSection
 import HorizontalCardSection from "../../components/horizontalCardSection/horizontalCardSection";
-import hImg1 from "../../assets/YogaRetreatsGermany/Lehrerinnen/Yogalehrer-Friethjof-Bluhm.jpg";
-import hImg2 from "../../assets/YogaRetreatsGermany/Lehrerinnen/yogalehrerin-sylvia-asmodena.jpg";
-import hImg3 from "../../assets/YogaRetreatsGermany/Lehrerinnen/Yogalehrerin-Sara-Lyn.jpg";
-import hImg4 from "../../assets/YogaRetreatsGermany/Lehrerinnen/Yoga-Lehrerin-Yogakasha.jpg";
 // ColorDivider
 import ColorDivider from "../../components/ColorDivider/ColorDivider";
 //ImageGallery3
 import ImageGallery3 from "../../components/ImageGallery3/ImageGallery3";
-import imgGallery1 from "../../assets/YogaRetreatsGermany/Unterkuenfte/Yoga-Retreat-im-Center.jpg";
-import imgGallery2 from "../../assets/YogaRetreatsGermany/Unterkuenfte/Yoga-Retreat-im-Fastenhof.jpg";
-import imgGallery3 from "../../assets/YogaRetreatsGermany/Unterkuenfte/Yoga-Retreat-im-Biohotel.jpg";
-import imgGallery4 from "../../assets/YogaRetreatsGermany/Unterkuenfte/Yoga-Retreat-im-Designholzhaus.jpg";
-import imgGallery5 from "../../assets/YogaRetreatsGermany/Unterkuenfte/Yoga-Retreat-im-Reetdachhaus.jpg";
-import imgGallery6 from "../../assets/YogaRetreatsGermany/Unterkuenfte/Yoga-Retreat-im-Kloster.jpg";
 //SingleCardSection
 import SingleCardSection from "../../components/SingleCardSection/SingleCardSection";
 //ImageGalleryBrick2
 import ImageGalleryBrick2 from "../../components/ImageGalleryBrick2/ImageGalleryBrick2";
-import image6 from "../../assets/YogaRetreatsGermany/Kategorien/Yoga-Wellness.jpg";
-import image7 from "../../assets/YogaRetreatsGermany/Kategorien/Yoga-Fasten.jpg";
-import image8 from "../../assets/YogaRetreatsGermany/Kategorien/Yoga-Flexible-Stornierungsbedingungen.jpg";
-import image9 from "../../assets/YogaRetreatsGermany/Kategorien/Yoga-Wandern.jpg";
-import image10 from "../../assets/YogaRetreatsGermany/Kategorien/Yoga-Anfaenger.jpg";
-import image11 from "../../assets/YogaRetreatsGermany/Kategorien/Yoga-Surf.jpg";
-import image12 from "../../assets/YogaRetreatsGermany/Kategorien/Yoga-Fahrrad.jpg";
 //DividerImg
 import DividerImg from "../../components/DividerImg/DividerImg";
-import Suchst from "../../assets/YogaRetreatsGermany/Divider/sunset-3087288_1920 (1).jpg";
 //HintSection
 import HintSection from "../../components/HintSection/HintSection";
-
 //ContactUsSection
 import ContactUsSection from "../../components/ContactUsSection/ContactUsSection";
-import Contact from "../../assets/images/contact.jpg";
-
 //TagSection
 import TagSection from "../../components/TagSection/TagSection";
 
@@ -118,14 +85,17 @@ const YogaRetreatsGermany = () => {
         tabCols="lg:grid-cols-6"
         tabContents={[
           {
-            detailsImage: Ostsee,
+            detailsImage:
+              "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/YogaRetreatsGermany/Regionen/Yoga-Retreat-Deutschland-Ostsee.jpg",
+
             detailsTitle: t("germany_divider_big_tab1_title"),
             detailsDesc: t("germany_divider_big_tab1_text"),
             detailsReadMore: "",
             cardTitle: t("germany_divider_big_tab1_more"),
             cardItems: [
               {
-                cardImage: cardImage,
+                cardImage:
+                  "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/images/cardImage.jpg",
                 title: "Yoga & Wandern auf der Ostseeinsel Rügen",
                 location: "Baabe, Rügen, Deutschland",
                 calender: "Ganzjährig geöffnet",
@@ -136,7 +106,8 @@ const YogaRetreatsGermany = () => {
                 ab: "Ab",
               },
               {
-                cardImage: cardImage,
+                cardImage:
+                  "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/images/cardImage.jpg",
                 title: "Idyllisches Yoga Retreat in der Lübecker Bucht",
                 location: "Scharbeutz, Deutschland",
                 calender: "2 Termine im Jahr",
@@ -147,7 +118,8 @@ const YogaRetreatsGermany = () => {
                 ab: "Ab",
               },
               {
-                cardImage: cardImage,
+                cardImage:
+                  "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/images/cardImage.jpg",
                 title: "Genusswandern und Yoga auf Usedom",
                 location: "Heringsdorf, Deutschland",
                 calender: "2 Termine im Jahr",
@@ -158,7 +130,8 @@ const YogaRetreatsGermany = () => {
                 ab: "Ab",
               },
               {
-                cardImage: cardImage,
+                cardImage:
+                  "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/images/cardImage.jpg",
                 title: "Iyengar Yoga zwischen blauen Wellen & weißer Kreide",
                 location: " Silenz, Rügen, Deutschland",
                 calender: "01.04. - 01.11.2021",
@@ -172,14 +145,16 @@ const YogaRetreatsGermany = () => {
             cardCols: "lg:grid-cols-4",
           },
           {
-            detailsImage: Nordsee,
+            detailsImage:
+              "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/YogaRetreatsGermany/Regionen/Yoga-Retreat-Deutschland-Nordsee.jpg",
             detailsTitle: t("germany_divider_big_tab2_title"),
             detailsDesc: t("germany_divider_big_tab2_text"),
             detailsReadMore: "",
             cardTitle: t("germany_divider_big_tab2_more"),
             cardItems: [
               {
-                cardImage: cardImage,
+                cardImage:
+                  "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/images/cardImage.jpg",
                 title: "Innere Balance & neue Kraft auf Norderney",
                 location: "Norderney, Deutschland",
                 calender: "3 Termine im Jahr",
@@ -190,7 +165,8 @@ const YogaRetreatsGermany = () => {
                 ab: "Ab",
               },
               {
-                cardImage: cardImage,
+                cardImage:
+                  "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/images/cardImage.jpg",
                 title: "Umfassendes Yoga-Erlebnis auf Langeoog",
                 location: "Langeoog, Deutschland",
                 calender: "4 Termine im Jahr",
@@ -201,7 +177,8 @@ const YogaRetreatsGermany = () => {
                 ab: "Ab",
               },
               {
-                cardImage: cardImage,
+                cardImage:
+                  "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/images/cardImage.jpg",
                 title: "Wirksames Yoga-Wochenende auf Norderney",
                 location: "Norderney, Deutschland",
                 calender: "30.08. - 02.09.2021",
@@ -212,7 +189,8 @@ const YogaRetreatsGermany = () => {
                 ab: "Ab",
               },
               {
-                cardImage: cardImage,
+                cardImage:
+                  "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/images/cardImage.jpg",
                 title: "Yoga-Wochenende auf Langeoog",
                 location: "Langeoog, Deutschland",
                 calender: "10.06. - 13.06.2021 ",
@@ -226,14 +204,16 @@ const YogaRetreatsGermany = () => {
             cardCols: "lg:grid-cols-4",
           },
           {
-            detailsImage: Bayern,
+            detailsImage:
+              "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/YogaRetreatsGermany/Regionen/Yoga-Retreat-Deutschland-Bayern.jpg",
             detailsTitle: t("germany_divider_big_tab3_title"),
             detailsDesc: t("germany_divider_big_tab3_text"),
             detailsReadMore: "",
             cardTitle: t("germany_divider_big_tab3_more"),
             cardItems: [
               {
-                cardImage: cardImage,
+                cardImage:
+                  "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/images/cardImage.jpg",
                 title: "Erholsame Yoga-Auszeit in der Chiemgauer Bergwelt",
                 location: "Aschau im Chiemgau, Deutschland",
                 calender: "09.01. - 19.12.2021",
@@ -244,7 +224,8 @@ const YogaRetreatsGermany = () => {
                 ab: "Ab",
               },
               {
-                cardImage: cardImage,
+                cardImage:
+                  "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/images/cardImage.jpg",
                 title: "Yoga Wochenende in Bayern: Raum und Zeit für Dich",
                 location: "Zell Am Main, Deutschland",
                 calender: "3 Termine im Jahr",
@@ -255,7 +236,8 @@ const YogaRetreatsGermany = () => {
                 ab: "Ab",
               },
               {
-                cardImage: cardImage,
+                cardImage:
+                  "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/images/cardImage.jpg",
                 title:
                   "Wirksames Yoga-Wochenende Yoga- und Wanderwoche für Frauen im blauen Land Norderney",
                 location: " Ohlstadt, Deutschland ",
@@ -270,14 +252,16 @@ const YogaRetreatsGermany = () => {
             cardCols: "lg:grid-cols-4",
           },
           {
-            detailsImage: Baden,
+            detailsImage:
+              "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/YogaRetreatsGermany/Regionen/Yoga-Retreat-Deutschland-Schwarzwald.jpg",
             detailsTitle: t("germany_divider_big_tab4_title"),
             detailsDesc: t("germany_divider_big_tab4_text"),
             detailsReadMore: "",
             cardTitle: t("germany_divider_big_tab4_more"),
             cardItems: [
               {
-                cardImage: cardImage,
+                cardImage:
+                  "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/images/cardImage.jpg",
                 title: "Stille Retreat an der Antonius-Quelle im Schwarzwald",
                 location: "Bad Antogast, Deutschland",
                 calender: "15 Termine im Jahr",
@@ -288,7 +272,8 @@ const YogaRetreatsGermany = () => {
                 ab: "Ab",
               },
               {
-                cardImage: cardImage,
+                cardImage:
+                  "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/images/cardImage.jpg",
                 title: "Yoga & Entschleunigung im Naturpark Stromberg",
                 location: " Häfnerhaslach, Deutschland",
                 calender: "10 Termine im Jahr",
@@ -299,7 +284,8 @@ const YogaRetreatsGermany = () => {
                 ab: "Ab",
               },
               {
-                cardImage: cardImage,
+                cardImage:
+                  "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/images/cardImage.jpg",
                 title: "Neustart: Yoga-Retreat in der Natur Oberschwabens",
                 location: "Eintürnen, Deutschland",
                 calender: "25.08. - 29.08.2021 ",
@@ -310,7 +296,8 @@ const YogaRetreatsGermany = () => {
                 ab: "Ab",
               },
               {
-                cardImage: cardImage,
+                cardImage:
+                  "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/images/cardImage.jpg",
                 title: "Yoga-Regenerations-Wochenende im Naturpark",
                 location: " Häfnerhaslach, Deutschland",
                 calender: "3 Termine im Jahr",
@@ -324,14 +311,16 @@ const YogaRetreatsGermany = () => {
             cardCols: "lg:grid-cols-4",
           },
           {
-            detailsImage: Brandenburg,
+            detailsImage:
+              "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/YogaRetreatsGermany/Regionen/Yoga-Retreat-Deutschland-Brandenburg.jpg",
             detailsTitle: t("germany_divider_big_tab5_title"),
             detailsDesc: t("germany_divider_big_tab5_text"),
             detailsReadMore: "",
             cardTitle: t("germany_divider_big_tab5_more"),
             cardItems: [
               {
-                cardImage: cardImage,
+                cardImage:
+                  "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/images/cardImage.jpg",
                 title:
                   "Yoga, Behmfasten und Wandern in Europas größtem Seengebiet",
                 location: "Flecken Zechlin, Deutschland",
@@ -343,7 +332,8 @@ const YogaRetreatsGermany = () => {
                 ab: "Ab",
               },
               {
-                cardImage: cardImage,
+                cardImage:
+                  "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/images/cardImage.jpg",
                 title: "Miniretreat mitten im Potsdamer Seengebiet",
                 location: "Nedlitz, Deutschland",
                 calender: "3 Termine im Jahr",
@@ -354,7 +344,8 @@ const YogaRetreatsGermany = () => {
                 ab: "Ab",
               },
               {
-                cardImage: cardImage,
+                cardImage:
+                  "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/images/cardImage.jpg",
                 title: "Yoga, Basenfasten & Wandern am Schwarzen See",
                 location: "Flecken Zechlin, Deutschland",
                 calender: "11 Termine im Jahr",
@@ -365,7 +356,8 @@ const YogaRetreatsGermany = () => {
                 ab: "Ab",
               },
               {
-                cardImage: cardImage,
+                cardImage:
+                  "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/images/cardImage.jpg",
                 title: "Yoga, Hildegardfasten & Wandern in Mecklenburg",
                 location: " Flecken Zechlin, Deutschland",
                 calender: "20.11. - 26.11.2021",
@@ -379,14 +371,16 @@ const YogaRetreatsGermany = () => {
             cardCols: "lg:grid-cols-4",
           },
           {
-            detailsImage: Nordrhein,
+            detailsImage:
+              "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/YogaRetreatsGermany/Regionen/Yoga-Retreat-Deutschland-NRW.jpg",
             detailsTitle: t("germany_divider_big_tab6_title"),
             detailsDesc: t("germany_divider_big_tab6_text"),
             detailsReadMore: "",
             cardTitle: t("germany_divider_big_tab6_more"),
             cardItems: [
               {
-                cardImage: cardImage,
+                cardImage:
+                  "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/images/cardImage.jpg",
                 title: "Deep Relax Yoga-Woche im Bergischen Land",
                 location: " Wermelskirchen, Deutschland",
                 calender: "4 Termine im Jahr",
@@ -397,7 +391,8 @@ const YogaRetreatsGermany = () => {
                 ab: "Ab",
               },
               {
-                cardImage: cardImage,
+                cardImage:
+                  "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/images/cardImage.jpg",
                 title: "Yoga-Erfahrung im größten Yogazentrum Europas ",
                 location: "Bad Meinberg, Deutschland",
                 calender: "Ganzjährig geöffnet",
@@ -408,7 +403,8 @@ const YogaRetreatsGermany = () => {
                 ab: "Ab",
               },
               {
-                cardImage: cardImage,
+                cardImage:
+                  "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/images/cardImage.jpg",
                 title: "Yoga- & Soul-Wochenende im Naherholungsgebiet",
                 location: "Wermelskirchen, Deutschland",
                 calender: "2 Termine im Jahr",
@@ -419,7 +415,8 @@ const YogaRetreatsGermany = () => {
                 ab: "Ab",
               },
               {
-                cardImage: cardImage,
+                cardImage:
+                  "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/images/cardImage.jpg",
                 title: "Zeit für dich: Yoga-Retreat in der Nordeifel",
                 location: "Tondorf, Deutschland",
                 calender: "4 Termine im Jahr",
@@ -438,25 +435,26 @@ const YogaRetreatsGermany = () => {
         title={t("germany_4_clickable_box_title")}
         items={[
           {
-            img: img1,
+            img: "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/YogaRetreatsGermany/Retreat Arten/Yoga-Wochenenden.jpg",
+
             shadow: "80",
             title: t("germany_4_clickable_box_item1_title"),
             description: t("germany_4_clickable_box_item1_text"),
           },
           {
-            img: img2,
+            img: "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/YogaRetreatsGermany/Retreat Arten/Stille-Retreats.jpg",
             shadow: "80",
             title: t("germany_4_clickable_box_item2_title"),
             description: t("germany_4_clickable_box_item2_text"),
           },
           {
-            img: img3,
+            img: "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/YogaRetreatsGermany/Retreat Arten/Spirituelle-Retreats.jpg",
             shadow: "80",
             title: t("germany_4_clickable_box_item3_title"),
             description: t("germany_4_clickable_box_item3_text"),
           },
           {
-            img: img4,
+            img: "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/YogaRetreatsGermany/Retreat Arten/Yoga-Meditation.jpg",
             shadow: "80",
             title: t("germany_4_clickable_box_item4_title"),
             description: t("germany_4_clickable_box_item4_text"),
@@ -468,25 +466,30 @@ const YogaRetreatsGermany = () => {
         description={t("germany_4_slide_subtitle")}
         items={[
           {
-            image: hImg1,
+            image:
+              "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/YogaRetreatsGermany/Lehrerinnen/Yogalehrer-Friethjof-Bluhm.jpg",
+
             description: t("germany_4_slide_item1_text"),
             name: "Frithjof Bluhm",
             details: t("germany_4_slide_item1_desc"),
           },
           {
-            image: hImg2,
+            image:
+              "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/YogaRetreatsGermany/Lehrerinnen/yogalehrerin-sylvia-asmodena.jpg",
             description: t("germany_4_slide_item2_text"),
             name: "Sylvia Asmodena Kurtar",
             details: t("germany_4_slide_item2_desc"),
           },
           {
-            image: hImg3,
+            image:
+              "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/YogaRetreatsGermany/Lehrerinnen/Yogalehrerin-Sara-Lyn.jpg",
             description: t("germany_4_slide_item3_text"),
             name: "Sara-Lyn Chana",
             details: t("germany_4_slide_item3_desc"),
           },
           {
-            image: hImg4,
+            image:
+              "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/YogaRetreatsGermany/Lehrerinnen/Yoga-Lehrerin-Yogakasha.jpg",
             description: t("germany_4_slide_item4_text"),
             name: "Tammy Assanoff",
             details: t("germany_4_slide_item4_desc"),
@@ -503,32 +506,33 @@ const YogaRetreatsGermany = () => {
         description={t("germany_6_clickable_boxes_subtitle")}
         items={[
           {
-            img: imgGallery1,
+            img: "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/YogaRetreatsGermany/Unterkuenfte/Yoga-Retreat-im-Center.jpg",
+
             shadow: "80",
             title: t("germany_6_clickable_boxes_item1"),
           },
           {
-            img: imgGallery2,
+            img: "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/YogaRetreatsGermany/Unterkuenfte/Yoga-Retreat-im-Fastenhof.jpg",
             shadow: "80",
             title: t("germany_6_clickable_boxes_item2"),
           },
           {
-            img: imgGallery3,
+            img: "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/YogaRetreatsGermany/Unterkuenfte/Yoga-Retreat-im-Biohotel.jpg",
             shadow: "80",
             title: t("germany_6_clickable_boxes_item3"),
           },
           {
-            img: imgGallery4,
+            img: "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/YogaRetreatsGermany/Unterkuenfte/Yoga-Retreat-im-Designholzhaus.jpg",
             shadow: "80",
             title: t("germany_6_clickable_boxes_item4"),
           },
           {
-            img: imgGallery5,
+            img: "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/YogaRetreatsGermany/Unterkuenfte/Yoga-Retreat-im-Reetdachhaus.jpg",
             shadow: "80",
             title: t("germany_6_clickable_boxes_item5"),
           },
           {
-            img: imgGallery6,
+            img: "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/YogaRetreatsGermany/Unterkuenfte/Yoga-Retreat-im-Kloster.jpg",
             shadow: "80",
             title: t("germany_6_clickable_boxes_item6"),
           },
@@ -539,7 +543,8 @@ const YogaRetreatsGermany = () => {
         description={t("germany_offer_element_subtitle")}
         items={[
           {
-            cardImage: cardImage,
+            cardImage:
+              "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/images/cardImage.jpg",
             title: "Yoga-Wochenende: Kraft tanken in der Casa Inspira",
             location: "Tondorf, Deutschland",
             calender: "7 Termine im Jahr",
@@ -550,7 +555,8 @@ const YogaRetreatsGermany = () => {
             ab: "Ab",
           },
           {
-            cardImage: cardImage,
+            cardImage:
+              "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/images/cardImage.jpg",
             title: "Neustart: Yoga-Retreat in der Natur Oberschwabens",
             location: "Eintürnen, Deutschland",
             calender: "25.08. - 29.08.2021 ",
@@ -561,7 +567,8 @@ const YogaRetreatsGermany = () => {
             ab: "Ab",
           },
           {
-            cardImage: cardImage,
+            cardImage:
+              "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/images/cardImage.jpg",
             title: "Miniretreat mitten im Potsdamer Seengebiet",
             location: "Nedlitz, Deutschland",
             calender: "3 Termine im Jahr",
@@ -572,7 +579,8 @@ const YogaRetreatsGermany = () => {
             ab: "Ab",
           },
           {
-            cardImage: cardImage,
+            cardImage:
+              "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/images/cardImage.jpg",
             title: "Zeit für dich: Yoga Wochenende an der Ostsee",
             location: "Wendelstorf, Deutschland",
             calender: "2 Termine im Jahr",
@@ -583,7 +591,8 @@ const YogaRetreatsGermany = () => {
             ab: "Ab",
           },
           {
-            cardImage: cardImage,
+            cardImage:
+              "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/images/cardImage.jpg",
             title: "Deep Relax Yoga-Woche im Bergischen Land",
             location: " Wermelskirchen, Deutschland",
             calender: "4 Termine im Jahr",
@@ -594,7 +603,8 @@ const YogaRetreatsGermany = () => {
             ab: "Ab",
           },
           {
-            cardImage: cardImage,
+            cardImage:
+              "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/images/cardImage.jpg",
             title: "Yoga & Entschleunigung im Naturpark Stromberg",
             location: " Häfnerhaslach, Deutschland",
             calender: "10 Termine im Jahr",
@@ -605,7 +615,8 @@ const YogaRetreatsGermany = () => {
             ab: "Ab",
           },
           {
-            cardImage: cardImage,
+            cardImage:
+              "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/images/cardImage.jpg",
             title: "Yoga Wochenende in Bayern: Raum und Zeit für Dich",
             location: "Zell Am Main, Deutschland",
             calender: "3 Termine im Jahr",
@@ -616,7 +627,8 @@ const YogaRetreatsGermany = () => {
             ab: "Ab",
           },
           {
-            cardImage: cardImage,
+            cardImage:
+              "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/images/cardImage.jpg",
             title: "Yoga- & Soul-Wochenende im Naherholungsgebiet",
             location: "Wermelskirchen, Deutschland",
             calender: "2 Termine im Jahr",
@@ -627,7 +639,8 @@ const YogaRetreatsGermany = () => {
             ab: "Ab",
           },
           {
-            cardImage: cardImage,
+            cardImage:
+              "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/images/cardImage.jpg",
             title: "Zeit für dich: Yoga-Retreat in der Nordeifeln",
             location: " Tondorf, Deutschland",
             calender: "4 Termine im Jahr",
@@ -638,7 +651,8 @@ const YogaRetreatsGermany = () => {
             ab: "Ab",
           },
           {
-            cardImage: cardImage,
+            cardImage:
+              "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/images/cardImage.jpg",
             title: "Yoga-Regenerations-Wochenende im Naturpark",
             location: " Häfnerhaslach, Deutschland",
             calender: "3 Termine im Jahr",
@@ -659,31 +673,32 @@ const YogaRetreatsGermany = () => {
       <ImageGalleryBrick2
         title={t("germany_7_clickable_boxex_title")}
         image1={{
-          img: image6,
+          img: "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/YogaRetreatsGermany/Kategorien/Yoga-Wellness.jpg",
+
           title: t("germany_7_clickable_boxex_item1"),
         }}
         image2={{
-          img: image7,
+          img: "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/YogaRetreatsGermany/Kategorien/Yoga-Fasten.jpg",
           title: t("germany_7_clickable_boxex_item2"),
         }}
         image3={{
-          img: image8,
+          img: "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/YogaRetreatsGermany/Kategorien/Yoga-Flexible-Stornierungsbedingungen.jpg",
           title: t("germany_7_clickable_boxex_item3"),
         }}
         image4={{
-          img: image9,
+          img: "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/YogaRetreatsGermany/Kategorien/Yoga-Wandern.jpg",
           title: t("germany_7_clickable_boxex_item4"),
         }}
         image5={{
-          img: image10,
+          img: "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/YogaRetreatsGermany/Kategorien/Yoga-Anfaenger.jpg",
           title: t("germany_7_clickable_boxex_item5"),
         }}
         image6={{
-          img: image11,
+          img: "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/YogaRetreatsGermany/Kategorien/Yoga-Surf.jpg",
           title: t("germany_7_clickable_boxex_item6"),
         }}
         image7={{
-          img: image12,
+          img: "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/YogaRetreatsGermany/Kategorien/Yoga-Fahrrad.jpg",
           title: t("germany_7_clickable_boxex_item7"),
         }}
       />
@@ -691,7 +706,8 @@ const YogaRetreatsGermany = () => {
         title={t("germany_offer_element2_title")}
         items={[
           {
-            cardImage: cardImage,
+            cardImage:
+              "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/images/cardImage.jpg",
             title: "Erholsame Yoga-Auszeit in der Chiemgauer Bergwelt",
             location: "Aschau im Chiemgau, Deutschland",
             calender: "09.01. - 19.12.2021",
@@ -702,7 +718,8 @@ const YogaRetreatsGermany = () => {
             ab: "Ab",
           },
           {
-            cardImage: cardImage,
+            cardImage:
+              "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/images/cardImage.jpg",
             title: "Innere Balance & neue Kraft auf Norderney",
             location: "Norderney, Deutschland",
             calender: "3 Termine im Jahr",
@@ -713,7 +730,8 @@ const YogaRetreatsGermany = () => {
             ab: "Ab",
           },
           {
-            cardImage: cardImage,
+            cardImage:
+              "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/images/cardImage.jpg",
             title: "Yoga-Wochenende beim Seeheilbad Scharbeutz",
             location: "Scharbeutz, Deutschland",
             calender: "07.10. - 10.10.2021",
@@ -724,7 +742,8 @@ const YogaRetreatsGermany = () => {
             ab: "Ab",
           },
           {
-            cardImage: cardImage,
+            cardImage:
+              "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/images/cardImage.jpg",
             title: "Iyengar Yoga zwischen blauen Wellen & weißer Kreide",
             location: " Silenz, Rügen, Deutschland",
             calender: "01.04. - 01.11.2021",
@@ -735,7 +754,8 @@ const YogaRetreatsGermany = () => {
             ab: "Ab",
           },
           {
-            cardImage: cardImage,
+            cardImage:
+              "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/images/cardImage.jpg",
             title: "Umfassendes Yoga-Erlebnis auf Langeoog",
             location: "Langeoog, Deutschland",
             calender: "4 Termine im Jahr",
@@ -746,7 +766,8 @@ const YogaRetreatsGermany = () => {
             ab: "Ab",
           },
           {
-            cardImage: cardImage,
+            cardImage:
+              "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/images/cardImage.jpg",
             title: "Wirksames Yoga-Wochenende auf Norderney",
             location: "Norderney, Deutschland",
             calender: "30.08. - 02.09.2021",
@@ -757,7 +778,8 @@ const YogaRetreatsGermany = () => {
             ab: "Ab",
           },
           {
-            cardImage: cardImage,
+            cardImage:
+              "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/images/cardImage.jpg",
             title: "Yoga-Erfahrung im größten Yogazentrum Europas",
             location: "Bad Meinberg, Deutschland",
             calender: "Ganzjährig geöffnet",
@@ -768,7 +790,8 @@ const YogaRetreatsGermany = () => {
             ab: "Ab",
           },
           {
-            cardImage: cardImage,
+            cardImage:
+              "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/images/cardImage.jpg",
             title: "Yoga-Wochenende auf Langeoog",
             location: "Langeoog, Deutschland",
             calender: "10.06. - 13.06.2021 ",
@@ -779,7 +802,8 @@ const YogaRetreatsGermany = () => {
             ab: "Ab",
           },
           {
-            cardImage: cardImage,
+            cardImage:
+              "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/images/cardImage.jpg",
             title: "Rügen mal anders: Iyengar Yoga und Windsurfen",
             location: "Silenz, Rügen, Deutschland",
             calender: "16.05. - 19.09.",
@@ -790,7 +814,8 @@ const YogaRetreatsGermany = () => {
             ab: "Ab",
           },
           {
-            cardImage: cardImage,
+            cardImage:
+              "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/images/cardImage.jpg",
             title: "Klassisches Yoga-Retreat im nordfriesischen Tönning",
             location: " Tönning, Deutschland",
             calender: "2 Termine im Jahr",
@@ -801,7 +826,8 @@ const YogaRetreatsGermany = () => {
             ab: "Ab",
           },
           {
-            cardImage: cardImage,
+            cardImage:
+              "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/images/cardImage.jpg",
             title: "Stille Retreat an der Antonius-Quelle im Schwarzwald",
             location: "Bad Antogast, Deutschland",
             calender: "15 Termine im Jahr",
@@ -812,7 +838,8 @@ const YogaRetreatsGermany = () => {
             ab: "Ab",
           },
           {
-            cardImage: cardImage,
+            cardImage:
+              "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/images/cardImage.jpg",
             title: "Genusswandern und Yoga auf Usedom",
             location: "Heringsdorf, Deutschland",
             calender: "2 Termine im Jahr",
@@ -826,7 +853,9 @@ const YogaRetreatsGermany = () => {
         cols="lg:grid-cols-4"
       />
       <DividerImg
-        image={Suchst}
+        image={
+          "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/YogaRetreatsGermany/Divider/sunset-3087288_1920 (1).jpg"
+        }
         align="left"
         title={t("germany_divider_title")}
         buttonTitle={t("germany_divider_button")}
@@ -866,7 +895,9 @@ const YogaRetreatsGermany = () => {
         ]}
         formTextarea={t("germany_contact_us_input_write_message")}
         formButton={t("germany_contact_us_input_send_message")}
-        cardImageSrc={Contact}
+        cardImageSrc={
+          "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/images/contact.jpg"
+        }
         cardTitle={t("germany_contact_us_card_title")}
         cardDesc={t("germany_contact_us_card_subtitle")}
         cardItems={[

@@ -14,49 +14,22 @@ import Hero from "../../components/Hero/Hero";
 import HintSection from "../../components/HintSection/HintSection";
 //Description
 import Description from "../../components/Description/Description";
-import Alleinreisende from "../../assets/teneriffa/Zielgruppen-Tab-Element/Surfcamps-Alleinreisende-Teneriffa.jpg";
-import Freund from "../../assets/teneriffa/Zielgruppen-Tab-Element/Surfcamps-Teneriffa-Gruppen-Freunde.jpg";
-import Paare from "../../assets/teneriffa/Zielgruppen-Tab-Element/Surf-Reisen-Teneriffa-Paare.jpg";
-import Familien from "../../assets/teneriffa/Zielgruppen-Tab-Element/Surfurlaub-Familien-Teneriffa.jpg";
-import cardImage from "../../assets/images/cardImage.jpg";
 // ImageGalleryFivePic
 import ImageGalleryFivePic from "../../components/ImageGalleryFivePic/ImageGalleryFivePic";
-import image1 from "../../assets/teneriffa/Kategorien-5er_LI/Surfcamps-Teneriffa-Natur.jpg";
-import image2 from "../../assets/teneriffa/Kategorien-5er_LI/Surf-Yoga-Camps-Teneriffa.jpg";
-import image3 from "../../assets/teneriffa/Kategorien-5er_LI/Low-Budget-Surfcamps-Teneriffa.jpg";
-import image4 from "../../assets/teneriffa/Kategorien-5er_LI/Surfcamps-Teneriffa-flexible-Stornierung.jpg";
-import image5 from "../../assets/teneriffa/Kategorien-5er_LI/Surfcamps-Teneriffa-Camping.jpg";
 // ListAndImage
 import ListAndImage from "../../components/ListAndImage/ListAndImage";
-import ListAndImage1 from "../../assets/teneriffa/Besonderheiten-Divider/Surfcamps-Teneriffa-Besonderheiten.jpg";
 //SingleCardSection
 import SingleCardSection from "../../components/SingleCardSection/SingleCardSection";
 //SingleColImg
 import SingleColImg from "../../components/SingleColImg/SingleColImg";
-import Col31 from "../../assets/teneriffa/Besondere-Extras_6er-Kacheln/SUP-Tour_Surfcamps-Teneriffa.jpg";
-import Col32 from "../../assets/teneriffa/Besondere-Extras_6er-Kacheln/Kajak-Tour-Delphine_Surfcamps-Teneriffa.jpg";
-import Col33 from "../../assets/teneriffa/Besondere-Extras_6er-Kacheln/Schnorchel-ausflug-Schildkröten_Surfcamps-Teneriffa.jpg";
-import Col34 from "../../assets/teneriffa/Vorkenntnisse_3er-LI/Surfcamps-Teneriffa-Anfaenger.jpg";
-import Col35 from "../../assets/teneriffa/Vorkenntnisse_3er-LI/Surfcamps-Teneriffa-Fortgeschrittene.jpg";
-import Col36 from "../../assets/teneriffa/Vorkenntnisse_3er-LI/Surfcamps-Teneriffa-Profis.jpg";
 //DividerImg
 import DividerImg from "../../components/DividerImg/DividerImg";
-import dividerImage from "../../assets/teneriffa/Kanaren-Divider/Surfcamps-Kanaren.jpg";
-import Besonderheiten from "../../assets/teneriffa/Kunden-Divider/Surfcamps-Teneriffa-Bewertungen.jpg";
 //ImageGalleryWindow
 import ImageGalleryWindow from "../../components/ImageGalleryWindow/ImageGalleryWindow";
-import wImg1 from "../../assets/teneriffa/Besondere-Extras_6er-Kacheln/Schnorchel-ausflug-Schildkroeten_Surfcamps-Teneriffa.jpg";
-import wImg2 from "../../assets/teneriffa/Besondere-Extras_6er-Kacheln/Paragliding_Surfcamps-Teneriffa.jpg";
-import wImg3 from "../../assets/teneriffa/Besondere-Extras_6er-Kacheln/SUP-Tour_Surfcamps-Teneriffa.jpg";
-import wImg4 from "../../assets/teneriffa/Besondere-Extras_6er-Kacheln/Vulkan-Teide_Surfcamps-Teneriffa.jpg";
-import wImg5 from "../../assets/teneriffa/Besondere-Extras_6er-Kacheln/Freediving_Surfcamps-Teneriffa.jpg";
-import wImg6 from "../../assets/teneriffa/Besondere-Extras_6er-Kacheln/Kajak-Tour-Delphine_Surfcamps-Teneriffa.jpg";
 //SlideDivider
 import SlideDivider from "../../components/SlideDivider/SlideDivider";
-import slideDividerImg from "../../assets/teneriffa/Kunden-Divider/Surfcamps-Teneriffa_Bewertungen.jpg";
 //ContactUsSection
 import ContactUsSection from "../../components/ContactUsSection/ContactUsSection";
-import Contact from "../../assets/images/contact.jpg";
 //TagSection
 import TagSection from "../../components/TagSection/TagSection";
 
@@ -102,14 +75,16 @@ const SurfcampTeneriffa = () => {
         tabCols="lg:grid-cols-4"
         tabContents={[
           {
-            detailsImage: Alleinreisende,
+            detailsImage:
+              "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/teneriffa/Zielgruppen-Tab-Element/Surfcamps-Alleinreisende-Teneriffa.jpg",
             detailsTitle: t("teneriffa_big_tab_tab1_title"),
             detailsDesc: t("teneriffa_big_tab_tab1_subtitle"),
             detailsReadMore: "",
             cardTitle: t("teneriffa_big_tab_tab1_more"),
             cardItems: [
               {
-                cardImage: cardImage,
+                cardImage:
+                  "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/images/cardImage.jpg",
                 title: "Surfcamp mit entspannter Atmosphäre",
                 location: "Adeje, Teneriffa",
                 calender: "Ganzjährig geöffnet",
@@ -120,7 +95,8 @@ const SurfcampTeneriffa = () => {
                 ab: "Ab",
               },
               {
-                cardImage: cardImage,
+                cardImage:
+                  "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/images/cardImage.jpg",
                 title: "Surfhaus im ursprünglichen Küstenort El Poris",
                 location: "El Poris, Teneriffa",
                 calender: "Ganzjährig geöffnet",
@@ -131,7 +107,8 @@ const SurfcampTeneriffa = () => {
                 ab: "Ab",
               },
               {
-                cardImage: cardImage,
+                cardImage:
+                  "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/images/cardImage.jpg",
                 title: "Modernes Surf & Yoga Haus mit Dachterrasse",
                 location: "Adeje, Teneriffa",
                 calender: "Ganzjährig geöffnet",
@@ -142,7 +119,8 @@ const SurfcampTeneriffa = () => {
                 ab: "Ab",
               },
               {
-                cardImage: cardImage,
+                cardImage:
+                  "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/images/cardImage.jpg",
                 title: "Surfhaus auf Teneriffa: Natur, Leidenschaft & Spaß",
                 location: "Adeje, Teneriffa",
                 calender: "Ganzjährig geöffnet",
@@ -156,14 +134,16 @@ const SurfcampTeneriffa = () => {
             cardCols: "lg:grid-cols-4",
           },
           {
-            detailsImage: Freund,
+            detailsImage:
+              "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/teneriffa/Zielgruppen-Tab-Element/Surfcamps-Teneriffa-Gruppen-Freunde.jpg",
             detailsTitle: t("teneriffa_big_tab_tab2_title"),
             detailsDesc: t("teneriffa_big_tab_tab2_subtitle"),
             detailsReadMore: "",
             cardTitle: t("teneriffa_big_tab_tab2_more"),
             cardItems: [
               {
-                cardImage: cardImage,
+                cardImage:
+                  "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/images/cardImage.jpg",
                 title: "Surfhaus auf Teneriffa: Natur, Leidenschaft & Spaß",
                 location: "Adeje, Teneriffa",
                 calender: "Ganzjährig geöffnet",
@@ -174,7 +154,8 @@ const SurfcampTeneriffa = () => {
                 ab: "Ab",
               },
               {
-                cardImage: cardImage,
+                cardImage:
+                  "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/images/cardImage.jpg",
                 title: "Surf & Yoga Urlaub am einsamen Strand",
                 location: "El Poris, Teneriffa",
                 calender: "Ganzjährig geöffnet",
@@ -185,7 +166,8 @@ const SurfcampTeneriffa = () => {
                 ab: "Ab",
               },
               {
-                cardImage: cardImage,
+                cardImage:
+                  "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/images/cardImage.jpg",
                 title: "Surfcamp mit entspannter Atmosphäre",
                 location: "Adeje, Teneriffa",
                 calender: "Ganzjährig geöffnet",
@@ -196,7 +178,8 @@ const SurfcampTeneriffa = () => {
                 ab: "Ab",
               },
               {
-                cardImage: cardImage,
+                cardImage:
+                  "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/images/cardImage.jpg",
                 title: "Modernes Surf & Yoga Haus mit Dachterrasse",
                 location: "Adeje, Teneriffa",
                 calender: "Ganzjährig geöffnet",
@@ -210,14 +193,16 @@ const SurfcampTeneriffa = () => {
             cardCols: "lg:grid-cols-4",
           },
           {
-            detailsImage: Paare,
+            detailsImage:
+              "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/teneriffa/Zielgruppen-Tab-Element/Surf-Reisen-Teneriffa-Paare.jpg",
             detailsTitle: t("teneriffa_big_tab_tab3_title"),
             detailsDesc: t("teneriffa_big_tab_tab3_subtitle"),
             detailsReadMore: "",
             cardTitle: t("teneriffa_big_tab_tab3_more"),
             cardItems: [
               {
-                cardImage: cardImage,
+                cardImage:
+                  "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/images/cardImage.jpg",
                 title: "Surfhaus im ursprünglichen Küstenort El Poris",
                 location: "El Poris, Teneriffa",
                 calender: "Ganzjährig geöffnet",
@@ -228,7 +213,8 @@ const SurfcampTeneriffa = () => {
                 ab: "Ab",
               },
               {
-                cardImage: cardImage,
+                cardImage:
+                  "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/images/cardImage.jpg",
                 title: "Surfhaus auf Teneriffa: Natur, Leidenschaft & Spaß",
                 location: "Adeje, Teneriffa",
                 calender: "Ganzjährig geöffnet",
@@ -239,7 +225,8 @@ const SurfcampTeneriffa = () => {
                 ab: "Ab",
               },
               {
-                cardImage: cardImage,
+                cardImage:
+                  "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/images/cardImage.jpg",
                 title: "Surf & Yoga Urlaub am einsamen Strand",
                 location: "El Poris, Teneriffa",
                 calender: "Ganzjährig geöffnet",
@@ -253,14 +240,16 @@ const SurfcampTeneriffa = () => {
             cardCols: "lg:grid-cols-4",
           },
           {
-            detailsImage: Familien,
+            detailsImage:
+              "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/teneriffa/Zielgruppen-Tab-Element/Surfurlaub-Familien-Teneriffa.jpg",
             detailsTitle: t("teneriffa_big_tab_tab4_title"),
             detailsDesc: t("teneriffa_big_tab_tab4_subtitle"),
             detailsReadMore: "",
             cardTitle: t("teneriffa_big_tab_tab4_more"),
             cardItems: [
               {
-                cardImage: cardImage,
+                cardImage:
+                  "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/images/cardImage.jpg",
                 title: "Surfhaus im ursprünglichen Küstenort El Poris",
                 location: "El Poris, Teneriffa",
                 calender: "Ganzjährig geöffnet",
@@ -271,7 +260,8 @@ const SurfcampTeneriffa = () => {
                 ab: "Ab",
               },
               {
-                cardImage: cardImage,
+                cardImage:
+                  "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/images/cardImage.jpg",
                 title: "Surf & Yoga Urlaub am einsamen Strand",
                 location: "El Poris, Teneriffa",
                 calender: "Ganzjährig geöffnet",
@@ -289,14 +279,32 @@ const SurfcampTeneriffa = () => {
       <ImageGalleryFivePic
         title={t("teneriffa_5_linked_image_title")}
         description={t("teneriffa_5_linked_image_subtitle")}
-        image1={{ img: image1, title: t("teneriffa_5_linked_image_item1") }}
-        image2={{ img: image2, title: t("teneriffa_5_linked_image_item2") }}
-        image3={{ img: image3, title: t("teneriffa_5_linked_image_item3") }}
-        image4={{ img: image4, title: t("teneriffa_5_linked_image_item4") }}
-        image5={{ img: image5, title: t("teneriffa_5_linked_image_item5") }}
+        image1={{
+          img: "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/teneriffa/Kategorien-5er_LI/Surfcamps-Teneriffa-Natur.jpg",
+
+          title: t("teneriffa_5_linked_image_item1"),
+        }}
+        image2={{
+          img: "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/teneriffa/Kategorien-5er_LI/Surf-Yoga-Camps-Teneriffa.jpg",
+          title: t("teneriffa_5_linked_image_item2"),
+        }}
+        image3={{
+          img: "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/teneriffa/Kategorien-5er_LI/Low-Budget-Surfcamps-Teneriffa.jpg",
+          title: t("teneriffa_5_linked_image_item3"),
+        }}
+        image4={{
+          img: "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/teneriffa/Kategorien-5er_LI/Surfcamps-Teneriffa-flexible-Stornierung.jpg",
+          title: t("teneriffa_5_linked_image_item4"),
+        }}
+        image5={{
+          img: "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/teneriffa/Kategorien-5er_LI/Surfcamps-Teneriffa-Camping.jpg",
+          title: t("teneriffa_5_linked_image_item5"),
+        }}
       />
       <ListAndImage
-        image={ListAndImage1}
+        image={
+          "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/teneriffa/Besonderheiten-Divider/Surfcamps-Teneriffa-Besonderheiten.jpg"
+        }
         title={t("teneriffa_big_divider_with_sumbol_title")}
         items={[
           t("teneriffa_big_divider_with_sumbol_item1"),
@@ -310,7 +318,8 @@ const SurfcampTeneriffa = () => {
         description={t("teneriffa_4_part_linked_offer_subtitle")}
         items={[
           {
-            cardImage: cardImage,
+            cardImage:
+              "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/images/cardImage.jpg",
             title: "Surfcamp mit entspannter Atmosphäre",
             location: "Adeje, Teneriffa",
             calender: "Ganzjährig geöffnet",
@@ -321,7 +330,8 @@ const SurfcampTeneriffa = () => {
             ab: "Ab",
           },
           {
-            cardImage: cardImage,
+            cardImage:
+              "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/images/cardImage.jpg",
             title: "Surf & Yoga Urlaub am einsamen Strand",
             location: "El Poris, Teneriffa",
             calender: "Ganzjährig geöffnet",
@@ -332,7 +342,8 @@ const SurfcampTeneriffa = () => {
             ab: "Ab",
           },
           {
-            cardImage: cardImage,
+            cardImage:
+              "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/images/cardImage.jpg",
             title: "Surfhaus auf Teneriffa: Natur, Leidenschaft & Spaß",
             location: "Adeje, Teneriffa",
             calender: "Ganzjährig geöffnet",
@@ -343,7 +354,8 @@ const SurfcampTeneriffa = () => {
             ab: "Ab",
           },
           {
-            cardImage: cardImage,
+            cardImage:
+              "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/images/cardImage.jpg",
             title: "Modernes Surf & Yoga Haus mit Dachterrasse",
             location: "Adeje, Teneriffa",
             calender: "Ganzjährig geöffnet",
@@ -354,7 +366,8 @@ const SurfcampTeneriffa = () => {
             ab: "Ab",
           },
           {
-            cardImage: cardImage,
+            cardImage:
+              "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/images/cardImage.jpg",
             title: "Surfhaus im ursprünglichen Küstenort El Poris",
             location: "El Poris, Teneriffa",
             calender: "Ganzjährig geöffnet",
@@ -372,17 +385,18 @@ const SurfcampTeneriffa = () => {
         description={t("teneriffa_3_part_link_image_subtitle")}
         items={[
           {
-            img: Col31,
+            img: "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/teneriffa/Besondere-Extras_6er-Kacheln/SUP-Tour_Surfcamps-Teneriffa.jpg",
+
             title: t("teneriffa_3_part_link_image_item1_title"),
             description: t("teneriffa_3_part_link_image_item1_subtitle"),
           },
           {
-            img: Col32,
+            img: "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/teneriffa/Besondere-Extras_6er-Kacheln/Kajak-Tour-Delphine_Surfcamps-Teneriffa.jpg",
             title: t("teneriffa_3_part_link_image_item2_title"),
             description: t("teneriffa_3_part_link_image_item2_subtitle"),
           },
           {
-            img: Col33,
+            img: "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/teneriffa/Besondere-Extras_6er-Kacheln/Schnorchel-ausflug-Schildkröten_Surfcamps-Teneriffa.jpg",
             title: t("teneriffa_3_part_link_image_item3_title"),
             description: t("teneriffa_3_part_link_image_item3_subtitle"),
           },
@@ -393,7 +407,9 @@ const SurfcampTeneriffa = () => {
         align="center"
         title={t("teneriffa_big_divider_title")}
         description={t("teneriffa_big_divider_subtitle")}
-        image={dividerImage}
+        image={
+          "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/teneriffa/Kanaren-Divider/Surfcamps-Kanaren.jpg"
+        }
         buttonTitle={t("teneriffa_big_divider_button")}
       />
       <SingleColImg
@@ -401,17 +417,18 @@ const SurfcampTeneriffa = () => {
         description={t("teneriffa_3_part_link_image2_sutitle")}
         items={[
           {
-            img: Col34,
+            img: "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/teneriffa/Vorkenntnisse_3er-LI/Surfcamps-Teneriffa-Anfaenger.jpg",
+
             title: t("teneriffa_3_part_link_image2_item1_title"),
             description: t("teneriffa_3_part_link_image2_item1_sutitle"),
           },
           {
-            img: Col35,
+            img: "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/teneriffa/Vorkenntnisse_3er-LI/Surfcamps-Teneriffa-Fortgeschrittene.jpg",
             title: t("teneriffa_3_part_link_image2_item2_title"),
             description: t("teneriffa_3_part_link_image2_item2_sutitle"),
           },
           {
-            img: Col36,
+            img: "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/teneriffa/Vorkenntnisse_3er-LI/Surfcamps-Teneriffa-Profis.jpg",
             title: t("teneriffa_3_part_link_image2_item3_title"),
             description: t("teneriffa_3_part_link_image2_item3_sutitle"),
           },
@@ -422,7 +439,9 @@ const SurfcampTeneriffa = () => {
         align="left"
         title="Gemeinsam für den Klimaschutz"
         description="Für jede Buchung im Dezember spenden wir 20 € an Ocean Patrol in Portugal!"
-        image={Besonderheiten}
+        image={
+          "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/teneriffa/Kunden-Divider/Surfcamps-Teneriffa-Bewertungen.jpg"
+        }
         dark={true}
         buttonTitle="Mehr erfahren"
       />
@@ -432,44 +451,47 @@ const SurfcampTeneriffa = () => {
         items={[
           {
             shadowSize: "80",
-            img: wImg1,
+            img: "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/teneriffa/Besondere-Extras_6er-Kacheln/Schnorchel-ausflug-Schildkroeten_Surfcamps-Teneriffa.jpg",
+
             title: t("teneriffa_6_part_linked_image_item1_title"),
             description: t("teneriffa_6_part_linked_image_item1_subtitle"),
           },
           {
             shadowSize: "80",
-            img: wImg2,
+            img: "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/teneriffa/Besondere-Extras_6er-Kacheln/Paragliding_Surfcamps-Teneriffa.jpg",
             title: t("teneriffa_6_part_linked_image_item2_title"),
             description: t("teneriffa_6_part_linked_image_item2_subtitle"),
           },
           {
             shadowSize: "80",
-            img: wImg3,
+            img: "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/teneriffa/Besondere-Extras_6er-Kacheln/SUP-Tour_Surfcamps-Teneriffa.jpg",
             title: t("teneriffa_6_part_linked_image_item3_title"),
             description: t("teneriffa_6_part_linked_image_item3_subtitle"),
           },
           {
             shadowSize: "80",
-            img: wImg4,
+            img: "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/teneriffa/Besondere-Extras_6er-Kacheln/Vulkan-Teide_Surfcamps-Teneriffa.jpg",
             title: t("teneriffa_6_part_linked_image_item4_title"),
             description: t("teneriffa_6_part_linked_image_item4_subtitle"),
           },
           {
             shadowSize: "80",
-            img: wImg5,
+            img: "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/teneriffa/Besondere-Extras_6er-Kacheln/Freediving_Surfcamps-Teneriffa.jpg",
             title: t("teneriffa_6_part_linked_image_item5_title"),
             description: t("teneriffa_6_part_linked_image_item5_subtitle"),
           },
           {
             shadowSize: "80",
-            img: wImg6,
+            img: "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/teneriffa/Besondere-Extras_6er-Kacheln/Kajak-Tour-Delphine_Surfcamps-Teneriffa.jpg",
             title: t("teneriffa_6_part_linked_image_item6_title"),
             description: t("teneriffa_6_part_linked_image_item6_subtitle"),
           },
         ]}
       />
       <SlideDivider
-        image={slideDividerImg}
+        image={
+          "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/teneriffa/Kunden-Divider/Surfcamps-Teneriffa_Bewertungen.jpg"
+        }
         dark={true}
         items={[
           {
@@ -491,7 +513,9 @@ const SurfcampTeneriffa = () => {
         ]}
         formTextarea={t("teneriffa_contact_us_input_write_message")}
         formButton={t("teneriffa_contact_us_input_send_message")}
-        cardImageSrc={Contact}
+        cardImageSrc={
+          "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/images/contact.jpg"
+        }
         cardTitle={t("teneriffa_contact_us_card_title")}
         cardDesc={t("teneriffa_contact_us_card_subtitle")}
         cardItems={[

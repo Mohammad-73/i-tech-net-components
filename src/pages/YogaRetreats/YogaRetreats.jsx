@@ -17,87 +17,32 @@ import Hero from "../../components/Hero/Hero";
 import HorizontalHintSection from "../../components/HorizontalHintSection/HorizontalHintSection";
 // ListAndImage
 import ListAndImage from "../../components/ListAndImage/ListAndImage";
-import ListAndImage1 from "../../assets/yogaRetreats/Angebote/Yoga-Retreat-Yin-Yoga-Portugal.jpg";
-import ListAndImage2 from "../../assets/yogaRetreats/Angebote/Yoga-Retreat-Gran-Canaria-Vegan.jpg";
 //SingleColImg
 import SingleColImg from "../../components/SingleColImg/SingleColImg";
-import Col31 from "../../assets/yogaRetreats/Reiseziele/Yoga-Retreat-Deutschland.jpg";
-import Col32 from "../../assets/yogaRetreats/Reiseziele/Yoga-Retreat-Oesterreich.jpg";
-import Col33 from "../../assets/yogaRetreats/Reiseziele/Yoga-Retreat-Portugal.jpg";
-import Col34 from "../../assets/yogaRetreats/Reiseziele/Yoga-Retreat-Mallorca.jpg";
-import Col35 from "../../assets/yogaRetreats/Reiseziele/Yoga-Retreat-Indien.jpg";
-import Col36 from "../../assets/yogaRetreats/Reiseziele/Yoga-Retreat-Sri Lanka.jpg";
-import Col37 from "../../assets/yogaRetreats/Reiseziele/Yoga-Retreat-Bali.jpg";
-import Col38 from "../../assets/yogaRetreats/Reiseziele/Yoga-Retreat-Thailand.jpg";
-import Col39 from "../../assets/yogaRetreats/Erfahrung/Yoga-Retreats-Fortgeschrittene.jpg";
-import Col40 from "../../assets/yogaRetreats/Erfahrung/Yoga-Retreats-Anfänger.jpg";
-import Col41 from "../../assets/yogaRetreats/Erfahrung/Yoga-Retreats-Profis.jpg";
 // ColorDivider
 import ColorDivider from "../../components/ColorDivider/ColorDivider";
 // ImageGalleryFivePic
 import ImageGalleryFivePic from "../../components/ImageGalleryFivePic/ImageGalleryFivePic";
-import image1 from "../../assets/yogaRetreats/Retreat Arten/Yoga-Retreats-Ayurveda.jpg";
-import image2 from "../../assets/yogaRetreats/Retreat Arten/Yoga-Therapie-Reisen.jpg";
-import image3 from "../../assets/yogaRetreats/Retreat Arten/Yoga-Mediations-Retreats.jpg";
-import image4 from "../../assets/yogaRetreats/Retreat Arten/Spirituelle-Yoga-Retreats.jpg";
-import image5 from "../../assets/yogaRetreats/Retreat Arten/Stille-Retreats.jpg";
 //SingleCardSection
 import SingleCardSection from "../../components/SingleCardSection/SingleCardSection";
 //DividerImg
 import DividerImg from "../../components/DividerImg/DividerImg";
-import Suchst from "../../assets/yogaRetreats/Divider/Yoga-Wochenenden.jpg";
-import welt from "../../assets/yogaRetreats/Divider/yoga-retreats-weltweit.jpg";
 //ImageGallery3
 import ImageGallery3 from "../../components/ImageGallery3/ImageGallery3";
-import imgGallery1 from "../../assets/yogaRetreats/Kategorien/Yoga-Retreats-Wellness.jpg";
-import imgGallery2 from "../../assets/yogaRetreats/Kategorien/Luxus-Yoga-Retreats.jpg";
-import imgGallery3 from "../../assets/yogaRetreats/Kategorien/Yoga-Safaris.jpg";
-import imgGallery4 from "../../assets/yogaRetreats/Kategorien/Yoga-Retreats-Frauen.jpg";
-import imgGallery5 from "../../assets/yogaRetreats/Kategorien/Yoga-Retreats-Flexible-Stornierungsbedingungen.jpg";
-import imgGallery6 from "../../assets/yogaRetreats/Kategorien/Budget-Yoga-Camps.jpg";
 //HorizontalCardSection
 import HorizontalCardSection from "../../components/horizontalCardSection/horizontalCardSection";
-import hImg1 from "../../assets/yogaRetreats/Lehrerinnen/Yoga-Lehrerin-Yogakasha.jpg";
-import hImg2 from "../../assets/yogaRetreats/Lehrerinnen/yogalehrerin-yogaion-retreats.jpg";
-import hImg3 from "../../assets/yogaRetreats/Lehrerinnen/Yoga-Lehrerin-YoooYoga.jpg";
-import hImg4 from "../../assets/yogaRetreats/Lehrerinnen/Yoga-Lehrerin-Casa-Vegana.jpg";
-import hImg5 from "../../assets/yogaRetreats/Lehrerinnen/yogalehrerin-fastenhof-behm.jpg";
-import hImg6 from "../../assets/yogaRetreats/Lehrerinnen/Yoga-Lehrerin-Nella-Yoga.jpg";
-import hImg7 from "../../assets/yogaRetreats/Lehrerinnen/yogalehrerin-globeseekers.jpg";
-import hImg8 from "../../assets/yogaRetreats/Lehrerinnen/Yoga-Lehrer-simha.jpg";
 //Description
 import Description from "../../components/Description/Description";
-import Moliets from "../../assets/yogaRetreats/Yoga Arten/Hatha-Yoga.jpg";
-import Yin from "../../assets/yogaRetreats/Yoga Arten/Yin-Yoga.jpg";
-import Iyengar from "../../assets/yogaRetreats/Yoga Arten/Iyengar-Yoga.jpg";
-import Vinyasa from "../../assets/yogaRetreats/Yoga Arten/Vinyasa-Yoga.jpg";
-import Aerial from "../../assets/yogaRetreats/Yoga Arten/Aerial-Yoga.jpg";
-import cardImage from "../../assets/images/cardImage.jpg";
 //ImageGalleryWindow
 import ImageGalleryWindow from "../../components/ImageGalleryWindow/ImageGalleryWindow";
-import wImg1 from "../../assets/yogaRetreats/Kombis/Yoga-Wandern.jpg";
-import wImg2 from "../../assets/yogaRetreats/Kombis/Yoga-Pilates.jpg";
-import wImg3 from "../../assets/yogaRetreats/Kombis/Yoga-Fitness.jpg";
-import wImg4 from "../../assets/yogaRetreats/Kombis/Yoga-Surfen.jpg";
 //ImageGalleryBrick2
 import ImageGalleryBrick2 from "../../components/ImageGalleryBrick2/ImageGalleryBrick2";
-import image6 from "../../assets/yogaRetreats/Nachhatltige Retreats/Yoga-Retreat-Balitrees.jpg";
-import image7 from "../../assets/yogaRetreats/Nachhatltige Retreats/Yoga-Retreat-Yogaion.jpg";
-import image8 from "../../assets/yogaRetreats/Nachhatltige Retreats/Yoga-Retreat-Fastenhof-Behm.jpg";
-import image9 from "../../assets/yogaRetreats/Nachhatltige Retreats/Yoga-Retreat-Casa-Vegana.jpg";
-import image10 from "../../assets/yogaRetreats/Nachhatltige Retreats/Yoga-Retreat-Goodtimes.jpg";
-import image11 from "../../assets/yogaRetreats/Nachhatltige Retreats/Yoga-Retreat-Bali-Floating-Leaf.jpg";
-import image12 from "../../assets/yogaRetreats/Nachhatltige Retreats/yoga-retreat-hinterland-village.jpg";
 //HintSection
 import HintSection from "../../components/HintSection/HintSection";
-
 //RateCardSection
 import RateCardSection from "../../components/RateCardSection/RateCardSection";
-import RateImg from "../../assets/images/g1.jpg";
 //ContactUsSection
 import ContactUsSection from "../../components/ContactUsSection/ContactUsSection";
-import Contact from "../../assets/images/contact.jpg";
-
 //TagSection
 import TagSection from "../../components/TagSection/TagSection";
 
@@ -138,26 +83,28 @@ const YogaRetreats = () => {
       <ListAndImage
         mainTitle="Entdecke die besten Reiseziele für dein Yoga Retreat"
         mainDescription="Die Umgebung spielt eine zentrale Rolle für die Atmosphäre und die Yogapraxis bei deinem Retreat. Wohin soll deine Reise gehen? Eine Welt voller Inspiration und unvergesslichen Erlebnissen wartet auf dich!"
-        image={ListAndImage1}
+        image={
+          "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/yogaRetreats/Angebote/Yoga-Retreat-Yin-Yoga-Portugal.jpg"
+        }
         title={t("yoga_retreats_white_box1_title")}
         description={t("yoga_retreats_white_box1_text1")}
       />
       <SingleColImg
         items={[
           {
-            img: Col31,
+            img: "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/yogaRetreats/Reiseziele/Yoga-Retreat-Deutschland.jpg",
             title: t("yoga_retreats_box1_4_clickable_box1"),
           },
           {
-            img: Col32,
+            img: "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/yogaRetreats/Reiseziele/Yoga-Retreat-Oesterreich.jpg",
             title: t("yoga_retreats_box1_4_clickable_box2"),
           },
           {
-            img: Col33,
+            img: "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/yogaRetreats/Reiseziele/Yoga-Retreat-Portugal.jpg",
             title: t("yoga_retreats_box1_4_clickable_box3"),
           },
           {
-            img: Col34,
+            img: "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/yogaRetreats/Reiseziele/Yoga-Retreat-Mallorca.jpg",
             title: t("yoga_retreats_box1_4_clickable_box4"),
           },
         ]}
@@ -165,26 +112,29 @@ const YogaRetreats = () => {
       />
       <ListAndImage
         imgAlign="right"
-        image={ListAndImage2}
+        image={
+          "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/yogaRetreats/Angebote/Yoga-Retreat-Gran-Canaria-Vegan.jpg"
+        }
         title={t("yoga_retreats_white_box2_title")}
         description={t("yoga_retreats_white_box2_text1")}
       />
       <SingleColImg
         items={[
           {
-            img: Col35,
+            img: "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/yogaRetreats/Reiseziele/Yoga-Retreat-Indien.jpg",
+
             title: t("yoga_retreats_box2_4_clickable_box1"),
           },
           {
-            img: Col36,
+            img: "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/yogaRetreats/Reiseziele/Yoga-Retreat-Sri Lanka.jpg",
             title: t("yoga_retreats_box2_4_clickable_box2"),
           },
           {
-            img: Col37,
+            img: "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/yogaRetreats/Reiseziele/Yoga-Retreat-Bali.jpg",
             title: t("yoga_retreats_box2_4_clickable_box3"),
           },
           {
-            img: Col38,
+            img: "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/yogaRetreats/Reiseziele/Yoga-Retreat-Thailand.jpg",
             title: t("yoga_retreats_box2_4_clickable_box4"),
           },
         ]}
@@ -199,27 +149,28 @@ const YogaRetreats = () => {
         title={t("yoga_retreats_5_clickable_box_title")}
         reverse={true}
         image1={{
-          img: image1,
+          img: "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/yogaRetreats/Retreat Arten/Yoga-Retreats-Ayurveda.jpg",
+
           title: t("yoga_retreats_5_clickable_box_item4_title"),
           description: t("yoga_retreats_5_clickable_box_item4_title"),
         }}
         image2={{
-          img: image2,
+          img: "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/yogaRetreats/Retreat Arten/Yoga-Therapie-Reisen.jpg",
           title: t("yoga_retreats_5_clickable_box_item2_title"),
           description: t("yoga_retreats_5_clickable_box_item2_title"),
         }}
         image5={{
-          img: image5,
+          img: "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/yogaRetreats/Retreat Arten/Yoga-Mediations-Retreats.jpg",
           title: t("yoga_retreats_5_clickable_box_item5_title"),
           description: t("yoga_retreats_5_clickable_box_item5_title"),
         }}
         image3={{
-          img: image3,
+          img: "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/yogaRetreats/Retreat Arten/Spirituelle-Yoga-Retreats.jpg",
           title: t("yoga_retreats_5_clickable_box_item3_title"),
           description: t("yoga_retreats_5_clickable_box_item3_title"),
         }}
         image4={{
-          img: image4,
+          img: "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/yogaRetreats/Retreat Arten/Stille-Retreats.jpg",
           title: t("yoga_retreats_5_clickable_box_item1_title"),
           description: t("yoga_retreats_5_clickable_box_item1_title"),
         }}
@@ -228,7 +179,8 @@ const YogaRetreats = () => {
         title={t("yoga_retreats_offer_element_4_part")}
         items={[
           {
-            cardImage: cardImage,
+            cardImage:
+              "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/images/cardImage.jpg",
             title: "Veganes Yoga Retreat: Achtsamkeit auf Gran Canaria",
             location: "Arucas, Gran Canaria",
             calender: "15 Termine im Jahr",
@@ -239,7 +191,8 @@ const YogaRetreats = () => {
             ab: "Ab",
           },
           {
-            cardImage: cardImage,
+            cardImage:
+              "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/images/cardImage.jpg",
             title: "Outdoor- und Yoga-Retreat auf 1800 Metern",
             location: " Mayrhofen, Österreich",
             calender: "8 Termine im Jahr",
@@ -250,7 +203,8 @@ const YogaRetreats = () => {
             ab: "Ab",
           },
           {
-            cardImage: cardImage,
+            cardImage:
+              "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/images/cardImage.jpg",
             title: "Yoga, Surfen & Kochen an der Algarve in Portugal",
             location: "Aljezur, Portugal",
             calender: "4 Termine im JahrS",
@@ -261,7 +215,8 @@ const YogaRetreats = () => {
             ab: "Ab",
           },
           {
-            cardImage: cardImage,
+            cardImage:
+              "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/images/cardImage.jpg",
             title: "Innere Balance & neue Kraft auf Norderney",
             location: "Norderney, Deutschland",
             calender: "3 Termine im Jahr",
@@ -272,7 +227,8 @@ const YogaRetreats = () => {
             ab: "Ab",
           },
           {
-            cardImage: cardImage,
+            cardImage:
+              "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/images/cardImage.jpg",
             title: "Yoga & Pilates: Deine Auszeit zum Wohlfühlen",
             location: "Villaverde, Fuerteventura",
             calender: "Ganzjährig geöffnet",
@@ -283,7 +239,8 @@ const YogaRetreats = () => {
             ab: "Ab",
           },
           {
-            cardImage: cardImage,
+            cardImage:
+              "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/images/cardImage.jpg",
             title: "Yoga & Entschleunigung im Naturpark Stromberg",
             location: " Häfnerhaslach, Deutschland",
             calender: "10 Termine im Jahr",
@@ -294,7 +251,8 @@ const YogaRetreats = () => {
             ab: "Ab",
           },
           {
-            cardImage: cardImage,
+            cardImage:
+              "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/images/cardImage.jpg",
             title: "Growing Happiness Yoga Retreat an der Costa Verde",
             location: "Gelfa, Portugal",
             calender: "2 Termine im Jahr",
@@ -305,7 +263,8 @@ const YogaRetreats = () => {
             ab: "Ab",
           },
           {
-            cardImage: cardImage,
+            cardImage:
+              "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/images/cardImage.jpg",
             title: "Umfassendes Yoga Retreat auf der grünen Insel Mijet",
             location: "Mijet, Kroatien",
             calender: "18.09. - 25.09.2021",
@@ -316,7 +275,8 @@ const YogaRetreats = () => {
             ab: "Ab",
           },
           {
-            cardImage: cardImage,
+            cardImage:
+              "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/images/cardImage.jpg",
             title: "Yoga-Trip durch die Wüste Marokkos",
             location: " Ait Ben Haddou, Marokko",
             calender: "2 Termine im Jahr",
@@ -327,7 +287,8 @@ const YogaRetreats = () => {
             ab: "Ab",
           },
           {
-            cardImage: cardImage,
+            cardImage:
+              "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/images/cardImage.jpg",
             title: "Umfassendes Yoga-Erlebnis auf Langeoog",
             location: "Langeoog, Deutschland",
             calender: "4 Termine im Jahr",
@@ -338,7 +299,8 @@ const YogaRetreats = () => {
             ab: "Ab",
           },
           {
-            cardImage: cardImage,
+            cardImage:
+              "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/images/cardImage.jpg",
             title: "Yoga Retreat im Märchenwald Sloweniens",
             location: "Most Na Soči, Slowenien",
             calender: "19.06. - 26.06.2021",
@@ -349,7 +311,8 @@ const YogaRetreats = () => {
             ab: "Ab",
           },
           {
-            cardImage: cardImage,
+            cardImage:
+              "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/images/cardImage.jpg",
             title: "Iyengar Yoga zwischen blauen Wellen & weißer KreideS",
             location: " Silenz, Rügen, Deutschland",
             calender: "01.04. - 01.11.2021",
@@ -360,7 +323,8 @@ const YogaRetreats = () => {
             ab: "Ab",
           },
           {
-            cardImage: cardImage,
+            cardImage:
+              "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/images/cardImage.jpg",
             title: "Yoga, Behmfasten und Wandern in Europas größtem Seengebiet",
             location: "Flecken Zechlin, Deutschland",
             calender: "10 Termine im Jahr",
@@ -371,7 +335,8 @@ const YogaRetreats = () => {
             ab: "Ab",
           },
           {
-            cardImage: cardImage,
+            cardImage:
+              "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/images/cardImage.jpg",
             title: "Traumhaftes Yoga Retreat an der Nordküste Siziliens",
             location: " Cefalù, Sizilien",
             calender: "09.10. - 16.10.2021 ",
@@ -382,7 +347,8 @@ const YogaRetreats = () => {
             ab: "Ab",
           },
           {
-            cardImage: cardImage,
+            cardImage:
+              "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/images/cardImage.jpg",
             title: "Yoga Retreat im oberösterreichischen Mühlviertel",
             location: " Altenfeden, Österreich",
             calender: "Ganzjährig buchbar",
@@ -393,7 +359,8 @@ const YogaRetreats = () => {
             ab: "Ab",
           },
           {
-            cardImage: cardImage,
+            cardImage:
+              "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/images/cardImage.jpg",
             title: "Zeit für dich: Yoga-Retreat in der Nordeifel",
             location: " Tondorf, Deutschland",
             calender: "4 Termine im Jahr",
@@ -404,7 +371,8 @@ const YogaRetreats = () => {
             ab: "Ab",
           },
           {
-            cardImage: cardImage,
+            cardImage:
+              "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/images/cardImage.jpg",
             title: "Erholsame Yoga-Auszeit in der Chiemgauer Bergwelt",
             location: "Aschau im Chiemgau, Deutschland",
             calender: "09.01. - 19.12.2021",
@@ -415,7 +383,8 @@ const YogaRetreats = () => {
             ab: "Ab",
           },
           {
-            cardImage: cardImage,
+            cardImage:
+              "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/images/cardImage.jpg",
             title: "Yoga-Auszeit in idyllischer Finca auf Mallorca",
             location: " Mallorca, Spanien",
             calender: "Ganzjährig geöffnet",
@@ -429,7 +398,9 @@ const YogaRetreats = () => {
         cols="lg:grid-cols-4"
       />
       <DividerImg
-        image={Suchst}
+        image={
+          "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/yogaRetreats/Divider/Yoga-Wochenenden.jpg"
+        }
         align="left"
         title={t("yoga_retreats_divider_title")}
         description={t("yoga_retreats_divider_text")}
@@ -439,32 +410,33 @@ const YogaRetreats = () => {
         title={t("yoga_retreats_6_clickable_boxes_title")}
         items={[
           {
-            img: imgGallery1,
+            img: "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/yogaRetreats/Kategorien/Yoga-Retreats-Wellness.jpg",
+
             shadow: "80",
             title: t("yoga_retreats_6_clickable_boxes_item1"),
           },
           {
-            img: imgGallery2,
+            img: "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/yogaRetreats/Kategorien/Luxus-Yoga-Retreats.jpg",
             shadow: "80",
             title: t("yoga_retreats_6_clickable_boxes_item2"),
           },
           {
-            img: imgGallery3,
+            img: "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/yogaRetreats/Kategorien/Yoga-Safaris.jpg",
             shadow: "80",
             title: t("yoga_retreats_6_clickable_boxes_item3"),
           },
           {
-            img: imgGallery4,
+            img: "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/yogaRetreats/Kategorien/Yoga-Retreats-Frauen.jpg",
             shadow: "80",
             title: t("yoga_retreats_6_clickable_boxes_item4"),
           },
           {
-            img: imgGallery5,
+            img: "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/yogaRetreats/Kategorien/Yoga-Retreats-Flexible-Stornierungsbedingungen.jpg",
             shadow: "80",
             title: t("yoga_retreats_6_clickable_boxes_item5"),
           },
           {
-            img: imgGallery6,
+            img: "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/yogaRetreats/Kategorien/Budget-Yoga-Camps.jpg",
             shadow: "80",
             title: t("yoga_retreats_6_clickable_boxes_item6"),
           },
@@ -475,49 +447,58 @@ const YogaRetreats = () => {
         description={t("yoga_retreats_2_slide_subTitle")}
         items={[
           {
-            image: hImg1,
+            image:
+              "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/yogaRetreats/Lehrerinnen/Yoga-Lehrerin-Yogakasha.jpg",
+
             description: t("yoga_retreats_2_slide_desc1"),
             name: t("yoga_retreats_2_slide_name1"),
             details: "Yogalehrerin aus Köln",
           },
           {
-            image: hImg2,
+            image:
+              "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/yogaRetreats/Lehrerinnen/yogalehrerin-yogaion-retreats.jpg",
             description: t("yoga_retreats_2_slide_desc2"),
             name: t("yoga_retreats_2_slide_name2"),
             details: "Iyengar Yogalehrerin in Portugal",
           },
           {
-            image: hImg3,
+            image:
+              "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/yogaRetreats/Lehrerinnen/Yoga-Lehrerin-YoooYoga.jpg",
             description: t("yoga_retreats_2_slide_desc3"),
             name: t("yoga_retreats_2_slide_name3"),
             details: "Yogalehrer aus Berlin",
           },
           {
-            image: hImg4,
+            image:
+              "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/yogaRetreats/Lehrerinnen/Yoga-Lehrerin-Casa-Vegana.jpg",
             description: t("yoga_retreats_2_slide_desc4"),
             name: t("yoga_retreats_2_slide_name4"),
             details: "Yogalehrerin auf Gran Canaria",
           },
           {
-            image: hImg5,
+            image:
+              "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/yogaRetreats/Lehrerinnen/yogalehrerin-fastenhof-behm.jpg",
             description: t("yoga_retreats_2_slide_desc5"),
             name: t("yoga_retreats_2_slide_name5"),
             details: "Fastenleiterin, CQM-Coach und Yogalehrerin",
           },
           {
-            image: hImg6,
+            image:
+              "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/yogaRetreats/Lehrerinnen/Yoga-Lehrerin-Nella-Yoga.jpg",
             description: t("yoga_retreats_2_slide_desc6"),
             name: t("yoga_retreats_2_slide_name6"),
             details: "Yogalehrerin aus Klagenfurt am Wörthersee",
           },
           {
-            image: hImg7,
+            image:
+              "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/yogaRetreats/Lehrerinnen/yogalehrerin-globeseekers.jpg",
             description: t("yoga_retreats_2_slide_desc7"),
             name: t("yoga_retreats_2_slide_name7"),
             details: "Yogalehrerin im Zillertal",
           },
           {
-            image: hImg8,
+            image:
+              "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/yogaRetreats/Lehrerinnen/Yoga-Lehrer-simha.jpg",
             description: t("yoga_retreats_2_slide_desc8"),
             name: t("yoga_retreats_2_slide_name8"),
             details: "Yogalehrer aus Baden-Württemberg",
@@ -536,14 +517,17 @@ const YogaRetreats = () => {
         tabCols="lg:grid-cols-5"
         tabContents={[
           {
-            detailsImage: Moliets,
+            detailsImage:
+              "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/yogaRetreats/Yoga Arten/Hatha-Yoga.jpg",
+
             detailsTitle: t("yoga_retreats_big_tab_element_tab1_title"),
             detailsDesc: t("yoga_retreats_big_tab_element_tab1_subtitle"),
             detailsReadMore: "",
             cardTitle: t("yoga_retreats_big_tab_element_tab1_more"),
             cardItems: [
               {
-                cardImage: cardImage,
+                cardImage:
+                  "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/images/cardImage.jpg",
                 title: "Hatha Yoga-Wochenende in ehemaligem Kloster",
                 location: " Damme, Deutschland",
                 calender: "4 Termine im Jahr",
@@ -554,7 +538,8 @@ const YogaRetreats = () => {
                 ab: "Ab",
               },
               {
-                cardImage: cardImage,
+                cardImage:
+                  "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/images/cardImage.jpg",
                 title: "Komfort Yoga- & Meditations-Auszeit in Brand",
                 location: "Brand, Österreich",
                 calender: "15 Termine im Jahr",
@@ -565,7 +550,8 @@ const YogaRetreats = () => {
                 ab: "Ab",
               },
               {
-                cardImage: cardImage,
+                cardImage:
+                  "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/images/cardImage.jpg",
                 title: "Deep Relax Yoga-Woche im Bergischen Land",
                 location: " Wermelskirchen, Deutschland",
                 calender: "4 Termine im Jahr",
@@ -576,7 +562,8 @@ const YogaRetreats = () => {
                 ab: "Ab",
               },
               {
-                cardImage: cardImage,
+                cardImage:
+                  "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/images/cardImage.jpg",
                 title: "Erholsame Yoga-Auszeit im Lifestyle Resort",
                 location: " Mellau, Österreich",
                 calender: "4 Termine im Jahr",
@@ -590,14 +577,16 @@ const YogaRetreats = () => {
             cardCols: "lg:grid-cols-4",
           },
           {
-            detailsImage: Yin,
+            detailsImage:
+              "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/yogaRetreats/Yoga Arten/Yin-Yoga.jpg",
             detailsTitle: t("yoga_retreats_big_tab_element_tab2_title"),
             detailsDesc: t("yoga_retreats_big_tab_element_tab2_subtitle"),
             detailsReadMore: "",
             cardTitle: t("yoga_retreats_big_tab_element_tab2_more"),
             cardItems: [
               {
-                cardImage: cardImage,
+                cardImage:
+                  "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/images/cardImage.jpg",
                 title: "Zeit für dich: Yoga-Retreat in der Nordeifel",
                 location: " Tondorf, Deutschland",
                 calender: "4 Termine im Jahr",
@@ -608,7 +597,8 @@ const YogaRetreats = () => {
                 ab: "Ab",
               },
               {
-                cardImage: cardImage,
+                cardImage:
+                  "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/images/cardImage.jpg",
                 title: "YinYourMind: Yin Yoga Retreat in Nordportugal",
                 location: "Gelfa, Portugal",
                 calender: "18.09. - 25.09.2021",
@@ -619,7 +609,8 @@ const YogaRetreats = () => {
                 ab: "Ab",
               },
               {
-                cardImage: cardImage,
+                cardImage:
+                  "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/images/cardImage.jpg",
                 title: "Deep Relax Yoga-Woche im Bergischen Land",
                 location: "Wermelskirchen, Deutschland",
                 calender: "4 Termine im Jahr",
@@ -633,14 +624,16 @@ const YogaRetreats = () => {
             cardCols: "lg:grid-cols-4",
           },
           {
-            detailsImage: Iyengar,
+            detailsImage:
+              "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/yogaRetreats/Yoga Arten/Iyengar-Yoga.jpg",
             detailsTitle: t("yoga_retreats_big_tab_element_tab3_title"),
             detailsDesc: t("yoga_retreats_big_tab_element_tab3_subtitle"),
             detailsReadMore: "",
             cardTitle: t("yoga_retreats_big_tab_element_tab3_more"),
             cardItems: [
               {
-                cardImage: cardImage,
+                cardImage:
+                  "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/images/cardImage.jpg",
                 title: "Iyengar Yoga: Für ein ausgewogenes Leben",
                 location: " Aljezur, Portugal",
                 calender: "4 Termine im Jahr",
@@ -651,7 +644,8 @@ const YogaRetreats = () => {
                 ab: "Ab",
               },
               {
-                cardImage: cardImage,
+                cardImage:
+                  "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/images/cardImage.jpg",
                 title: "Rügen mal anders: Iyengar Yoga und Windsurfen",
                 location: "Silenz, Rügen, Deutschland",
                 calender: "16.05. - 19.09.",
@@ -662,7 +656,8 @@ const YogaRetreats = () => {
                 ab: "Ab",
               },
               {
-                cardImage: cardImage,
+                cardImage:
+                  "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/images/cardImage.jpg",
                 title: "Women’s Wisdom: Iyengar Yoga in Portugal",
                 location: "Aljezur, Portugal",
                 calender: "04.09. - 10.09.2021",
@@ -673,7 +668,8 @@ const YogaRetreats = () => {
                 ab: "Ab",
               },
               {
-                cardImage: cardImage,
+                cardImage:
+                  "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/images/cardImage.jpg",
                 title: "Iyengar Yoga zwischen blauen Wellen & weißer Kreide",
                 location: " Silenz, Rügen, Deutschland",
                 calender: "01.04. - 01.11.2021",
@@ -687,14 +683,16 @@ const YogaRetreats = () => {
             cardCols: "lg:grid-cols-4",
           },
           {
-            detailsImage: Vinyasa,
+            detailsImage:
+              "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/yogaRetreats/Yoga Arten/Vinyasa-Yoga.jpg",
             detailsTitle: t("yoga_retreats_big_tab_element_tab4_title"),
             detailsDesc: t("yoga_retreats_big_tab_element_tab4_subtitle"),
             detailsReadMore: "",
             cardTitle: t("yoga_retreats_big_tab_element_tab4_more"),
             cardItems: [
               {
-                cardImage: cardImage,
+                cardImage:
+                  "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/images/cardImage.jpg",
                 title: "Yoga, Fitness & Wandern in der Toskana",
                 location: " Montegonzi, Italien",
                 calender: "01.04. - 31.11.2021",
@@ -705,7 +703,8 @@ const YogaRetreats = () => {
                 ab: "Ab",
               },
               {
-                cardImage: cardImage,
+                cardImage:
+                  "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/images/cardImage.jpg",
                 title: "Harmonischer Vinyasa-Flow am mächtigen Atlantik",
                 location: "Gelfa, Portugal",
                 calender: "12.06.2021 - 19.06.2021",
@@ -716,7 +715,8 @@ const YogaRetreats = () => {
                 ab: "Ab",
               },
               {
-                cardImage: cardImage,
+                cardImage:
+                  "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/images/cardImage.jpg",
                 title: "Genusswandern und Yoga auf Usedom",
                 location: "Heringsdorf, Deutschland",
                 calender: "2 Termine im Jahr",
@@ -727,7 +727,8 @@ const YogaRetreats = () => {
                 ab: "Ab",
               },
               {
-                cardImage: cardImage,
+                cardImage:
+                  "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/images/cardImage.jpg",
                 title: "Veganes Yoga Retreat: Achtsamkeit auf Gran Canaria",
                 location: "Arucas, Gran Canaria",
                 calender: "15 Termine im Jahr",
@@ -741,14 +742,16 @@ const YogaRetreats = () => {
             cardCols: "lg:grid-cols-4",
           },
           {
-            detailsImage: Aerial,
+            detailsImage:
+              "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/yogaRetreats/Yoga Arten/Aerial-Yoga.jpg",
             detailsTitle: t("yoga_retreats_big_tab_element_tab5_title"),
             detailsDesc: t("yoga_retreats_big_tab_element_tab5_subtitle"),
             detailsReadMore: "",
             cardTitle: t("yoga_retreats_big_tab_element_tab5_more"),
             cardItems: [
               {
-                cardImage: cardImage,
+                cardImage:
+                  "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/images/cardImage.jpg",
                 title: "Aerial Yoga im Tamarindos stylischem Yoga-Hostel",
                 location: "Tamarindo, Costa Rica",
                 calender: "Ganzjährig geöffnet",
@@ -759,7 +762,8 @@ const YogaRetreats = () => {
                 ab: "Ab",
               },
               {
-                cardImage: cardImage,
+                cardImage:
+                  "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/images/cardImage.jpg",
                 title: "Yoga Village in Canggu: Luxus & Erholung",
                 location: "Canggu, Bali",
                 calender: "Ganzjährig geöffnet",
@@ -770,7 +774,8 @@ const YogaRetreats = () => {
                 ab: "Ab",
               },
               {
-                cardImage: cardImage,
+                cardImage:
+                  "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/images/cardImage.jpg",
                 title: "Yoga Retreat mit Dschungel-Feeling in Costa Rica",
                 location: "Santa Teresa, Costa Rica",
                 calender: "Ganzjährig geöffnet",
@@ -790,28 +795,29 @@ const YogaRetreats = () => {
         items={[
           {
             shadowSize: "80",
-            img: wImg1,
+            img: "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/yogaRetreats/Kombis/Yoga-Wandern.jpg",
+
             title: t("yoga_retreats_4_clickable_box_item1"),
             description:
               "Genieße ganzheitliche Wanderungen in der Natur gespickt mit Meditationen und Atemübungen.",
           },
           {
             shadowSize: "80",
-            img: wImg2,
+            img: "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/yogaRetreats/Kombis/Yoga-Pilates.jpg",
             title: t("yoga_retreats_4_clickable_box_item2"),
             description:
               "Stärke deinen Rücken und deine innere Mitte mit dieser faszinierenden Mischung aus Workout und Erdung.",
           },
           {
             shadowSize: "80",
-            img: wImg3,
+            img: "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/yogaRetreats/Kombis/Yoga-Fitness.jpg",
             title: t("yoga_retreats_4_clickable_box_item3"),
             description:
               "Wenn dir der sportliche Aspekt beim Yoga zu kurz kommt, dann kombiniere Yoga mit Fitness um dich voll auszulasten!",
           },
           {
             shadowSize: "80",
-            img: wImg4,
+            img: "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/yogaRetreats/Kombis/Yoga-Surfen.jpg",
             title: t("yoga_retreats_4_clickable_box_item4"),
             description:
               "Zwei Sportarten, die Hand in Hand gehen und nur voneinander profitieren: Erlebe den ultimativen Spaßfaktor!",
@@ -822,17 +828,18 @@ const YogaRetreats = () => {
         title={t("yoga_retreats_3_clickable_box_title")}
         items={[
           {
-            img: Col39,
+            img: "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/yogaRetreats/Erfahrung/Yoga-Retreats-Fortgeschrittene.jpg",
+
             title: t("yoga_retreats_3_clickable_box_item1"),
             description: t("yoga_retreats_3_clickable_box_item1_desc"),
           },
           {
-            img: Col40,
+            img: "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/yogaRetreats/Erfahrung/Yoga-Retreats-Anfänger.jpg",
             title: t("yoga_retreats_3_clickable_box_item2"),
             description: t("yoga_retreats_3_clickable_box_item2_desc"),
           },
           {
-            img: Col41,
+            img: "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/yogaRetreats/Erfahrung/Yoga-Retreats-Profis.jpg",
             title: t("yoga_retreats_3_clickable_box_item3"),
             description: t("yoga_retreats_3_clickable_box_item3_desc"),
           },
@@ -847,43 +854,46 @@ const YogaRetreats = () => {
       <ImageGalleryBrick2
         title={t("yoga_retreats_7_clickable_box_title")}
         image1={{
-          img: image6,
+          img: "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/yogaRetreats/Nachhatltige Retreats/Yoga-Retreat-Balitrees.jpg",
+
           title: t("yoga_retreats_7_clickable_box_item1_title"),
           description: t("yoga_retreats_7_clickable_box_item1_desc"),
         }}
         image2={{
-          img: image7,
+          img: "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/yogaRetreats/Nachhatltige Retreats/Yoga-Retreat-Yogaion.jpg",
           title: t("yoga_retreats_7_clickable_box_item2_title"),
           description: t("yoga_retreats_7_clickable_box_item2_desc"),
         }}
         image3={{
-          img: image8,
+          img: "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/yogaRetreats/Nachhatltige Retreats/Yoga-Retreat-Fastenhof-Behm.jpg",
           title: t("yoga_retreats_7_clickable_box_item3_title"),
           description: t("yoga_retreats_7_clickable_box_item3_desc"),
         }}
         image4={{
-          img: image9,
+          img: "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/yogaRetreats/Nachhatltige Retreats/Yoga-Retreat-Casa-Vegana.jpg",
           title: t("yoga_retreats_7_clickable_box_item4_title"),
           description: t("yoga_retreats_7_clickable_box_item4_desc"),
         }}
         image5={{
-          img: image10,
+          img: "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/yogaRetreats/Nachhatltige Retreats/Yoga-Retreat-Goodtimes.jpg",
           title: t("yoga_retreats_7_clickable_box_item5_title"),
           description: t("yoga_retreats_7_clickable_box_item5_desc"),
         }}
         image6={{
-          img: image11,
+          img: "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/yogaRetreats/Nachhatltige Retreats/Yoga-Retreat-Bali-Floating-Leaf.jpg",
           title: t("yoga_retreats_7_clickable_box_item6_title"),
           description: t("yoga_retreats_7_clickable_box_item6_desc"),
         }}
         image7={{
-          img: image12,
+          img: "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/yogaRetreats/Nachhatltige Retreats/yoga-retreat-hinterland-village.jpg",
           title: t("yoga_retreats_7_clickable_box_item7_title"),
           description: t("yoga_retreats_7_clickable_box_item7_desc"),
         }}
       />
       <DividerImg
-        image={welt}
+        image={
+          "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/yogaRetreats/Divider/yoga-retreats-weltweit.jpg"
+        }
         align="center"
         title={t("yoga_retreats_divider2_title")}
         buttonTitle={t("yoga_retreats_divider2_button")}
@@ -917,42 +927,48 @@ const YogaRetreats = () => {
           {
             rateName: " Julia Gitzler",
             rateDesc: t("yoga_retreats_review_element_desc1"),
-            rateImage: RateImg,
+            rateImage:
+              "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/images/g1.jpg",
             rateCalendar: "30.04.2021",
             rateFootNote: t("yoga_retreats_review_element_more1"),
           },
           {
             rateName: "Michaela",
             rateDesc: t("yoga_retreats_review_element_desc2"),
-            rateImage: RateImg,
+            rateImage:
+              "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/images/g1.jpg",
             rateCalendar: "01.02.2021",
             rateFootNote: t("yoga_retreats_review_element_more2"),
           },
           {
             rateName: "Uwe Poppitz,",
             rateDesc: t("yoga_retreats_review_element_desc3"),
-            rateImage: RateImg,
+            rateImage:
+              "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/images/g1.jpg",
             rateCalendar: "12.10.2020",
             rateFootNote: t("yoga_retreats_review_element_more3"),
           },
           {
             rateName: "Silke Roth",
             rateDesc: t("yoga_retreats_review_element_desc4"),
-            rateImage: RateImg,
+            rateImage:
+              "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/images/g1.jpg",
             rateCalendar: "18.09.2020",
             rateFootNote: t("yoga_retreats_review_element_more4"),
           },
           {
             rateName: "Melanie",
             rateDesc: t("yoga_retreats_review_element_desc5"),
-            rateImage: RateImg,
+            rateImage:
+              "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/images/g1.jpg",
             rateCalendar: "29.10.2019",
             rateFootNote: t("yoga_retreats_review_element_more5"),
           },
           {
             rateName: "Tina",
             rateDesc: t("yoga_retreats_review_element_desc6"),
-            rateImage: RateImg,
+            rateImage:
+              "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/images/g1.jpg",
             rateCalendar: "17.06.2019",
             rateFootNote: t("yoga_retreats_review_element_more6"),
           },
@@ -974,7 +990,9 @@ const YogaRetreats = () => {
         ]}
         formTextarea={t("yoga_retreats_contact_us_input_write_message")}
         formButton={t("yoga_retreats_contact_us_input_send_message")}
-        cardImageSrc={Contact}
+        cardImageSrc={
+          "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/images/contact.jpg"
+        }
         cardTitle={t("yoga_retreats_contact_us_card_title")}
         cardDesc={t("yoga_retreats_contact_us_card_subtitle")}
         cardItems={[

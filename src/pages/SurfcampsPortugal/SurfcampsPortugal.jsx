@@ -14,47 +14,22 @@ import Hero from "../../components/Hero/Hero";
 import HintSection from "../../components/HintSection/HintSection";
 //Description
 import Description from "../../components/Description/Description";
-import Algarve from "../../assets/SurfcampPortugal/Regionen/Surfcamps-Portugal-Algarve.jpg";
-import Ericeira from "../../assets/SurfcampPortugal/Regionen/Surfcamps-Portugal-Ericeira.jpg";
-import Peniche from "../../assets/SurfcampPortugal/Regionen/Surfcamps-Portugal-Peniche.jpg";
-import Santa from "../../assets/SurfcampPortugal/Regionen/Surfcamps-Portugal-Santa-Cruz.jpg";
-import Lourinha from "../../assets/SurfcampPortugal/Regionen/Surfcamps-Portugal-Areia-Branca.jpg";
-import Region from "../../assets/SurfcampPortugal/Regionen/Surfcamps-Portugal-Porto.jpg";
-import cardImage from "../../assets/images/cardImage.jpg";
 //ImageGalleryFourPic
 import ImageGalleryFourPic from "../../components/ImageGalleryFourPic/ImageGalleryFourPic";
-import img1 from "../../assets/SurfcampPortugal/Zielgruppe/Surfcamps-Portugal-Alleinreisende.jpg";
-import img2 from "../../assets/SurfcampPortugal/Zielgruppe/Surfcamps-Portugal_Gruppen-Freunde-alt.jpg";
-import img3 from "../../assets/SurfcampPortugal/Zielgruppe/Familien-Surfcamps-Portugal.jpg";
-import img4 from "../../assets/SurfcampPortugal/Zielgruppe/Surfurlaub-Paare-Portugal.jpg";
 //ListAndImage
 import ListAndImage from "../../components/ListAndImage/ListAndImage";
-import ListAndImage1 from "../../assets/SurfcampPortugal/Vorteile-Divider/Surfcamps-Portugal-Besonderheiten.jpg";
 //ImageGallery3
 import ImageGallery3 from "../../components/ImageGallery3/ImageGallery3";
-import imgGallery6 from "../../assets/SurfcampPortugal/Kategorien/Surf-Yoga-Camps-Portugal.jpg";
-import imgGallery1 from "../../assets/SurfcampPortugal/Kategorien/Surfcamps-Portugal-Natur.jpg";
-import imgGallery4 from "../../assets/SurfcampPortugal/Kategorien/Surfcamps-Portugal-Kostenfreie-Stornierung.jpg";
-import imgGallery3 from "../../assets/SurfcampPortugal/Kategorien/Surf-Mountainbike-Urlaub-Portugal.jpg";
-import imgGallery5 from "../../assets/SurfcampPortugal/Kategorien/Low-Budget-Surfcamps-Portugal.jpg";
-import imgGallery2 from "../../assets/SurfcampPortugal/Kategorien/Surfurlaub-Portugal-Einzelzimmer.jpg";
 //SingleCardSection
 import SingleCardSection from "../../components/SingleCardSection/SingleCardSection";
 //DividerImg
 import DividerImg from "../../components/DividerImg/DividerImg";
-import dividerImage from "../../assets/SurfcampPortugal/Divider/surfcamps-portugal.jpg";
-import Besonderheiten from "../../assets/images/Besonderheiten.jpg";
 //SingleColImg
 import SingleColImg from "../../components/SingleColImg/SingleColImg";
-import Col31 from "../../assets/SurfcampPortugal/Vorkenntnisse/Surfcamps-Portugal-Anfänger.jpg";
-import Col32 from "../../assets/SurfcampPortugal/Vorkenntnisse/Surfcamps-Portugal_Intermediates.jpg";
-import Col33 from "../../assets/SurfcampPortugal/Vorkenntnisse/Surfari-Surf-Guiding-Portugal.jpg";
 //RateCardSection
 import RateCardSection from "../../components/RateCardSection/RateCardSection";
-import RateImg from "../../assets/images/g1.jpg";
 //ContactUsSection
 import ContactUsSection from "../../components/ContactUsSection/ContactUsSection";
-import Contact from "../../assets/images/contact.jpg";
 //TagSection
 import TagSection from "../../components/TagSection/TagSection";
 
@@ -102,14 +77,17 @@ const SurfcampsPortugal = () => {
         tabCols="lg:grid-cols-6"
         tabContents={[
           {
-            detailsImage: Algarve,
+            detailsImage:
+              "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/SurfcampPortugal/Regionen/Surfcamps-Portugal-Algarve.jpg",
+
             detailsTitle: t("portugal_big_tab_element_tab1_title"),
             detailsDesc: t("portugal_big_tab_element_tab1_text"),
             detailsReadMore: "",
             cardTitle: "Top-Surfcamps an der Algarve",
             cardItems: [
               {
-                cardImage: cardImage,
+                cardImage:
+                  "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/images/cardImage.jpg",
                 title: "Umgeben von Natur: Surfcamp im entspannten Sagres",
                 location: "Sagres, Portugal",
                 calender: "01.04. - 01.12.2022",
@@ -120,7 +98,8 @@ const SurfcampsPortugal = () => {
                 ab: "Ab",
               },
               {
-                cardImage: cardImage,
+                cardImage:
+                  "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/images/cardImage.jpg",
                 title: "Gemütliche Villa: Surfen, Natur und leckeres Essen",
                 location: "Lagos, Portugal",
                 calender: "28.03. - 07.11.2022",
@@ -131,7 +110,8 @@ const SurfcampsPortugal = () => {
                 ab: "Ab",
               },
               {
-                cardImage: cardImage,
+                cardImage:
+                  "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/images/cardImage.jpg",
                 title: "Mission-to-Surf: Lass deine Träume wahr werdenl",
                 location: "Vale Da Telha, Portugal",
                 calender: "30.03. - 21.11.2022",
@@ -142,7 +122,8 @@ const SurfcampsPortugal = () => {
                 ab: "Ab",
               },
               {
-                cardImage: cardImage,
+                cardImage:
+                  "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/images/cardImage.jpg",
                 title: "Ganzheitliches Surfcamp für Naturliebhaber",
                 location: "Lagoa, Portugal",
                 calender: "Ganzjährig geöffnet",
@@ -156,14 +137,16 @@ const SurfcampsPortugal = () => {
             cardCols: "lg:grid-cols-4",
           },
           {
-            detailsImage: Ericeira,
+            detailsImage:
+              "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/SurfcampPortugal/Regionen/Surfcamps-Portugal-Ericeira.jpg",
             detailsTitle: t("portugal_big_tab_element_tab2_title"),
             detailsDesc: t("portugal_big_tab_element_tab2_text"),
             detailsReadMore: "",
             cardTitle: "Top-Surfcamps in Ericeira",
             cardItems: [
               {
-                cardImage: cardImage,
+                cardImage:
+                  "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/images/cardImage.jpg",
                 title: "Surfhaus mit Dachterrasse direkt am Surfspot",
                 location: "Ericeira, Portugal",
                 calender: "01.04. - 30.10.2022",
@@ -174,7 +157,8 @@ const SurfcampsPortugal = () => {
                 ab: "Ab",
               },
               {
-                cardImage: cardImage,
+                cardImage:
+                  "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/images/cardImage.jpg",
                 title:
                   "Chill in Surfhaus mit Blick auf's Meer im Surfer-Paradies",
                 location: "Ericeira, Portugal",
@@ -186,7 +170,8 @@ const SurfcampsPortugal = () => {
                 ab: "Ab",
               },
               {
-                cardImage: cardImage,
+                cardImage:
+                  "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/images/cardImage.jpg",
                 title: "Yoga- & Surf-Reise im modernen Haus in Ericeira",
                 location: "Ericeira, Portugal",
                 calender: "Ganzjährig geöffnet",
@@ -197,7 +182,8 @@ const SurfcampsPortugal = () => {
                 ab: "Ab",
               },
               {
-                cardImage: cardImage,
+                cardImage:
+                  "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/images/cardImage.jpg",
                 title:
                   "Surfari für erfahrene Surfer im World Surfing Reserve Europas",
                 location: "Ericeira, Portugal",
@@ -212,14 +198,16 @@ const SurfcampsPortugal = () => {
             cardCols: "lg:grid-cols-4",
           },
           {
-            detailsImage: Peniche,
+            detailsImage:
+              "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/SurfcampPortugal/Regionen/Surfcamps-Portugal-Peniche.jpg",
             detailsTitle: t("portugal_big_tab_element_tab3_title"),
             detailsDesc: t("portugal_big_tab_element_tab3_text"),
             detailsReadMore: "",
             cardTitle: "Top-Surfcamps in Peniche",
             cardItems: [
               {
-                cardImage: cardImage,
+                cardImage:
+                  "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/images/cardImage.jpg",
                 title: "Familien Surfurlaub am langen Sandstrand",
                 location: "Peniche, Portugal",
                 calender: "01.02. - 23.12.",
@@ -230,7 +218,8 @@ const SurfcampsPortugal = () => {
                 ab: "Ab",
               },
               {
-                cardImage: cardImage,
+                cardImage:
+                  "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/images/cardImage.jpg",
                 title: "Gemütliches Surfhaus direkt am Surfspot",
                 location: "Peniche, Portugal",
                 calender: "Ganzjährig geöffnet",
@@ -241,7 +230,8 @@ const SurfcampsPortugal = () => {
                 ab: "Ab",
               },
               {
-                cardImage: cardImage,
+                cardImage:
+                  "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/images/cardImage.jpg",
                 title: "Surf-Erlebnis mit Hotelkomfort in Peniche",
                 location: "Peniche, Portugal",
                 calender: "01.02. - 23.12.",
@@ -252,7 +242,8 @@ const SurfcampsPortugal = () => {
                 ab: "Ab",
               },
               {
-                cardImage: cardImage,
+                cardImage:
+                  "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/images/cardImage.jpg",
                 title: "Surf & Yoga Urlaub in der Sonne Portugals",
                 location: "Peniche, Portugal",
                 calender: "Ganzjährig geöffnet",
@@ -266,14 +257,16 @@ const SurfcampsPortugal = () => {
             cardCols: "lg:grid-cols-4",
           },
           {
-            detailsImage: Santa,
+            detailsImage:
+              "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/SurfcampPortugal/Regionen/Surfcamps-Portugal-Santa-Cruz.jpg",
             detailsTitle: t("portugal_big_tab_element_tab4_title"),
             detailsDesc: t("portugal_big_tab_element_tab4_text"),
             detailsReadMore: "",
             cardTitle: "Top-Surfcamps in Santa Cruz",
             cardItems: [
               {
-                cardImage: cardImage,
+                cardImage:
+                  "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/images/cardImage.jpg",
                 title:
                   "Surf Lodge in Santa Cruz: Umgeben von über 30 Surfspots",
                 location: "Santa Cruz, Portugal",
@@ -285,7 +278,8 @@ const SurfcampsPortugal = () => {
                 ab: "Ab",
               },
               {
-                cardImage: cardImage,
+                cardImage:
+                  "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/images/cardImage.jpg",
                 title: "Surfcamp am Praia Azul: Surfen an abgelegenen Spots",
                 location: "Santa Cruz, Portugal",
                 calender: "21.03. - 30.10.2022",
@@ -296,7 +290,8 @@ const SurfcampsPortugal = () => {
                 ab: "Ab",
               },
               {
-                cardImage: cardImage,
+                cardImage:
+                  "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/images/cardImage.jpg",
                 title: "Surf-Guiding in gemütlicher Surf Lodge in Santa Cruz",
                 location: "Santa Cruz, Portugal",
                 calender: "20.03. - 26.06. & 25.09. - 18.12.2022",
@@ -310,14 +305,16 @@ const SurfcampsPortugal = () => {
             cardCols: "lg:grid-cols-4",
           },
           {
-            detailsImage: Lourinha,
+            detailsImage:
+              "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/SurfcampPortugal/Regionen/Surfcamps-Portugal-Areia-Branca.jpg",
             detailsTitle: t("portugal_big_tab_element_tab5_title"),
             detailsDesc: t("portugal_big_tab_element_tab5_text"),
             detailsReadMore: "",
             cardTitle: "Top-Surfcamps in Lourinha",
             cardItems: [
               {
-                cardImage: cardImage,
+                cardImage:
+                  "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/images/cardImage.jpg",
                 title: "Surfurlaub für Familien: Natur & Spaß am Strand",
                 location: "Areia Branca, Portugal",
                 calender: "20.03. - 31.10.2022",
@@ -328,7 +325,8 @@ const SurfcampsPortugal = () => {
                 ab: "Ab",
               },
               {
-                cardImage: cardImage,
+                cardImage:
+                  "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/images/cardImage.jpg",
                 title: "Surfcamp: Entspannte Leute und gute Vibes",
                 location: "Lourinha, Portugal",
                 calender: "27.03. - 30.10.2022",
@@ -339,7 +337,8 @@ const SurfcampsPortugal = () => {
                 ab: "Ab",
               },
               {
-                cardImage: cardImage,
+                cardImage:
+                  "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/images/cardImage.jpg",
                 title: "Beachlodge Surfcamp im sonnigen Winter Portugals",
                 location: "Lourinhã, Portugal",
                 calender: "30.10. - 27.03.",
@@ -350,7 +349,8 @@ const SurfcampsPortugal = () => {
                 ab: "Ab",
               },
               {
-                cardImage: cardImage,
+                cardImage:
+                  "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/images/cardImage.jpg",
                 title: "Surfen & Mountainbiken inmitten der Natur",
                 location: "Areia Branca, Portugal",
                 calender: "20.03. - 31.10.2022",
@@ -364,14 +364,16 @@ const SurfcampsPortugal = () => {
             cardCols: "lg:grid-cols-4",
           },
           {
-            detailsImage: Region,
+            detailsImage:
+              "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/SurfcampPortugal/Regionen/Surfcamps-Portugal-Porto.jpg",
             detailsTitle: t("portugal_big_tab_element_tab6_title"),
             detailsDesc: t("portugal_big_tab_element_tab6_text"),
             detailsReadMore: "",
             cardTitle: "Top-Surfcamps in der Region Porto",
             cardItems: [
               {
-                cardImage: cardImage,
+                cardImage:
+                  "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/images/cardImage.jpg",
                 title: "Surf- & Yoga-Urlaub im Eco-Hotel am Ozean",
                 location: "Viana do Castelo, Portugal",
                 calender: "30.04. - 10.11.2022",
@@ -382,7 +384,8 @@ const SurfcampsPortugal = () => {
                 ab: "Ab",
               },
               {
-                cardImage: cardImage,
+                cardImage:
+                  "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/images/cardImage.jpg",
                 title: "Surfcamp am unberührten Strand im Norden Portugals",
                 location: "Gelfa, Portugal",
                 calender: "30.04. - 15.10.2022",
@@ -393,7 +396,8 @@ const SurfcampsPortugal = () => {
                 ab: "Ab",
               },
               {
-                cardImage: cardImage,
+                cardImage:
+                  "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/images/cardImage.jpg",
                 title: "Surfurlaub im innovativen Sporthotel",
                 location: "Viana do Castelo, Portugal",
                 calender: "30.04. - 10.11.2022",
@@ -404,7 +408,8 @@ const SurfcampsPortugal = () => {
                 ab: "Ab",
               },
               {
-                cardImage: cardImage,
+                cardImage:
+                  "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/images/cardImage.jpg",
                 title: "Familiäres Surfhaus im unberührten Norden Portugals",
                 location: "Estela, Portugal",
                 calender: "01.03. - 01.11.2022",
@@ -423,29 +428,32 @@ const SurfcampsPortugal = () => {
         title={t("portugal_4_linked_image_title")}
         items={[
           {
-            img: img1,
+            img: "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/SurfcampPortugal/Zielgruppe/Surfcamps-Portugal-Alleinreisende.jpg",
+
             shadow: "80",
             title: t("portugal_4_linked_image_item1"),
           },
           {
-            img: img2,
+            img: "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/SurfcampPortugal/Zielgruppe/Surfcamps-Portugal_Gruppen-Freunde-alt.jpg",
             shadow: "80",
             title: t("portugal_4_linked_image_item2"),
           },
           {
-            img: img3,
+            img: "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/SurfcampPortugal/Zielgruppe/Familien-Surfcamps-Portugal.jpg",
             shadow: "80",
             title: t("portugal_4_linked_image_item3"),
           },
           {
-            img: img4,
+            img: "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/SurfcampPortugal/Zielgruppe/Surfurlaub-Paare-Portugal.jpg",
             shadow: "80",
             title: t("portugal_4_linked_image_item4"),
           },
         ]}
       />
       <ListAndImage
-        image={ListAndImage1}
+        image={
+          "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/SurfcampPortugal/Vorteile-Divider/Surfcamps-Portugal-Besonderheiten.jpg"
+        }
         title={t("portugal_big_divider_element_title")}
         items={[
           t("portugal_big_divider_element_item1"),
@@ -458,32 +466,32 @@ const SurfcampsPortugal = () => {
         title={t("portugal_6_part_linked_image_element_title")}
         items={[
           {
-            img: imgGallery1,
+            img: "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/SurfcampPortugal/Kategorien/Surfcamps-Portugal-Natur.jpg",
             shadow: "80",
             title: t("portugal_6_part_linked_image_element_item1"),
           },
           {
-            img: imgGallery2,
+            img: "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/SurfcampPortugal/Kategorien/Surfurlaub-Portugal-Einzelzimmer.jpg",
             shadow: "80",
             title: t("portugal_6_part_linked_image_element_item2"),
           },
           {
-            img: imgGallery3,
+            img: "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/SurfcampPortugal/Kategorien/Surf-Mountainbike-Urlaub-Portugal.jpg",
             shadow: "80",
             title: t("portugal_6_part_linked_image_element_item3"),
           },
           {
-            img: imgGallery4,
+            img: "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/SurfcampPortugal/Kategorien/Surfcamps-Portugal-Kostenfreie-Stornierung.jpg",
             shadow: "80",
             title: t("portugal_6_part_linked_image_element_item4"),
           },
           {
-            img: imgGallery5,
+            img: "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/SurfcampPortugal/Kategorien/Low-Budget-Surfcamps-Portugal.jpg",
             shadow: "80",
             title: t("portugal_6_part_linked_image_element_item5"),
           },
           {
-            img: imgGallery6,
+            img: "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/SurfcampPortugal/Kategorien/Surf-Yoga-Camps-Portugal.jpg",
             shadow: "80",
             title: t("portugal_6_part_linked_image_element_item6"),
           },
@@ -494,7 +502,8 @@ const SurfcampsPortugal = () => {
         description="Freust du dich über ein gemeinsamen Grillabend am Lagerfeuer, willst danach aber schnell ins Bett, um fit für die Wellen am nächsten Morgen zu sein? Dann entdecke unsere beliebtesten Surfcamps für die richtige Balance zwischen Action in den Wellen und Erholung in der Natur:"
         items={[
           {
-            cardImage: cardImage,
+            cardImage:
+              "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/images/cardImage.jpg",
             title: "Umgeben von Natur: Surfcamp im entspannten Sagres",
             location: "Sagres, Portugal",
             calender: "01.04. - 01.12.2022",
@@ -505,7 +514,8 @@ const SurfcampsPortugal = () => {
             ab: "Ab",
           },
           {
-            cardImage: cardImage,
+            cardImage:
+              "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/images/cardImage.jpg",
             title: "Chill in Surfhaus mit Blick auf's Meer im Surfer-Paradies",
             location: "Ericeira, Portugal",
             calender: "01.04. - 04.01.",
@@ -516,7 +526,8 @@ const SurfcampsPortugal = () => {
             ab: "Ab",
           },
           {
-            cardImage: cardImage,
+            cardImage:
+              "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/images/cardImage.jpg",
             title: "Gemütliches Surfhaus direkt am Surfspot",
             location: "Peniche, Portugal",
             calender: "Ganzjährig geöffnet",
@@ -527,7 +538,8 @@ const SurfcampsPortugal = () => {
             ab: "Ab",
           },
           {
-            cardImage: cardImage,
+            cardImage:
+              "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/images/cardImage.jpg",
             title: "Familiäres Surfhaus im unberührten Norden Portugals",
             location: "Estela, Portugal",
             calender: "01.03. - 01.11.2022",
@@ -538,7 +550,8 @@ const SurfcampsPortugal = () => {
             ab: "Ab",
           },
           {
-            cardImage: cardImage,
+            cardImage:
+              "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/images/cardImage.jpg",
             title: "Surfen und Yoga: Wohlfühlurlaub in der Natur",
             location: "Lagos, Portugal",
             calender: "28.03. - 07.11.2022",
@@ -549,7 +562,8 @@ const SurfcampsPortugal = () => {
             ab: "Ab",
           },
           {
-            cardImage: cardImage,
+            cardImage:
+              "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/images/cardImage.jpg",
             title: "Surfurlaub für Familien: Natur & Spaß am Strand",
             location: "Areia Branca, Portugal",
             calender: "20.03. - 31.10.2022",
@@ -560,7 +574,8 @@ const SurfcampsPortugal = () => {
             ab: "Ab",
           },
           {
-            cardImage: cardImage,
+            cardImage:
+              "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/images/cardImage.jpg",
             title: "Beachlodge Surfcamp im sonnigen Winter Portugals",
             location: "Lourinhã, Portugal",
             calender: "30.10. - 27.03.",
@@ -571,7 +586,8 @@ const SurfcampsPortugal = () => {
             ab: "Ab",
           },
           {
-            cardImage: cardImage,
+            cardImage:
+              "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/images/cardImage.jpg",
             title: "Surf- & Yoga-Urlaub im Eco-Hotel am Ozean",
             location: "Viana do Castelo, Portugal",
             calender: "30.04. - 10.11.2022",
@@ -582,7 +598,8 @@ const SurfcampsPortugal = () => {
             ab: "Ab",
           },
           {
-            cardImage: cardImage,
+            cardImage:
+              "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/images/cardImage.jpg",
             title: "Surfhaus mit Dachterrasse direkt am Surfspot",
             location: "Ericeira, Portugal",
             calender: "01.04. - 30.10.2022",
@@ -593,7 +610,8 @@ const SurfcampsPortugal = () => {
             ab: "Ab",
           },
           {
-            cardImage: cardImage,
+            cardImage:
+              "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/images/cardImage.jpg",
             title: "Ganzheitliches Surfcamp für Naturliebhaber",
             location: "Lagoa, Portugal",
             calender: "Ganzjährig geöffnet",
@@ -604,7 +622,8 @@ const SurfcampsPortugal = () => {
             ab: "Ab",
           },
           {
-            cardImage: cardImage,
+            cardImage:
+              "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/images/cardImage.jpg",
             title: "Surfcamp am Praia Azul: Surfen an abgelegenen Spots",
             location: "Santa Cruz, Portugal",
             calender: "21.03. - 30.10.2022",
@@ -615,7 +634,8 @@ const SurfcampsPortugal = () => {
             ab: "Ab",
           },
           {
-            cardImage: cardImage,
+            cardImage:
+              "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/images/cardImage.jpg",
             title: "Familien Surfurlaub am langen Sandstrand",
             location: "Peniche, Portugal",
             calender: "01.02. - 23.12.",
@@ -626,7 +646,8 @@ const SurfcampsPortugal = () => {
             ab: "Ab",
           },
           {
-            cardImage: cardImage,
+            cardImage:
+              "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/images/cardImage.jpg",
             title: "Surf Lodge in Santa Cruz: Umgeben von über 30 Surfspots",
             location: "Santa Cruz, Portugal",
             calender: "20.03. - 18.12.",
@@ -637,7 +658,8 @@ const SurfcampsPortugal = () => {
             ab: "Ab",
           },
           {
-            cardImage: cardImage,
+            cardImage:
+              "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/images/cardImage.jpg",
             title: "Mission-to-Surf: Lass deine Träume wahr werden",
             location: "Vale Da Telha, Portugal",
             calender: "30.03. - 21.11.2022",
@@ -648,7 +670,8 @@ const SurfcampsPortugal = () => {
             ab: "Ab",
           },
           {
-            cardImage: cardImage,
+            cardImage:
+              "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/images/cardImage.jpg",
             title: "Surfen & Mountainbiken inmitten der Natur",
             location: "Areia Branca, Portugal",
             calender: "20.03. - 31.10.2022",
@@ -659,7 +682,8 @@ const SurfcampsPortugal = () => {
             ab: "Ab",
           },
           {
-            cardImage: cardImage,
+            cardImage:
+              "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/images/cardImage.jpg",
             title: "Gemütliche Villa: Surfen, Natur und leckeres Essen",
             location: "Lagos, Portugal",
             calender: "28.03. - 07.11.2022",
@@ -670,7 +694,8 @@ const SurfcampsPortugal = () => {
             ab: "Ab",
           },
           {
-            cardImage: cardImage,
+            cardImage:
+              "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/images/cardImage.jpg",
             title: "Surf-Erlebnis mit Hotelkomfort in Peniche",
             location: "Peniche, Portugal",
             calender: "01.02. - 23.12.",
@@ -681,7 +706,8 @@ const SurfcampsPortugal = () => {
             ab: "Ab",
           },
           {
-            cardImage: cardImage,
+            cardImage:
+              "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/images/cardImage.jpg",
             title: "Yoga- & Surf-Reise im modernen Haus in Ericeira",
             location: "Ericeira, Portugal",
             calender: "Ganzjährig geöffnet",
@@ -697,7 +723,9 @@ const SurfcampsPortugal = () => {
       <DividerImg
         align="center"
         title={t("portugal_big_divider_with_image_bg_title")}
-        image={dividerImage}
+        image={
+          "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/SurfcampPortugal/Divider/surfcamps-portugal.jpg"
+        }
         buttonTitle={t("portugal_big_divider_with_image_bg_button")}
       />
       <SingleColImg
@@ -705,17 +733,18 @@ const SurfcampsPortugal = () => {
         description={t("portugal_3_linked_image_element_subtitle")}
         items={[
           {
-            img: Col31,
+            img: "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/SurfcampPortugal/Vorkenntnisse/Surfcamps-Portugal-Anfänger.jpg",
+
             title: t("portugal_3_linked_image_element_tab1_title"),
             description: t("portugal_3_linked_image_element_tab1_text"),
           },
           {
-            img: Col32,
+            img: "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/SurfcampPortugal/Vorkenntnisse/Surfcamps-Portugal_Intermediates.jpg",
             title: t("portugal_3_linked_image_element_tab2_title"),
             description: t("portugal_3_linked_image_element_tab2_text"),
           },
           {
-            img: Col33,
+            img: "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/SurfcampPortugal/Vorkenntnisse/Surfari-Surf-Guiding-Portugal.jpg",
             title: t("portugal_3_linked_image_element_tab3_title"),
             description: t("portugal_3_linked_image_element_tab3_text"),
           },
@@ -726,7 +755,9 @@ const SurfcampsPortugal = () => {
         align="left"
         title="Gemeinsam für den Klimaschutz"
         description="Für jede Buchung im Dezember spenden wir 20 € an Ocean Patrol in Portugal!"
-        image={Besonderheiten}
+        image={
+          "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/images/Besonderheiten.jpg"
+        }
         dark={true}
         buttonTitle="Mehr erfahren"
       />
@@ -736,42 +767,48 @@ const SurfcampsPortugal = () => {
           {
             rateName: "Amelie",
             rateDesc: t("portugal_review_element_text1"),
-            rateImage: RateImg,
+            rateImage:
+              "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/images/g1.jpg",
             rateCalendar: "28.09.2021",
             rateFootNote: t("portugal_review_element_more1"),
           },
           {
             rateName: "Taty",
             rateDesc: t("portugal_review_element_text2"),
-            rateImage: RateImg,
+            rateImage:
+              "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/images/g1.jpg",
             rateCalendar: "03.12.2021",
             rateFootNote: t("portugal_review_element_more2"),
           },
           {
             rateName: "Sarah",
             rateDesc: t("portugal_review_element_text3"),
-            rateImage: RateImg,
+            rateImage:
+              "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/images/g1.jpg",
             rateCalendar: "28.09.2021",
             rateFootNote: t("portugal_review_element_more3"),
           },
           {
             rateName: "Christine",
             rateDesc: t("portugal_review_element_text4"),
-            rateImage: RateImg,
+            rateImage:
+              "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/images/g1.jpg",
             rateCalendar: "30.07.2021",
             rateFootNote: t("portugal_review_element_more4"),
           },
           {
             rateName: "Pia",
             rateDesc: t("portugal_review_element_text5"),
-            rateImage: RateImg,
+            rateImage:
+              "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/images/g1.jpg",
             rateCalendar: "28.09.2021",
             rateFootNote: t("portugal_review_element_more5"),
           },
           {
             rateName: "Melina",
             rateDesc: t("portugal_review_element_text6"),
-            rateImage: RateImg,
+            rateImage:
+              "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/images/g1.jpg",
             rateCalendar: "19.08.2021",
             rateFootNote: t("portugal_review_element_more6"),
           },
@@ -790,7 +827,9 @@ const SurfcampsPortugal = () => {
         ]}
         formTextarea={t("portugal_contact_us_input_write_message")}
         formButton={t("portugal_contact_us_input_send_message")}
-        cardImageSrc={Contact}
+        cardImageSrc={
+          "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/images/contact.jpg"
+        }
         cardTitle={t("portugal_contact_us_card_title")}
         cardDesc={t("portugal_contact_us_card_subtitle")}
         cardItems={[

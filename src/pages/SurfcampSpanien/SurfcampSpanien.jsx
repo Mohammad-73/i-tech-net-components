@@ -14,53 +14,24 @@ import Hero from "../../components/Hero/Hero";
 import HintSection from "../../components/HintSection/HintSection";
 //Description
 import Description from "../../components/Description/Description";
-import Kantabrien from "../../assets/spanien/Regionen-Tab-Element/Surfcamps-Kantabrien-Spanien.jpg";
-import Baskenland from "../../assets/spanien/Regionen-Tab-Element/Surfcamps-Baskenland-Spanien.jpg";
-import Andalusien from "../../assets/spanien/Regionen-Tab-Element/Surfcamps-Andalusien-Spanien.jpg";
-import Fuerteventura from "../../assets/spanien/Regionen-Tab-Element/Surfcamps-Fuerteventura.jpg";
-import Teneriffa from "../../assets/spanien/Regionen-Tab-Element/Surfcamps-Teneriffa.jpg";
-import Gran from "../../assets/spanien/Regionen-Tab-Element/Surfcamps-Gran-Canaria.jpg";
-import cardImage from "../../assets/images/cardImage.jpg";
 // ImageGalleryFivePic
 import ImageGalleryFivePic from "../../components/ImageGalleryFivePic/ImageGalleryFivePic";
-import image1 from "../../assets/spanien/Zielgruppe/Surfcamps-Spanien-Alleinreisende.jpg";
-import image2 from "../../assets/spanien/Zielgruppe/Surfcamps-Spanien-Gruppen-Freunde.jpg";
-import image3 from "../../assets/spanien/Zielgruppe/Familien-Surfurlaub-Spanien.jpg";
-import image4 from "../../assets/spanien/Zielgruppe/Surfcamps-Spanien-Paare.jpg";
-import image5 from "../../assets/spanien/Zielgruppe/Junior-Surfcamps-Spanien.jpg";
 // ListAndImage
 import ListAndImage from "../../components/ListAndImage/ListAndImage";
-import ListAndImage1 from "../../assets/spanien/Vorteile-Divider/Surfcamps-Spanien-Besonderheiten.jpg";
-import ListAndImage2 from "../../assets/spanien/Unterkungt-RL/Surfcamps-Spanien_Surfhaeuser-Lodges.jpg";
-import ListAndImage3 from "../../assets/spanien/Unterkungt-RL/Surfcamps-Spanien_Campingplatz.jpg";
-import ListAndImage4 from "../../assets/spanien/Unterkungt-RL/Surfurlaub-Spanien_private-apartments.jpg";
 //SingleCardSection
 import SingleCardSection from "../../components/SingleCardSection/SingleCardSection";
 // ColorDivider
 import ColorDivider from "../../components/ColorDivider/ColorDivider";
 //SingleColImg
 import SingleColImg from "../../components/SingleColImg/SingleColImg";
-import Col31 from "../../assets/spanien/Vorkenntnisse/Surfcamps-Spanien-Anfaenger.jpg";
-import Col32 from "../../assets/spanien/Vorkenntnisse/Surfcamps-Spanien-Intermediates.jpg";
-import Col33 from "../../assets/spanien/Vorkenntnisse/Surfari-Surf-Guiding-Spanien.jpg";
 //ImageGallery3
 import ImageGallery3 from "../../components/ImageGallery3/ImageGallery3";
-import imgGallery1 from "../../assets/spanien/Kategorien-6er/Surfcamps-Spanien-Natur.jpg";
-import imgGallery2 from "../../assets/spanien/Kategorien-6er/Nachhaltiges-Surfcamp-Spanien.jpg";
-import imgGallery3 from "../../assets/spanien/Kategorien-6er/Low-Budget_Surfcamps-Spanien.jpg";
-import imgGallery4 from "../../assets/spanien/Kategorien-6er/Surfcamps-Spanien_flexible-Stornierung.jpg";
-import imgGallery5 from "../../assets/spanien/Kategorien-6er/Surf-Skate-Camp-Spanien.jpg";
-import imgGallery6 from "../../assets/spanien/Kategorien-6er/Surf-Yoga-Camps-Spanien.jpg";
 //DividerImg
 import DividerImg from "../../components/DividerImg/DividerImg";
-import Besonderheiten from "../../assets/spanien/Kunden-Divider/surfcamp-spanin-bewertung.png";
 //RateCardSection
 import RateCardSection from "../../components/RateCardSection/RateCardSection";
-import RateImg from "../../assets/images/g1.jpg";
 //ContactUsSection
 import ContactUsSection from "../../components/ContactUsSection/ContactUsSection";
-import Contact from "../../assets/images/contact.jpg";
-
 //TagSection
 import TagSection from "../../components/TagSection/TagSection";
 
@@ -108,14 +79,17 @@ const SurfcampSpanien = () => {
         tabCols="lg:grid-cols-6"
         tabContents={[
           {
-            detailsImage: Kantabrien,
+            detailsImage:
+              "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/spanien/Regionen-Tab-Element/Surfcamps-Kantabrien-Spanien.jpg",
+
             detailsTitle: t("spain_big_tab_tab1_title"),
             detailsDesc: t("spain_big_tab_tab1_text"),
             detailsReadMore: "",
             cardTitle: t("spain_big_tab_tab1_more"),
             cardItems: [
               {
-                cardImage: cardImage,
+                cardImage:
+                  "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/images/cardImage.jpg",
                 title: "Surfcamp im Nationalpark in Kantabrien",
                 location: "Ruilobuca, Spanien",
                 calender: "28.05. - 17.09.2022",
@@ -126,7 +100,8 @@ const SurfcampSpanien = () => {
                 ab: "Ab",
               },
               {
-                cardImage: cardImage,
+                cardImage:
+                  "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/images/cardImage.jpg",
                 title:
                   "Surfhaus in Nordspanien: Surfen, Party & perfekte Vibes",
                 location: "Somo, Spanien",
@@ -138,7 +113,8 @@ const SurfcampSpanien = () => {
                 ab: "Ab",
               },
               {
-                cardImage: cardImage,
+                cardImage:
+                  "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/images/cardImage.jpg",
                 title: "Surfcamp im Naturpark Oyambre",
                 location: "Oyambre, Spanien",
                 calender: "10.06. - 25.09.2022",
@@ -149,7 +125,8 @@ const SurfcampSpanien = () => {
                 ab: "Ab",
               },
               {
-                cardImage: cardImage,
+                cardImage:
+                  "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/images/cardImage.jpg",
                 title: "Moderne Surf Lodge am Traumstrand von Loredo",
                 location: "Loredo, Spanien",
                 calender: "04.04. - 14.11.2022",
@@ -163,14 +140,16 @@ const SurfcampSpanien = () => {
             cardCols: "lg:grid-cols-4",
           },
           {
-            detailsImage: Baskenland,
+            detailsImage:
+              "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/spanien/Regionen-Tab-Element/Surfcamps-Baskenland-Spanien.jpg",
             detailsTitle: t("spain_big_tab_tab2_title"),
             detailsDesc: t("spain_big_tab_tab2_text"),
             detailsReadMore: "",
             cardTitle: t("spain_big_tab_tab2_more"),
             cardItems: [
               {
-                cardImage: cardImage,
+                cardImage:
+                  "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/images/cardImage.jpg",
                 title: "Surf & Skate Hostel mit baskischem Flair",
                 location: "Urduliz, Spanien",
                 calender: "09.06. - 29.10.2022",
@@ -184,14 +163,16 @@ const SurfcampSpanien = () => {
             cardCols: "lg:grid-cols-4",
           },
           {
-            detailsImage: Andalusien,
+            detailsImage:
+              "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/spanien/Regionen-Tab-Element/Surfcamps-Andalusien-Spanien.jpg",
             detailsTitle: t("spain_big_tab_tab3_title"),
             detailsDesc: t("spain_big_tab_tab3_text"),
             detailsReadMore: "",
             cardTitle: t("spain_big_tab_tab3_more"),
             cardItems: [
               {
-                cardImage: cardImage,
+                cardImage:
+                  "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/images/cardImage.jpg",
                 title:
                   "Surf-Finca mit Pool, Sauna & großem Garten in Andalusien",
                 location: "Conil De La Frontera, Spanien",
@@ -203,7 +184,8 @@ const SurfcampSpanien = () => {
                 ab: "Ab",
               },
               {
-                cardImage: cardImage,
+                cardImage:
+                  "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/images/cardImage.jpg",
                 title: "Longboard-Surfen und Yoga-Retreat am Strand",
                 location: "El Plamar, Spaniens",
                 calender: "18.12. - 25.12.2021",
@@ -214,7 +196,8 @@ const SurfcampSpanien = () => {
                 ab: "Ab",
               },
               {
-                cardImage: cardImage,
+                cardImage:
+                  "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/images/cardImage.jpg",
                 title: "Surfcamp in der wärmsten Region Europas",
                 location: "El Palmar, Spanien",
                 calender: "13.09.2021 - 29.05.2022",
@@ -225,7 +208,8 @@ const SurfcampSpanien = () => {
                 ab: "Ab",
               },
               {
-                cardImage: cardImage,
+                cardImage:
+                  "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/images/cardImage.jpg",
                 title: "Surfhaus mit Apartments im Süden Spaniens",
                 location: "Conil De La Frontera, Spanien",
                 calender: "Ganzjährig geöffnet",
@@ -239,14 +223,16 @@ const SurfcampSpanien = () => {
             cardCols: "lg:grid-cols-4",
           },
           {
-            detailsImage: Fuerteventura,
+            detailsImage:
+              "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/spanien/Regionen-Tab-Element/Surfcamps-Fuerteventura.jpg",
             detailsTitle: t("spain_big_tab_tab4_title"),
             detailsDesc: t("spain_big_tab_tab4_text"),
             detailsReadMore: "",
             cardTitle: t("spain_big_tab_tab4_more"),
             cardItems: [
               {
-                cardImage: cardImage,
+                cardImage:
+                  "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/images/cardImage.jpg",
                 title: "Surfcamp mit Pool am Strand von Fuerteventura",
                 location: "Corralejo, Fuerteventura",
                 calender: "Ganzjährig geöffnet",
@@ -257,7 +243,8 @@ const SurfcampSpanien = () => {
                 ab: "Ab",
               },
               {
-                cardImage: cardImage,
+                cardImage:
+                  "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/images/cardImage.jpg",
                 title:
                   "Surfen in der Sonne: Gemütliche Surfvilla in El Cotillo",
                 location: "El Cotillo, Fuerteventura",
@@ -269,7 +256,8 @@ const SurfcampSpanien = () => {
                 ab: "Ab",
               },
               {
-                cardImage: cardImage,
+                cardImage:
+                  "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/images/cardImage.jpg",
                 title: "Surfcamp in Corralejo: Chillen, Surfen & neue Leute",
                 location: "Corralejo, Fuerteventura",
                 calender: "Ganzjährig geöffnet",
@@ -280,7 +268,8 @@ const SurfcampSpanien = () => {
                 ab: "Ab",
               },
               {
-                cardImage: cardImage,
+                cardImage:
+                  "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/images/cardImage.jpg",
                 title:
                   "Familiäre Surfvilla in El Cotillo: Surfen & Yoga im Paradies",
                 location: "El Cotillo, Fuerteventura",
@@ -295,14 +284,16 @@ const SurfcampSpanien = () => {
             cardCols: "lg:grid-cols-4",
           },
           {
-            detailsImage: Teneriffa,
+            detailsImage:
+              "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/spanien/Regionen-Tab-Element/Surfcamps-Teneriffa.jpg",
             detailsTitle: t("spain_big_tab_tab5_title"),
             detailsDesc: t("spain_big_tab_tab5_text"),
             detailsReadMore: "",
             cardTitle: t("spain_big_tab_tab5_more"),
             cardItems: [
               {
-                cardImage: cardImage,
+                cardImage:
+                  "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/images/cardImage.jpg",
                 title: "Surfcamp mit entspannter Atmosphäre",
                 location: "Adeje, Teneriffa",
                 calender: "Ganzjährig geöffnet",
@@ -313,7 +304,8 @@ const SurfcampSpanien = () => {
                 ab: "Ab",
               },
               {
-                cardImage: cardImage,
+                cardImage:
+                  "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/images/cardImage.jpg",
                 title: "Surfhaus im ursprünglichen Küstenort El Poris ",
                 location: "El Poris, Teneriffa",
                 calender: "Ganzjährig geöffnet",
@@ -324,7 +316,8 @@ const SurfcampSpanien = () => {
                 ab: "Ab",
               },
               {
-                cardImage: cardImage,
+                cardImage:
+                  "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/images/cardImage.jpg",
                 title: "Surfhaus auf Teneriffa: Natur, Leidenschaft & Spaß",
                 location: "Adeje, Teneriffa",
                 calender: "Ganzjährig geöffnet",
@@ -335,7 +328,8 @@ const SurfcampSpanien = () => {
                 ab: "Ab",
               },
               {
-                cardImage: cardImage,
+                cardImage:
+                  "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/images/cardImage.jpg",
                 title: "Modernes Surf & Yoga Haus mit Dachterrasse",
                 location: "Adeje, Teneriffa",
                 calender: "Ganzjährig geöffnet",
@@ -349,14 +343,16 @@ const SurfcampSpanien = () => {
             cardCols: "lg:grid-cols-4",
           },
           {
-            detailsImage: Gran,
+            detailsImage:
+              "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/spanien/Regionen-Tab-Element/Surfcamps-Gran-Canaria.jpg",
             detailsTitle: t("spain_big_tab_tab6_title"),
             detailsDesc: t("spain_big_tab_tab6_text"),
             detailsReadMore: "",
             cardTitle: t("spain_big_tab_tab6_more"),
             cardItems: [
               {
-                cardImage: cardImage,
+                cardImage:
+                  "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/images/cardImage.jpg",
                 title: "Surfurlaub in direkter Strandlage in Las Palmas",
                 location: "Las Palmas, Gran Canaria",
                 calender: "Ganzjährig geöffnet",
@@ -367,7 +363,8 @@ const SurfcampSpanien = () => {
                 ab: "Ab",
               },
               {
-                cardImage: cardImage,
+                cardImage:
+                  "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/images/cardImage.jpg",
                 title: "Surfen & Yoga: Erlebe die Magie von Las Palmas",
                 location: "Las Palmas, Gran Canaria",
                 calender: "Ganzjährig geöffnet",
@@ -378,7 +375,8 @@ const SurfcampSpanien = () => {
                 ab: "Ab",
               },
               {
-                cardImage: cardImage,
+                cardImage:
+                  "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/images/cardImage.jpg",
                 title: "Buntes Surfhostel mit Charme auf Gran Canaria",
                 location: "San Felipe, Gran Canaria",
                 calender: "Ganzjährig geöffnet",
@@ -389,7 +387,8 @@ const SurfcampSpanien = () => {
                 ab: "Ab",
               },
               {
-                cardImage: cardImage,
+                cardImage:
+                  "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/images/cardImage.jpg",
                 title: "Surfhaus mit Dachterrasse am Strand von Las Palmas",
                 location: "Las Palmas, Gran Canaria",
                 calender: "Ganzjährig geöffnet",
@@ -408,28 +407,31 @@ const SurfcampSpanien = () => {
         title={t("spain_5_clickable_boxes_title")}
         description={t("spain_5_clickable_boxes_subtitle")}
         image1={{
-          img: image1,
+          img: "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/spanien/Zielgruppe/Surfcamps-Spanien-Alleinreisende.jpg",
+
           title: t("spain_5_clickable_boxes_item1_title"),
         }}
         image2={{
-          img: image2,
+          img: "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/spanien/Zielgruppe/Surfcamps-Spanien-Gruppen-Freunde.jpg",
           title: t("spain_5_clickable_boxes_item2_title"),
         }}
         image3={{
-          img: image3,
+          img: "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/spanien/Zielgruppe/Familien-Surfurlaub-Spanien.jpg",
           title: t("spain_5_clickable_boxes_item3_title"),
         }}
         image4={{
-          img: image4,
+          img: "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/spanien/Zielgruppe/Surfcamps-Spanien-Paare.jpg",
           title: t("spain_5_clickable_boxes_item4_title"),
         }}
         image5={{
-          img: image5,
+          img: "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/spanien/Zielgruppe/Junior-Surfcamps-Spanien.jpg",
           title: t("spain_5_clickable_boxes_item5_title"),
         }}
       />
       <ListAndImage
-        image={ListAndImage1}
+        image={
+          "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/spanien/Vorteile-Divider/Surfcamps-Spanien-Besonderheiten.jpg"
+        }
         title={t("spain_divider_with_symbol_title")}
         items={[
           t("spain_divider_with_symbol_item1"),
@@ -441,20 +443,26 @@ const SurfcampSpanien = () => {
       <ListAndImage
         mainTitle={t("spain_text_and_image_element_title")}
         mainDescription={t("spain_text_and_image_element_subtitle")}
-        image={ListAndImage2}
+        image={
+          "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/spanien/Unterkungt-RL/Surfcamps-Spanien_Surfhaeuser-Lodges.jpg"
+        }
         title={t("spain_text_and_image_element_item1_title")}
         description={t("spain_text_and_image_element_item1_subtitle")}
         readMore={t("spain_text_and_image_element_item1_more")}
       />
       <ListAndImage
         imgAlign="right"
-        image={ListAndImage3}
+        image={
+          "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/spanien/Unterkungt-RL/Surfcamps-Spanien_Campingplatz.jpg"
+        }
         title={t("spain_text_and_image_element_item2_title")}
         description={t("spain_text_and_image_element_item2_subtitle")}
         readMore={t("spain_text_and_image_element_item2_more")}
       />
       <ListAndImage
-        image={ListAndImage4}
+        image={
+          "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/spanien/Unterkungt-RL/Surfurlaub-Spanien_private-apartments.jpg"
+        }
         title={t("spain_text_and_image_element_item3_title")}
         description={t("spain_text_and_image_element_item3_subtitle")}
         readMore={t("spain_text_and_image_element_item3_more")}
@@ -464,7 +472,8 @@ const SurfcampSpanien = () => {
         description={t("spain_offer_element_subtitle")}
         items={[
           {
-            cardImage: cardImage,
+            cardImage:
+              "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/images/cardImage.jpg",
             title: "Surfurlaub in direkter Strandlage in Las Palmas",
             location: "Las Palmas, Gran Canaria",
             calender: "Ganzjährig geöffnet",
@@ -475,7 +484,8 @@ const SurfcampSpanien = () => {
             ab: "Ab",
           },
           {
-            cardImage: cardImage,
+            cardImage:
+              "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/images/cardImage.jpg",
             title: "Surfcamp in der wärmsten Region Europas",
             location: "El Palmar, Spanien",
             calender: "13.09.2021 - 29.05.2022",
@@ -486,7 +496,8 @@ const SurfcampSpanien = () => {
             ab: "Ab",
           },
           {
-            cardImage: cardImage,
+            cardImage:
+              "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/images/cardImage.jpg",
             title: "Surfcamp in Corralejo: Chillen, Surfen & neue Leute",
             location: "Corralejo, Fuerteventura",
             calender: "Ganzjährig geöffnet",
@@ -497,7 +508,8 @@ const SurfcampSpanien = () => {
             ab: "Ab",
           },
           {
-            cardImage: cardImage,
+            cardImage:
+              "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/images/cardImage.jpg",
             title: "Surfhaus auf Teneriffa: Natur, Leidenschaft & Spaß",
             location: "Adeje, Teneriffa",
             calender: "Ganzjährig geöffnet",
@@ -508,7 +520,8 @@ const SurfcampSpanien = () => {
             ab: "Ab",
           },
           {
-            cardImage: cardImage,
+            cardImage:
+              "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/images/cardImage.jpg",
             title: "Surf-Hostel in Andalusien: Sonne und entspannte Vibes",
             location: "Conil De La Frontera, Spanien",
             calender: "Ganzjährig geöffnet",
@@ -519,7 +532,8 @@ const SurfcampSpanien = () => {
             ab: "Ab",
           },
           {
-            cardImage: cardImage,
+            cardImage:
+              "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/images/cardImage.jpg",
             title: "Dein Surferlebnis zwischen Klippen und Vulkanen",
             location: "Caleta de Famara, Lanzarote",
             calender: "Ganzjährig geöffnet",
@@ -530,7 +544,8 @@ const SurfcampSpanien = () => {
             ab: "Ab",
           },
           {
-            cardImage: cardImage,
+            cardImage:
+              "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/images/cardImage.jpg",
             title: "Surfen in der Sonne: Gemütliche Surfvilla in El Cotillo",
             location: "El Cotillo, Fuerteventura",
             calender: "Ganzjährig geöffnet",
@@ -541,7 +556,8 @@ const SurfcampSpanien = () => {
             ab: "Ab",
           },
           {
-            cardImage: cardImage,
+            cardImage:
+              "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/images/cardImage.jpg",
             title: "Surfhaus in Kantabrien: Ruhe, Natur & Wellen",
             location: "Loredo, Spanien",
             calender: "03.04. - 15.11.2022",
@@ -552,7 +568,8 @@ const SurfcampSpanien = () => {
             ab: "Ab",
           },
           {
-            cardImage: cardImage,
+            cardImage:
+              "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/images/cardImage.jpg",
             title: "Buntes Surfhostel mit Charme auf Gran Canaria",
             location: "San Felipe, Gran Canaria",
             calender: "Ganzjährig geöffnet",
@@ -563,7 +580,8 @@ const SurfcampSpanien = () => {
             ab: "Ab",
           },
           {
-            cardImage: cardImage,
+            cardImage:
+              "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/images/cardImage.jpg",
             title: "Surfcamp mit entspannter Atmosphäre",
             location: "Adeje, Teneriffa",
             calender: "Ganzjährig geöffnet",
@@ -574,7 +592,8 @@ const SurfcampSpanien = () => {
             ab: "Ab",
           },
           {
-            cardImage: cardImage,
+            cardImage:
+              "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/images/cardImage.jpg",
             title: "Surfcamp im Nationalpark in Kantabrien",
             location: "Ruilobuca, Spanien",
             calender: "28.05. - 17.09.2022",
@@ -585,7 +604,8 @@ const SurfcampSpanien = () => {
             ab: "Ab",
           },
           {
-            cardImage: cardImage,
+            cardImage:
+              "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/images/cardImage.jpg",
             title: "Longboard-Surfen und Yoga-Retreat am Strand",
             location: "El Plamar, Spanien",
             calender: "18.12. - 25.12.2021",
@@ -596,7 +616,8 @@ const SurfcampSpanien = () => {
             ab: "Ab",
           },
           {
-            cardImage: cardImage,
+            cardImage:
+              "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/images/cardImage.jpg",
             title: "Surf-Abenteuer im idyllischen Norden Lanzarotes",
             location: "Caleta de Famara, Lanzarote",
             calender: "Ganzjährig geöffnet",
@@ -607,7 +628,8 @@ const SurfcampSpanien = () => {
             ab: "Ab",
           },
           {
-            cardImage: cardImage,
+            cardImage:
+              "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/images/cardImage.jpg",
             title:
               "Familiäre Surfvilla in El Cotillo: Surfen & Yoga im Paradies",
             location: "El Cotillo, Fuerteventura",
@@ -619,7 +641,8 @@ const SurfcampSpanien = () => {
             ab: "Ab",
           },
           {
-            cardImage: cardImage,
+            cardImage:
+              "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/images/cardImage.jpg",
             title: "Surfhaus in Nordspanien: Surfen, Party & perfekte Vibes",
             location: "Somo, Spanien",
             calender: "04.04. - 14.11.2022",
@@ -630,7 +653,8 @@ const SurfcampSpanien = () => {
             ab: "Ab",
           },
           {
-            cardImage: cardImage,
+            cardImage:
+              "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/images/cardImage.jpg",
             title: "Surfhaus mit Dachterrasse am Strand von Las Palmas",
             location: "Las Palmas, Gran Canaria",
             calender: "Ganzjährig geöffnet",
@@ -641,7 +665,8 @@ const SurfcampSpanien = () => {
             ab: "Ab",
           },
           {
-            cardImage: cardImage,
+            cardImage:
+              "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/images/cardImage.jpg",
             title: "Surf & Skate Hostel mit baskischem Flair",
             location: "Urduliz, Spanien",
             calender: "09.06. - 29.10.2022",
@@ -652,7 +677,8 @@ const SurfcampSpanien = () => {
             ab: "Ab",
           },
           {
-            cardImage: cardImage,
+            cardImage:
+              "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/images/cardImage.jpg",
             title: "Moderne Surf Lodge am Traumstrand von Loredo",
             location: "Loredo, Spanien",
             calender: "04.04. - 14.11.2022",
@@ -663,7 +689,8 @@ const SurfcampSpanien = () => {
             ab: "Ab",
           },
           {
-            cardImage: cardImage,
+            cardImage:
+              "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/images/cardImage.jpg",
             title: "Surf & Yoga Urlaub am einsamen Strand",
             location: "El Poris, Teneriffa",
             calender: "Ganzjährig geöffnet",
@@ -674,7 +701,8 @@ const SurfcampSpanien = () => {
             ab: "Ab",
           },
           {
-            cardImage: cardImage,
+            cardImage:
+              "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/images/cardImage.jpg",
             title: "Surfen & Yoga: Erlebe die Magie von Las Palmas",
             location: "Las Palmas, Gran Canaria",
             calender: "Ganzjährig geöffnet",
@@ -697,17 +725,18 @@ const SurfcampSpanien = () => {
         description={t("spain_3_clickable_boxes_subtitle")}
         items={[
           {
-            img: Col31,
+            img: "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/spanien/Vorkenntnisse/Surfcamps-Spanien-Anfaenger.jpg",
+
             title: t("spain_3_clickable_boxes_item1_title"),
             description: t("spain_3_clickable_boxes_item1_subtitle"),
           },
           {
-            img: Col32,
+            img: "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/spanien/Vorkenntnisse/Surfcamps-Spanien-Intermediates.jpg",
             title: t("spain_3_clickable_boxes_item2_title"),
             description: t("spain_3_clickable_boxes_item2_subtitle"),
           },
           {
-            img: Col33,
+            img: "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/spanien/Vorkenntnisse/Surfari-Surf-Guiding-Spanien.jpg",
             title: t("spain_3_clickable_boxes_item3_title"),
             description: t("spain_3_clickable_boxes_item3_subtitle"),
           },
@@ -718,32 +747,33 @@ const SurfcampSpanien = () => {
         title={t("spain_6_clickable_boxes_title")}
         items={[
           {
-            img: imgGallery1,
+            img: "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/spanien/Kategorien-6er/Surfcamps-Spanien-Natur.jpg",
+
             shadow: "80",
             title: t("spain_6_clickable_boxes_item1"),
           },
           {
-            img: imgGallery2,
+            img: "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/spanien/Kategorien-6er/Nachhaltiges-Surfcamp-Spanien.jpg",
             shadow: "80",
             title: t("spain_6_clickable_boxes_item2"),
           },
           {
-            img: imgGallery3,
+            img: "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/spanien/Kategorien-6er/Low-Budget_Surfcamps-Spanien.jpg",
             shadow: "80",
             title: t("spain_6_clickable_boxes_item3"),
           },
           {
-            img: imgGallery4,
+            img: "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/spanien/Kategorien-6er/Surfcamps-Spanien_flexible-Stornierung.jpg",
             shadow: "80",
             title: t("spain_6_clickable_boxes_item4"),
           },
           {
-            img: imgGallery5,
+            img: "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/spanien/Kategorien-6er/Surf-Skate-Camp-Spanien.jpg",
             shadow: "80",
             title: t("spain_6_clickable_boxes_item5"),
           },
           {
-            img: imgGallery6,
+            img: "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/spanien/Kategorien-6er/Surf-Yoga-Camps-Spanien.jpg",
             shadow: "80",
             title: t("spain_6_clickable_boxes_item6"),
           },
@@ -753,7 +783,9 @@ const SurfcampSpanien = () => {
         align="left"
         title="Gemeinsam für den Klimaschutz"
         description="Für jede Buchung im Dezember spenden wir 20 € an Ocean Patrol in Portugal!"
-        image={Besonderheiten}
+        image={
+          "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/spanien/Kunden-Divider/surfcamp-spanin-bewertung.png"
+        }
         dark={true}
         buttonTitle="Mehr erfahren"
       />
@@ -763,42 +795,48 @@ const SurfcampSpanien = () => {
           {
             rateName: "Chloe",
             rateDesc: t("spain_review_element_item1_text"),
-            rateImage: RateImg,
+            rateImage:
+              "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/images/g1.jpg",
             rateCalendar: "27.08.2021",
             rateFootNote: t("spain_review_element_item1_more"),
           },
           {
             rateName: "Yves",
             rateDesc: t("spain_review_element_item2_text"),
-            rateImage: RateImg,
+            rateImage:
+              "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/images/g1.jpg",
             rateCalendar: "08.12.2021",
             rateFootNote: t("spain_review_element_item2_more"),
           },
           {
             rateName: "Fabi",
             rateDesc: t("spain_review_element_item3_text"),
-            rateImage: RateImg,
+            rateImage:
+              "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/images/g1.jpg",
             rateCalendar: "22.08.2021",
             rateFootNote: t("spain_review_element_item3_more"),
           },
           {
             rateName: "Christina",
             rateDesc: t("spain_review_element_item4_text"),
-            rateImage: RateImg,
+            rateImage:
+              "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/images/g1.jpg",
             rateCalendar: "06.12.2021",
             rateFootNote: t("spain_review_element_item4_more"),
           },
           {
             rateName: "Ella",
             rateDesc: t("spain_review_element_item5_text"),
-            rateImage: RateImg,
+            rateImage:
+              "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/images/g1.jpg",
             rateCalendar: "27.08.2021",
             rateFootNote: t("spain_review_element_item5_more"),
           },
           {
             rateName: "Alexander",
             rateDesc: t("spain_review_element_item6_text"),
-            rateImage: RateImg,
+            rateImage:
+              "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/images/g1.jpg",
             rateCalendar: "17.08.2021",
             rateFootNote: t("spain_review_element_item6_more"),
           },
@@ -817,7 +855,9 @@ const SurfcampSpanien = () => {
         ]}
         formTextarea={t("spain_contact_us_input_write_message")}
         formButton={t("spain_contact_us_input_send_message")}
-        cardImageSrc={Contact}
+        cardImageSrc={
+          "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/images/contact.jpg"
+        }
         cardTitle={t("spain_contact_us_card_title")}
         cardDesc={t("spain_contact_us_card_subtitle")}
         cardItems={[

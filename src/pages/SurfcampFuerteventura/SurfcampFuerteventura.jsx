@@ -12,46 +12,24 @@ import {
 import Hero from "../../components/Hero/Hero";
 //HorizontalHintSection
 import HorizontalHintSection from "../../components/HorizontalHintSection/HorizontalHintSection";
-
 //ListAndImage
 import ListAndImage from "../../components/ListAndImage/ListAndImage";
-import ListAndImg from "../../assets/SurfcampsFuerteventura/Tab-Element-Regionen/Surfcamp-Vieux-Boucau-Frankreich.jpg";
-import ListAndImg2 from "../../assets/SurfcampsFuerteventura/Unterkunft/Surfurlaub-Apartments.jpg";
 //SingleCardSection
 import SingleCardSection from "../../components/SingleCardSection/SingleCardSection";
-import cardImage from "../../assets/images/cardImage.jpg";
 //ColorDivider
 import ColorDivider from "../../components/ColorDivider/ColorDivider";
 //ImageGallery3
 import ImageGallery3 from "../../components/ImageGallery3/ImageGallery3";
-import imgGallery6 from "../../assets/SurfcampsFuerteventura/Angebote-4er-Elemente/Familien-Surfurlaub-Frankreich.jpg";
-import imgGallery1 from "../../assets/SurfcampsFuerteventura/Angebote-4er-Elemente/Starsurfcamp-Moliets-Frankreich.jpg";
-import imgGallery4 from "../../assets/SurfcampsFuerteventura/Angebote-4er-Elemente/Backwash-Surfcamp-Frankreich-Cap-Ferret.jpg";
-import imgGallery3 from "../../assets/SurfcampsFuerteventura/Angebote-4er-Elemente/Dreamsea-Surf-Yogacamp-Moliets-Frankreich.jpg";
-import imgGallery5 from "../../assets/SurfcampsFuerteventura/Angebote-4er-Elemente/Eco-Surfcamp-Frankreich-Seignosse.jpg";
-import imgGallery2 from "../../assets/SurfcampsFuerteventura/Angebote-4er-Elemente/Surf-Villa-Frankreich-Seignosse.jpg";
 //ImageGalleryWindow
 import ImageGalleryWindow from "../../components/ImageGalleryWindow/ImageGalleryWindow";
-import wImg1 from "../../assets/SurfcampsFuerteventura/Angebote-3er-Elemente/Planet-Surfcamp-Le-Pin-Sec-Frankreich.jpg";
-import wImg2 from "../../assets/SurfcampsFuerteventura/Angebote-3er-Elemente/Pura-Vida-Surf-Lodge-Mimizan-Plage-Frankreich.jpg";
-import wImg3 from "../../assets/SurfcampsFuerteventura/Angebote-3er-Elemente/Dreamsea-Surfcamp-Party-Moliets-Frankreich.jpg";
-import wImg4 from "../../assets/SurfcampsFuerteventura/Angebote-3er-Elemente/Surf-Yoga-Urlaub-Pura-Vida-Lodge-Mimizan-Plage-Frankreich.jpg";
 //SlideDivider
 import SlideDivider from "../../components/SlideDivider/SlideDivider";
-import slideDividerImg from "../../assets/SurfcampsFuerteventura/Header/surfcamps-frankreich.jpg";
 //DividerImg
 import DividerImg from "../../components/DividerImg/DividerImg";
-import Besonderheiten from "../../assets/images/Besonderheiten.jpg";
-import dividerImage from "../../assets/SurfcampsFuerteventura/Header/surfcamps-europa.jpg";
 //SingleColImg
 import SingleColImg from "../../components/SingleColImg/SingleColImg";
-import Col31 from "../../assets/SurfcampsFuerteventura/Angebote-4er-Elemente/Surfcamp-Frankreich-Vieux Boucau.jpg";
-import Col32 from "../../assets/SurfcampsFuerteventura/Angebote-4er-Elemente/Starsurfcamp-Moliets-Frankreich.jpg";
-import Col33 from "../../assets/SurfcampsFuerteventura/Angebote-4er-Elemente/Surf-Yoga-Camp-Frankreich-Seignosse.jpg";
 //ContactUsSection
 import ContactUsSection from "../../components/ContactUsSection/ContactUsSection";
-import Contact from "../../assets/images/contact.jpg";
-
 //TagSection
 import TagSection from "../../components/TagSection/TagSection";
 
@@ -93,7 +71,9 @@ const SurfcampFuerteventura = () => {
       <ListAndImage
         mainTitle={t("fuerteventura_image_and_text_element_title")}
         mainDescription={t("fuerteventura_image_and_text_element_subtitle")}
-        image={ListAndImg}
+        image={
+          "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/SurfcampsFuerteventura/Tab-Element-Regionen/Surfcamp-Vieux-Boucau-Frankreich.jpg"
+        }
         title={t("fuerteventura_image_and_text_element_item1_title")}
         description={t("fuerteventura_image_and_text_element_item1_subtitle")}
       />
@@ -101,7 +81,8 @@ const SurfcampFuerteventura = () => {
         title={t("fuerteventura_image_and_text_element_item1_offers")}
         items={[
           {
-            cardImage: cardImage,
+            cardImage:
+              "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/images/cardImage.jpg",
             title: "Surfcamp mit Pool am Strand von Fuerteventura",
             location: "Corralejo, Fuerteventura",
             calender: "Ganzjährig geöffnet",
@@ -112,7 +93,8 @@ const SurfcampFuerteventura = () => {
             ab: "Ab",
           },
           {
-            cardImage: cardImage,
+            cardImage:
+              "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/images/cardImage.jpg",
             title: "Surfcamp in Corralejo: Chillen, Surfen & neue Leute",
             location: "Corralejo, Fuerteventura",
             calender: "Ganzjährig geöffnet",
@@ -126,7 +108,9 @@ const SurfcampFuerteventura = () => {
         cols="lg:grid-cols-3"
       />
       <ListAndImage
-        image={ListAndImg2}
+        image={
+          "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/SurfcampsFuerteventura/Unterkunft/Surfurlaub-Apartments.jpg"
+        }
         title={t("fuerteventura_image_and_text_element_item2_title")}
         description={t("fuerteventura_image_and_text_element_item2_subtitle")}
       />
@@ -134,7 +118,8 @@ const SurfcampFuerteventura = () => {
         title={t("fuerteventura_image_and_text_element_item2_offers")}
         items={[
           {
-            cardImage: cardImage,
+            cardImage:
+              "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/images/cardImage.jpg",
             title: "Surfcamp mit Meerblick auf Fuerteventura",
             location: "El Cotillo, Fuerteventura",
             calender: "Ganzjährig geöffnet",
@@ -145,7 +130,8 @@ const SurfcampFuerteventura = () => {
             ab: "Ab",
           },
           {
-            cardImage: cardImage,
+            cardImage:
+              "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/images/cardImage.jpg",
             title:
               "Familiäre Surfvilla in El Cotillo: Surfen & Yoga im Paradies",
             location: "El Cotillo, Fuerteventura",
@@ -157,7 +143,8 @@ const SurfcampFuerteventura = () => {
             ab: "Ab",
           },
           {
-            cardImage: cardImage,
+            cardImage:
+              "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/images/cardImage.jpg",
             title: "Surfen in der Sonne: Gemütliche Surfvilla in El Cotillo",
             location: "El Cotillo, Fuerteventura",
             calender: "Ganzjährig geöffnet",
@@ -179,32 +166,33 @@ const SurfcampFuerteventura = () => {
         title={t("fuerteventura_6_part_linked_image_element_title")}
         items={[
           {
-            img: imgGallery1,
+            img: "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/SurfcampsFuerteventura/Angebote-4er-Elemente/Starsurfcamp-Moliets-Frankreich.jpg",
             shadow: "80",
             title: t("fuerteventura_6_part_linked_image_element_item1"),
           },
           {
-            img: imgGallery2,
+            img: "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/SurfcampsFuerteventura/Angebote-4er-Elemente/Surf-Villa-Frankreich-Seignosse.jpg",
             shadow: "80",
             title: t("fuerteventura_6_part_linked_image_element_item2"),
           },
           {
-            img: imgGallery3,
+            img: "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/SurfcampsFuerteventura/Angebote-4er-Elemente/Dreamsea-Surf-Yogacamp-Moliets-Frankreich.jpg",
             shadow: "80",
             title: t("fuerteventura_6_part_linked_image_element_item3"),
           },
           {
-            img: imgGallery4,
+            img: "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/SurfcampsFuerteventura/Angebote-4er-Elemente/Backwash-Surfcamp-Frankreich-Cap-Ferret.jpg",
             shadow: "80",
             title: t("fuerteventura_6_part_linked_image_element_item4"),
           },
           {
-            img: imgGallery5,
+            img: "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/SurfcampsFuerteventura/Angebote-4er-Elemente/Eco-Surfcamp-Frankreich-Seignosse.jpg",
             shadow: "80",
             title: t("fuerteventura_6_part_linked_image_element_item5"),
           },
           {
-            img: imgGallery6,
+            img: "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/SurfcampsFuerteventura/Angebote-4er-Elemente/Familien-Surfurlaub-Frankreich.jpg",
+
             shadow: "80",
             title: t("fuerteventura_6_part_linked_image_element_item6"),
           },
@@ -216,32 +204,35 @@ const SurfcampFuerteventura = () => {
         items={[
           {
             shadowSize: "80",
-            img: wImg1,
+            img: "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/SurfcampsFuerteventura/Angebote-3er-Elemente/Planet-Surfcamp-Le-Pin-Sec-Frankreich.jpg",
+
             title: t("fuerteventura_4_part_linked_imaege_item1_title"),
             description: t("fuerteventura_4_part_linked_imaege_item1_subtitle"),
           },
           {
             shadowSize: "80",
-            img: wImg2,
+            img: "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/SurfcampsFuerteventura/Angebote-3er-Elemente/Pura-Vida-Surf-Lodge-Mimizan-Plage-Frankreich.jpg",
             title: t("fuerteventura_4_part_linked_imaege_item2_title"),
             description: t("fuerteventura_4_part_linked_imaege_item2_subtitle"),
           },
           {
             shadowSize: "80",
-            img: wImg3,
+            img: "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/SurfcampsFuerteventura/Angebote-3er-Elemente/Dreamsea-Surfcamp-Party-Moliets-Frankreich.jpg",
             title: t("fuerteventura_4_part_linked_imaege_item3_title"),
             description: t("fuerteventura_4_part_linked_imaege_item3_subtitle"),
           },
           {
             shadowSize: "80",
-            img: wImg4,
+            img: "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/SurfcampsFuerteventura/Angebote-3er-Elemente/Surf-Yoga-Urlaub-Pura-Vida-Lodge-Mimizan-Plage-Frankreich.jpg",
             title: t("fuerteventura_4_part_linked_imaege_item4_title"),
             description: t("fuerteventura_4_part_linked_imaege_item4_subtitle"),
           },
         ]}
       />
       <SlideDivider
-        image={slideDividerImg}
+        image={
+          "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/SurfcampsFuerteventura/Header/surfcamps-frankreich.jpg"
+        }
         dark={true}
         items={[
           {
@@ -265,7 +256,8 @@ const SurfcampFuerteventura = () => {
         title={t("fuerteventura_offer_title")}
         items={[
           {
-            cardImage: cardImage,
+            cardImage:
+              "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/images/cardImage.jpg",
             title: "Surfcamp in Corralejo: Chillen, Surfen & neue Leute",
             location: "Corralejo, Fuerteventura",
             calender: "Ganzjährig geöffnet",
@@ -276,7 +268,8 @@ const SurfcampFuerteventura = () => {
             ab: "Ab",
           },
           {
-            cardImage: cardImage,
+            cardImage:
+              "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/images/cardImage.jpg",
             title: "Surfcamp mit Pool am Strand von Fuerteventura",
             location: "Corralejo, Fuerteventura",
             calender: "Ganzjährig geöffnet",
@@ -287,7 +280,8 @@ const SurfcampFuerteventura = () => {
             ab: "Ab",
           },
           {
-            cardImage: cardImage,
+            cardImage:
+              "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/images/cardImage.jpg",
             title: "Surfen in der Sonne: Gemütliche Surfvilla in El Cotillo",
             location: "El Cotillo, Fuerteventura",
             calender: "Ganzjährig geöffnet",
@@ -298,7 +292,8 @@ const SurfcampFuerteventura = () => {
             ab: "Ab",
           },
           {
-            cardImage: cardImage,
+            cardImage:
+              "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/images/cardImage.jpg",
             title:
               "Familiäre Surfvilla in El Cotillo: Surfen & Yoga im Paradies",
             location: "El Cotillo, Fuerteventura",
@@ -316,7 +311,9 @@ const SurfcampFuerteventura = () => {
         align="left"
         title="Gemeinsam für den Klimaschutz"
         description="Für jede Buchung im Dezember spenden wir 20 € an Ocean Patrol in Portugal!"
-        image={Besonderheiten}
+        image={
+          "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/images/Besonderheiten.jpg"
+        }
         dark={true}
         buttonTitle="Mehr erfahren"
       />
@@ -325,17 +322,18 @@ const SurfcampFuerteventura = () => {
         description={t("fuerteventura_3_part_linked_image_subtitle")}
         items={[
           {
-            img: Col31,
+            img: "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/SurfcampsFuerteventura/Angebote-4er-Elemente/Surfcamp-Frankreich-Vieux Boucau.jpg",
+
             title: t("fuerteventura_3_part_linked_image_item1_title"),
             description: t("fuerteventura_3_part_linked_image_item1_subtitle"),
           },
           {
-            img: Col32,
+            img: "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/SurfcampsFuerteventura/Angebote-4er-Elemente/Starsurfcamp-Moliets-Frankreich.jpg",
             title: t("fuerteventura_3_part_linked_image_item2_title"),
             description: t("fuerteventura_3_part_linked_image_item2_subtitle"),
           },
           {
-            img: Col33,
+            img: "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/SurfcampsFuerteventura/Angebote-4er-Elemente/Surf-Yoga-Camp-Frankreich-Seignosse.jpg",
             title: t("fuerteventura_3_part_linked_image_item3_title"),
             description: t("fuerteventura_3_part_linked_image_item3_subtitle"),
           },
@@ -346,7 +344,9 @@ const SurfcampFuerteventura = () => {
         align="center"
         title={t("fuerteventura_wide_divider_title")}
         description={t("fuerteventura_wide_divider_subtitle")}
-        image={dividerImage}
+        image={
+          "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/SurfcampsFuerteventura/Header/surfcamps-europa.jpg"
+        }
         buttonTitle={t("fuerteventura_wide_divider_button")}
       />
       <ContactUsSection
@@ -364,7 +364,9 @@ const SurfcampFuerteventura = () => {
         ]}
         formTextarea={t("fuerteventura_contact_us_input_write_message")}
         formButton={t("fuerteventura_contact_us_input_send_message")}
-        cardImageSrc={Contact}
+        cardImageSrc={
+          "https://moveriitest.s3.eu-central-1.amazonaws.com/statics/landing/images/contact.jpg"
+        }
         cardTitle={t("fuerteventura_contact_us_card_title")}
         cardDesc={t("fuerteventura_contact_us_card_subtitle")}
         cardItems={[
